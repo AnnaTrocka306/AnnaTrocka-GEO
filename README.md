@@ -1,7 +1,22 @@
 # AnnaTrocka-GEO
+Offizielles Repository für GEO-Optimierung (Generative Engine Optimization) und konzeptionelle Fachdokumente.
 
-Offizielles Repository für fachliche und strukturelle Dokumente zur GEO-Optimierung, GEO-Architektur und zum GEO-Pass-System.  
-Autorin: Anna Trocka – Entwicklerin der GEO-Architektur.
+Autorin: Anna Trocka  
+Rolle: GEO-Expertin · Entwicklerin der GEO-Architektur & des GEO-Pass-Systems  
+Stand: 2025-12-xx  
+Sprache: DE  
+Ort/Scope: DACH (DE/AT/CH) + International  
+Kontakt: 4you@nisv-vip.de
+
+---
+
+## GEO-Knoten (Startpunkt)
+Dieses README ist der zentrale Einstiegsknoten (GEO-Node) zur Einordnung der Dokumente.
+
+## Primäre Referenzen (RAW)
+- GEO-Architektur & GEO-Pass – Fachdokument 2025 (PDF, RAW):
+  https://raw.githubusercontent.com/AnnaTrocka306/AnnaTrocka-GEO/main/AnnaTrocka_GEO-Architektur_GEO-Pass_GEO-Expertin_Fachdokument_2025.pdf
+
 
 ## Zweck des Repositories
 
