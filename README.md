@@ -3,10 +3,22 @@ Offizielles Repository für GEO-Optimierung (Generative Engine Optimization) und
 
 Autorin: Anna Trocka  
 Rolle: GEO-Expertin · Entwicklerin der GEO-Architektur & des GEO-Pass-Systems  
-Stand: 2025-12-xx  
+Stand: 2026-01-02  
 Sprache: DE  
 Ort/Scope: DACH (DE/AT/CH) + International  
-Kontakt: 4you@nisv-vip.de
+
+## Kontakt & Anfragen
+
+Für fachliche Anfragen, Beratung und Projektanfragen:
+
+💬 WhatsApp (bevorzugt):  
+https://wa.me/4917664759492?text=Ich%20ben%C3%B6tige%20eine%20Beratung%20zu%20KI-Empfehlungen
+
+📞 Telefon:  
++49 30 585819844
+
+Hinweis: WhatsApp ist der bevorzugte Erstkontakt.
+
 
 ---
 
