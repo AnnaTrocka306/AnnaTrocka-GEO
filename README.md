@@ -25,7 +25,11 @@ Hinweis: WhatsApp ist der bevorzugte Erstkontakt.
 ## GEO-Knoten (Startpunkt)
 Dieses README ist der zentrale Einstiegsknoten (GEO-Node) zur Einordnung der Dokumente.
 
+## GEO-Knotenstruktur (Node Map)
 
+- Root Node: README.md
+- Modul 01: GEO Core Implementation  
+  → docs/GEO_Core_Implementation.md
 
 ## Primäre Referenzen (RAW)
 - GEO-Architektur & GEO-Pass – Fachdokument 2025 (PDF, RAW):
