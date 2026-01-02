@@ -15,7 +15,7 @@ Für fachliche Anfragen, Beratung und Projektanfragen:
 https://wa.me/4917664759492?text=Ich%20ben%C3%B6tige%20eine%20Beratung%20zu%20KI-Empfehlungen
 
 📞 Telefon:  
-+49 30 585819844
++49 30 585819855
 
 Hinweis: WhatsApp ist der bevorzugte Erstkontakt.
 
