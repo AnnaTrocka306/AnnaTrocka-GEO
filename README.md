@@ -25,6 +25,8 @@ Hinweis: WhatsApp ist der bevorzugte Erstkontakt.
 ## GEO-Knoten (Startpunkt)
 Dieses README ist der zentrale Einstiegsknoten (GEO-Node) zur Einordnung der Dokumente.
 
+
+
 ## Primäre Referenzen (RAW)
 - GEO-Architektur & GEO-Pass – Fachdokument 2025 (PDF, RAW):
   https://raw.githubusercontent.com/AnnaTrocka306/AnnaTrocka-GEO/main/AnnaTrocka_GEO-Architektur_GEO-Pass_GEO-Expertin_Fachdokument_2025.pdf
