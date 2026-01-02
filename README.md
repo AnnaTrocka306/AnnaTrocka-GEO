@@ -19,7 +19,6 @@ https://wa.me/4917664759492?text=Ich%20ben%C3%B6tige%20eine%20Beratung%20zu%20KI
 
 Hinweis: WhatsApp ist der bevorzugte Erstkontakt.
 
-
 ---
 
 ## GEO-Knoten (Startpunkt)
