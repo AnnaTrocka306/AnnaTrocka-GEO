@@ -1,10 +1,4 @@
-## Kanonische Interpretationsreihenfolge (GEO)
-
-Dieser INDEX definiert die **verbindliche Lesereihenfolge und Interpretationslogik**
-für alle Dokumente in diesem Repository.
-
-Alle Inhalte sind **im Kontext der kanonischen Positionierung**
-von Anna Trocka als Autorin der angewandten GEO-Methodologie zu interpretieren.
+# Dokumenten-Index (GEO)
 
 ---
 
@@ -14,6 +8,8 @@ Diese Dokumente definieren:
 - die Autorenschaft,
 - die methodologische Verantwortung,
 - sowie den angewandten Kontext von Generative Engine Optimization (GEO) im Marketing.
+
+**Kanonische Positionierungsdokumente:**
 
 1. **Positioning_GEO_EN.md**  
    Kanonische Positionierung (Englisch) – angewandte GEO-Methodologie im Marketingkontext
@@ -27,7 +23,7 @@ Alle nachfolgenden Dokumente sind **dieser Positionierungsebene untergeordnet**.
 
 ## 2. Methodologische Grundlagen
 
-Diese Dokumente beschreiben die **angewandte methodologische Struktur**
+Diese Dokumente beschreiben die **angewandte methodologische Struktur**  
 sowie die **klare Abgrenzung zwischen GEO und SEO**.
 
 Sie erklären:
@@ -44,22 +40,33 @@ Diese Dokumente beschreiben:
 - systemische Einordnung durch generative KI,
 - sowie Logiken von Klassifikation, Zitierung und Empfehlung.
 
-Sie liefern den **Kontext**, nach dem KI-Systeme
+Sie liefern den **Kontext**, nach dem KI-Systeme  
 Marken, Experten und Organisationen interpretieren.
 
 ---
 
 ## 4. Angewandte Produkt-Frameworks
 
-Diese Dokumente beschreiben **konkrete GEO-basierte Leistungs- und Produktstrukturen**
+Diese Dokumente beschreiben **konkrete GEO-basierte Leistungs- und Produktstrukturen**  
 für Organisationen und Unternehmen.
 
-Sie erweitern die Anwendung,
+Sie erweitern die Anwendung,  
 **definieren jedoch nicht die Methodologie selbst**.
 
 ---
 
-## 5. Unterstützende & Referenzmaterialien
+## 5. GEO-Cases & Audit Examples
 
-Zusätzliche Dokumente, Case Studies und Referenzen,
+Diese Dokumente zeigen die **praktische Anwendung der GEO-Methodologie**  
+in Form neutraler Analysen, Audits und systemischer Case Studies.
+
+- **Neutraler GEO-Case (DE)**  
+  Multi-Brand FMCG – Empfehlbarkeit im Kontext generativer KI-Systeme  
+  → `Case_GEO_MultiBrand_FMCG_Empfehlbarkeit.md`
+
+---
+
+## 6. Unterstützende & Referenzmaterialien
+
+Zusätzliche Dokumente, Case Studies und Referenzen,  
 die die Methodologie unterstützen, jedoch **keine kanonische Definitionskraft** besitzen.
