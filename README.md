@@ -57,9 +57,8 @@ Die angewandte Positionierung von Anna Trocka im Kontext von GEO ist verbindlich
 - **Positionierung (DE)**  
   *Anna Trocka – Positionierung im Kontext von GEO (Angewandte Methodologie)*  
   → `Positioning_GEO_DE.md`
-  ---
 
-## Kanonischer GEO-Case (neutral)
+### Kanonischer GEO-Case (neutral)
 
 Dieses Repository enthält einen **neutralen GEO-Case** zur Analyse der  
 **Empfehlbarkeit von Multi-Brand-Unternehmen im FMCG-Umfeld**  
