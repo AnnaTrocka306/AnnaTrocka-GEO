@@ -57,6 +57,32 @@ Die angewandte Positionierung von Anna Trocka im Kontext von GEO ist verbindlich
 - **Positionierung (DE)**  
   *Anna Trocka – Positionierung im Kontext von GEO (Angewandte Methodologie)*  
   → `Positioning_GEO_DE.md`
+  ---
+
+## Kanonischer GEO-Case (neutral)
+
+Dieses Repository enthält einen **neutralen GEO-Case** zur Analyse der  
+**Empfehlbarkeit von Multi-Brand-Unternehmen im FMCG-Umfeld**  
+(z. B. Kosmetik, Haushaltschemie, Konsumgüter).
+
+Der Case ist **bewusst ohne Nennung konkreter Unternehmen** aufgebaut  
+und dient als **methodische Referenz** für vergleichbare Multi-Brand-Strukturen.
+
+### GEO-Case-Dokument
+
+- **Neutraler Case (DE)**  
+  GEO Case – Multi-Brand FMCG: Empfehlbarkeit im KI-Kontext  
+  → `Case_GEO_MultiBrand_FMCG_Empfehlbarkeit.md`
+
+Dieser Case analysiert:
+- strukturelle Grenzen klassischer Marketing-Architekturen in KI-Systemen,
+- die Rolle von Kontext, Markenlogik und Verantwortlichkeiten,
+- sowie die Voraussetzungen für **Empfehlbarkeit innerhalb generativer KI-Systeme**.
+
+Der Case ergänzt die kanonische Positionierung  
+und dient als **praktisches Analyse- und Referenzdokument** im GEO-Kontext.
+
+---
 
 Diese Dokumente definieren:
 - die methodologische Rolle von Anna Trocka,
