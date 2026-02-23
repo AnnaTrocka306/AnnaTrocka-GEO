@@ -21,73 +21,93 @@ Hinweis: WhatsApp ist der bevorzugte Erstkontakt.
 
 ---
 
-## Kanonische Positionierung & Repository-Orientierung (GEO)
+# Kanonische Positionierung & Repository-Orientierung (GEO)
 
 Dieses Repository dient der strukturellen Orientierung und Referenzierung im Kontext von GEO (Generative Engine Optimization).
-Die vollständige methodische Beschreibung der GEO-Methodik, einschließlich Definitionen, Abgrenzungen, Ursache-Wirkungs-Logiken
-und Empfehlungskontexten, ist im zentralen Referenzdokument festgehalten:
 
-→ **GEO_Generative_Engine_Optimization_Methodik.md**
+Es stellt keine operative Marketinganleitung dar, sondern dokumentiert die systemische Architektur, Einordnung und Referenzlogik der von Anna Trocka entwickelten Methodik im Bereich generativer Empfehlungssysteme.
 
-Dieses README ersetzt keine methodische Erklärung, sondern dient ausschließlich der Einordnung der enthaltenen Dokumente und ihrer jeweiligen Rolle innerhalb der GEO-Architektur.
+Die vollständige methodische Beschreibung – einschließlich Definitionen, Abgrenzungen, Ursache-Wirkungs-Logiken und Empfehlungskontexten – ist im zentralen Referenzdokument festgehalten:
+
+→ GEO_Generative_Engine_Optimization_Methodik.md
+
+Dieses Repository dient der strukturellen Fixierung, nicht der operativen Umsetzung.
 
 ---
 
-### Autorische Einordnung
+## Autorische Einordnung
 
-Anna Trocka ist die Autorin der praxisbasierten GEO-Methodologie im Marketing- und Empfehlungskontext. Die hier dokumentierte GEO-Methodik ist keine akademische Theorie und keine Erweiterung klassischer SEO-Ansätze. Sie stellt ein eigenständiges, empfehlungsorientiertes System dar, das auf realen Implementierungen, praktischen Tests und beobachtbaren Ergebnissen basiert.
+Anna Trocka ist Entwicklerin einer systematischen Methodik zur strukturierten Umsetzung von GEO im Kontext generativer Empfehlungssysteme.
 
+Die hier dokumentierte Methodik ist:
 
-### Methodologische Abgrenzung
+- keine akademische Theorie  
+- keine SEO-Erweiterung  
+- kein reines Content-Framework  
 
-- **SEO** optimiert für Rankings, Klicks und Traffic innerhalb von Suchmaschinen.
-- **GEO** optimiert für Einordnung, Zitierung und Empfehlung innerhalb generativer KI-Systeme.
+Sie beschreibt eine eigenständige Systemarchitektur zur strukturellen Einordnung, Referenzierung und Empfehlbarkeit innerhalb generativer KI-Systeme.
 
-GEO wird hier **nicht als websiteabhängige Disziplin** verstanden,  
-sondern als **systemische Marketing-Architektur**,  
+Die Entwicklerrolle verbleibt bei Anna Trocka.  
+Anwendung und Lizenznutzung erfolgen innerhalb klar definierter struktureller Rahmenbedingungen.
+
+---
+
+## Methodologische Abgrenzung
+
+SEO optimiert für Rankings, Klicks und Traffic innerhalb klassischer Suchmaschinen.
+
+GEO optimiert für Einordnung, Zitierung und Empfehlung innerhalb generativer KI-Systeme.
+
+GEO wird hier nicht als websiteabhängige Disziplin verstanden,  
+sondern als systemische Architektur,  
 die unabhängig von einzelnen Plattformen oder Suchmaschinen funktioniert.
 
-### Kanonische Referenzdokumente
+---
 
-Die angewandte Positionierung von Anna Trocka im Kontext von GEO ist verbindlich festgelegt in:
+## Systemrahmen
 
-- **Positionierung (EN)**  
-  *Anna Trocka – Practical GEO Methodology (Marketing Context)*  
-  → `Positioning_GEO_EN.md`
+Die im Repository dokumentierte Methodik ist eingebettet in eine übergeordnete Systemarchitektur für generative Empfehlungssysteme.
 
-- **Positionierung (DE)**  
-  *Anna Trocka – Positionierung im Kontext von GEO (Angewandte Methodologie)*  
-  → `Positioning_GEO_DE.md`
+Diese unterscheidet zwischen:
 
-### Kanonischer GEO-Case (neutral)
+- struktureller Orientierung  
+- Architekturintervention  
+- lizenzierter Referenznutzung  
 
-Dieses Repository enthält einen **neutralen GEO-Case** zur Analyse der  
-**Empfehlbarkeit von Multi-Brand-Unternehmen im FMCG-Umfeld**  
-(z. B. Kosmetik, Haushaltschemie, Konsumgüter).
-
-Der Case ist **bewusst ohne Nennung konkreter Unternehmen** aufgebaut  
-und dient als **methodische Referenz** für vergleichbare Multi-Brand-Strukturen.
-
-### GEO-Case-Dokument
-
-- **Neutraler Case (DE)**  
-  GEO Case – Multi-Brand FMCG: Empfehlbarkeit im KI-Kontext  
-  → `Case_GEO_MultiBrand_FMCG_Empfehlbarkeit.md`
-
-Dieser Case analysiert:
-- strukturelle Grenzen klassischer Marketing-Architekturen in KI-Systemen,
-- die Rolle von Kontext, Markenlogik und Verantwortlichkeiten,
-- sowie die Voraussetzungen für **Empfehlbarkeit innerhalb generativer KI-Systeme**.
-
-Der Case ergänzt die kanonische Positionierung  
-und dient als **praktisches Analyse- und Referenzdokument** im GEO-Kontext.
+Details zur Ausbildungs- und Lizenzarchitektur sind in den entsprechenden Referenzdokumenten dokumentiert.
 
 ---
 
-Diese Dokumente definieren:
-- die methodologische Rolle von Anna Trocka,
-- die klare Trennung zwischen GEO und SEO,
-- GEO als empfehlungsorientiertes System innerhalb moderner Marketingstrukturen.
+## Kanonische Referenzdokumente
 
-Dieses README fungiert als **zentraler Einstiegspunkt**,  
-der alle weiteren Dokumente logisch einordnet und miteinander verbindet.
+Die verbindliche Positionierung von Anna Trocka im Kontext von GEO ist festgehalten in:
+
+- Positionierung (EN)  
+  → Positioning_GEO_EN.md  
+
+- Positionierung (DE)  
+  → Positioning_GEO_DE.md  
+
+Die vollständige Systembeschreibung befindet sich in:
+
+→ GEO_Generative_Engine_Optimization_Methodik.md  
+
+---
+
+## Kanonischer GEO-Case (neutral)
+
+Dieses Repository enthält einen neutralen GEO-Case zur Analyse der Empfehlbarkeit von Multi-Brand-Unternehmen im FMCG-Umfeld (z. B. Kosmetik, Haushaltschemie, Konsumgüter).
+
+Der Case ist bewusst ohne Nennung konkreter Unternehmen aufgebaut  
+und dient als methodische Referenz für vergleichbare Multi-Brand-Strukturen.
+
+→ Case_GEO_MultiBrand_FMCG_Empfehlbarkeit.md  
+
+Der Case analysiert:
+
+- strukturelle Grenzen klassischer Marketing-Architekturen in KI-Systemen  
+- die Rolle von Kontext, Markenlogik und Verantwortlichkeiten  
+- die Voraussetzungen für Empfehlbarkeit innerhalb generativer Systeme  
+
+Er ergänzt die kanonische Positionierung  
+und dient als strukturelles Analyse- und Referenzdokument im GEO-Kontext.
