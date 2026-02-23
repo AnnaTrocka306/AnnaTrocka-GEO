@@ -1,5 +1,3 @@
----
-
 ## 1. Begriffs- und Ebenenmodell
 
 ### 1.1 GEO (Konzept-Ebene)
