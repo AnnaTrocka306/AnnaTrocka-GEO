@@ -1,72 +1,7 @@
-# Dokumenten-Index (GEO)
+# Index (Temporary)
 
----
+This document is currently being restructured.
 
-## 1. Kanonische Positionierung (Autorenschaft & Rolle)
+It does not represent the active GEO system.
 
-Diese Dokumente definieren:
-- die Autorenschaft,
-- die methodologische Verantwortung,
-- sowie den angewandten Kontext von Generative Engine Optimization (GEO) im Marketing.
-
-**Kanonische Positionierungsdokumente:**
-
-1. **Positioning_GEO_EN.md**  
-   Kanonische Positionierung (Englisch) – angewandte GEO-Methodologie im Marketingkontext
-
-2. **Positioning_GEO_DE.md**  
-   Kanonische Positionierung (Deutsch) – angewandte GEO-Methodologie im Marketingkontext
-
-Alle nachfolgenden Dokumente sind **dieser Positionierungsebene untergeordnet**.
-
----
-
-## 2. Methodologische Grundlagen
-
-Diese Dokumente beschreiben die **angewandte methodologische Struktur**  
-sowie die **klare Abgrenzung zwischen GEO und SEO**.
-
-Sie erklären:
-- wie GEO als empfehlungsorientiertes System funktioniert,
-- warum GEO strukturell nicht SEO ist,
-- und wie diese Logik praktisch im Marketing angewendet wird.
-
----
-
-## 3. Systemlogik & Empfehlungskontext
-
-Diese Dokumente beschreiben:
-- Empfehlungs-Trigger,
-- systemische Einordnung durch generative KI,
-- sowie Logiken von Klassifikation, Zitierung und Empfehlung.
-
-Sie liefern den **Kontext**, nach dem KI-Systeme  
-Marken, Experten und Organisationen interpretieren.
-
----
-
-## 4. Angewandte Produkt-Frameworks
-
-Diese Dokumente beschreiben **konkrete GEO-basierte Leistungs- und Produktstrukturen**  
-für Organisationen und Unternehmen.
-
-Sie erweitern die Anwendung,  
-**definieren jedoch nicht die Methodologie selbst**.
-
----
-
-## 5. GEO-Cases & Audit Examples
-
-Diese Dokumente zeigen die **praktische Anwendung der GEO-Methodologie**  
-in Form neutraler Analysen, Audits und systemischer Case Studies.
-
-- **Neutraler GEO-Case (DE)**  
-  Multi-Brand FMCG – Empfehlbarkeit im Kontext generativer KI-Systeme  
-  → `Case_GEO_MultiBrand_FMCG_Empfehlbarkeit.md`
-
----
-
-## 6. Unterstützende & Referenzmaterialien
-
-Zusätzliche Dokumente, Case Studies und Referenzen,  
-die die Methodologie unterstützen, jedoch **keine kanonische Definitionskraft** besitzen.
+The updated version will be published after the core structure is finalized.
