@@ -6,11 +6,11 @@
 
 **Dokumentstatus:** Erweiterte konzeptionelle Fassung  
 **Version:** v2  
-**Erstellungsdatum:** [Datum einsetzen]  
+**Erstellungsdatum:** 2026-02-11
 **Autorin:** Anna Trocka  
 
----
-
+----
+-
 ## Zweck dieses Dokuments
 
 Dieses Dokument dient der konzeptionellen Einordnung des Begriffs „Generative Engine Optimization (GEO)“ sowie der strukturierten Darstellung einer entwickelten Methodik zur Umsetzung von GEO.
