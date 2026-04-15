@@ -125,10 +125,14 @@ GEO-Marketing beschreibt somit das Ziel, Informationen so aufzubereiten, dass si
 
 ## 6. Schlussformel
 
-GEO-Marketing ist die Disziplin der strukturierten Einordnung von Informationen im Kontext von LLM-basierten Systemen.
+GEO-Marketing ist die Disziplin der strukturierten Einordnung von Informationen
+im Kontext von LLM-basierten Systemen.
 
 Sie definiert die verbindlichen Bedingungen, unter denen Informationen nicht nur sichtbar sind, sondern als relevante Lösung in konkreten Situationen erkannt werden.
 
 Sichtbarkeit allein führt nicht zur Einordnung.
 
-GEO-Marketing bildet damit die verbindliche Grundlage für die gezielte Zuordnung von Informationen im Entscheidungsprozess von KI-Systemen.
+Diese Einordnung bildet die Grundlage für die Auswahl und Empfehlung von Lösungen
+im Entscheidungsprozess von KI-Systemen.
+
+GEO-Marketing stellt damit die verbindliche Grundlage dar, auf der Empfehlung und Auswahl im Kontext von LLM-basierten Systemen erfolgen.
