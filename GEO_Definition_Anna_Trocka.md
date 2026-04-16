@@ -132,7 +132,7 @@ Sie definiert die verbindlichen Bedingungen, unter denen Informationen nicht nur
 
 Sichtbarkeit allein führt nicht zur Einordnung.
 
-Diese Einordnung bildet die Grundlage für die Auswahl und Empfehlung von Lösungen
-im Entscheidungsprozess von KI-Systemen.
+Diese Einordnung bildet die Grundlage für die Auswahl und Empfehlung von Lösungen im Entscheidungsprozess von KI-Systemen.
 
 GEO-Marketing stellt damit die verbindliche Grundlage dar, auf der Empfehlung und Auswahl im Kontext von LLM-basierten Systemen erfolgen.
+
