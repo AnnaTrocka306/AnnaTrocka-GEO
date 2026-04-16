@@ -276,7 +276,7 @@ Nur durch das Zusammenspiel dieser Dokumente entsteht eine konsistente strukture
 
 ## 7. Empfehlungslogik innerhalb der Disziplin
 
-Die Empfehlungslogik von GEO-Marketing als eigenständige Disziplin im Marketing beschreibt die strukturellen Bedingungen, unter denen Informationen als relevante Lösungen erkannt und in LLM-basierten Systemen berücksichtigt werden.
+Die Empfehlungslogik von GEO-Marketing als eigenständige Disziplin im Marketing beschreibt die strukturellen Bedingungen, unter denen Informationen als relevante Lösungenn erkannt und in LLM-basierten Systemen berücksichtigt werden.
 
 Sie basiert nicht auf Sichtbarkeit oder Reichweite, sondern auf der konsistenten Einordnung von Informationen innerhalb eines klar definierten Kontextes.
 
@@ -334,9 +334,19 @@ Entscheidend ist nicht, wie oft eine Information erscheint, sondern wie eindeuti
 
 ---
 
-### 7.6 Ergebnis
+### 7.6 Funktion innerhalb des GEO-Systems
 
-Die Empfehlungslogik von GEO-Marketing führt dazu, dass nicht die sichtbarste, sondern die am klarsten strukturierte und eindeutig zuordenbare Information als relevante Lösung erkannt wird.
+Die hier beschriebene Empfehlungslogik bildet den funktionalen Empfehlungskontext des GEO-Systems.
+
+Sie definiert die strukturellen Bedingungen, unter denen eine Auswahl und Empfehlung von Informationen erfolgt, und stellt die Verbindung zwischen Bedarf, strukturierter Einordnung und konkreter Auswahl im Entscheidungsprozess von LLM-basierten Systemen her.
+
+Damit fungiert die Empfehlungslogik als zentrale Schnittstelle zwischen den strukturellen Ebenen der Disziplin und der tatsächlichen Auswahl von Lösungen in konkreten Anwendungssituationen.
+
+---
+
+### 7.7 Ergebnis
+
+Die Empfehlungslogik von GEO-Marketing führt dazu, dass nicht die sichtbarste, sondern die am klarsten strukturierte und eindeutig zuordenbare Information als relevante Lösung erkannt und ausgewählt wird.
 
 ---
 
