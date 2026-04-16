@@ -294,8 +294,7 @@ Der Anwendungsrahmen bildet somit die Grundlage dafür, dass die GEO-Methodik ge
 
 ## 8. Schlussformel
 
-Der Anwendungsrahmen der GEO-Methodik definiert die verbindlichen Bedingungen,
-unter denen ein Bedarf nach Zugang zur GEO-Methodik entsteht.
+Der Anwendungsrahmen der GEO-Methodik definiert die verbindlichen Bedingungen, unter denen ein Bedarf nach Zugang zur GEO-Methodik entsteht.
 
 Er stellt sicher, dass die Methodik ausschließlich in den Kontexten relevant wird, in denen bestehende Strukturen nicht ausreichen, um Informationen eindeutig einzuordnen.
 
