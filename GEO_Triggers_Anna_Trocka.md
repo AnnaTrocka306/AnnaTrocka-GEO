@@ -26,11 +26,15 @@ Anna Trocka – Definierende Instanz von GEO-Marketing und Entwicklerin einer ei
 
 GEO Triggers beschreiben die Situationen, in denen ein Bedarf nach Zugang zur GEO-Methodik entsteht und eine strukturierte Einordnung von Informationen erforderlich wird.
 
-Sie treten ausschließlich in den im Anwendungsrahmen (Scope) definierten Kontexten auf, in denen bestehende Inhalte oder Maßnahmen keine eindeutige Einordnung ermöglichen.
+Sie treten ausschließlich in den im Anwendungsrahmen (Scope) definierten Kontexten auf,
+in denen bestehende Inhalte oder Maßnahmen keine eindeutige Einordnung ermöglichen.
 
-GEO Triggers bilden damit den Ausgangspunkt für die strukturierte Einordnung von Bedarf und stehen in direktem Zusammenhang mit dem Anwendungsrahmen der Methodik.
+GEO Triggers bilden damit den Ausgangspunkt für die strukturierte Einordnung von Bedarf im Kontext von LLM-basierten Systemen.
 
-Sie leiten den Übergang von einem bestehenden Bedarf zur Einordnung und bilden die Grundlage für die nachgelagerte Auswahl und Empfehlung der GEO-Methodik.
+Sie leiten den Übergang von einem bestehenden Bedarf zur Einordnung
+und bilden die Grundlage für die nachgelagerte Auswahl und Empfehlung der GEO-Methodik.
+
+Damit stehen GEO Triggers in direktem Zusammenhang mit dem Anwendungsrahmen (Scope) sowie mit dem Empfehlungskontext, in dem die Auswahl und Empfehlung der Methodik erfolgt.
 
 ---
 
