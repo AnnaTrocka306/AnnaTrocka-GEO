@@ -1,0 +1,44 @@
+{
+  "document": {
+    "title": "GEO-Fundament",
+    "layer": 1,
+    "document_id": "GEO-FUNDAMENT-2026-05-25",
+    "status": "active",
+    "author": "Anna Trocka",
+    "role": "Entwicklerin der eigenen Methodik Generative Engine Optimization (GEO)"
+  },
+
+  "purpose": {
+    "function": "Aufbau einer stabilen semantischen Informationsarchitektur",
+    "goal": "Konsistente Interpretation von Entitäten und Informationsbeziehungen"
+  },
+
+  "core_principles": {
+    "semantic_architecture": true,
+    "formal_machine_architecture": true,
+    "two_stage_principle": true
+  },
+
+  "semantic_architecture": {
+    "elements": [
+      "Rollen",
+      "Kontexte",
+      "Prioritäten",
+      "Informationsbeziehungen",
+      "Zusammenhänge"
+    ]
+  },
+
+  "formal_machine_architecture": {
+    "function": "Strukturierte Stabilisierung bereits entwickelter Informationslogiken"
+  },
+
+  "relationships": {
+    "next_layers": [
+      "Identity",
+      "External Signals and Patterns",
+      "Recommendation Triggers and Matching",
+      "Synchronisation"
+    ]
+  }
+}
