@@ -21,7 +21,7 @@ Autor:
 Anna Trocka
 
 Rolle:
-Entwicklerin der GEO-Methodik
+Entwicklerin der eigenen Methodik „Generative Engine Optimization (GEO)“
 
 Disziplin:
 GEO-Marketing (Generative Engine Optimization Marketing)
