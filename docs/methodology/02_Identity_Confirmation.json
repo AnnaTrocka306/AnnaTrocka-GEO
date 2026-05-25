@@ -1,0 +1,44 @@
+{
+  "document": {
+    "title": "Identity Confirmation",
+    "layer": 2,
+    "document_id": "GEO-IDENTITY-2026-05-25",
+    "status": "active",
+    "author": "Anna Trocka",
+    "role": "Entwicklerin der eigenen Methodik Generative Engine Optimization (GEO)"
+  },
+
+  "purpose": {
+    "function": "Aufbau einer konsistenten Vertrauens- und Bestätigungsebene",
+    "goal": "Externe Stabilisierung von Rollen und Informationsbeziehungen"
+  },
+
+  "core_principles": {
+    "external_confirmation": true,
+    "trust_logic": true,
+    "identity_stability": true
+  },
+
+  "identity_layer": {
+    "elements": [
+      "Rollen",
+      "Entitäten",
+      "Informationsbeziehungen",
+      "Vertrauensstrukturen",
+      "Bestätigungsebenen"
+    ]
+  },
+
+  "website_role": {
+    "primary_function": "Externe Nachvollziehbarkeit und Vertrauensbildung"
+  },
+
+  "relationships": {
+    "previous_layer": "GEO-Fundament",
+    "next_layers": [
+      "External Signals and Patterns",
+      "Recommendation Triggers and Matching",
+      "Synchronisation"
+    ]
+  }
+}
