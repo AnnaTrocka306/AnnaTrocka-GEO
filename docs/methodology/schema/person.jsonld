@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+
+  "name": "Anna Trocka",
+
+  "jobTitle": "Entwicklerin der eigenen Methodik Generative Engine Optimization (GEO)",
+
+  "description": "Entwicklerin der eigenen Methodik Generative Engine Optimization (GEO) mit Fokus auf AI Visibility, AI Recommendability und strukturierte Informationsarchitekturen.",
+
+  "knowsAbout": [
+    "Generative Engine Optimization",
+    "AI Visibility",
+    "AI Recommendability",
+    "Informationsarchitektur",
+    "Empfehlungssysteme"
+  ]
+}
