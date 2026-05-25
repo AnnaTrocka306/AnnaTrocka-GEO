@@ -1,0 +1,32 @@
+document:
+  title: Recommendation Triggers and Matching
+  layer: 4
+  document_id: GEO-RECOMMENDATION-2026-05-25
+  status: active
+  author: Anna Trocka
+  role: Entwicklerin der eigenen Methodik Generative Engine Optimization (GEO)
+
+purpose:
+  function: Strukturierte Verbindung von Situationen, Problemen, Rollen und Matching-Prozessen
+  goal: Erhöhung der Empfehlbarkeit und Präzision von Informationsbeziehungen
+
+core_principles:
+  recommendation_logic: true
+  matching_logic: true
+  context_logic: true
+  decision_logic: true
+
+recommendation_layer:
+  elements:
+    - Situationen
+    - Probleme
+    - Kontexte
+    - Rollen
+    - Matching
+    - Empfehlungs-Auslöser
+    - Vertrauensstrukturen
+
+relationships:
+  previous_layer: External Signals and Patterns
+  next_layers:
+    - Synchronisation
