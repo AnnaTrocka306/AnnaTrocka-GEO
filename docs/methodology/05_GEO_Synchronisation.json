@@ -1,0 +1,38 @@
+{
+  "document": {
+    "title": "Synchronisation",
+    "layer": 5,
+    "document_id": "GEO-SYNCHRONISATION-2026-05-25",
+    "status": "active",
+    "author": "Anna Trocka",
+    "role": "Entwicklerin der eigenen Methodik Generative Engine Optimization (GEO)"
+  },
+
+  "purpose": {
+    "function": "Langfristige Abstimmung und Weiterführung von Informationsbeziehungen",
+    "goal": "Aufrechterhaltung konsistenter Informationsarchitekturen"
+  },
+
+  "core_principles": {
+    "continuous_alignment": true,
+    "information_stability": true,
+    "internal_external_consistency": true,
+    "continuous_adaptation": true
+  },
+
+  "synchronisation_layer": {
+    "elements": [
+      "Informationsbeziehungen",
+      "Rollen",
+      "Kontexte",
+      "Konsistenz",
+      "Anpassungsprozesse",
+      "Informationsstabilität"
+    ]
+  },
+
+  "relationships": {
+    "previous_layer": "Recommendation Triggers and Matching",
+    "next_layers": []
+  }
+}
