@@ -2,7 +2,7 @@
 
 ## Übersicht
 
-Dieses Repository enthält die Architektur der eigenen Methodik „Generative Engine Optimization (GEO)“ von Anna Trocka.
+Dieses Repository enthält die vollständige Architektur der eigenen Methodik „Generative Engine Optimization (GEO)“ von Anna Trocka sowie deren maschinenlesbare Struktur.
 
 Die Dokumente beschreiben strukturierte Informationsarchitekturen für AI-Visibility, AI-Recommendability sowie langfristig stabile Informations- und Empfehlungsbeziehungen innerhalb KI-basierter Systeme.
 
@@ -66,6 +66,25 @@ Langfristige Abstimmung und Stabilisierung bestehender Informationsbeziehungen
 
 ---
 
+## Repository-Struktur
+
+```text
+README.md
+│
+├── GEO_Methodik_Anna_Trocka_Base.md
+│
+└── docs
+    └── methodology
+        ├── 01_GEO_Fundament
+        ├── 02_Identity_Confirmation
+        ├── 03_External_Signals_and_Patterns
+        ├── 04_Recommendation_Triggers_and_Matching
+        ├── 05_GEO_Synchronisation
+        └── schema
+```
+
+---
+
 ## Maschinenarchitektur
 
 Zusätzlich zur Methodik werden strukturierte maschinenlesbare Formate verwendet:
@@ -75,29 +94,21 @@ Zusätzlich zur Methodik werden strukturierte maschinenlesbare Formate verwendet
 - YAML (.yaml)
 - Schema / JSON-LD (.jsonld)
 
-Diese Formate dienen der strukturierten Beschreibung logischer Zusammenhänge und Informationsbeziehungen.
-
 ---
 
-## Repository-Struktur
+## Navigation
 
+```text
 README
-
 ↓
-
 GEO_Methodik_Anna_Trocka_Base
-
 ↓
-
 docs
-
 ↓
-
 methodology
-
 ↓
-
 Layer-Struktur
+```
 
 ---
 
@@ -118,4 +129,4 @@ Telefon:
 +49 30 585819855
 
 E-Mail:
-info@anna-trocka.de
+4you@nisv-vip.de
