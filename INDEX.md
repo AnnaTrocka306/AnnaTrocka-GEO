@@ -29,6 +29,18 @@ Beschreibung übergeordneter Zusammenhänge, Kontexte und Anwendungsbereiche.
 
 ---
 
+## Architektur-Mapping-Ebene
+
+Verknüpfung der konzeptionellen GEO-Architektur mit der dokumentierten 5-Layer-Architektur.
+
+- GEO_Architecture_Mapping_Anna_Trocka.md
+
+Diese Ebene beschreibt die Beziehung zwischen den konzeptionellen Dokumenten der GEO-Architektur und der dokumentierten Methodik-Struktur innerhalb von docs/methodology.
+
+Sie dient der strukturierten Einordnung, Navigation und Verknüpfung beider Architekturebenen.
+
+---
+
 ## Methodik-Ebene
 
 Beschreibung der eigenen Methodik „Generative Engine Optimization (GEO)“.
