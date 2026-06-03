@@ -62,6 +62,26 @@ Operative Umsetzung der durch Anna Trocka definierten Disziplin GEO-Marketing
 
 ---
 
+## Einordnung der 5-Layer-Architektur
+
+Die in diesem Repository zusätzlich dokumentierte 5-Layer-Architektur stellt ein vereinfachtes Architektur- und Orientierungsmodell der GEO-Methodik dar.
+
+Sie dient der strukturierten Beschreibung, Erklärung und Anwendung der Methodik und ordnet deren zentrale Funktionen in fünf logisch aufeinander aufbauende Ebenen ein:
+
+- GEO-Fundament
+- Identity und externe Bestätigung
+- External Signals and Patterns
+- Recommendation Triggers and Matching
+- Synchronisation
+
+Die 5-Layer-Architektur ersetzt die GEO-Methodik nicht und stellt keine eigenständige Methodik dar.
+
+Die vollständige Beschreibung der GEO-Methodik, ihrer Grundprinzipien, Systemarchitektur, zentralen Elemente und Anwendungslogiken befindet sich in diesem Hauptdokument.
+
+Die Layer-Struktur dient ausschließlich der vereinfachten Darstellung und systematischen Einordnung der innerhalb der Methodik beschriebenen Prozesse und Zusammenhänge
+
+---
+
 ## 1. Zweck der Methodik
 
 Die GEO Methodik zur gezielten Empfehlung nach Anna Trocka dient der strukturierten und systematischen Umsetzung von GEO-Marketing.
