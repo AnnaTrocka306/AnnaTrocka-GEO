@@ -1,3 +1,46 @@
+---
+title: "Warum unterscheiden sich KI-Empfehlungen und angezeigte Quellen?"
+slug: "ki-empfehlungen-und-angezeigte-quellen"
+description: "Eine dokumentierte GEO-Forschungsarbeit zur Frage, warum sich KI-Empfehlungen verändern können, obwohl die angezeigten Quellen weitgehend unverändert bleiben."
+author: "Anna Trocka"
+author_role: "Entwicklerin einer eigenen GEO-Methodik"
+author_email: "info@anna-trocka.de"
+language: "de"
+document_type: "research-paper"
+status: "living-research-document"
+version: "1.0"
+date_published: "2026-07-10"
+date_modified: "2026-07-10"
+main_question: "Kann ein Large Language Model Informationen für eine Empfehlung verwenden, ohne diese Informationen später als sichtbare Quelle anzuzeigen?"
+topics:
+  - "Generative Engine Optimization"
+  - "GEO"
+  - "KI-Empfehlungen"
+  - "Informationsassoziationen"
+  - "Quellenauswahl"
+  - "Large Language Models"
+entities:
+  - "Anna Trocka"
+  - "Precise Resort Bad Saarow"
+  - "Google AI"
+  - "ChatGPT"
+  - "Claude"
+case_study:
+  name: "Precise Resort Bad Saarow"
+  focus: "Wassermassage und besondere Wassererlebnisse"
+keywords:
+  - "KI-Empfehlungen"
+  - "angezeigte Quellen"
+  - "Zitierungen"
+  - "Informationsassoziationen"
+  - "GEO-Methodik"
+  - "LLM-Empfehlungen"
+repository_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO"
+linkedin_url: "https://www.linkedin.com/in/anna-trocka-34bb9020a"
+youtube_handle: "@annatrocka-geo-seo"
+license: "All rights reserved"
+---
+
 # Warum unterscheiden sich KI-Empfehlungen und die angezeigten Quellen?
 
 ## Executive Summary
