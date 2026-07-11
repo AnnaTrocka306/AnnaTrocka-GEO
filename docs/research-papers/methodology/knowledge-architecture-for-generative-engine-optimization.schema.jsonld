@@ -1,0 +1,108 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "genre": "Knowledge Paper",
+  "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/research-papers/methodology/knowledge-architecture-for-generative-engine-optimization.md",
+  "url": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/research-papers/methodology/knowledge-architecture-for-generative-engine-optimization.md",
+  "headline": "Knowledge Architecture for Generative Engine Optimization",
+  "name": "Knowledge Architecture for Generative Engine Optimization",
+  "description": "Diese Wissensarbeit beschreibt eine werkzeugunabhängige Knowledge Architecture, die Forschung, operatives Wissen, Second Brain und Knowledge-driven Automation zu reproduzierbaren GEO-Prozessen verbindet.",
+  "inLanguage": "de",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "version": "1.0",
+  "encodingFormat": "text/markdown",
+
+  "author": {
+    "@type": "Person",
+    "@id": "https://github.com/AnnaTrocka306",
+    "name": "Anna Trocka",
+    "alternateName": "Anna Trocka (Berlin)",
+    "jobTitle": "Entwicklerin einer eigenen GEO-Methodik",
+    "email": "info@anna-trocka.de",
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Berlin, Deutschland"
+    },
+    "sameAs": [
+      "https://github.com/AnnaTrocka306",
+      "https://www.linkedin.com/in/anna-trocka-34bb9020a",
+      "https://www.youtube.com/@annatrocka-geo-seo"
+    ]
+  },
+
+  "publisher": {
+    "@type": "Person",
+    "@id": "https://github.com/AnnaTrocka306",
+    "name": "Anna Trocka"
+  },
+
+  "identifier": "KP-KA-GEO-001",
+
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/research-papers/methodology/knowledge-architecture-for-generative-engine-optimization.md"
+  },
+
+  "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO",
+    "name": "Anna Trocka GEO Knowledge Base",
+    "url": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO"
+  },
+
+  "about": {
+    "@type": "Thing",
+    "name": "Knowledge Architecture for Generative Engine Optimization",
+    "description": "Eine werkzeugunabhängige Wissensarchitektur für reproduzierbare GEO-Prozesse, Second-Brain-Systeme und Knowledge-driven Automation."
+  },
+
+  "mentions": [
+    {
+      "@type": "Thing",
+      "name": "Generative Engine Optimization",
+      "alternateName": "GEO"
+    },
+    {
+      "@type": "Thing",
+      "name": "Research Layer"
+    },
+    {
+      "@type": "Thing",
+      "name": "Application Layer"
+    },
+    {
+      "@type": "Thing",
+      "name": "Operatives Wissen"
+    },
+    {
+      "@type": "Thing",
+      "name": "Second Brain"
+    },
+    {
+      "@type": "Thing",
+      "name": "Knowledge-driven Automation"
+    },
+    {
+      "@type": "Thing",
+      "name": "Knowledge Base"
+    },
+    {
+      "@type": "Thing",
+      "name": "Knowledge Paper"
+    }
+  ],
+
+  "keywords": [
+    "Knowledge Architecture",
+    "Generative Engine Optimization",
+    "GEO",
+    "Research Layer",
+    "Application Layer",
+    "Operatives Wissen",
+    "Second Brain",
+    "Knowledge-driven Automation",
+    "Knowledge Base",
+    "Knowledge Paper"
+  ]
+}
