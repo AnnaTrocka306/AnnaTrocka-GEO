@@ -1,3 +1,4 @@
+---
 id: case-hotel-direct-bookings-ai-recommendations-001
 
 title: >
@@ -14,244 +15,96 @@ document_class:
 
 status: Final
 
-version: 2.0
+version: "2.0"
 
 language: de
 
 author:
   name: Anna Trocka
 
-industry:
-  Hospitality
+industry: Hospitality
 
 target_audience:
   - Hotelinhaber
-  - Geschäftsführer
-  - Hotelmarketing
-  - Hotelgruppen
-  - Tourismusunternehmen
-
-main_question: >
-  Welche wirtschaftlichen Chancen entstehen für Hotels
-  durch KI-Empfehlungen und warum wird eine
-  maschinenlesbare Wissensbasis zur Grundlage
-  der digitalen Zukunft eines Hotels?
-
-architectural_peak: >
-  Eine maschinenlesbare Wissensbasis erhöht nicht nur
-  die Wahrscheinlichkeit von KI-Empfehlungen.
-  Sie entwickelt sich zu einem digitalen Unternehmens-Asset,
-  das die Grundlage für Direktbuchungen,
-  Second Brain,
-  AI-Agenten,
-  Business Automation,
-  digitale Produkte
-  und zukünftigen Agentic Commerce bildet.
+  - Hotelmanager
+  - Marketingverantwortliche
+  - Revenue Manager
+  - Digital Strategists
 
 business_problem: >
-  Immer mehr Reisende lassen sich bei der Hotelsuche
-  von KI-Systemen beraten.
-  Hotels konkurrieren dadurch nicht mehr ausschließlich
-  um Sichtbarkeit auf Buchungsplattformen,
-  sondern zunehmend um Empfehlungen innerhalb
-  konkreter Nutzungssituationen.
+  Hotels investieren in Marketing, werden jedoch von
+  generativen KI-Systemen häufig nicht empfohlen,
+  obwohl ihre Leistungen den Suchanfragen entsprechen.
 
 business_goal: >
-  Aufbau einer maschinenlesbaren Wissensbasis,
-  welche die tatsächlichen Stärken eines Hotels
-  mit den passenden Recommendation Contexts verbindet,
-  damit KI-Systeme das Hotel
-  in relevanten Situationen empfehlen können.
+  Nachweisen, dass eine strukturierte maschinenlesbare
+  Wissensbasis die Wahrnehmung eines Hotels durch KI
+  verändern und die Grundlage für mehr Direktbuchungen
+  schaffen kann.
 
-business_value:
+main_question: >
+  Wie kann eine strukturierte maschinenlesbare Wissensbasis
+  dazu beitragen, dass Hotels häufiger von KI-Systemen
+  empfohlen werden?
 
-  primary: >
-    Höhere Wahrscheinlichkeit,
-    bei relevanten KI-Empfehlungen berücksichtigt zu werden
-    und dadurch zusätzliche Chancen
-    für Direktbuchungen zu schaffen.
-
-  secondary:
-    - Machine-Readable Knowledge Base
-    - Digitales Unternehmens-Asset
-    - Wiederverwendbares Unternehmenswissen
-    - Second Brain
-    - AI-Agenten
-    - Business Automation
-    - Digitale Produkte
-    - Agentic Commerce
-    - Langfristige digitale Infrastruktur
-
-investment_type:
-
-  immediate:
-    - KI-Empfehlungen
-    - AI Visibility
-    - Potenzial für Direktbuchungen
-
-  long_term:
-    - Digitale Unternehmensinfrastruktur
-    - Wiederverwendbares Wissen
-    - Second Brain
-    - AI-Agenten
-    - Business Automation
-    - Digitale Produkte
-    - Agentic Commerce
-
-case_entity:
-
-  company:
-    Precise Resort Bad Saarow
+architectural_peak: >
+  Nicht die Leistungen eines Hotels wurden verändert,
+  sondern die digitale Wissensbasis, anhand derer
+  KI-Systeme das Hotel verstehen, einordnen und empfehlen.
 
 recommendation_context:
-
   primary:
-    Hotel mit Wassermassage
+    - Hotel mit Wassermassage
+    - Wellnesshotel
+    - Direktbuchung
+    - Adults Only Wellness
+    - Erholung in Bad Saarow
 
-  category:
-    Wellness
+project_scope:
+  type: Case Study
+  industry: Hospitality
 
-  business_relevance:
-    Hoch
-
-  measurable:
-    true
-
-  description: >
-    Gäste suchen gezielt nach einem Wellnesshotel,
-    das einen Pool mit Wassermassage bietet.
-
-perception_analysis:
-
-  self_perception: >
-    Wie beschreibt das Hotel seine Leistungen
-    auf der eigenen Website
-    und in den offiziellen Kommunikationskanälen?
-
-  customer_perception: >
-    Welche Eigenschaften werden von Gästen
-    tatsächlich wahrgenommen,
-    geschätzt und regelmäßig erwähnt?
-
-  ai_perception: >
-    Welche Eigenschaften erkennt,
-    versteht und verwendet
-    die KI tatsächlich
-    in ihren Empfehlungen?
-
-project_scope: >
-
-  Analyse der Wahrnehmungsunterschiede zwischen
-
-  - Selbstbild des Hotels,
-
-  - tatsächlichem Gästeerlebnis,
-
-  - KI-Wahrnehmung,
-
-  sowie Aufbau einer
-  maschinenlesbaren Wissensbasis,
-  welche diese Unterschiede reduziert.
+business_value:
+  - Verbesserte KI-Wahrnehmung
+  - Höhere Empfehlungswahrscheinlichkeit
+  - Grundlage für mehr Direktbuchungen
+  - Aufbau einer digitalen Wissensinfrastruktur
 
 proof_of_value:
-
-  - Vorher-/Nachher-Vergleich
   - Dokumentiertes LLM-Monitoring
+  - Veränderung der KI-Antworten
   - Zeitliche Entwicklung
-  - Veränderung semantischer Beziehungen
-  - Veränderung der KI-Wahrnehmung
-  - Veränderung der Recommendation Contexts
-  - Dokumentierte ChatGPT-Antworten
-  - Screenshots
-  - Monitoring-Daten
-
-business_impact:
-
-  - Höhere Wahrscheinlichkeit relevanter Empfehlungen
-  - Zusätzlicher digitaler Empfehlungskanal
-  - Potenzial für mehr Direktbuchungen
-  - Langfristige Reduzierung der Abhängigkeit
-    von provisionsbasierten Vertriebskanälen
-  - Nachhaltiger Wissensaufbau
-
-strategic_outcome:
-
-  - Digitale Unternehmensinfrastruktur
-  - Machine-Readable Knowledge Base
-  - Second Brain
-  - AI-Agenten
-  - Business Automation
-  - Digitale Produkte
-  - Agentic Commerce
-  - Skalierbares Unternehmenswissen
-
-core_topics:
-
-  - GEO
-  - KI-Empfehlungen
-  - Recommendation Context
-  - Semantic Matching
-  - Machine-Readable Knowledge
-  - AI Visibility
-  - Perception Analysis
-  - Knowledge Architecture
-  - Second Brain
-  - AI Agents
-  - Business Automation
-  - Digitale Produkte
-  - Agentic Commerce
+  - Vergleich vor und nach dem Projekt
 
 expected_outcomes:
+  - Verbesserte semantische Einordnung
+  - Höhere Sichtbarkeit in KI-Systemen
+  - Reproduzierbarer GEO-Prozess
 
-  - Veränderung der KI-Wahrnehmung
-  - Neue Recommendation Contexts
-  - Höhere Wahrscheinlichkeit relevanter Empfehlungen
-  - Aufbau einer digitalen Wissensinfrastruktur
-  - Wiederverwendbares Unternehmenswissen
-  - Grundlage für zukünftige KI-Anwendungen
+strategic_outcome: >
+  Das Projekt zeigt, dass der Aufbau einer
+  strukturierten Wissensbasis eine nachhaltige
+  digitale Infrastruktur für zukünftige
+  KI-Empfehlungen schaffen kann.
 
 related_knowledge:
-
-  - GEO Methodik
-  - GEO Gap
+  - GEO Methodology
   - Recommendation Context
-  - Semantic Matching
-  - Machine-Readable Knowledge Base
   - Perception Analysis
-  - Knowledge First Architecture
-  - Second Brain
-  - AI Agents
-  - Business Automation
-  - Agentic Commerce
+  - Business Narrative
+  - GEO Knowledge Architecture
 
 assets:
-
   folder: assets/
 
-  includes:
+repository_standard:
+  visibility: public
+  one_document_one_main_question: true
+  self_contained: true
 
-    - Monitoring
-    - LLM Responses
-    - Screenshots
-    - Before-After Comparisons
-    - Diagrams
-    - Timelines
-    - Evidence
+license: Proprietary
 
-repository_standard: >
-
-  Jeder Case ist eine eigenständige Wissenseinheit.
-
-  Sämtliche Bilder,
-  Monitoring-Dateien,
-  Diagramme und Nachweise
-  befinden sich ausschließlich
-  im Unterordner "assets".
-
-  Alle Dateien werden
-  über relative Pfade
-  in die Dokumentation eingebunden.
-
+last_updated: 2026-07-16
 ---
 
 # Storyline
