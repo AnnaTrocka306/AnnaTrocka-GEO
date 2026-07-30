@@ -47,10 +47,11 @@ tags:
 
 ## Definition
 
-Ein **Customer Goal** beschreibt den gewünschten Zustand oder das angestrebte Ergebnis, das ein Kunde durch die Lösung eines Customer Problems erreichen möchte.
+Eine **Recommendation Situation** beschreibt den konkreten Kontext, in dem eine [Business Entity](Business_Entity.md), eine [Service Entity](Service_Entity.md) oder eine [Product Entity](Product_Entity.md) für einen Nutzer empfohlen werden kann.
 
-Es dient als semantischer Bezugspunkt für das Verständnis der Absichten und Erwartungen eines Kunden und ermöglicht die Zuordnung geeigneter Produkte, Dienstleistungen oder Unternehmen zur Erreichung dieses Ziels.
+Sie verbindet die Bedürfnisse einer [Target Audience](Target_Audience.md) mit einer geeigneten Lösung und bildet den semantischen Ausgangspunkt für eine Empfehlung innerhalb einer [Knowledge Architecture](Knowledge_Architecture.md).
 
-Ein Customer Goal kann unabhängig von einer bestimmten Lösung existieren und durch unterschiedliche Business Entities, Product Entities oder Service Entities erreicht werden.
+Eine Recommendation Situation entsteht durch das Zusammenspiel verschiedener Knowledge Objects, insbesondere einer [Target Audience](Target_Audience.md), eines [Customer Problems](Customer_Problem.md), eines [Customer Goals](Customer_Goal.md) sowie einer oder mehrerer [Business Entities](Business_Entity.md), [Product Entities](Product_Entity.md) oder [Service Entities](Service_Entity.md).
 
-Innerhalb einer Knowledge Architecture bildet ein Customer Goal gemeinsam mit einem Customer Problem und einer Target Audience die Grundlage für die Modellierung von Recommendation Situations.
+Sie definiert nicht, **welches** Unternehmen empfohlen wird, sondern **unter welchen Bedingungen** eine Empfehlung sinnvoll, relevant und wahrscheinlich ist.
+
