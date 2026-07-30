@@ -37,6 +37,10 @@ relationships:
   children: []
 
   related:
+    - object_id: SES-001
+      canonical_name: Semantic Entity Standard
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Semantic_Entity_Standard.md"
+
     - object_id: CK-001
       canonical_name: Client Knowledge
       canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Client_Knowledge.md"
@@ -48,8 +52,7 @@ relationships:
 
 tags:
   - semantic-entity
-  - business
-  - organization
+  - business-entity
   - knowledge-architecture
 ---
 
@@ -59,4 +62,7 @@ tags:
 
 Eine **Business Entity** ist eine Spezialisierung einer [Semantic Entity](Semantic_Entity.md), die ein Unternehmen oder eine andere geschäftliche Einheit innerhalb einer [Knowledge Architecture](Knowledge_Architecture.md) repräsentiert.
 
-Sie beschreibt die Identität eines Unternehmens unabhängig von einzelnen Produkten, Dienstleistungen oder Personen und dient als zentraler Bezugspunkt für geschäftsbezogene Informationen, Beziehungen und Wissensstrukturen.
+Sie dient als semantischer Bezugspunkt für geschäftsbezogenes Wissen und ermöglicht die eindeutige Zuordnung von Informationen, Eigenschaften und Beziehungen zu einer bestimmten geschäftlichen Einheit.
+
+Die Regeln für die Modellierung, Strukturierung und Verknüpfung einer Business Entity mit anderen Semantic Entities werden im [Semantic Entity Standard](Semantic_Entity_Standard.md) definiert.
+
