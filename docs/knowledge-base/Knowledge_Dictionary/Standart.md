@@ -1,126 +1,186 @@
 ---
-document_id: KD-STD-001
-canonical_name: Knowledge Dictionary Standard
-german_name: Standard zur Erstellung des Knowledge Dictionary
+object_id: KO-001
 
-document_type: Knowledge Standard
-document_family: Knowledge Standards
+canonical_name: Knowledge Object
+display_name_de: Wissensobjekt
+filename: Knowledge_Object.md
+
+object_type: Knowledge Object
+document_family: Knowledge Dictionary
 architecture_layer: Knowledge Layer
 
-canonical_language: de
-supported_languages:
-  - de
+terminology_language: en
+definition_language: de
+
+available_translations:
   - en
   - ru
 
-status: Draft
-version: 1.2.0
+status: draft
+version: 1.0.0
 
 created_at: 2026-07-30
 updated_at: 2026-07-30
 
-owner: AnnaTrocka-GEO
+authority: AnnaTrocka-GEO
+
+repository: AnnaTrocka306/AnnaTrocka-GEO
+repository_path: "Knowledge/Knowledge Objects/Knowledge_Object.md"
+canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/Knowledge/Knowledge%20Objects/Knowledge_Object.md"
+
+relationships:
+  parent:
+    object_id: KD-001
+    canonical_name: Knowledge Dictionary
+    canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/Knowledge/Knowledge%20Objects/Knowledge_Dictionary.md"
+
+  children: []
+
+  related:
+    - object_id: CK-001
+      canonical_name: Client Knowledge
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/Knowledge/Knowledge%20Objects/Client_Knowledge.md"
+
+    - object_id: KC-001
+      canonical_name: Knowledge Contribution
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/Knowledge/Knowledge%20Objects/Knowledge_Contribution.md"
+
+  depends_on:
+    - object_id: KD-001
+      canonical_name: Knowledge Dictionary
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/Knowledge/Knowledge%20Objects/Knowledge_Dictionary.md"
+
+tags:
+  - knowledge-architecture
+  - knowledge-dictionary
+  - knowledge-object
+  - canonical-terminology
 ---
 
-# Knowledge Dictionary Standard
-
-## Zweck
-
-Das Knowledge Dictionary definiert die kanonischen Begriffe der Knowledge Architecture.
-
-Jedes Dokument beschreibt ausschließlich die Bedeutung eines Begriffs.
-
-Das Knowledge Dictionary erklärt keine Prozesse, Methoden, Arbeitsabläufe oder Anweisungen. Diese gehören in die entsprechenden Standards.
-
----
-
-## Schreibregeln
-
-Für jedes Knowledge Object gelten folgende Regeln:
-
-- Ein Dokument beschreibt genau einen Begriff.
-- Die Beschreibung ist kurz, eindeutig und präzise.
-- Jedes Dokument wird als eigenständige Markdown-Datei (`.md`) erstellt.
-- Jedes Dokument beginnt mit einem YAML Front Matter.
-- Alle Definitionen werden in deutscher Sprache geschrieben.
-- Offizielle Übersetzungen ins Englische und Russische sind zulässig, dürfen jedoch ausschließlich den Inhalt übersetzen und nicht verändern.
-
----
-
-## Benennung
-
-Der `canonical_name` enthält immer den kanonischen englischen Begriff.
-
-Der `german_name` enthält die offizielle deutsche Bezeichnung des Begriffs.
-
-Der Dokumenttitel (`#`) verwendet den `canonical_name`.
-
----
-
-## Kanonische Definition
-
-Für jeden Begriff existiert genau eine kanonische Definition.
-
-Diese Definition ist die einzige autoritative Beschreibung des Begriffs innerhalb der gesamten Knowledge Architecture.
-
-Andere Dokumente dürfen auf den Begriff verweisen, ihn jedoch nicht neu definieren oder anders interpretieren.
+# Knowledge Standard
+## Knowledge Dictionary Standard
 
 ---
 
-## Begriffliche Eindeutigkeit
+# Purpose
 
-Für dieselbe Bedeutung darf nur ein kanonischer Begriff existieren.
+This standard defines the mandatory structure, metadata and writing rules for every Knowledge Object contained in the Knowledge Dictionary.
 
-Neue Knowledge Objects dürfen nicht erstellt werden, wenn ein bestehender Begriff dieselbe oder eine wesentlich ähnliche Bedeutung besitzt.
-
-Erweitert sich das fachliche Verständnis eines Begriffs, wird das bestehende Knowledge Object erweitert.
-
-Neue Begriffe dürfen ausschließlich eingeführt werden, wenn sie ein neues eigenständiges Konzept beschreiben.
-
-Die künstliche Vervielfachung semantisch ähnlicher Begriffe ist nicht zulässig.
+The objective of the Knowledge Dictionary is to provide one canonical definition for every architectural concept used within the AnnaTrocka-GEO Knowledge Architecture.
 
 ---
 
-## Verweise
+# Scope
 
-Wird innerhalb einer Definition ein anderer Begriff des Knowledge Dictionary erwähnt, muss dieser als interner Verweis auf das entsprechende Knowledge Object erstellt werden.
+This standard applies to every document stored in the **Knowledge Dictionary**.
 
-Alle Beziehungen zwischen Knowledge Objects sollen explizit und maschinenlesbar sein.
-
-Freitext ohne Verlinkung auf bestehende Knowledge Objects ist nicht zulässig, wenn für den Begriff bereits ein kanonisches Knowledge Object existiert.
+No Knowledge Object may deviate from this standard.
 
 ---
 
-## YAML Front Matter
+# Canonical Language
 
-Jedes Dokument des Knowledge Dictionary muss mit einem YAML Front Matter beginnen.
+The canonical language of the Knowledge Dictionary is **German**.
 
-Das YAML Front Matter enthält die maschinenlesbaren Metadaten des Dokuments.
+Every canonical definition shall be written in German.
 
-Ein Dokument ohne YAML Front Matter gilt als unvollständig.
+English serves as the technical language for the repository architecture, identifiers, filenames and metadata.
 
----
-
-## Sprache
-
-Die kanonische Sprache der Definitionen ist Deutsch.
-
-Automatische offizielle Übersetzungen in weitere Sprachen sind zulässig.
-
-Dabei darf ausschließlich die Sprache geändert werden.
-
-Die Bedeutung des Begriffs sowie seine semantischen Beziehungen dürfen nicht verändert werden.
+Additional translations may be created in the future but shall never modify the canonical meaning of a Knowledge Object.
 
 ---
 
-## Ziel
+# Knowledge Object
 
-Das Knowledge Dictionary soll:
+Each Knowledge Object shall describe exactly one concept.
 
-- eindeutig sein;
-- kompakt bleiben;
-- langfristig stabil sein;
-- maschinenlesbar sein;
-- für Menschen leicht verständlich sein;
-- eine einheitliche Terminologie für die gesamte Knowledge Architecture bereitstellen.
-```
+Each Knowledge Object shall contain exactly one canonical definition.
+
+A Knowledge Object shall never describe multiple independent concepts.
+
+---
+
+# Canonical Definition
+
+Each concept has exactly one canonical definition.
+
+The canonical definition represents the authoritative meaning of the concept within the Knowledge Architecture.
+
+Translations may translate the definition but shall never extend, reinterpret or modify its meaning.
+
+---
+
+# Concept Stability
+
+A new Knowledge Object shall only be created when it represents a genuinely new concept.
+
+Additional explanations, clarifications or improvements shall extend the existing Knowledge Object instead of creating similar or overlapping concepts.
+
+---
+
+# File Naming
+
+All filenames shall use English.
+
+Example:
+
+Knowledge_Object.md
+
+Recommendation_Goal.md
+
+Knowledge_Contribution.md
+
+---
+
+# Metadata
+
+Every Knowledge Object shall contain a YAML Front Matter.
+
+The YAML metadata shall use English.
+
+The metadata structure shall remain consistent across the entire repository.
+
+---
+
+# Document Structure
+
+Every Knowledge Object shall follow the same structure.
+
+1. YAML Front Matter
+2. German title
+3. Definition
+
+Additional sections may be introduced by future standards but shall remain consistent across all Knowledge Objects.
+
+---
+
+# Writing Rules
+
+Every definition shall:
+
+- define the concept clearly;
+- remain concise;
+- avoid ambiguity;
+- avoid implementation details;
+- avoid workflows;
+- avoid tutorials;
+- avoid recommendations;
+- avoid marketing language.
+
+The purpose of the Knowledge Dictionary is to define concepts, not to explain how they are used.
+
+---
+
+# Maintenance
+
+Knowledge Objects may evolve over time.
+
+The canonical definition may only change when the concept itself changes.
+
+Editorial improvements shall not alter the semantic meaning of the concept.
+
+---
+
+# Completion
+
+The Knowledge Dictionary is considered complete when every architectural concept is represented by exactly one canonical Knowledge Object following this standard.
