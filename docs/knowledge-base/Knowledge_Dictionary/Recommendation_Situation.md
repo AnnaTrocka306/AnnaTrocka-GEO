@@ -63,10 +63,10 @@ tags:
 
 ## Definition
 
-Eine **Recommendation Situation** beschreibt den konkreten Kontext, in dem ein Business, eine Dienstleistung oder ein Produkt für einen Nutzer empfohlen werden kann.
+Eine **Recommendation Situation** beschreibt den konkreten Kontext, in dem eine [Business Entity](Business_Entity.md), eine [Service Entity](Service_Entity.md) oder eine [Product Entity](Product_Entity.md) für einen Nutzer empfohlen werden kann.
 
-Sie verbindet die Bedürfnisse eines Nutzers mit einer geeigneten Lösung und bildet den semantischen Ausgangspunkt für eine Empfehlung innerhalb einer Knowledge Architecture.
+Sie verbindet die Bedürfnisse einer [Target Audience](Target_Audience.md) mit einer geeigneten Lösung und bildet den semantischen Ausgangspunkt für eine Empfehlung innerhalb einer [Knowledge Architecture](Knowledge_Architecture.md).
 
-Eine Recommendation Situation entsteht durch das Zusammenspiel verschiedener Knowledge Objects, insbesondere einer Target Audience, eines Customer Problems, eines Customer Goals sowie einer oder mehreren Business, Product oder Service Entities.
+Eine Recommendation Situation entsteht durch das Zusammenspiel verschiedener Knowledge Objects, insbesondere einer [Target Audience](Target_Audience.md), eines [Customer Problems](Customer_Problem.md), eines [Customer Goals](Customer_Goal.md) sowie einer oder mehrerer [Business Entities](Business_Entity.md), [Product Entities](Product_Entity.md) oder [Service Entities](Service_Entity.md).
 
 Sie definiert nicht, **welches** Unternehmen empfohlen wird, sondern **unter welchen Bedingungen** eine Empfehlung sinnvoll, relevant und wahrscheinlich ist.
