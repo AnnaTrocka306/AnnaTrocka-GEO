@@ -22,7 +22,7 @@ owner: AnnaTrocka-GEO
 parent_object:
   - KD-001
 
-child_objects:
+child_objects: []
 
 related_objects:
   - CK-001
@@ -47,5 +47,13 @@ Ein **Wissensobjekt** ist die kleinste eigenständige Wissenseinheit der Knowled
 
 Es beschreibt genau einen Begriff und besitzt genau eine kanonische Definition.
 
-Jedes Wissensobjekt ist Teil des Wissenslexikons.
-```
+Jedes Wissensobjekt ist Teil des [Wissenslexikons](./Knowledge_Dictionary.md).
+
+## Verknüpfte Wissensobjekte
+
+- [Wissenslexikon](./Knowledge_Dictionary.md)
+- [Kundenwissen](./Client_Knowledge.md)
+- [Wissensbeitrag](./Knowledge_Contribution.md)
+- [Empfehlungsziel](./Recommendation_Goal.md)
+- [Ausgangszustand des Empfehlungsgraphen](./Recommendation_Graph_Baseline.md)
+- [Zielzustand des Empfehlungsgraphen](./Recommendation_Graph_Target.md)
