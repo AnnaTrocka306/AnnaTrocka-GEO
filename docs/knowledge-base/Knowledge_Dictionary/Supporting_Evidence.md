@@ -1,4 +1,3 @@
-```md id="h5t8pw"
 ---
 object_id: SEV-001
 canonical_name: Supporting Evidence
