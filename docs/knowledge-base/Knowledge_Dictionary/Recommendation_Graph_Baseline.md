@@ -1,3 +1,4 @@
+---
 object_id: RGB-001
 canonical_name: Recommendation Graph Baseline
 german_name: Ausgangszustand des Empfehlungsgraphen
