@@ -1,9 +1,9 @@
 ---
-object_id: LOC-001
+object_id: LE-001
 
-canonical_name: Location
-display_name_de: Standort
-filename: Location.md
+canonical_name: Location Entity
+display_name_de: Lokationsentität
+filename: Location_Entity.md
 
 object_type: Knowledge Object
 document_family: Knowledge Dictionary
@@ -25,32 +25,39 @@ updated_at: 2026-07-30
 authority: AnnaTrocka-GEO
 
 repository: AnnaTrocka306/AnnaTrocka-GEO
-repository_path: "docs/knowledge-base/Knowledge_Dictionary/Location.md"
-canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Location.md"
+repository_path: "docs/knowledge-base/Knowledge_Dictionary/Location_Entity.md"
+canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Location_Entity.md"
 
 relationships:
   parent:
+    object_id: SE-001
+    canonical_name: Semantic Entity
+    canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Semantic_Entity.md"
 
   children: []
 
   related:
-    - object_id: LE-001
-      canonical_name: Location Entity
-      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Location_Entity.md"
+    - object_id: SES-001
+      canonical_name: Semantic Entity Standard
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Semantic_Entity_Standard.md"
 
-  depends_on: []
+  depends_on:
+    - object_id: SE-001
+      canonical_name: Semantic Entity
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Semantic_Entity.md"
 
 tags:
-  - location
+  - semantic-entity
+  - location-entity
   - knowledge-architecture
 ---
 
-# Standort
+# Lokationsentität
 
 ## Definition
 
-Ein **Location** bezeichnet einen geografischen Ort oder einen räumlich eindeutig identifizierbaren Standort innerhalb der realen Welt.
+Eine **Location Entity** ist eine Spezialisierung einer [Semantic Entity](Semantic_Entity.md), die einen geografischen Ort oder einen räumlich eindeutig identifizierbaren Standort innerhalb einer [Knowledge Architecture](Knowledge_Architecture.md) repräsentiert.
 
-Ein Location kann beispielsweise ein Land, eine Region, eine Stadt, eine Adresse, ein Gebäude, ein Hotel oder ein anderer eindeutig lokalisierbarer Ort sein.
+Sie dient als semantischer Bezugspunkt für standortbezogenes Wissen und ermöglicht die eindeutige Zuordnung von Informationen, Eigenschaften und Beziehungen zu einer bestimmten Lokation.
 
-Innerhalb einer Knowledge Architecture wird ein Location durch eine [Location Entity](Location_Entity.md) semantisch repräsentiert.
+Die Regeln für die Modellierung, Strukturierung und Verknüpfung einer Location Entity mit anderen Semantic Entities werden im [Semantic Entity Standard](Semantic_Entity_Standard.md) definiert.
