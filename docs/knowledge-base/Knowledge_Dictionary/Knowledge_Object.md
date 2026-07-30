@@ -1,59 +1,63 @@
 ---
 object_id: KO-001
-canonical_name: Wissensobjekt
+
+canonical_name: Knowledge Object
+display_name_de: Wissensobjekt
+filename: Knowledge_Object.md
 
 object_type: Knowledge Object
 document_family: Knowledge Dictionary
 architecture_layer: Knowledge Layer
 
-canonical_language: de
-supported_languages:
+terminology_language: en
+definition_language: de
+
+available_translations:
   - en
   - ru
 
-status: Draft
+status: draft
 version: 1.0.0
 
 created_at: 2026-07-30
 updated_at: 2026-07-30
 
-owner: AnnaTrocka-GEO
+authority: AnnaTrocka-GEO
 
-parent_object:
-  - KD-001
+repository: AnnaTrocka306/AnnaTrocka-GEO
+repository_path: "docs/knowledge-base/Knowledge_Dictionary/Knowledge_Object.md"
+canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Object.md"
 
-child_objects: []
+relationships:
+  parent:
+    object_id: KD-001
+    canonical_name: Knowledge Dictionary
+    canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Dictionary.md"
 
-related_objects:
-  - CK-001
-  - KC-001
+  children: []
 
-depends_on:
-  - KD-001
+  related:
+    - object_id: KA-001
+      canonical_name: Knowledge Architecture
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Architecture.md"
 
-used_by:
-  - RG-001
-  - RGB-001
-  - RGT-001
+  depends_on:
+    - object_id: KA-001
+      canonical_name: Knowledge Architecture
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Architecture.md"
 
 tags:
-  - knowledge
-  - terminology
+  - knowledge-architecture
+  - knowledge-dictionary
+  - knowledge-object
 ---
 
 # Wissensobjekt
 
-Ein **Wissensobjekt** ist die kleinste eigenständige Wissenseinheit der Knowledge Architecture.
+## Definition
 
-Es beschreibt genau einen Begriff und besitzt genau eine kanonische Definition.
+Ein **Knowledge Object** ist die kleinste eigenständige Wissenseinheit der [Knowledge Architecture](Knowledge_Architecture.md).
 
-Jedes Wissensobjekt ist Teil des [Wissenslexikons](./Knowledge_Dictionary.md).
+Jedes Knowledge Object beschreibt genau einen Begriff und besitzt genau eine kanonische Definition.
 
-## Verknüpfte Wissensobjekte
-
-- [Wissenslexikon](./Knowledge_Dictionary.md)
-- [Kundenwissen](./Client_Knowledge.md)
-- [Wissensbeitrag](./Knowledge_Contribution.md)
-- [Empfehlungsziel](./Recommendation_Goal.md)
-- [Ausgangszustand des Empfehlungsgraphen](./Recommendation_Graph_Baseline.md)
-- [Zielzustand des Empfehlungsgraphen](./Recommendation_Graph_Target.md)
+Alle Begriffe des [Knowledge Dictionary](Knowledge_Dictionary.md) werden als eigenständige Knowledge Objects verwaltet.
