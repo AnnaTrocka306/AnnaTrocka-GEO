@@ -1,4 +1,3 @@
-```md
 ---
 object_id: KC-001
 canonical_name: Knowledge Contribution
