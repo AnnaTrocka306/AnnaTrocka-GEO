@@ -49,8 +49,8 @@ tags:
 
 Ein **Knowledge Gap** beschreibt den Unterschied zwischen dem Wissen, das innerhalb einer [Knowledge Architecture](Knowledge_Architecture.md) bereits verfügbar ist, und dem Wissen, das erforderlich ist, um ein definiertes Informations- oder Empfehlungsziel zu erreichen.
 
-Es dient als semantischer Bezugspunkt für die Identifikation fehlender Wissensbereiche und unterstützt die systematische Weiterentwicklung einer Knowledge Base.
+Es dient als semantischer Bezugspunkt für die Identifikation fehlender Wissensbereiche und unterstützt die systematische Weiterentwicklung einer [Knowledge Base](Knowledge_Base.md).
 
-Ein Knowledge Gap kann sich auf fehlende Knowledge Objects, unzureichende semantische Beziehungen oder nicht ausreichend entwickelte Knowledge Contributions beziehen.
+Ein Knowledge Gap kann entstehen, wenn erforderliche [Knowledge Objects](Knowledge_Object.md) fehlen, relevante [Semantic Relationships](Semantic_Relationship.md) noch nicht vorhanden oder nicht ausreichend entwickelt sind oder bestehende [Knowledge Contributions](Knowledge_Contribution.md) nicht ausreichen, um das angestrebte Ziel zu unterstützen.
 
-Die Identifikation eines Knowledge Gaps bildet die Grundlage für die Planung neuer [Knowledge Series](Knowledge_Series.md), [Knowledge Papers](Knowledge_Paper.md) oder anderer Maßnahmen zum gezielten Ausbau der Knowledge Architecture.
+Die Identifikation eines Knowledge Gaps bildet die Grundlage für die Planung neuer [Knowledge Series](Knowledge_Series.md), [Knowledge Papers](Knowledge_Paper.md) und [Knowledge Contributions](Knowledge_Contribution.md), durch die das fehlende Wissen systematisch aufgebaut und in die Knowledge Architecture integriert werden kann.
