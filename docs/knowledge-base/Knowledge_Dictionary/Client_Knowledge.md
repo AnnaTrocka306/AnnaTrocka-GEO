@@ -1,31 +1,61 @@
 ---
 object_id: CK-001
+
 canonical_name: Client Knowledge
-german_name: Kundenwissen
+display_name_de: Kundenwissen
+filename: Client_Knowledge.md
 
 object_type: Knowledge Object
 document_family: Knowledge Dictionary
 architecture_layer: Knowledge Layer
 
-canonical_language: de
-supported_languages:
-  - de
+terminology_language: en
+definition_language: de
+
+available_translations:
   - en
   - ru
 
-status: Draft
-version: 0.1.0
+status: draft
+version: 1.0.0
 
 created_at: 2026-07-30
 updated_at: 2026-07-30
 
-owner: AnnaTrocka-GEO
+authority: AnnaTrocka-GEO
+
+repository: AnnaTrocka306/AnnaTrocka-GEO
+repository_path: "docs/knowledge-base/Knowledge_Dictionary/Client_Knowledge.md"
+canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Client_Knowledge.md"
+
+relationships:
+  parent:
+    object_id: KD-001
+    canonical_name: Knowledge Dictionary
+    canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Dictionary.md"
+
+  children: []
+
+  related:
+    - object_id: KO-001
+      canonical_name: Knowledge Object
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Object.md"
+
+  depends_on:
+    - object_id: KO-001
+      canonical_name: Knowledge Object
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Object.md"
+
+tags:
+  - knowledge-architecture
+  - knowledge-dictionary
+  - client-knowledge
 ---
 
-# Client Knowledge
+# Kundenwissen
 
-## Kanonische Definition
+## Definition
 
-**Client Knowledge** ist die Gesamtheit aller Knowledge Objects, die einen bestimmten Kunden, sein Unternehmen, seine Leistungen und seinen fachlichen Kontext beschreiben.
+**Client Knowledge** bezeichnet sämtliche Informationen, die einen bestimmten Kunden, dessen Unternehmen, Produkte, Dienstleistungen, Ziele, Zielgruppen und geschäftlichen Kontext beschreiben.
 
-Client Knowledge bildet die kanonische Wissensbasis eines einzelnen Kunden innerhalb der Knowledge Architecture.
+Client Knowledge bildet die Wissensgrundlage für die Erstellung, Organisation und Weiterentwicklung kundenspezifischer Wissensartefakte innerhalb der Knowledge Architecture.
