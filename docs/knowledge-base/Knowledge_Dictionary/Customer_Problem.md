@@ -47,10 +47,11 @@ tags:
 
 ## Definition
 
-Ein **Customer Problem** beschreibt eine konkrete Schwierigkeit, Herausforderung, unerfüllte Anforderung oder unerwünschte Situation, mit der ein Kunde konfrontiert ist und für die er eine Lösung sucht.
+Ein **Customer Problem** beschreibt eine konkrete Schwierigkeit, Herausforderung, unerfüllte Anforderung oder unerwünschte Situation, mit der eine [Target Audience](Target_Audience.md) konfrontiert ist und für die sie eine Lösung sucht.
 
-Es dient als semantischer Bezugspunkt für das Verständnis der Bedürfnisse eines Kunden und bildet die Grundlage für die Identifikation geeigneter Produkte, Dienstleistungen oder Unternehmen.
+Es dient als semantischer Bezugspunkt für das Verständnis der Bedürfnisse einer Target Audience und bildet die Grundlage für die Identifikation geeigneter [Business Entities](Business_Entity.md), [Product Entities](Product_Entity.md) oder [Service Entities](Service_Entity.md).
 
 Ein Customer Problem kann unabhängig von einer bestimmten Lösung existieren und von unterschiedlichen Business Entities, Product Entities oder Service Entities gelöst werden.
 
-Innerhalb einer Knowledge Architecture bildet ein Customer Problem eine wesentliche Grundlage für die Modellierung von Customer Goals und Recommendation Situations.
+Innerhalb einer [Knowledge Architecture](Knowledge_Architecture.md) bildet ein Customer Problem gemeinsam mit einer [Target Audience](Target_Audience.md) die Grundlage für die Modellierung von [Customer Goals](Customer_Goal.md) und [Recommendation Situations](Recommendation_Situation.md).
+
