@@ -1,33 +1,57 @@
 ---
-object_id: KD-000
+object_id: KD-001
+
 canonical_name: Knowledge Dictionary
-german_name: Wissenslexikon
+display_name_de: Wissenslexikon
+filename: Knowledge_Dictionary.md
 
 object_type: Knowledge Object
 document_family: Knowledge Dictionary
 architecture_layer: Knowledge Layer
 
-canonical_language: de
-supported_languages:
-  - de
+terminology_language: en
+definition_language: de
+
+available_translations:
   - en
   - ru
 
-status: Draft
-version: 0.1.0
+status: draft
+version: 1.0.0
 
 created_at: 2026-07-30
 updated_at: 2026-07-30
 
-owner: AnnaTrocka-GEO
+authority: AnnaTrocka-GEO
+
+repository: AnnaTrocka306/AnnaTrocka-GEO
+repository_path: "docs/knowledge-base/Knowledge_Dictionary/Knowledge_Dictionary.md"
+canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Dictionary.md"
+
+relationships:
+  parent: null
+
+  children:
+    - object_id: KA-001
+      canonical_name: Knowledge Architecture
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Architecture.md"
+
+  related: []
+
+  depends_on: []
+
+tags:
+  - knowledge-architecture
+  - knowledge-dictionary
+  - terminology
 ---
 
-# Knowledge Dictionary
+# Wissenslexikon
 
-## Kanonische Definition
+## Definition
 
-Das **Knowledge Dictionary** ist die kanonische Sammlung aller Begriffe der Knowledge Architecture.
+Das **Knowledge Dictionary** ist das kanonische Verzeichnis aller Begriffe der Methodik.
 
-Jeder Begriff wird als eigenständiges Knowledge Object beschrieben und besitzt genau eine kanonische Definition.
+Es besteht aus eigenständigen [Knowledge Objects](Knowledge_Object.md), von denen jedes genau einen Begriff beschreibt und genau eine kanonische Definition besitzt.
 
-Das Knowledge Dictionary stellt sicher, dass alle Menschen und KI-Agenten dieselbe Terminologie und dieselbe Bedeutung der Begriffe verwenden.
+Das Knowledge Dictionary dient als verbindliche Referenz für Menschen und AI-Agenten und gewährleistet eine einheitliche Verwendung der Terminologie innerhalb der [Knowledge Architecture](Knowledge_Architecture.md).
