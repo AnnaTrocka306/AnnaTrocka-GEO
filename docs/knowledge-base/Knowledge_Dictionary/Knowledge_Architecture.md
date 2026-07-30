@@ -56,8 +56,12 @@ tags:
 
 ## Definition
 
-Die **Knowledge Architecture** ist die übergeordnete Struktur zur Organisation, Verwaltung und Weiterentwicklung von Wissen innerhalb der AnnaTrocka-GEO Methodik.
+Die **Knowledge Architecture** ist die übergeordnete Struktur zur systematischen Organisation, Verbindung, Verwaltung und Weiterentwicklung von Wissen.
 
-Sie definiert, wie Wissen in eigenständige Wissensobjekte strukturiert, durch Standards beschrieben und über semantische Beziehungen miteinander verbunden wird.
+Sie definiert, wie Wissen in eigenständige [Knowledge Objects](Knowledge_Object.md) gegliedert, durch [Semantic Entities](Semantic_Entity.md) und [Semantic Relationships](Semantic_Relationship.md) strukturiert sowie durch verbindliche [Knowledge Standards](Knowledge_Standard.md) geregelt wird.
 
-Die Knowledge Architecture bildet den verbindlichen Rahmen für alle Knowledge Objects, Knowledge Standards, Writing Standards und Execution Standards und gewährleistet eine konsistente, skalierbare und sowohl für Menschen als auch für AI-Agenten verständliche Wissensbasis.
+Zu diesen Standards gehören spezialisierte Regelwerke wie der [Semantic Entity Standard](Semantic_Entity_Standard.md) und der [Knowledge Series Standard](Knowledge_Series_Standard.md).
+
+Das [Knowledge Dictionary](Knowledge_Dictionary.md) stellt innerhalb der Knowledge Architecture die kanonischen Definitionen der verwendeten Begriffe bereit.
+
+Die Knowledge Architecture bildet damit den verbindlichen Rahmen für eine konsistente, skalierbare und sowohl für Menschen als auch für AI-Agenten verständliche Wissensbasis.
