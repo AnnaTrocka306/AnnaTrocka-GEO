@@ -52,8 +52,8 @@ tags:
 
 Eine **Target Audience** beschreibt die definierte Gruppe von Personen oder Organisationen, für die ein Unternehmen, eine Dienstleistung oder ein Produkt bestimmt ist.
 
-Sie dient als semantischer Bezugspunkt für alle Knowledge Objects, die sich auf die potenziellen Kunden oder Nutzer eines Business beziehen.
+Sie dient als semantischer Bezugspunkt für alle Knowledge Objects, die sich auf die potenziellen Kunden oder Nutzer einer [Business Entity](Business_Entity.md), einer [Service Entity](Service_Entity.md) oder einer [Product Entity](Product_Entity.md) beziehen.
 
 Eine Target Audience kann anhand gemeinsamer Merkmale wie Bedürfnissen, Interessen, beruflichen Rollen, demografischen Eigenschaften oder typischen Nutzungssituationen beschrieben werden.
 
-Innerhalb einer Knowledge Architecture bildet die Target Audience die Grundlage für die Modellierung von Customer Problems, Customer Goals und Recommendation Situations.
+Innerhalb einer [Knowledge Architecture](Knowledge_Architecture.md) bildet eine Target Audience die Grundlage für die Modellierung von [Customer Problems](Customer_Problem.md), [Customer Goals](Customer_Goal.md) und [Recommendation Situations](Recommendation_Situation.md).
