@@ -1,6 +1,7 @@
 ---
 document_id: KD-STD-001
-canonical_name: Standard zur Erstellung des Knowledge Dictionary
+canonical_name: Knowledge Dictionary Standard
+german_name: Standard zur Erstellung des Knowledge Dictionary
 
 document_type: Knowledge Standard
 document_family: Knowledge Standards
@@ -13,7 +14,7 @@ supported_languages:
   - ru
 
 status: Draft
-version: 1.1.0
+version: 1.2.0
 
 created_at: 2026-07-30
 updated_at: 2026-07-30
@@ -21,7 +22,7 @@ updated_at: 2026-07-30
 owner: AnnaTrocka-GEO
 ---
 
-# Standard zur Erstellung des Knowledge Dictionary
+# Knowledge Dictionary Standard
 
 ## Zweck
 
@@ -41,8 +42,18 @@ Für jedes Knowledge Object gelten folgende Regeln:
 - Die Beschreibung ist kurz, eindeutig und präzise.
 - Jedes Dokument wird als eigenständige Markdown-Datei (`.md`) erstellt.
 - Jedes Dokument beginnt mit einem YAML Front Matter.
-- Alle Dokumente werden in deutscher Sprache erstellt.
+- Alle Definitionen werden in deutscher Sprache geschrieben.
 - Offizielle Übersetzungen ins Englische und Russische sind zulässig, dürfen jedoch ausschließlich den Inhalt übersetzen und nicht verändern.
+
+---
+
+## Benennung
+
+Der `canonical_name` enthält immer den kanonischen englischen Begriff.
+
+Der `german_name` enthält die offizielle deutsche Bezeichnung des Begriffs.
+
+Der Dokumenttitel (`#`) verwendet den `canonical_name`.
 
 ---
 
@@ -70,6 +81,16 @@ Die künstliche Vervielfachung semantisch ähnlicher Begriffe ist nicht zulässi
 
 ---
 
+## Verweise
+
+Wird innerhalb einer Definition ein anderer Begriff des Knowledge Dictionary erwähnt, muss dieser als interner Verweis auf das entsprechende Knowledge Object erstellt werden.
+
+Alle Beziehungen zwischen Knowledge Objects sollen explizit und maschinenlesbar sein.
+
+Freitext ohne Verlinkung auf bestehende Knowledge Objects ist nicht zulässig, wenn für den Begriff bereits ein kanonisches Knowledge Object existiert.
+
+---
+
 ## YAML Front Matter
 
 Jedes Dokument des Knowledge Dictionary muss mit einem YAML Front Matter beginnen.
@@ -82,13 +103,13 @@ Ein Dokument ohne YAML Front Matter gilt als unvollständig.
 
 ## Sprache
 
-Die kanonische Sprache des Knowledge Dictionary ist Deutsch.
+Die kanonische Sprache der Definitionen ist Deutsch.
 
 Automatische offizielle Übersetzungen in weitere Sprachen sind zulässig.
 
 Dabei darf ausschließlich die Sprache geändert werden.
 
-Die Bedeutung des Begriffs, seine Definition sowie seine Beziehungen dürfen nicht verändert werden.
+Die Bedeutung des Begriffs sowie seine semantischen Beziehungen dürfen nicht verändert werden.
 
 ---
 
@@ -102,3 +123,4 @@ Das Knowledge Dictionary soll:
 - maschinenlesbar sein;
 - für Menschen leicht verständlich sein;
 - eine einheitliche Terminologie für die gesamte Knowledge Architecture bereitstellen.
+```
