@@ -52,10 +52,7 @@ tags:
   - client-knowledge
 ---
 
-# Kundenwissen
-
 ## Definition
 
-**Client Knowledge** bezeichnet sämtliche Informationen, die einen bestimmten Kunden, dessen Unternehmen, Produkte, Dienstleistungen, Ziele, Zielgruppen und geschäftlichen Kontext beschreiben.
+Client Knowledge bildet die Wissensgrundlage für die Erstellung, Organisation und Weiterentwicklung kundenspezifischer Wissensartefakte innerhalb der [Knowledge Architecture](Knowledge_Architecture.md).
 
-Client Knowledge bildet die Wissensgrundlage für die Erstellung, Organisation und Weiterentwicklung kundenspezifischer Wissensartefakte innerhalb der Knowledge Architecture.
