@@ -1,32 +1,79 @@
 ---
 object_id: RP-001
+
 canonical_name: Recommendation Path
-german_name: Empfehlungspfad
+display_name_de: Empfehlungspfad
+filename: Recommendation_Path.md
+
 object_type: Knowledge Object
 document_family: Knowledge Dictionary
 architecture_layer: Recommendation Architecture
-canonical_language: de
-supported_languages:
-  - de
+
+terminology_language: en
+definition_language: de
+
+available_translations:
   - en
   - ru
+
 status: draft
-version: 0.1
+version: 1.0.0
+
 created_at: 2026-08-04
 updated_at: 2026-08-04
-owner: Anna Trocka
----
 
-# Recommendation Path
+authority: AnnaTrocka-GEO
 
-## Definition
+repository: AnnaTrocka306/AnnaTrocka-GEO
+repository_path: "docs/knowledge-base/Knowledge_Dictionary/Recommendation_Path.md"
+canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Path.md"
 
-Ein Recommendation Path beschreibt den vollständigen semantischen Pfad, über den eine Empfehlung innerhalb eines Recommendation Graph entsteht.
+relationships:
+  parent:
+    object_id: KD-001
+    canonical_name: Knowledge Dictionary
+    canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Dictionary.md"
 
-Er verbindet mehrere Semantic Entities über eine oder mehrere Semantic Relationships zu einer nachvollziehbaren Empfehlungskette.
+  children: []
 
-Ein Recommendation Path beschreibt nicht einzelne Beziehungen, sondern deren semantische Kombination im Kontext einer konkreten Recommendation Goal.
+  related:
+    - object_id: RG-001
+      canonical_name: Recommendation Goal
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Goal.md"
 
+    - object_id: RGB-001
+      canonical_name: Recommendation Graph Baseline
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Baseline.md"
+
+    - object_id: RGT-001
+      canonical_name: Recommendation Graph Target
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Target.md"
+
+    - object_id: SE-001
+      canonical_name: Semantic Entity
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Semantic_Entity.md"
+
+    - object_id: SR-001
+      canonical_name: Semantic Relationship
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Semantic_Relationship.md"
+
+    - object_id: SPE-001
+      canonical_name: Supporting Evidence
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Supporting_Evidence.md"
+
+  depends_on:
+    - object_id: SE-001
+      canonical_name: Semantic Entity
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Semantic_Entity.md"
+
+    - object_id: SR-001
+      canonical_name: Semantic Relationship
+      canonical_url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Semantic_Relationship.md"
+
+tags:
+  - recommendation-architecture
+  - recommendation-graph
+  - recommendation-path
 ---
 
 ## Zweck
