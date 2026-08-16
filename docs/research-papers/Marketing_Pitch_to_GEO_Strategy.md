@@ -51,13 +51,13 @@ Ein guter Pitch beantwortet im Kern:
 
 Für GEO lässt sich daraus eine Struktur ableiten:
 
-**[Recommendation Situation](../Knowledge_Dictionary/Recommendation_Situation.md) → [Customer Problem](../Knowledge_Dictionary/Customer_Problem.md) → [Customer Goal](../Knowledge_Dictionary/Customer_Goal.md) → [Semantic Entity](../Knowledge_Dictionary/Semantic_Entity.md) → Capability → Method → Intended Outcome**
+**[Recommendation Situation](../knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md) → [Customer Problem](../knowledge-base/Knowledge_Dictionary/Customer_Problem.md) → [Customer Goal](../knowledge-base/Knowledge_Dictionary/Customer_Goal.md) → [Semantic Entity](../knowledge-base/Knowledge_Dictionary/Semantic_Entity.md) → Capability → Method → Intended Outcome**
 
 Damit haben wir noch keine GEO-Strategie. Aber wir haben ein mögliches **Zielbild**.
 
 ### Schritt 1: Beziehungen extrahieren
 
-Der Pitch wird in einzelne [Semantic Relationships](../Knowledge_Dictionary/Semantic_Relationship.md) zerlegt.
+Der Pitch wird in einzelne [Semantic Relationships](../knowledge-base/Knowledge_Dictionary/Semantic_Relationship.md) zerlegt.
 
 Zum Beispiel:
 
@@ -69,17 +69,17 @@ Zum Beispiel:
 
 ### Schritt 2: Zielbild mit der Realität vergleichen
 
-Jetzt prüfen wir, welche dieser Beziehungen im aktuellen [Recommendation Graph Baseline](../Knowledge_Dictionary/Recommendation_Graph_Baseline.md) bereits vorhanden sind.
+Jetzt prüfen wir, welche dieser Beziehungen im aktuellen [Recommendation Graph Baseline](../knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Baseline.md) bereits vorhanden sind.
 
 **Welche Beziehungen existieren? Welche sind schwach? Welche fehlen?**
 
-So werden die [Knowledge Gaps](../Knowledge_Dictionary/Knowledge_Gap.md) zwischen gewünschter und aktuell wahrnehmbarer Positionierung sichtbar.
+So werden die [Knowledge Gaps](../knowledge-base/Knowledge_Dictionary/Knowledge_Gap.md) zwischen gewünschter und aktuell wahrnehmbarer Positionierung sichtbar.
 
 ### Schritt 3: Fehlende Beziehungen entwickeln
 
-Die relevanten Gaps werden priorisiert und über den [Semantic Development Path](../Knowledge_Dictionary/Semantic_Development_Path.md) systematisch entwickelt.
+Die relevanten Gaps werden priorisiert und über den [Semantic Development Path](../knowledge-base/Knowledge_Dictionary/Semantic_Development_Path.md) systematisch entwickelt.
 
-Dafür werden passende [Supporting Evidence](../Knowledge_Dictionary/Supporting_Evidence.md) und [Knowledge Contributions](../Knowledge_Dictionary/Knowledge_Contribution.md) aufgebaut.
+Dafür werden passende [Supporting Evidence](../knowledge-base/Knowledge_Dictionary/Supporting_Evidence.md) und [Knowledge Contributions](../knowledge-base/Knowledge_Dictionary/Knowledge_Contribution.md) aufgebaut.
 
 Die Logik ist damit:
 
@@ -101,13 +101,13 @@ Der Pitch wird also nicht einfach für KI umgeschrieben.
 
 Der entscheidende Punkt ist: **Wir starten nicht beim Content. Wir starten bei der gewünschten Empfehlung.**
 
-Wenn der Pitch beschreibt, wem eine [Semantic Entity](../Knowledge_Dictionary/Semantic_Entity.md) in welcher [Recommendation Situation](../Knowledge_Dictionary/Recommendation_Situation.md) wobei und auf welche Weise helfen kann, liefert er bereits einen möglichen Ausgangspunkt für das [Recommendation Goal](../Knowledge_Dictionary/Recommendation_Goal.md).
+Wenn der Pitch beschreibt, wem eine [Semantic Entity](../knowledge-base/Knowledge_Dictionary/Semantic_Entity.md) in welcher [Recommendation Situation](../knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md) wobei und auf welche Weise helfen kann, liefert er bereits einen möglichen Ausgangspunkt für das [Recommendation Goal](../knowledge-base/Knowledge_Dictionary/Recommendation_Goal.md).
 
 Von dort arbeiten wir rückwärts:
 
 **Welche Empfehlung wollen wir erreichen?**  
-→ **Welche [Semantic Relationships](../Knowledge_Dictionary/Semantic_Relationship.md) muss das System dafür verstehen können?**  
-→ **Welche davon sind im [Recommendation Graph Baseline](../Knowledge_Dictionary/Recommendation_Graph_Baseline.md) bereits vorhanden?**  
+→ **Welche [Semantic Relationships](../knowledge-base/Knowledge_Dictionary/Semantic_Relationship.md) muss das System dafür verstehen können?**  
+→ **Welche davon sind im [Recommendation Graph Baseline](../knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Baseline.md) bereits vorhanden?**  
 → **Welche fehlen oder sind zu schwach?**  
 → **Welche Informationen und Belege brauchen wir, um sie aufzubauen?**
 
@@ -121,7 +121,7 @@ eine wesentlich präzisere Frage:
 
 > **„Welche Beziehung müssen wir als Nächstes stärken, damit die gewünschte Empfehlung wahrscheinlicher und nachvollziehbarer wird?“**
 
-Die Antwort darauf bestimmt den [Semantic Development Path](../Knowledge_Dictionary/Semantic_Development_Path.md) und anschließend die benötigten [Knowledge Contributions](../Knowledge_Dictionary/Knowledge_Contribution.md).
+Die Antwort darauf bestimmt den [Semantic Development Path](../knowledge-base/Knowledge_Dictionary/Semantic_Development_Path.md) und anschließend die benötigten [Knowledge Contributions](../knowledge-base/Knowledge_Dictionary/Knowledge_Contribution.md).
 
 Genau darin liegt für mich der Unterschied zwischen **Content produzieren** und **eine GEO-Strategie entwickeln**.
 
@@ -131,17 +131,17 @@ Genau darin liegt für mich der Unterschied zwischen **Content produzieren** und
 
 Damit bekommt ein Marketing-Pitch eine zweite Funktion.
 
-Er ist nicht mehr nur eine Botschaft für potenzielle Kunden, sondern kann als **Startpunkt für die gewünschte Positionierung im [Recommendation Graph](../Knowledge_Dictionary/Recommendation_Graph_Target.md)** dienen.
+Er ist nicht mehr nur eine Botschaft für potenzielle Kunden, sondern kann als **Startpunkt für die gewünschte Positionierung im [Recommendation Graph Target](../knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Target.md)** dienen.
 
 Das macht den Einstieg in eine GEO-Strategie erstaunlich konkret:
 
 **Pitch formulieren**  
-→ **[Semantic Relationships](../Knowledge_Dictionary/Semantic_Relationship.md) extrahieren**  
-→ **[Recommendation Graph Baseline](../Knowledge_Dictionary/Recommendation_Graph_Baseline.md) prüfen**  
-→ **[Knowledge Gaps](../Knowledge_Dictionary/Knowledge_Gap.md) identifizieren**  
-→ **fehlende Beziehungen über den [Semantic Development Path](../Knowledge_Dictionary/Semantic_Development_Path.md) entwickeln**
+→ **[Semantic Relationships](../knowledge-base/Knowledge_Dictionary/Semantic_Relationship.md) extrahieren**  
+→ **[Recommendation Graph Baseline](../knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Baseline.md) prüfen**  
+→ **[Knowledge Gaps](../knowledge-base/Knowledge_Dictionary/Knowledge_Gap.md) identifizieren**  
+→ **fehlende Beziehungen über den [Semantic Development Path](../knowledge-base/Knowledge_Dictionary/Semantic_Development_Path.md) entwickeln**
 
-Natürlich ersetzt ein guter Pitch weder [Supporting Evidence](../Knowledge_Dictionary/Supporting_Evidence.md) noch den systematischen Aufbau von [Knowledge Contributions](../Knowledge_Dictionary/Knowledge_Contribution.md).
+Natürlich ersetzt ein guter Pitch weder [Supporting Evidence](../knowledge-base/Knowledge_Dictionary/Supporting_Evidence.md) noch den systematischen Aufbau von [Knowledge Contributions](../knowledge-base/Knowledge_Dictionary/Knowledge_Contribution.md).
 
 Aber er kann eine entscheidende Frage beantworten:
 
@@ -149,7 +149,7 @@ Aber er kann eine entscheidende Frage beantworten:
 
 Und genau deshalb kann ein guter Marketing-Pitch weit mehr sein als ein Verkaufssatz.
 
-**Er kann der erste Entwurf des gewünschten [Recommendation Graph Target](../Knowledge_Dictionary/Recommendation_Graph_Target.md) sein.**
+**Er kann der erste Entwurf des gewünschten [Recommendation Graph Target](../knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Target.md) sein.**
 
 ---
 
@@ -161,7 +161,7 @@ Ein guter Marketing-Pitch sagt im Kern:
 
 Genau diese Logik lässt sich für GEO nutzen.
 
-Aus dem Pitch werden [Semantic Relationships](../Knowledge_Dictionary/Semantic_Relationship.md). Aus den Relationships entsteht ein [Recommendation Graph Target](../Knowledge_Dictionary/Recommendation_Graph_Target.md). Der Vergleich mit dem [Recommendation Graph Baseline](../Knowledge_Dictionary/Recommendation_Graph_Baseline.md) zeigt die [Knowledge Gaps](../Knowledge_Dictionary/Knowledge_Gap.md). Und aus diesen Gaps entsteht der [Semantic Development Path](../Knowledge_Dictionary/Semantic_Development_Path.md).
+Aus dem Pitch werden [Semantic Relationships](../knowledge-base/Knowledge_Dictionary/Semantic_Relationship.md). Aus den Relationships entsteht ein [Recommendation Graph Target](../knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Target.md). Der Vergleich mit dem [Recommendation Graph Baseline](../knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Baseline.md) zeigt die [Knowledge Gaps](../knowledge-base/Knowledge_Dictionary/Knowledge_Gap.md). Und aus diesen Gaps entsteht der [Semantic Development Path](../knowledge-base/Knowledge_Dictionary/Semantic_Development_Path.md).
 
 Kurz gesagt:
 
@@ -170,4 +170,3 @@ Kurz gesagt:
 Der Marketing-Pitch ist damit nicht die GEO-Strategie selbst.
 
 **Aber er kann ein erstaunlich guter Ausgangspunkt dafür sein.**
-
