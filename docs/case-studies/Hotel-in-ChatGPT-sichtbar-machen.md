@@ -1,44 +1,83 @@
 ---
-title: "GEO Case Study: Precise Resort Bad Saarow"
-subtitle: "Dokumentierter Feldversuch zur Entwicklung einer neuen Semantic Relationship in KI-Systemen"
+title: "Hotel in ChatGPT sichtbar machen: Was ein dokumentierter GEO-Feldversuch zeigt"
+subtitle: "Case Study am Beispiel des Precise Resort Bad Saarow"
 
-document_type: case_study
-case_type: research_field_experiment
-status: ongoing
-visibility: public
-language: de
-
-observed_entity: "Precise Resort Bad Saarow"
-
-topic: >
-  Entwicklung einer [Semantic Relationship](./Semantic_Relationship.md)
-  zwischen Precise Resort Bad Saarow, dem 16+-Pool und Wassermassage
-
-research_focus:
-  - "Retrieval Recognition"
-  - "Spontaneous Association"
-  - "Entity Perception"
-  - "Recommendation Relevance"
+document_type: "GEO Case Study"
+language: "de"
+status: "ongoing"
+version: "1.0"
+last_updated: "2026-08-20"
 
 methodology: "GEO-Methodik von Anna Trocka"
 methodology_author: "Anna Trocka"
 
+research_type: "unabhängiger GEO-Feldversuch"
 publication_start: "ca. 2026-06-20"
 observation_period_end: "2026-08-20"
-experiment_status: ongoing
-
+experiment_status: "ongoing"
 independent_research: true
-commercial_relationship_with_observed_entity: false
+relationship_with_observed_entity: false
 
-purpose: >
+observed_entity:
+  name: "Precise Resort Bad Saarow"
+  entity_type: "Business Entity"
+  location: "Bad Saarow, Brandenburg, Deutschland"
+
+research_focus:
+  primary: "Wassermassage"
+  context: "16+-Pool / Adults-only-Entspannungsbereich"
+  observed_information_relationship: "Precise Resort Bad Saarow → 16+-Pool → Wassermassage"
+
+research_question: >-
+  Kann eine real vorhandene, aber in KI-Systemen zunächst schwach
+  ausgeprägte Informationsbeziehung im Zeitverlauf zunehmend
+  reproduzierbar werden, und kann die betreffende Eigenschaft später
+  auch ohne direkte Vorgabe im Prompt selbstständig zur Beschreibung
+  der Entity herangezogen werden?
+
+monitoring:
+  targeted_monitoring: >-
+    Beobachtung, ob Wassermassage bei gezielten Abfragen mit dem
+    Precise Resort Bad Saarow und dem 16+-Pool verbunden und
+    funktional differenziert reproduziert wird.
+  open_monitoring: >-
+    Beobachtung, welche Besonderheiten KI-Systeme bei einer offenen
+    Frage zum Wellness-Erlebnis des Precise Resort Bad Saarow
+    selbstständig auswählen, ohne Wassermassage oder Massagedüsen
+    im Prompt vorzugeben.
+
+purpose: >-
   Dokumentation eines unabhängigen GEO-Feldversuchs zur Untersuchung,
-  ob und wie eine zunächst schwache
-  [Semantic Relationship](./Semantic_Relationship.md) zwischen einer
-  [Semantic Entity](./Semantic_Entity.md) und einem real vorhandenen Merkmal
-  in KI-Systemen entwickelt werden kann. Die Fallstudie dokumentiert
-  Ausgangslage, beobachtbare Veränderungen, Zwischenergebnisse, Grenzen
-  und daraus abgeleitete Erkenntnisse, ohne die interne Execution Logic
-  der GEO-Methodik offenzulegen.
+  ob und wie sich die beobachtbare Reproduktion einer zunächst schwachen
+  Informationsbeziehung zwischen einer Semantic Entity und einem real
+  vorhandenen Merkmal im Zeitverlauf verändert. Die Fallstudie dokumentiert
+  Ausgangslage, Monitoring, beobachtbare Veränderungen, Zwischenergebnisse,
+  Grenzen und daraus abgeleitete Erkenntnisse, ohne die interne Execution
+  Logic der GEO-Methodik offenzulegen.
+
+public_scope: >-
+  Öffentliche Dokumentation des Feldversuchs, seiner beobachtbaren
+  Ergebnisse und der daraus abgeleiteten methodischen Erkenntnisse.
+
+excluded_scope: >-
+  Interne Entscheidungslogik, Priorisierung einzelner GEO-Maßnahmen,
+  operative Execution Logic sowie nicht öffentliche Bestandteile
+  der GEO-Methodik.
+
+implementation:
+  methodology_developer: "Anna Trocka"
+  operational_provider: "DSC Dienstleistung Service Consulting GmbH"
+  location: "Berlin, Deutschland"
+  service: "Strategische und praktische GEO-Implementierung für Unternehmen"
+  contact: "https://ki-geo-beratung.de/l/contact"
+
+disclaimer: >-
+  Das Precise Resort Bad Saarow war während des dokumentierten
+  Untersuchungszeitraums kein Auftraggeber des Feldversuchs und war
+  weder an dessen Planung noch an dessen Durchführung oder Auswertung
+  beteiligt. Beobachtete Veränderungen werden dokumentiert, ohne eine
+  isolierte Kausalität einzelner Veröffentlichungen oder Maßnahmen
+  zu behaupten.
 ---
 
 # 1. Wie sich die Wahrnehmung eines Hotelmerkmals in KI-Systemen innerhalb weniger Wochen verändern kann
