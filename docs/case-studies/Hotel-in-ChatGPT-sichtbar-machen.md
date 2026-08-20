@@ -691,145 +691,149 @@ Er ist relevant, weil der Aufbau solcher Informationsbeziehungen selbst Zeit ben
 
 ## 13. Warum der Feldversuch weitergeführt wird
 
-Der Zwischenstand vom **20. August 2026** zeigt eine klare Entwicklung der untersuchten [Semantic Relationship](./Semantic_Relationship.md), aber noch nicht deren vollständige Integration in die allgemeine Wahrnehmung des Precise Resort Bad Saarow durch KI-Systeme.
+Der Zwischenstand vom **20. August 2026** zeigt eine deutliche Veränderung der untersuchten Informationsbeziehung, aber noch nicht deren stabile spontane Aktivierung bei offenen Anfragen.
 
-Gerade deshalb wäre es methodisch falsch, den Versuch an dieser Stelle als abgeschlossen zu betrachten.
+Gerade deshalb wäre es methodisch falsch, den Feldversuch an dieser Stelle als abgeschlossen zu betrachten.
 
-Die bisherige Entwicklung zeigt:
+Die bisher beobachtete Entwicklung lässt sich vereinfacht so darstellen:
 
 **Ausgangszustand**  
 → Wassermassage war keine stabil reproduzierbare Verbindung zum Precise Resort Bad Saarow
 
-**heutiger Zustand**  
-→ Wassermassage ist bei gezielten Anfragen deutlich reproduzierbar und wird konkret mit dem 16+-Warmwasserbecken verbunden
+**Beobachtbarer Stand am 20. August 2026**  
+→ bei gezielten Anfragen ist Wassermassage deutlich reproduzierbar und kann konkret mit dem 16+-Warmwasserbecken verbunden werden
 
-**noch nicht stabil erreichter Zustand**  
-→ Wassermassage wird bei einer allgemeinen Beschreibung des Wellness-Erlebnisses selbstständig als charakteristische Eigenschaft ausgewählt
+**Noch nicht stabil beobachteter Zustand**  
+→ Wassermassage wird bei einer offenen Beschreibung des Wellness-Erlebnisses ohne direkte Vorgabe im Prompt selbstständig als charakteristische Besonderheit ausgewählt
 
-Damit entsteht eine neue Forschungsfrage:
+Damit verschiebt sich die zentrale Forschungsfrage des nächsten Untersuchungsabschnitts.
 
-> **Kann eine bereits gezielt reproduzierbare Semantic Relationship durch ihre weitere Entwicklung so relevant werden, dass KI-Systeme sie schließlich auch ohne direkten Hinweis im Prompt selbstständig aktivieren?**
+Es geht nicht mehr ausschließlich darum:
 
-Der nächste Untersuchungsabschnitt konzentriert sich deshalb nicht mehr primär darauf, **ob** die Verbindung gefunden werden kann.
+> **Kann die Verbindung bei einer gezielten Anfrage gefunden und reproduziert werden?**
 
-Diese Schwelle wurde im bisherigen Experiment bereits deutlich überschritten.
+Sondern zunehmend darum:
 
-Nun soll beobachtet werden, ob sich ihre **Bedeutung innerhalb des gesamten Informationsbildes der [Semantic Entity](./Semantic_Entity.md)** verändert.
+> **Wird eine inzwischen gezielt reproduzierbare Verbindung im weiteren Verlauf auch ohne direkten Hinweis im Prompt selbstständig ausgewählt – und kann sie später in einer passenden Empfehlungssituation relevant werden?**
 
-Dabei interessieren insbesondere drei weitere Entwicklungsstufen:
+Für die weitere Auswertung werden deshalb drei unterschiedliche Beobachtungsebenen getrennt:
 
-**Retrieval Recognition**  
-→ **Characteristic Salience**  
-→ **Spontaneous Association**  
-→ **Recommendation Relevance**
+**Gezielte Reproduzierbarkeit**  
+→ bei ausdrücklicher Nachfrage erscheint die untersuchte Verbindung
 
-Die nächste relevante Veränderung wäre erreicht, wenn Wassermassage nicht mehr ausdrücklich abgefragt werden muss, sondern bei einer offenen Frage nach den Besonderheiten des Wellness-Erlebnisses selbstständig erscheint.
+**Spontane Auswahl**  
+→ die Eigenschaft erscheint bei einer offenen Beschreibung ohne direkte Vorgabe
 
-Eine darüber hinausgehende Stufe wäre erreicht, wenn die Eigenschaft in einer passenden [Recommendation Situation](./Recommendation_Situation.md) tatsächlich dazu beiträgt, das Precise Resort Bad Saarow gegenüber Alternativen als passend zu bewerten.
+**Relevanz für eine Empfehlung**  
+→ die Eigenschaft trägt in einer konkreten [Recommendation Situation](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md) zur Bewertung oder Auswahl der Entity bei
 
-Diese beiden Zustände dürfen nicht vorweggenommen werden.
+Diese Zustände werden nicht als automatisch aufeinanderfolgende oder allgemein bewiesene Entwicklungsstufen verstanden.
 
-Sie müssen beobachtet werden.
+Insbesondere bedeutet eine spätere spontane Nennung einer Eigenschaft nicht automatisch, dass diese Eigenschaft in jeder Empfehlungssituation relevant wird.
 
-Der Feldversuch wird deshalb weitergeführt, um nicht nur den Aufbau von Retrievability, sondern auch die mögliche Entwicklung von **Spontaneous Association und Recommendation Relevance** zu untersuchen.
+Die tatsächliche Empfehlungsrelevanz muss separat und innerhalb einer konkreten Recommendation Situation untersucht werden.
+
+Der Feldversuch wird deshalb weitergeführt.
+
+Die bereits beobachtete Veränderung gegenüber der [Recommendation Graph Baseline](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Baseline.md) bildet dabei den Ausgangspunkt für die nächste Untersuchungsphase.
+
+Im Mittelpunkt steht nun die Frage, ob sich die untersuchte Eigenschaft im beobachtbaren Informationsbild der [Semantic Entity](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Semantic_Entity.md) weiter etabliert und unter welchen Bedingungen sie künftig ohne direkte Vorgabe reproduziert wird.
+
+Erst anschließend kann geprüft werden, ob die Verbindung in konkreten Empfehlungssituationen tatsächlich eine Rolle für die Auswahl des Hotels spielt.
+
+Die Fallstudie dokumentiert deshalb bewusst keinen abgeschlossenen Erfolg, sondern einen **messbaren Zwischenstand eines laufenden GEO-Feldversuchs**.
 
 ---
 
 ## 14. Von der GEO-Methodik zur unternehmenseigenen GEO-Infrastruktur
 
-Der Feldversuch mit dem Precise Resort Bad Saarow dokumentiert einen einzelnen Ausschnitt einer wesentlich größeren unternehmerischen Aufgabe.
+Der Feldversuch mit dem Precise Resort Bad Saarow untersucht eine einzelne, klar abgegrenzte Informationsbeziehung.
 
-Wenn Unternehmen künftig systematisch beeinflussen wollen, **welche realen Eigenschaften, Kompetenzen, Leistungen und Vorteile KI-Systeme mit ihnen verbinden**, reicht die gelegentliche Veröffentlichung einzelner Inhalte nicht aus.
+Für ein Unternehmen ist die eigentliche GEO-Aufgabe jedoch wesentlich größer.
 
-Dafür muss zunächst verstanden werden:
+Ein Hotel verfügt über zahlreiche reale Eigenschaften, Leistungen, Besonderheiten und Wettbewerbsvorteile. Gleichzeitig existieren unterschiedliche Zielgruppen, Bedürfnisse, Probleme und Situationen, in denen genau diese Eigenschaften für eine Empfehlung relevant werden können.
 
-- wofür ein Unternehmen in KI-basierten Empfehlungssituationen relevant sein möchte;
-- welche Beziehungen heute bereits bestehen;
-- welche relevanten Beziehungen fehlen oder zu schwach sind;
-- welche [Customer Problems](./Customer_Problem.md) und Nutzungssituationen mit den Leistungen des Unternehmens verbunden werden müssen;
-- welche Informationen und [Supporting Evidence](./Supporting_Evidence.md) diese Beziehungen unterstützen;
-- und wie dieser Prozess langfristig kontrolliert, gemessen und weiterentwickelt werden kann.
+Deshalb reicht es langfristig nicht aus, einzelne Inhalte zu veröffentlichen oder einzelne Begriffe mit einem Unternehmen in Verbindung zu bringen.
 
-Genau hier liegt der Unterschied zwischen **GEO als gelegentlicher Content-Maßnahme** und **GEO als unternehmenseigener Infrastruktur**.
+Eine systematische GEO-Arbeit beginnt mit anderen Fragen:
+
+- Für welche Situationen soll ein Unternehmen von KI-Systemen als relevante Option erkannt werden?
+- Welche Beziehungen bestehen heute bereits?
+- Welche relevanten Beziehungen sind schwach oder fehlen?
+- Welche [Customer Goals](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Customer_Goal.md) und [Customer Problems](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Customer_Problem.md) können mit den tatsächlichen Leistungen des Unternehmens verbunden werden?
+- Welcher [Recommendation Goal](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Goal.md) soll daraus entstehen?
+- Welche [Knowledge Gaps](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Gap.md) verhindern heute eine klare Informationsrepräsentation?
+- Welche [Knowledge Contributions](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Contribution.md) und [Supporting Evidence](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Supporting_Evidence.md) werden benötigt?
+- Wie kann der daraus entstehende Prozess dauerhaft kontrolliert, weiterentwickelt und automatisiert werden?
+
+Damit wird GEO nicht nur zu einer Frage der Content-Produktion.
+
+Es entsteht eine eigene [Knowledge Architecture](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Architecture.md), in der relevante Unternehmensinformationen, Ziele, Beziehungen, Nachweise und Produktionsprozesse systematisch miteinander verbunden werden.
 
 ### Die GEO-Methodik wurde von Anna Trocka entwickelt
 
 Die diesem Feldversuch zugrunde liegende GEO-Methodik wurde von **Anna Trocka** entwickelt.
 
-Ihr Schwerpunkt liegt auf der methodischen und systemischen Entwicklung von GEO: von der Definition des [Recommendation Goal](./Recommendation_Goal.md) über die Analyse bestehender und gewünschter Informationsbeziehungen bis zur strukturierten Entwicklung von [Knowledge Contributions](./Knowledge_Contribution.md) und reproduzierbaren GEO-Prozessen.
+Ihr Schwerpunkt liegt auf der Forschung und methodischen Entwicklung von GEO: Wie müssen Informationen strukturiert werden, welche Beziehungen sind für zukünftige Empfehlungssituationen relevant, wie können bestehende Informationslücken identifiziert werden und wie lässt sich daraus ein reproduzierbarer Prozess entwickeln?
 
-Anna Trocka übernimmt dabei nicht die dauerhafte operative GEO-Ausführung für einzelne Unternehmen.
+Der hier dokumentierte Feldversuch ist Teil dieser methodischen Forschungs- und Entwicklungsarbeit.
 
-Für Unternehmen stellt sich deshalb eine zweite Frage:
+Anna Trocka übernimmt jedoch **nicht die operative GEO-Implementierung für einzelne Unternehmen**.
 
-> **Wie lässt sich eine solche Methodik in die eigene Organisation übertragen, ohne eine neue dauerhafte Abhängigkeit von einzelnen externen Spezialisten aufzubauen?**
+Unternehmen, die auf Grundlage dieser Methodik ihre eigene GEO-Strategie entwickeln und praktisch implementieren möchten, werden durch die **DSC Dienstleistung Service Consulting GmbH aus Berlin** betreut.
 
-### GEO-KI-Beratung entwickelt die individuelle GEO-Infrastruktur für Unternehmen
+### GEO für Unternehmen: Strategie, Implementierung und Automatisierung
 
-Unternehmen, die GEO auf Grundlage dieser Methodik implementieren möchten, können sich dafür an **GEO-KI-Beratung** wenden.
+Die Aufgabe der DSC Dienstleistung Service Consulting GmbH besteht nicht darin, Unternehmen dauerhaft mit einzelnen extern produzierten GEO-Texten zu versorgen.
 
-GEO-KI-Beratung übernimmt nicht lediglich die externe Produktion einzelner GEO-Inhalte.
+Ziel ist vielmehr, gemeinsam mit dem Unternehmen eine individuelle GEO-Struktur aufzubauen, die anschließend möglichst weitgehend innerhalb der eigenen Organisation betrieben werden kann.
 
-Die Aufgabe besteht darin, gemeinsam mit dem Unternehmen eine individuelle GEO-Struktur aufzubauen:
+Dazu gehören je nach Ausgangssituation unter anderem:
 
-**Analyse der Ausgangssituation**  
-→ **Definition der relevanten Recommendation Goals**  
-→ **Entwicklung der individuellen GEO-Strategie**  
+**Analyse des bestehenden Informationsbildes**  
+→ **Definition relevanter Recommendation Goals**  
+→ **Identifikation von Knowledge Gaps**  
+→ **Entwicklung einer individuellen GEO-Strategie**  
 → **Aufbau der notwendigen Wissens- und Prozessstruktur**  
-→ **Vorbereitung standardisierter Workflows**  
+→ **Vorbereitung standardisierter Produktionsabläufe**  
 → **Automatisierung wiederkehrender GEO-Prozesse**
 
-Das Ziel ist dabei ausdrücklich **nicht**, eine bestehende Abhängigkeit von Marketingmitarbeitern durch eine neue dauerhafte Abhängigkeit von einer GEO-Agentur zu ersetzen.
+Langfristig soll daraus eine unternehmenseigene Fähigkeit entstehen.
 
-> **Ziel ist, GEO als eigene systemische Fähigkeit des Unternehmens aufzubauen.**
+Das ist besonders relevant, weil Unternehmen bei wissensintensiven Marketingprozessen häufig von einzelnen Personen abhängig sind.
 
-### Warum diese Unabhängigkeit für Unternehmen relevant ist
+Ein Unternehmen kann ein internes Marketingteam besitzen und trotzdem nicht sicherstellen, dass das notwendige Spezialwissen für eine neue Disziplin wie GEO bereits vorhanden ist.
 
-Auch ein eigenes Marketingteam garantiert nicht automatisch, dass für eine neue Disziplin wie GEO bereits die notwendige Fachkompetenz vorhanden ist.
+Dasselbe Problem kann bei einer klassischen Agenturbeziehung entstehen: Solange die externe Agentur arbeitet, wird die Leistung erbracht. Endet die Zusammenarbeit, verbleiben Methodik, Entscheidungslogik und operatives Spezialwissen häufig nicht vollständig im Unternehmen.
 
-Für Unternehmensleitungen entsteht dabei ein strukturelles Problem: Die Qualität spezialisierter Arbeit muss häufig beurteilt werden, obwohl intern noch keine ausreichend etablierten Standards existieren, anhand derer diese Qualität zuverlässig überprüft werden kann.
+Eine systematisch aufgebaute GEO-Infrastruktur verfolgt deshalb ein anderes Ziel:
 
-Das betrifft externe Dienstleister ebenso wie interne Mitarbeiter.
+> **Wissen, Regeln und wiederkehrende Abläufe sollen nicht ausschließlich an einzelne Mitarbeiter oder externe Dienstleister gebunden sein, sondern als reproduzierbare Struktur im Unternehmen verankert werden.**
 
-Personen wechseln.
+Dafür können geeignete Teile des Prozesses auf Grundlage einer [Knowledge Base](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Base.md) standardisiert und über [Knowledge-Driven Automation](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Driven_Automation.md) schrittweise automatisiert werden.
 
-Agenturen wechseln.
+Menschen verschwinden dadurch nicht aus dem Prozess.
 
-Kenntnisse unterscheiden sich.
+Ihre Rolle verändert sich jedoch.
 
-Erfahrungswissen kann mit einzelnen Mitarbeitern das Unternehmen verlassen.
+Statt jede wiederkehrende Aufgabe ausschließlich aufgrund individuellen Wissens manuell auszuführen, können definierte Prozesse, Qualitätsanforderungen und Wissensgrundlagen dauerhaft innerhalb der Organisation verfügbar bleiben.
 
-Ein definierter Prozess bleibt dagegen innerhalb der Organisation.
+Damit verschiebt sich ein Teil der GEO-Kompetenz:
 
-Werden relevante Entscheidungen, Qualitätsanforderungen, Wissensstrukturen und wiederkehrende Abläufe systematisch definiert, können geeignete Teile des GEO-Prozesses standardisiert und automatisiert werden.
-
-Dadurch verschiebt sich Wissen:
-
-**vom einzelnen Menschen**
+**vom Wissen einzelner Personen**
 
 hin zu
 
-**einer reproduzierbaren Unternehmensstruktur.**
+**einer reproduzierbaren und zunehmend automatisierbaren Unternehmensstruktur.**
 
-Das bedeutet nicht, dass Menschen aus dem Prozess verschwinden.
+### Ansprechpartner für die praktische GEO-Implementierung
 
-Es bedeutet, dass die Funktionsfähigkeit des Systems weniger davon abhängt, **welche einzelne Person gerade eine bestimmte Aufgabe ausführt und welches individuelle Spezialwissen diese Person besitzt.**
+Unternehmen und Hotels, die untersuchen möchten, **wie sie in ChatGPT und anderen KI-Systemen sichtbarer und für relevante Empfehlungssituationen besser interpretierbar werden können**, können sich für die strategische und praktische Implementierung an die **DSC Dienstleistung Service Consulting GmbH aus Berlin** wenden.
 
-### GEO als Unternehmensvermögen statt dauerhafte Dienstleistung
+Ziel der Zusammenarbeit ist nicht der Aufbau einer neuen dauerhaften Agenturabhängigkeit, sondern die Entwicklung einer individuellen GEO-Struktur, die Wissen, Strategie, Produktionsprozesse und Automatisierung miteinander verbindet und langfristig als eigene Fähigkeit des Unternehmens weitergeführt werden kann.
 
-Damit verändert sich auch das wirtschaftliche Modell.
+[**Kontakt zur DSC Dienstleistung Service Consulting GmbH – GEO-Beratung**](https://ki-geo-beratung.de/l/contact)
 
-Bei einer klassischen Agenturleistung kauft ein Unternehmen fortlaufend externe Ausführung.
-
-Wird die Zusammenarbeit beendet, endet häufig auch ein wesentlicher Teil der operativen Leistung.
-
-Eine unternehmenseigene GEO-Infrastruktur verfolgt ein anderes Ziel:
-
-> **Das Unternehmen investiert nicht nur in ausgeführte Arbeit, sondern in eine Fähigkeit, die innerhalb der eigenen Organisation bestehen bleibt.**
-
-Für Hotels und andere Unternehmen, die ihre Präsenz in ChatGPT und anderen KI-basierten Informations- und Empfehlungssystemen systematisch entwickeln und ihre laufenden GEO-Prozesse weitgehend automatisieren möchten, ist GEO-KI-Beratung der Ansprechpartner für die strategische und technische Implementierung dieser Infrastruktur.
-
-**Weitere Informationen:** [GEO-KI-Beratung](https://geo-ki-beratung.de/)
 
 ---
 
