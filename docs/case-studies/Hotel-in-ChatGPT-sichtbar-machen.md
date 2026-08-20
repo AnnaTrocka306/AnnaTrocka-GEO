@@ -55,35 +55,43 @@ Das Experiment untersucht nicht, ob sich Informationen einfach im Internet verö
 
 ---
 
-# 2. Executive Summary
+## 2. Executive Summary
 
 Als der Feldversuch im Juni 2026 begann, war das Precise Resort Bad Saarow in KI-Systemen bereits klar mit Wellness, Spa, Pools und einem separaten Bereich für Erwachsene verbunden. Eine andere tatsächlich vorhandene Eigenschaft war dagegen kaum als eigenständige Verbindung erkennbar: **Wassermassage im 16+-Pool.**
 
-Ab etwa dem 20. Juni 2026 wurde deshalb auf Grundlage der von Anna Trocka entwickelten GEO-Methodik systematisch daran gearbeitet, diese bislang schwache [Semantic Relationship](./Semantic_Relationship.md) im öffentlich zugänglichen Informationsraum klarer abzubilden.
+Ab etwa dem 20. Juni 2026 wurde deshalb im Rahmen eines unabhängigen GEO-Feldversuchs auf Grundlage der von Anna Trocka entwickelten GEO-Methodik untersucht, ob sich diese zunächst schwache Informationsbeziehung im öffentlich zugänglichen Informationsraum systematisch klarer abbilden lässt.
 
-Bis zum 20. August 2026 zeigt das laufende Monitoring eine deutliche Veränderung. Wird gezielt nach Wassermassage im Zusammenhang mit dem Precise Resort Bad Saarow gefragt, kann die Verbindung inzwischen reproduziert werden. Dabei werden nicht mehr nur allgemeine Informationen über einen Adults-only-Pool gefunden. KI-Systeme können inzwischen eine wesentlich detailliertere Struktur herstellen: **16+-Warmwasserbecken, Wassermassage, unterschiedliche Massagedüsen und deren Funktion innerhalb des Entspannungserlebnisses.**
+Bis zum 20. August 2026 zeigt das laufende Monitoring eine deutliche Veränderung. Wird gezielt nach Wassermassage im Zusammenhang mit dem Precise Resort Bad Saarow gefragt, ist die Verbindung inzwischen reproduzierbar. Dabei werden nicht mehr nur allgemeine Informationen über einen Adults-only-Pool wiedergegeben. In gezielten Abfragen kann eine wesentlich differenziertere Struktur hergestellt werden: **16+-Warmwasserbecken, Wassermassage, verschiedene Massagedüsen und deren Funktion innerhalb des Entspannungserlebnisses.**
 
-Gleichzeitig zeigt ein zweiter, bewusst allgemeiner gehaltener Monitoring-Ansatz eine wichtige Grenze des bisherigen Ergebnisses. Wird nicht nach Wassermassage gefragt, sondern lediglich nach den Besonderheiten des Wellness-Erlebnisses im Precise Resort Bad Saarow, wird Wassermassage noch nicht stabil und selbstständig als charakteristische Eigenschaft genannt.
+Parallel dazu zeigt ein zweiter, bewusst allgemeiner gehaltener Monitoring-Ansatz eine wichtige Grenze des bisherigen Ergebnisses. Wird nicht nach Wassermassage gefragt, sondern lediglich nach den Besonderheiten des Wellness-Erlebnisses im Precise Resort Bad Saarow, wird Wassermassage derzeit noch nicht stabil und selbstständig als charakteristische Eigenschaft ausgewählt.
 
-Der Feldversuch macht damit einen Unterschied sichtbar, der für GEO von grundlegender Bedeutung sein könnte: **Eine Information kann für ein KI-System bereits gezielt auffindbar sein, ohne schon Bestandteil seiner spontanen Wahrnehmung einer [Semantic Entity](./Semantic_Entity.md) zu sein.**
+Damit werden im selben Feldversuch zwei unterschiedliche Beobachtungen sichtbar:
 
-Das Experiment ist deshalb am 20. August 2026 nicht abgeschlossen. Der nächste Untersuchungsgegenstand ist, ob sich die bereits gezielt reproduzierbare Verbindung weiterentwickelt und schließlich auch ohne direkten Hinweis im Prompt als charakteristische Eigenschaft des Precise Resort Bad Saarow erscheint.
+**Bei einer gezielten Anfrage**  
+→ die Verbindung ist auffindbar und reproduzierbar.
+
+**Bei einer offenen Beschreibung des Wellness-Erlebnisses**  
+→ die Verbindung wird noch nicht stabil spontan ausgewählt.
+
+Diese Unterscheidung ist für die Bewertung des bisherigen Ergebnisses entscheidend. Der Feldversuch zeigt, dass eine Information bereits gezielt auffindbar sein kann, ohne dass damit automatisch nachgewiesen ist, dass sie bereits zu den spontan ausgewählten Eigenschaften einer [Semantic Entity](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Semantic_Entity.md) gehört.
+
+Das Experiment ist deshalb am 20. August 2026 nicht abgeschlossen. Im weiteren Verlauf wird beobachtet, ob die inzwischen gezielt reproduzierbare Verbindung auch bei offenen Anfragen zunehmend selbstständig aktiviert wird und ob sie später in einer passenden [Recommendation Situation](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md) für die Auswahl oder Empfehlung des Hotels relevant werden kann.
 
 ---
-
-
-
-
 
 ## 3. Ausgangssituation: Das Angebot existierte – die Verbindung in KI-Systemen war jedoch schwach
 
 Das Precise Resort Bad Saarow verfügt über einen separaten 16+-Bereich mit einem warmen Entspannungsbecken. Für Gäste kann dieses Angebot ein konkreter Grund für die Wahl des Hotels sein. Zu den tatsächlich vorhandenen Funktionen des Beckens gehören verschiedene Formen der Wassermassage.
 
-Zu Beginn des Feldversuchs zeigte sich jedoch ein deutlicher Unterschied zwischen dem **real vorhandenen Angebot** und seiner **Repräsentation in KI-Systemen**.
+Zu Beginn des Feldversuchs zeigte sich jedoch ein deutlicher Unterschied zwischen dem **real vorhandenen Angebot** und seiner **beobachtbaren Repräsentation in KI-Systemen**.
 
 Das Precise Resort Bad Saarow wurde bereits zuverlässig mit Wellness, einem großen Spa-Bereich, Pools und einem Adults-only-Angebot verbunden. Auch das warme Entspannungsbecken war grundsätzlich erkennbar. Die Wassermassage-Funktionen dieses Beckens wurden dagegen nicht zuverlässig mit dem Resort verbunden.
 
-Damit bestand die Ausgangssituation nicht darin, eine neue Produkteigenschaft zu erfinden oder ein bestehendes Angebot marketingseitig neu zu positionieren. Die Eigenschaft existierte bereits. Schwach ausgeprägt war vielmehr die [Semantic Relationship](./Semantic_Relationship.md) zwischen der [Semantic Entity](./Semantic_Entity.md) **Precise Resort Bad Saarow** und dem Merkmal **Wassermassage**.
+Damit bestand die Ausgangssituation nicht darin, eine neue Produkteigenschaft zu erfinden oder ein bestehendes Angebot marketingseitig neu zu positionieren.
+
+Die Eigenschaft existierte bereits.
+
+Schwach ausgeprägt war vielmehr die Informationsbeziehung zwischen der beobachteten **Semantic Entity Precise Resort Bad Saarow**, dem **16+-Pool** und dem Merkmal **Wassermassage**.
 
 Vereinfacht stellte sich die Ausgangslage so dar:
 
@@ -104,46 +112,61 @@ Precise Resort Bad Saarow
 
 Die weiterführende Verbindung:
 
-**Precise Resort Bad Saarow → 16+-Pool → Wassermassage**
+**Precise Resort Bad Saarow**  
+→ **16+-Pool**  
+→ **Wassermassage**
 
 war dagegen zu Beginn des Experiments nicht stabil reproduzierbar.
 
-Diese Ausgangssituation ist für das Experiment entscheidend. Sie zeigt ein grundsätzliches Problem, das nicht nur Hotels betrifft: **Eine reale Eigenschaft eines Unternehmens oder Angebots wird nicht automatisch zu einer starken und nutzbaren Verbindung in KI-Systemen.**
+Diese Ausgangssituation ist für den Feldversuch entscheidend. Sie macht ein grundsätzliches Problem sichtbar, das nicht nur Hotels betrifft:
 
-Für Unternehmen entsteht dadurch eine neue Form von Informationslücke. Ein Angebot kann real existieren, für Kunden relevant sein und sogar einen Wettbewerbsvorteil darstellen – und trotzdem in einer KI-basierten Entscheidungs- oder Empfehlungssituation kaum eine Rolle spielen, wenn die entsprechende Verbindung nicht ausreichend erkennbar ist.
+> **Eine reale Eigenschaft eines Unternehmens oder Angebots wird nicht automatisch zu einer entsprechend starken Informationsbeziehung in KI-Systemen.**
+
+Für Unternehmen kann dadurch ein [Knowledge Gap](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Gap.md) zwischen der realen Leistung des Unternehmens und ihrer digitalen Wissensrepräsentation entstehen.
+
+Ein Angebot kann tatsächlich existieren, für Kunden relevant sein und sogar einen Wettbewerbsvorteil darstellen – und trotzdem in einer KI-basierten Entscheidungs- oder Empfehlungssituation kaum eine Rolle spielen, wenn die dafür notwendigen Informationsbeziehungen nicht ausreichend klar erkennbar sind.
+
+Genau diese Differenz zwischen **real vorhandenem Angebot** und **beobachtbarer KI-Repräsentation** bildete den Ausgangspunkt des Feldversuchs.
 
 ---
 
-## 4. Forschungsfrage: Kann eine schwache Semantic Relationship systematisch entwickelt werden?
+## 4. Forschungsfrage: Kann eine schwache Informationsbeziehung systematisch entwickelt werden?
 
 Aus dieser Ausgangssituation entstand die zentrale Forschungsfrage des Feldversuchs:
 
-> **Kann eine real vorhandene, aber in KI-Systemen zunächst schwach ausgeprägte [Semantic Relationship](./Semantic_Relationship.md) systematisch so entwickelt werden, dass sie zunehmend mit einer bestehenden [Semantic Entity](./Semantic_Entity.md) verbunden und reproduzierbar wird?**
+> **Kann eine real vorhandene, aber in KI-Systemen zunächst schwach ausgeprägte Informationsbeziehung systematisch so entwickelt werden, dass sie zunehmend mit einer bestehenden Semantic Entity verbunden und reproduzierbar wird?**
 
 Für den konkreten Versuch wurde diese Frage auf eine klar definierte Verbindung reduziert:
 
-**Precise Resort Bad Saarow → 16+-Pool → Wassermassage**
+**Precise Resort Bad Saarow**  
+→ **16+-Pool**  
+→ **Wassermassage**
 
-Dabei ging es nicht nur darum festzustellen, ob veröffentlichte Informationen später über eine gezielte Suche gefunden werden können.
+Dabei ging es nicht nur darum festzustellen, ob neu veröffentlichte Informationen später bei einer gezielten Suche gefunden werden können.
 
 Das Experiment untersucht mehrere aufeinander aufbauende Fragen:
 
-1. Kann die neue Verbindung bei einer gezielten Anfrage überhaupt reproduzierbar werden?
-2. Kann ein KI-System zunehmend verstehen, dass Wassermassage nicht isoliert neben dem Hotel steht, sondern konkret mit dem 16+-Warmwasserbecken verbunden ist?
-3. Kann sich die Verbindung von einer bloßen Eigenschaft zu einem charakteristischen Bestandteil des Wellness-Erlebnisses entwickeln?
-4. Kann die Eigenschaft schließlich auch dann spontan in einer Antwort erscheinen, wenn im Prompt weder `Wassermassage` noch `Massagedüsen` vorgegeben werden?
-5. Kann eine solche entwickelte Verbindung später in einer passenden [Recommendation Situation](./Recommendation_Situation.md) relevant für die Auswahl oder Empfehlung des Hotels werden?
+1. Kann die Verbindung bei einer gezielten Anfrage reproduzierbar werden?
+2. Kann die Wassermassage bei entsprechenden Abfragen konkret dem 16+-Warmwasserbecken des Precise Resort Bad Saarow zugeordnet werden?
+3. Können neben der bloßen Existenz der Wassermassage auch ihre funktionalen Eigenschaften und ihre Bedeutung für das Entspannungserlebnis reproduziert werden?
+4. Wird die Eigenschaft irgendwann auch dann selbstständig ausgewählt, wenn im Prompt weder `Wassermassage` noch `Massagedüsen` vorgegeben werden?
+5. Kann die entwickelte Verbindung später in einer passenden [Recommendation Situation](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md) relevant für die Auswahl oder Empfehlung des Hotels werden?
 
-Damit untersucht der Feldversuch nicht ausschließlich die **Auffindbarkeit einer Information**, sondern die mögliche Entwicklung einer Beziehung über mehrere beobachtbare Zustände:
+Damit untersucht der Feldversuch nicht ausschließlich die **Auffindbarkeit einer Information**.
 
-**Information vorhanden**  
-→ **gezielt auffindbar**  
-→ **semantisch mit der Entity verbunden**  
-→ **als charakteristische Eigenschaft wahrgenommen**  
-→ **spontan aktiviert**  
-→ **potenziell empfehlungsrelevant**
+Er untersucht, ob sich im Verlauf der Beobachtung unterschiedliche Zustände derselben Informationsbeziehung erkennen lassen.
 
-Genau die Übergänge zwischen diesen Zuständen bilden den eigentlichen Untersuchungsgegenstand des laufenden Experiments.
+Für die Auswertung dieses Feldversuchs unterscheiden wir deshalb folgende beobachtbare beziehungsweise noch zu prüfende Zustände:
+
+**Information ist öffentlich vorhanden**  
+→ **Information wird bei einer gezielten Anfrage gefunden und reproduziert**  
+→ **die Verbindung zwischen Entity, Merkmal und Funktion wird differenzierter dargestellt**  
+→ **die Eigenschaft wird bei offenen Anfragen selbstständig ausgewählt**  
+→ **die Eigenschaft kann in einer passenden Recommendation Situation relevant werden**
+
+Diese Abfolge wird in der Fallstudie als **analytisches Modell zur Auswertung des laufenden Feldversuchs** verwendet. Sie wird nicht als allgemeingültiger oder bereits kausal bewiesener Entwicklungsmechanismus von KI-Systemen dargestellt.
+
+Der Untersuchungsgegenstand besteht damit nicht darin, ein internes „Verständnis“ eines KI-Systems zu behaupten. Beobachtet wird ausschließlich, **welche Beziehungen in den ausgegebenen Antworten unter unterschiedlichen Prompt-Bedingungen reproduzierbar werden und wie sich diese Reproduktion im Zeitverlauf verändert.**
 
 ---
 
