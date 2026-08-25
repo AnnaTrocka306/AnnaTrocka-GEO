@@ -1,0 +1,195 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/research-papers/airline_geo_real_passenger_experience_en.md#article",
+      "url": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/research-papers/airline_geo_real_passenger_experience_en.md",
+      "headline": "Why Airlines Need Real Passenger Experience for GEO — and Why Product Knowledge Alone Is Not Enough",
+      "description": "A methodology article by Anna Trocka explaining why airlines can be known by AI while still being recommended incorrectly. The article shows how real Passenger Experience can reveal missing Recommendation Relationships between airline services, passenger context and AI recommendations.",
+      "inLanguage": "en",
+      "datePublished": "2026-08-25",
+      "dateModified": "2026-08-25",
+
+      "author": {
+        "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO#anna-trocka"
+      },
+
+      "creator": {
+        "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO#anna-trocka"
+      },
+
+      "audience": [
+        {
+          "@type": "Audience",
+          "audienceType": "Airline management"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Airline marketing teams"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Airline customer experience teams"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Airline digital strategy teams"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Airline AI and innovation teams"
+        }
+      ],
+
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Generative Engine Optimization for airlines",
+          "alternateName": "Airline GEO",
+          "description": "The development of information and Recommendation Relationships that help AI systems understand when an airline is relevant for a specific passenger situation."
+        },
+        {
+          "@type": "Thing",
+          "name": "AI airline recommendations",
+          "description": "The selection or recommendation of an airline by AI systems or AI agents based on passenger context, available services and recommendation-relevant relationships."
+        },
+        {
+          "@type": "Thing",
+          "name": "Real Passenger Experience",
+          "description": "Lived passenger decision context used as analytical evidence for identifying airline benefits, friction, trade-offs and Recommendation Situations."
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md",
+          "name": "Recommendation Situation",
+          "url": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Reality_Validation.md",
+          "name": "Reality Validation",
+          "url": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Reality_Validation.md"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Gap.md",
+          "name": "Knowledge Gap",
+          "url": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Gap.md"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Contribution.md",
+          "name": "Knowledge Contribution",
+          "url": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Contribution.md"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Baseline.md",
+          "name": "Recommendation Graph Baseline",
+          "url": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Baseline.md"
+        }
+      ],
+
+      "mentions": [
+        {
+          "@id": "https://www.emirates.com/#organization"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.emirates.com/us/english/travel-partners/deutsche-bahn/#rail-and-fly",
+          "name": "Rail&Fly",
+          "url": "https://www.emirates.com/us/english/travel-partners/deutsche-bahn/",
+          "provider": {
+            "@id": "https://www.emirates.com/#organization"
+          }
+        },
+        {
+          "@type": "Organization",
+          "name": "Deutsche Bahn",
+          "url": "https://www.bahn.de/"
+        }
+      ],
+
+      "keywords": [
+        "GEO for airlines",
+        "Airline GEO",
+        "Generative Engine Optimization for airlines",
+        "AI airline recommendations",
+        "airline AI visibility",
+        "Passenger Experience",
+        "Passenger Journey",
+        "Recommendation Relationships",
+        "Recommendation Situation",
+        "AI agents for travel",
+        "airline AI strategy",
+        "Recommendation Knowledge",
+        "Reality Validation",
+        "airline customer experience"
+      ],
+
+      "mainEntity": {
+        "@type": "Thing",
+        "name": "Airline GEO based on real Passenger Experience",
+        "description": "A methodological approach in which lived Passenger Experience is analysed to identify missing Recommendation Relationships between airline services, passenger context and AI recommendation decisions."
+      },
+
+      "isPartOf": {
+        "@type": "CreativeWork",
+        "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO",
+        "name": "AnnaTrocka-GEO",
+        "url": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO"
+      },
+
+      "subjectOf": {
+        "@type": "WebPage",
+        "@id": "https://ki-geo-beratung.de/#airline-geo",
+        "name": "Operational GEO services",
+        "url": "https://ki-geo-beratung.de/"
+      }
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO#anna-trocka",
+      "name": "Anna Trocka",
+      "jobTitle": "Developer of the GEO Methodology",
+      "url": "https://github.com/AnnaTrocka306/AnnaTrocka-GEO",
+      "description": "Anna Trocka develops the GEO methodology and its analytical logic for identifying, validating and developing Recommendation Relationships in AI-driven recommendation environments.",
+      "knowsAbout": [
+        "Generative Engine Optimization",
+        "AI recommendations",
+        "Recommendation Relationships",
+        "Recommendation Situations",
+        "Reality Validation",
+        "Passenger Experience analysis",
+        "Airline GEO"
+      ]
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://ki-geo-beratung.de/#organization",
+      "name": "ki-geo-beratung.de",
+      "url": "https://ki-geo-beratung.de/",
+      "description": "Operational GEO service provider working according to the GEO methodology developed by Anna Trocka.",
+      "knowsAbout": [
+        "Generative Engine Optimization",
+        "GEO Audit",
+        "AI recommendation analysis",
+        "Recommendation Gap analysis",
+        "GEO implementation"
+      ]
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.emirates.com/#organization",
+      "name": "Emirates",
+      "url": "https://www.emirates.com/",
+      "description": "Airline referenced in the article as a real passenger case. Emirates is not represented as a client, partner or sponsor of Anna Trocka or ki-geo-beratung.de."
+    }
+  ]
+}
+</script>
