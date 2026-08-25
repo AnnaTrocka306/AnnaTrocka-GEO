@@ -218,10 +218,7 @@ My preferred airline is Emirates.
 
 Emirates currently does not operate flights from Berlin. In Germany, the airline currently operates from several airports, including Hamburg.
 
-Emirates also offers **Rail&Fly**  
-(https://www.emirates.com/us/english/travel-partners/deutsche-bahn/)
-
-which allows passengers to integrate Deutsche Bahn rail travel into their journey to or from an Emirates departure airport.
+Emirates also offers **[Rail&Fly](https://www.emirates.com/us/english/travel-partners/deutsche-bahn/)**, which allows passengers to integrate Deutsche Bahn rail travel into their journey to or from an Emirates departure airport.
 
 At first glance, a simple recommendation system could still reason like this:
 
@@ -235,8 +232,6 @@ Passenger lives in Berlin
 That logic sounds reasonable.
 
 But for my real travel situation, it is not automatically the best recommendation.
-
----
 
 ## The Nearest Airport Is Not Necessarily the Most Convenient One
 
@@ -286,8 +281,7 @@ This is why a seemingly simple fact such as:
 BER is geographically closer
 ```
 
-can turn into a much more complex **Recommendation Situation**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md)
+can turn into a much more complex **[Recommendation Situation](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md)**.
 
 Geographical proximity alone does not answer questions such as:
 
@@ -302,8 +296,6 @@ Geographical proximity alone does not answer questions such as:
 For a passenger, convenience is therefore not simply a question of distance.
 
 It is the result of the entire travel context.
-
----
 
 ## Hamburg Is Farther Away — but Not Automatically More Difficult for Me
 
@@ -347,8 +339,7 @@ So what may look like additional travel time from an algorithmic perspective can
 
 ## This Is Where the Real GEO Problem Appears
 
-An AI agent can know **Rail&Fly**  
-(https://www.emirates.com/us/english/travel-partners/deutsche-bahn/)
+An AI agent can know **[Rail&Fly](https://www.emirates.com/us/english/travel-partners/deutsche-bahn/)**.
 
 It can know Emirates.
 
@@ -412,8 +403,6 @@ The fact is identical.
 The value is different.
 
 And that difference in value interpretation can change the recommendation.
-
----
 
 ## Why Real Passenger Experience Matters So Much
 
@@ -479,10 +468,7 @@ This is not about replacing internal teams with external observers.
 
 The perspectives provide different layers of knowledge.
 
-This is exactly where **Reality Validation**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Reality_Validation.md)
-
-becomes important in my GEO methodology.
+This is exactly where **[Reality Validation](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Reality_Validation.md)** becomes important in my GEO methodology.
 
 Real Customer Experience is not used simply to answer:
 
@@ -512,7 +498,6 @@ This is why real Passenger Experience is not merely testimonial material.
 In GEO, it can become analytical evidence.
 
 The important step is to translate that experience into structured knowledge that can later support a real Recommendation Relationship.
----
 
 ## From Passenger Experience to a Recommendation Relationship
 
@@ -540,31 +525,19 @@ Recommendation Situation
 Recommendation Relationship
 ```
 
-A **Customer Problem**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Customer_Problem.md)
-
-might be:
+A **[Customer Problem](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Customer_Problem.md)** might be:
 
 > Reaching the geographically nearest airport is expensive, stressful or difficult to plan reliably.
 
-A **Customer Goal**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Customer_Goal.md)
-
-might be:
+A **[Customer Goal](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Customer_Goal.md)** might be:
 
 > To travel to Dubai with the preferred airline while keeping the overall journey as predictable and low-stress as possible.
 
-From this, a **Recommendation Situation**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md)
-
-can emerge:
+From this, a **[Recommendation Situation](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md)** can emerge:
 
 > A Berlin-based passenger prefers Emirates and is willing to use a more distant departure airport if the total journey becomes more predictable, more comfortable or more valuable for that passenger.
 
-At this point, **Rail&Fly**  
-(https://www.emirates.com/us/english/travel-partners/deutsche-bahn/)
-
-takes on a very different meaning.
+At this point, **[Rail&Fly](https://www.emirates.com/us/english/travel-partners/deutsche-bahn/)** takes on a very different meaning.
 
 It is no longer only:
 
@@ -591,15 +564,9 @@ First, the airline needs to understand:
 - Which relationships are weak, missing or misinterpreted?
 - Which of those relationships are important enough to influence an actual recommendation?
 
-Only then does a **Knowledge Gap**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Gap.md)
+Only then does a **[Knowledge Gap](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Gap.md)** become visible.
 
-become visible.
-
-And only after that should a targeted **Knowledge Contribution**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Contribution.md)
-
-be created.
+And only after that should a targeted **[Knowledge Contribution](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Contribution.md)** be created.
 
 Content is therefore not the starting point.
 
@@ -637,127 +604,141 @@ It creates a knowledge base that explains not only **what an airline offers**, b
 
 That distinction is crucial for GEO.
 
----
+## Why This Becomes Even More Important with Personalised AI Agents
 
-## From Passenger Experience to a Recommendation Relationship
+Today, passengers still explicitly state many of their criteria themselves.
 
-In my GEO methodology, a real Passenger Experience is therefore not simply published as a story.
+They may search for:
 
-It is structured.
+> a direct flight from Berlin to Dubai
 
-The analytical path can look like this:
+or:
 
-```text
-Observation
-↓
-Customer Problem
-↓
-Customer Goal
-↓
-Feature / Service
-↓
-Experienced Benefit
-↓
-Trade-off
-↓
-Recommendation Situation
-↓
-Recommendation Relationship
-```
+> the cheapest business-class flight to Dubai.
 
-A **Customer Problem**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Customer_Problem.md)
+But a personalised AI agent may increasingly be able to consider parts of the user’s broader context.
 
-might be:
+It may know, depending on the system and the permissions available:
 
-> Reaching the geographically nearest airport is expensive, stressful or difficult to plan reliably.
+- preferred airlines;
+- comfort preferences;
+- price sensitivity;
+- willingness to use rail transport;
+- preferred departure times;
+- previous travel decisions;
+- tolerance for additional travel time;
+- preference for lower-stress journeys.
 
-A **Customer Goal**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Customer_Goal.md)
+The recommendation task then changes.
 
-might be:
+It is no longer simply:
 
-> To travel to Dubai with the preferred airline while keeping the overall journey as predictable and low-stress as possible.
-
-From this, a **Recommendation Situation**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md)
-
-can emerge:
-
-> A Berlin-based passenger prefers Emirates and is willing to use a more distant departure airport if the total journey becomes more predictable, more comfortable or more valuable for that passenger.
-
-At this point, **Rail&Fly**  
-(https://www.emirates.com/us/english/travel-partners/deutsche-bahn/)
-
-takes on a very different meaning.
-
-It is no longer only:
-
-> Emirates offers a rail service.
+> Which flight best matches this search query?
 
 It becomes:
 
-> For a specific passenger situation, this service can make another departure airport a realistic and attractive alternative.
+> **Which total journey best matches this particular person?**
 
-That is Recommendation Knowledge.
+For airlines, that creates a fundamentally different information requirement.
 
-## For Airlines, GEO Should Not Start with More Content
+It is no longer sufficient to ensure that AI knows:
 
-An airline could react to a case like this by simply publishing more articles about Rail&Fly.
+> We offer this service.
 
-For me, that would not yet be a proper GEO strategy.
+AI increasingly needs to understand:
 
-First, the airline needs to understand:
+> **For which passenger, in which situation, can this service change the optimal recommendation?**
 
-- Which real Passenger Situations exist?
-- Which services actually matter within those situations?
-- Which benefits are experienced by passengers but not clearly represented digitally?
-- What does AI already understand today?
-- Which relationships are weak, missing or misinterpreted?
-- Which of those relationships are important enough to influence an actual recommendation?
+This is one of the central future questions of Airline GEO.
 
-Only then does a **Knowledge Gap**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Gap.md)
+## This Is Exactly Where My GEO Methodology Starts
 
-become visible.
+When developing my GEO methodology, I distinguish between knowledge about **what a company offers** and knowledge about **when that company becomes the right recommendation**.
 
-And only after that should a targeted **Knowledge Contribution**  
-(https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Knowledge_Contribution.md)
+Real Passenger Experience is not used as a testimonial.
 
-be created.
-
-Content is therefore not the starting point.
-
-It is a targeted intervention designed to strengthen a missing or insufficient Recommendation Relationship.
-
-## From Individual Cases to Structured Airline Knowledge
-
-A single passenger case is not valuable because it automatically applies to every passenger.
-
-It is valuable because it can reveal a relationship that was previously invisible.
-
-That relationship can then be checked, validated and compared with other Passenger Situations.
-
-Over time, airlines can build structured knowledge around fields such as:
+It is used as a source for identifying relationships that may not yet be visible between:
 
 ```text
 Passenger Context
-Journey Stage
++
 Customer Problem
++
 Customer Goal
-Feature / Service
-Actual Experience
-Friction
-Benefit
-Trade-off
++
+Service
++
+Experienced Benefit
++
 Recommendation Situation
-AI Perception
-Recommendation Gap
-Supporting Evidence
 ```
 
-This creates something fundamentally different from a collection of reviews or travel stories.
+These relationships can then be compared with the existing **[Recommendation Graph Baseline](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Graph_Baseline.md)**.
 
-It creates a knowledge base that explains not only **what an airline offers**, but also **why that offer becomes recommendation-relevant in a specific passenger context**.
+This makes it possible to ask:
 
-That distinction is crucial for GEO.
+- Which relationships does AI already understand?
+- Which passenger situations are already represented?
+- Which relevant benefits remain disconnected from those situations?
+- Which recommendation relationships are weak or absent?
+- Which knowledge should be developed next?
+
+Over time, individual real Passenger Journeys can therefore contribute to a structured knowledge base that does not merely document **what an airline offers**, but helps explain **why that airline should be recommended in particular situations**.
+
+## How Airlines Can Apply This Methodology Operationally
+
+My role is the development of the GEO methodology, its analytical logic and the standards derived from it.
+
+The operational application of this methodology for companies is carried out through **[ki-geo-beratung.de](https://ki-geo-beratung.de)**.
+
+**ki-geo-beratung.de works according to the GEO methodology developed by Anna Trocka** and applies the corresponding GEO analysis and implementation processes operationally for companies.
+
+For an airline, such a process can develop from:
+
+```text
+Real Passenger Journey
+↓
+Reality Validation
+↓
+Structured Passenger Experience Knowledge
+↓
+AI Perception Analysis
+↓
+Recommendation Graph Baseline
+↓
+Recommendation Gaps
+↓
+Prioritised Knowledge Contributions
+↓
+GEO Content
+↓
+Monitoring
+```
+
+A single Passenger Journey is not valuable because it automatically represents every passenger.
+
+It is valuable because it can expose relationships that were previously invisible.
+
+Those relationships can then be systematically validated, structured and investigated across further Passenger Situations.
+
+This is how an individual real experience can become the starting point for a much larger airline knowledge system.
+
+## The Most Important Question for Airlines
+
+For me, the most important question is therefore not:
+
+> Does AI know that we offer Rail&Fly?
+
+The more important question is:
+
+> **Does AI understand for which passenger, and in which situation, Rail&Fly becomes valuable enough to change the choice of airline?**
+
+An AI agent can know the airline.
+
+It can know the service.
+
+It can even know the user.
+
+And the right recommendation can still be missing if the decisive relationships between those pieces of information have not been sufficiently developed.
+
+Making these relationships visible, verifiable and understandable for AI is, in my view, one of the central tasks of GEO.
