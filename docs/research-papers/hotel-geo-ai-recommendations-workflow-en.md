@@ -207,7 +207,7 @@ last_updated: 2026-09-03
 
 # How to Prepare Your Hotel for Future AI Recommendations
 
-**German version:** [LINK TO GERMAN VERSION]
+**German version:** [LINK TO GERMAN VERSION](https://ki-geo-insider.blogspot.com/2026/09/you-can-read-english-version-of-this.html?m=1)
 
 The way people search for, compare and choose hotels is changing quickly.
 
