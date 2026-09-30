@@ -60,3 +60,16 @@ terminology:
     url: "https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/GEO_Recommendation_Gap.md"
 ---
 
+## 1. Zweck des Dokuments
+
+Dieser Bericht untersucht, wie **Waldorf Astoria Dubai Palm Jumeirah** von AI-Systemen und innerhalb der digitalen Informationslandschaft wahrgenommen wird, in welchen konkreten [Recommendation Situations](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation.md) das Hotel als relevant erkannt und potenziell empfohlen werden kann und ob diese digitale Wahrnehmung durch das reale Hotelprodukt vor Ort tatsächlich bestätigt wird.
+
+Im Mittelpunkt steht damit nicht eine klassische Hotelbewertung und auch kein standardisierter Mystery-Guest-Check. Der Aufenthalt vor Ort dient als [On-Site Verification](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/On_Site_Verification.md) innerhalb des GEO-Audits.
+
+Ziel ist es zu überprüfen, ob die wesentlichen Erwartungen, die aus der Marke, der [AI and Digital Perception](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/AI_and_Digital_Perception.md) des konkreten Hotels und der verfügbaren digitalen Information entstehen, mit dem tatsächlich erlebbaren Produkt übereinstimmen. Dazu gehören insbesondere die für dieses Hotel relevanten Themen **Luxury, Service, Family Suitability, Tranquillity, Spa, Beach und Resort Experience**.
+
+Aus diesem Vergleich werden mögliche [GEO Recommendation Gaps](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/GEO_Recommendation_Gap.md) identifiziert, also relevante Abweichungen zwischen:
+
+**Brand Expectation → Digital Property Positioning → On-Site Product Reality.**
+
+Zusätzlich dokumentiert der Bericht relevante Guest-Experience-, Commercial- und Management-Potenziale, die während der On-Site Verification sichtbar wurden. Diese Erkenntnisse erweitern den praktischen Nutzen des Audits, stellen jedoch nicht dessen primären Untersuchungsgegenstand dar.
