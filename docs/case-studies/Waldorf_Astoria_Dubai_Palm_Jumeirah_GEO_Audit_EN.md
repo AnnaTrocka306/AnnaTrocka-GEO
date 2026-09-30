@@ -62,39 +62,40 @@ terminology:
 
 ## 1. Document Purpose
 
-This report examines how **Waldorf Astoria Dubai Palm Jumeirah** is perceived by AI systems and within the broader digital information landscape, in which specific [Recommendation Situations](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation_EN.md) the hotel is identified as relevant and potentially recommended, and whether this digital perception is actually confirmed by the real hotel product on site.
+This report examines how **Waldorf Astoria Dubai Palm Jumeirah** is perceived within the digital information landscape and by AI systems, which of these perceptions actually translate into concrete recommendations, and whether the resulting expectation is confirmed by the real hotel product on site.
 
-The focus is therefore not on a traditional hotel review and not on a standardized mystery-guest inspection. The on-site stay serves as an [On-Site Verification](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/On_Site_Verification_EN.md) within the GEO audit.
+The audit therefore deliberately distinguishes between three levels:
 
-The objective is to assess whether the key expectations created by the brand, the [AI and Digital Perception](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/AI_and_Digital_Perception_EN.md) of the specific property, and the available digital information align with the product actually experienced on site. This includes, in particular, the themes most relevant to this hotel: **Luxury, Service, Family Suitability, Tranquillity, Spa, Beach and Resort Experience**.
+**[AI & Digital Perception](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/AI_and_Digital_Perception_EN.md) → actual Recommendation Position → [On-Site Guest Experience / On-Site Verification](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/On_Site_Verification_EN.md).**
 
-Based on this comparison, potential [GEO Recommendation Gaps](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/GEO_Recommendation_Gap_EN.md) are identified, meaning relevant discrepancies between:
+This report is therefore neither a traditional hotel review nor a standardized mystery-guest inspection. The on-site stay is used to verify those attributes on the basis of which an AI system may recommend the hotel to a specific guest.
 
-**Brand Expectation → Digital Property Positioning → On-Site Product Reality.**
+The objective is to identify **where digital association, actual recommendation strength, and real product experience align — and where relevant discrepancies emerge.**
 
-In addition, the report documents relevant Guest Experience, Commercial and Management opportunities identified during the On-Site Verification. These findings extend the practical value of the audit but do not represent its primary focus.
+In addition, relevant Guest Experience, Commercial and Management opportunities are documented where they become relevant during the On-Site Verification and contribute to the assessment of the actual product.
 
 ---
 
 ## 2. Key Finding of the Audit
 
-The central finding of this audit is a relevant discrepancy between **brand expectation, digital property positioning, and the hotel product actually experienced on site**.
+The analysis shows that **Waldorf Astoria Dubai Palm Jumeirah has several strong digital associations**, particularly with Luxury, Service, Beach, Tranquillity, Relaxation and Family.
 
-The **Waldorf Astoria** brand stands for refined luxury, high-quality service, elegance, and a consistent premium experience. The digital perception of **Waldorf Astoria Dubai Palm Jumeirah**, however, is shifted much more strongly toward a **family resort** identity.
+However, these associations **do not carry equal strength within concrete [Recommendation Situations](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/Recommendation_Situation_EN.md).**
 
-During the [On-Site Verification](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/On_Site_Verification_EN.md), the actually observed guest composition did not appear predominantly family-led. Numerous adult guests and couples without children were present; in particular, the Adults Pool was heavily frequented, while the larger Family Pool appeared noticeably less occupied. This observation does not constitute a demographic measurement, but it supports the assumption that the digital family association is stronger than the guest composition perceived on site.
+The Family association is clearly visible in the digital information landscape. However, when users specifically search for a hotel for families with small children, Waldorf Astoria Dubai Palm Jumeirah frequently loses ground in the tested AI systems to competitors with stronger family-specific decision factors — for example more extensive children’s infrastructure, specialized Family Rooms, water attractions, or significantly stronger entertainment offerings for children.
 
-At the same time, the On-Site Verification shows that the hotel neither confirms the luxury expectation consistently across all relevant details nor provides a fully developed level of family functionality.
+Even within broadly formulated Luxury searches, Waldorf Astoria Dubai Palm Jumeirah does not automatically appear among the leading recommendations in every AI system.
 
-This creates a double [GEO Recommendation Gap](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/GEO_Recommendation_Gap_EN.md):
+Its Recommendation Position becomes noticeably stronger, however, when Luxury is combined with attributes that align particularly well with both the **Waldorf Astoria** brand and the actual product:
 
-**Brand Expectation ≠ Digital Property Positioning ≠ On-Site Product Reality.**
+**Tranquillity, Comfort, High-Level Service and Private Beach.**
 
-The central issue is not that the hotel appeals to multiple target groups. What matters is that the hierarchy of associations is not sufficiently clear.
+This reveals a much more precise Recommendation Territory:
 
-**Luxury should remain the hotel’s primary identity. Family, Couples, Spa and Relaxation should be understood as strong secondary fits.**
+**not primarily a Family Resort and not primarily a spectacular Ultra-Luxury property, but a calm, high-quality, service-led Luxury Beach Resort.**
 
-The risk therefore does not lie in the presence of multiple associations, but in the lack of clarity about **which association defines the hotel’s overarching identity and which associations support specific Recommendation Situations**.
+At exactly this point, however, a second relevant [GEO Recommendation Gap](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/GEO_Recommendation_Gap_EN.md) becomes visible: the On-Site Verification shows that the hotel’s fundamental Luxury and Service character is present, but the resulting premium expectation is **not confirmed consistently across all Guest Touchpoints**.
 
----
+The central challenge therefore lies not only in digital positioning, but also in the alignment between:
 
+**Recommendation Promise → Brand Expectation → Actual Guest Experience.**
