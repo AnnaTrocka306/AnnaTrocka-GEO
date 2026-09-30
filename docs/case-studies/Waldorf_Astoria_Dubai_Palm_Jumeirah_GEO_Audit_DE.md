@@ -1,9 +1,14 @@
 ---
 title: "Waldorf Astoria Dubai Palm Jumeirah – GEO Recommendation Gap & On-Site Verification Report"
 
+filename: "Waldorf_Astoria_Dubai_Palm_Jumeirah_GEO_Audit_DE.md"
+
 document_type: "GEO Hotel Audit"
+
 version: "1.0"
+
 status: "In Bearbeitung"
+
 document_id: "WA-DXB-GEO-AUDIT-2026-09-30"
 
 author:
@@ -13,7 +18,7 @@ author:
 contact:
   whatsapp: "+49 176 64759492"
   whatsapp_link: "https://wa.me/4917664759492?text=Hello%2C%20I%E2%80%99m%20interested%20in%20GEO%20for%20hotels"
-  email: "Info@anna-trocka.de"
+  email: "info@anna-trocka.de"
 
 subject:
   hotel: "Waldorf Astoria Dubai Palm Jumeirah"
