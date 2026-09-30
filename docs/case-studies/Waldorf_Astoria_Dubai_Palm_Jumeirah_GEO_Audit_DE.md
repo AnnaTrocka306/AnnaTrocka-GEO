@@ -123,3 +123,74 @@ Das strategische Ziel besteht daher nicht darin, die Family-Assoziation von Wald
 **Luxury als primäre Identität — Family, Couples, Spa und Relaxation als starke, klar definierte sekundäre Recommendation Fits.**
 
 Damit kann das Hotel in AI-basierten Empfehlungssystemen präziser eingeordnet werden, ohne relevante Zielgruppen oder bestehende Produktstärken künstlich zu verengen.
+
+---
+
+## 4. Audit-Logik und Methodik
+
+Der Audit folgt der **von Anna Trocka entwickelten eigenen GEO-Methodik** und verbindet die digitale Analyse eines Hotels mit der strukturierten Überprüfung des realen Produkts vor Ort.
+
+Die grundlegende Audit-Logik lautet:
+
+**Pre-Stay AI & Digital Audit → On-Site Verification → Verification of Decisive Attributes → GEO Gap Analysis → Recommendations**
+
+### 4.1 Pre-Stay AI & Digital Audit
+
+Vor dem Aufenthalt wird untersucht, wie das Hotel innerhalb der digitalen Informationslandschaft und in AI-basierten Systemen verstanden und eingeordnet wird.
+
+Dabei wird insbesondere analysiert:
+
+- welche Eigenschaften besonders stark mit dem Hotel verbunden sind;
+- welche Zielgruppen und Nutzungskontexte erkennbar sind;
+- in welchen Recommendation Situations das Hotel als relevant erscheint;
+- welche Unterschiede zwischen Brand Association und Property Association bestehen;
+- welche Attribute eindeutig, schwach, widersprüchlich oder möglicherweise veraltet dargestellt werden;
+- welche Erwartungen aus diesen digitalen Informationen für einen potenziellen Gast entstehen.
+
+Diese Analyse bildet die digitale Ausgangsbasis des Audits.
+
+### 4.2 On-Site Verification
+
+Im nächsten Schritt wird das Hotel als realer Gast erlebt.
+
+Die [On-Site Verification](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/On_Site_Verification.md) dient dazu, zu überprüfen, ob die digital erkennbaren Eigenschaften und Erwartungen im tatsächlichen Hotelprodukt bestätigt werden.
+
+Dabei geht es nicht um eine allgemeine Mystery-Guest-Bewertung, sondern gezielt um die Frage:
+
+**Entspricht das reale Produkt dem Bild, aufgrund dessen ein AI-System dieses Hotel einem Gast empfehlen könnte?**
+
+### 4.3 Verification of Decisive Attributes
+
+Besondere Aufmerksamkeit erhalten diejenigen Eigenschaften, die für eine konkrete Empfehlung entscheidend sein können.
+
+Ein Hotel kann beispielsweise allgemein als Luxury Resort, Family Hotel oder Spa Hotel erkannt werden. Für die tatsächliche Empfehlungsrelevanz können jedoch wesentlich spezifischere Merkmale ausschlaggebend sein — etwa Ruhe, Adults-Pool, Family Functionality, Zimmerausstattung, Dining Experience, Beach Experience oder bestimmte Serviceleistungen.
+
+Diese entscheidenden Attribute werden deshalb nicht nur digital identifiziert, sondern soweit möglich auch vor Ort überprüft.
+
+### 4.4 GEO Gap Analysis
+
+Anschließend werden digitale Erwartung und reale Produkterfahrung miteinander verglichen.
+
+Die zentrale Vergleichslogik lautet:
+
+**Brand Expectation → Digital Property Positioning → On-Site Product Reality**
+
+Wo zwischen diesen Ebenen relevante Abweichungen entstehen, werden mögliche [GEO Recommendation Gaps](https://github.com/AnnaTrocka306/AnnaTrocka-GEO/blob/main/docs/knowledge-base/Knowledge_Dictionary/GEO_Recommendation_Gap.md) identifiziert.
+
+Dabei wird unterschieden, ob ein Problem hauptsächlich auf der digitalen Informationsebene, im tatsächlichen Produkt oder in der Verbindung zwischen beiden Ebenen entsteht.
+
+### 4.5 Ableitung von Empfehlungen
+
+Die Empfehlungen des Audits können deshalb auf unterschiedlichen Ebenen ansetzen.
+
+Je nach Befund kann es notwendig sein:
+
+- bestehende digitale Informationen zu präzisieren oder zu korrigieren;
+- relevante, aber digital zu schwach erkennbare Produkteigenschaften stärker abzubilden;
+- die Hierarchie bestehender Assoziationen klarer zu strukturieren;
+- einen tatsächlichen Produkt- oder Guest-Experience-Gap zu schließen;
+- oder eine starke reale Leistung besser mit den passenden Recommendation Situations zu verbinden.
+
+Ziel ist nicht, ein künstliches digitales Bild des Hotels zu erzeugen.
+
+**Ziel ist eine möglichst klare Übereinstimmung zwischen dem, wofür das Hotel digital verstanden und empfohlen wird, und dem, was der Gast vor Ort tatsächlich erleben kann.**
