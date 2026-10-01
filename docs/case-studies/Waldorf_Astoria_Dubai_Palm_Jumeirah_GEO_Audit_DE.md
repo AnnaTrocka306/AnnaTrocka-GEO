@@ -272,7 +272,7 @@ Jeder Punkt zeigt kurz und nachvollziehbar:
 
 Damit wird sichtbar, **was konkret nicht vollständig zur erwarteten Positionierung und zum Qualitätsversprechen des Hotels passt, warum dies relevant ist und welche Verbesserung empfohlen wird**.
 
-## 6.1 Foyer & Arrival Experience
+### 6.1 Foyer & Arrival Experience
 
 #### Observation
 
