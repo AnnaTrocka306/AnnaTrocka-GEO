@@ -274,7 +274,7 @@ Damit wird sichtbar, **was konkret nicht vollständig zur erwarteten Positionier
 
 ## 6.1 Foyer & Arrival Experience
 
-### Observation
+#### Observation
 
 Der erste Eindruck des **Waldorf Astoria Dubai Palm Jumeirah** ist grundsätzlich sehr positiv. Das Foyer wirkt großzügig, elegant und hochwertig. Auch der organisierte Flughafentransfer war gut: klimatisierter Wartebereich, Wasserangebot und vollständige Gepäckübernahme.
 
@@ -284,7 +284,7 @@ Gleichzeitig waren deutlich erkennbare künstliche Blumenarrangements vorhanden.
 
 Zusätzlich fielen im öffentlich sichtbaren Bereich stark mit Fingerabdrücken versehene Aufzugtasten sowie ein sichtbarer Fleck an der Decke im Bereich des Aufzugs auf.
 
-### Gap
+#### Gap
 
 Für ein **5-Sterne-Luxushotel** fehlt damit an mehreren unmittelbar sichtbaren Stellen die konsequente Premium-Ausführung:
 
@@ -295,7 +295,7 @@ Für ein **5-Sterne-Luxushotel** fehlt damit an mehreren unmittelbar sichtbaren 
 
 Die hochwertige Architektur und Einrichtung kommunizieren Luxury sehr überzeugend, werden jedoch nicht in jedem Detail durch Hospitality, Pflege und Präsentation bestätigt.
 
-### Impact
+#### Impact
 
 Gerade die ersten Minuten im Hotel prägen die Wahrnehmung des gesamten Aufenthalts. Kleine sichtbare Unstimmigkeiten können deshalb überproportional stark wirken.
 
