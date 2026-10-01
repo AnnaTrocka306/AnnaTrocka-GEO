@@ -487,6 +487,58 @@ Gerade bei einem Aufenthalt von fast zwei Wochen betrifft dies nicht nur ein ein
 
 Es entsteht damit ein **F&B Product Value & Revenue Capture Gap** zwischen dem grundsätzlich hohen Ausgabepotenzial der Gäste und dem Umsatz, den das Hotel daraus tatsächlich innerhalb des eigenen Resorts realisiert.
 
+### 6.6 Housekeeping & Quality Control
+
+#### Observation
+
+Das Hotel machte insgesamt **keinen ungepflegten oder schmutzigen Eindruck**. Die Mitarbeitenden im Housekeeping waren sichtbar aktiv und arbeiteten kontinuierlich.
+
+Während des Aufenthalts zeigten sich jedoch wiederholt kleinere Details, die durch die reguläre Reinigung offenbar nicht zuverlässig erfasst wurden. Dazu gehörten Flecken an seitlichen Flächen im Badezimmer, Staub bzw. Verschmutzungen in weniger offensichtlichen Bereichen der Aufzüge sowie Situationen, in denen benutztes Geschirr abgeräumt wurde, der darunterliegende Tisch jedoch anschließend nicht gereinigt wurde.
+
+Gerade letzteres deutet weniger auf mangelnde Arbeitsleistung einzelner Mitarbeitender als auf eine mögliche Schnittstelle zwischen verschiedenen Zuständigkeiten hin: Das Geschirr wird entfernt, die vollständige Wiederherstellung des Guest Touchpoints bleibt jedoch teilweise offen.
+
+#### Gap
+
+Der zentrale Gap liegt nicht in der grundsätzlichen Sauberkeit des Hotels, sondern in der **Tiefe und Konsistenz der Qualitätskontrolle**.
+
+In einem 5-Sterne-Luxushotel müssen neben den offensichtlich sichtbaren Flächen auch weniger auffällige Bereiche, technische Details und Übergaben zwischen verschiedenen Abteilungen zuverlässig kontrolliert werden.
+
+Damit entsteht ein **Luxury Cleanliness & Quality Control Gap**.
+
+#### Impact
+
+Im Luxury Segment entsteht Sauberkeit nicht nur dadurch, dass ein Raum grundsätzlich sauber ist. Entscheidend ist, dass der Gast möglichst **keine Stelle entdeckt, an der die Qualitätskontrolle sichtbar endet**.
+
+Mehrere kleine Auffälligkeiten an unterschiedlichen Orten können deshalb stärker wirken als ein einzelner Mangel und den Eindruck erzeugen, dass die Kontrolle nicht überall mit derselben Konsequenz erfolgt.
+
+---
+
+### 6.7 Guest Transportation & Brand Consistency
+
+#### Observation
+
+Der Shuttle-Service zum **Dubai Mall** ist grundsätzlich ein sinnvoller und gastfreundlicher Bestandteil des Hotelangebots und bietet Gästen aufgrund der Lage auf Palm Jumeirah einen praktischen Zugang zu Shopping, Gastronomie und weiteren Aktivitäten.
+
+Die konkrete Fahrzeugwahl entsprach jedoch nur eingeschränkt dem sonstigen Premium-Eindruck des Hotels.
+
+Der eingesetzte schwarze Kleinbus wirkte äußerlich eher wie ein funktionaler gewerblicher Gruppen- oder Mitarbeitertransporter als wie ein Shuttle eines 5-Sterne-Luxushotels. Der Innenraum war angenehmer als der äußere Eindruck und verfügte über Klimaanlage. Die Fahrt selbst wurde jedoch als relativ unruhig und deutlich ruckelnd wahrgenommen.
+
+#### Gap
+
+Hier entsteht ein **Brand Consistency Gap**.
+
+Die Dienstleistung selbst bietet einen klaren Mehrwert, wird jedoch über einen Guest Touchpoint ausgeführt, dessen visuelle Wirkung und Fahrkomfort nicht vollständig auf dem Niveau des übrigen Waldorf-Astoria-Erlebnisses liegen.
+
+Bei einer Luxury Brand endet die Markenerfahrung nicht an der Hoteltür.
+
+#### Impact
+
+Ein grundsätzlich positiver Zusatzservice verliert dadurch einen Teil seiner Premium-Wirkung.
+
+Gerade bei Gästen, die Waldorf Astoria wegen **Comfort, Service und Luxury** gewählt haben, kann ein funktional wirkendes Transportmittel einen deutlichen Kontrast zum Hotel selbst erzeugen und die Konsistenz der Brand Experience unterbrechen.
+
+---
+
 ### 6.8 Interior, Art & Curatorial Experience
 
 #### Observation
@@ -508,3 +560,25 @@ Kunst kann ein Luxury Hotel deutlich aufwerten, wenn sie als Teil einer klar kur
 Die Wirkung eines Luxury Interiors entsteht nicht nur durch hochwertige Materialien, sondern auch durch Atmosphäre und Inszenierung.
 
 Wenn Kunst stärker als Verkaufsobjekt denn als Teil des Gesamterlebnisses wahrgenommen wird, kann dies die Exklusivität und Ruhe der Raumwirkung reduzieren.
+
+---
+
+### 6.9 On-Site Gap Summary
+
+Die On-Site Verification zeigt insgesamt **kein grundsätzlich schwaches Hotelprodukt**. Im Gegenteil: Waldorf Astoria Dubai Palm Jumeirah verfügt über starke Voraussetzungen – großzügige Räume, hochwertige Architektur, einen attraktiven Private Beach, eine ruhige Resort-Atmosphäre und vielfach sehr guten persönlichen Service.
+
+Die identifizierten Gaps entstehen vor allem dort, wo diese grundsätzlich starke Basis **nicht in jedem Detail mit derselben Konsequenz fortgeführt wird**.
+
+Über die verschiedenen Bereiche hinweg zeigen sich insbesondere folgende wiederkehrende Muster:
+
+- ein **Luxury Detail Consistency Gap** zwischen hochwertigem Gesamtprodukt und einzelnen sichtbaren Details;
+- ein **Maintenance & Preventive Quality Control Gap** bei Zimmern, Pool, Liegen und weniger offensichtlichen Bereichen;
+- ein **Functional Comfort Gap** bei Internet, Ergonomie, Poolnutzung und Residential Functionality;
+- ein **Climate Suitability Gap** bei der Auswahl von Badezimmerkosmetik für ein High-UV Beach Resort;
+- ein **F&B Product Value & Revenue Capture Gap**, durch den vorhandene Zahlungsbereitschaft teilweise außerhalb des Hotels realisiert wurde;
+- ein **Digital & AI Perception Gap**, insbesondere dort, wo veraltete Informationen – wie bei Social und Heinz Beck – nicht mehr eindeutig mit dem heutigen Produkt übereinstimmen;
+- sowie ein übergreifender **Brand Consistency Gap** an Touchpoints, an denen der Gast zwar einen funktionierenden Service erhält, dieser jedoch nicht vollständig das erwartete Waldorf-Astoria-Niveau widerspiegelt.
+
+Der zentrale Befund der On-Site Verification lautet damit:
+
+**Das Luxury-Versprechen des Hotels ist grundsätzlich vorhanden und in vielen Bereichen klar erlebbar. Die größte Verbesserungschance liegt nicht in einer vollständigen Neupositionierung des Produkts, sondern in einer konsequenteren Abstimmung von Details, Funktionalität, Qualitätskontrolle und aktueller digitaler Darstellung mit dem bereits bestehenden Premium-Niveau.**
