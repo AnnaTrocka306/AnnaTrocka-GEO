@@ -272,3 +272,33 @@ Jeder Punkt zeigt kurz und nachvollziehbar:
 
 Damit wird sichtbar, **was konkret nicht vollständig zur erwarteten Positionierung und zum Qualitätsversprechen des Hotels passt, warum dies relevant ist und welche Verbesserung empfohlen wird**.
 
+## 6.1 Foyer & Arrival Experience
+
+### Observation
+
+Der erste Eindruck des **Waldorf Astoria Dubai Palm Jumeirah** ist grundsätzlich sehr positiv. Das Foyer wirkt großzügig, elegant und hochwertig. Auch der organisierte Flughafentransfer war gut: klimatisierter Wartebereich, Wasserangebot und vollständige Gepäckübernahme.
+
+Im Lobbybereich fehlte jedoch ein sichtbar inszenierter **Welcome Refreshment Point** mit gekühltem Wasser, frischem Obst, kleinen hochwertigen Süßigkeiten oder Gebäck für Gäste während des Check-ins.
+
+Gleichzeitig waren deutlich erkennbare künstliche Blumenarrangements vorhanden. Der schön gestaltete Bereich für **Arabic Coffee** wirkte zunächst wie ein besonderes Hospitality Element, wurde während des Aufenthalts jedoch nicht als aktiver Service wahrgenommen.
+
+Zusätzlich fielen im öffentlich sichtbaren Bereich stark mit Fingerabdrücken versehene Aufzugtasten sowie ein sichtbarer Fleck an der Decke im Bereich des Aufzugs auf.
+
+### Gap
+
+Für ein **5-Sterne-Luxushotel** fehlt damit an mehreren unmittelbar sichtbaren Stellen die konsequente Premium-Ausführung:
+
+- künstliche statt frischer Blumen;
+- kein hochwertig inszeniertes Welcome-Angebot mit Getränken und kleinen Erfrischungen;
+- ein vorhandener Arabic-Coffee-Bereich ohne erkennbare aktive Funktion;
+- einzelne sichtbare Sauberkeits- und Maintenance-Details im öffentlichen Bereich.
+
+Die hochwertige Architektur und Einrichtung kommunizieren Luxury sehr überzeugend, werden jedoch nicht in jedem Detail durch Hospitality, Pflege und Präsentation bestätigt.
+
+### Impact
+
+Gerade die ersten Minuten im Hotel prägen die Wahrnehmung des gesamten Aufenthalts. Kleine sichtbare Unstimmigkeiten können deshalb überproportional stark wirken.
+
+Besonders ein dekorativ vorbereitetes, aber nicht genutztes Hospitality Element kann beim Gast den Eindruck erzeugen, dass ein ursprünglich vorgesehenes Premium-Angebot nicht mehr aktiv betrieben wird.
+
+Damit entsteht bereits im Arrival-Bereich ein erster **Luxury Detail Consistency Gap** zwischen der hochwertigen visuellen Positionierung des Hotels und einzelnen tatsächlich erlebbaren Details.
