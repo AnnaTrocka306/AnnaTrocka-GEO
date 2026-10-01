@@ -486,3 +486,25 @@ Damit geht es nicht um fehlende Zahlungsbereitschaft, sondern um **nicht ausgesc
 Gerade bei einem Aufenthalt von fast zwei Wochen betrifft dies nicht nur ein einzelnes Dinner, sondern potenziell zahlreiche Frühstücke, Lunches, Dinner, Getränke und spontane Bestellungen.
 
 Es entsteht damit ein **F&B Product Value & Revenue Capture Gap** zwischen dem grundsätzlich hohen Ausgabepotenzial der Gäste und dem Umsatz, den das Hotel daraus tatsächlich innerhalb des eigenen Resorts realisiert.
+
+### 6.8 Interior, Art & Curatorial Experience
+
+#### Observation
+
+Die Innenarchitektur des Hotels ist hochwertig und elegant. Gleichzeitig wirkten einzelne Bereiche vergleichsweise zurückhaltend dekoriert; natürliche Pflanzen, Blumen oder dezente textile Elemente könnten die Atmosphäre stärker beleben.
+
+Auffällig war außerdem die Präsentation moderner Kunstwerke mit deutlich sichtbaren Verkaufspreisen von mehreren Tausend Euro, teilweise bis etwa **10.000 Euro**.
+
+Dadurch verschob sich die Wahrnehmung teilweise von der ästhetischen Wirkung des Kunstwerks hin zu Material, Herstellung und Preis. Bei einzelnen Objekten entstand dadurch eher ein kommerzieller als ein kuratorischer Eindruck.
+
+#### Gap
+
+Hier entsteht ein **Luxury Atmosphere & Curatorial Consistency Gap**.
+
+Kunst kann ein Luxury Hotel deutlich aufwerten, wenn sie als Teil einer klar kuratierten Gesamtwelt wahrgenommen wird. Stark sichtbare Verkaufspreise können diesen Effekt schwächen und die Aufmerksamkeit vom Erlebnis auf den Verkaufswert lenken.
+
+#### Impact
+
+Die Wirkung eines Luxury Interiors entsteht nicht nur durch hochwertige Materialien, sondern auch durch Atmosphäre und Inszenierung.
+
+Wenn Kunst stärker als Verkaufsobjekt denn als Teil des Gesamterlebnisses wahrgenommen wird, kann dies die Exklusivität und Ruhe der Raumwirkung reduzieren.
