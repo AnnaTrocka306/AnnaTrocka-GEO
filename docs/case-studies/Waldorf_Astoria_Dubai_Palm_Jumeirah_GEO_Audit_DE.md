@@ -380,3 +380,51 @@ Daraus darf ausdrücklich **nicht** abgeleitet werden, dass Aesop-Produkte Hautk
 **Bei einem Luxury Resort mit hoher UV-Belastung sollte die Auswahl der Standardkosmetik nicht nur marken-, sondern auch klima- und nutzungsspezifisch geprüft werden.**
 
 Damit entsteht ein **Climate Suitability Gap** zwischen einer grundsätzlich hochwertigen Amenity-Auswahl und der besonderen Nutzungssituation eines sonnintensiven Beach Resorts.
+
+### 6.4 Pool, Beach & Outdoor Guest Experience
+
+#### Observation
+
+Der Pool- und Strandbereich des **Waldorf Astoria Dubai Palm Jumeirah** passt grundsätzlich sehr gut zur ruhigen Resort-Atmosphäre des Hotels. Während des Aufenthalts wurden jedoch mehrere Punkte festgestellt, die Komfort, Pflegezustand und teilweise auch die Sicherheit der Outdoor-Bereiche beeinträchtigten.
+
+Der **Adults-only Pool** war wiederholt stark ausgelastet bzw. überfüllt. Gleichzeitig war dieser Bereich während des Aufenthalts der einzige Pool mit deutlich kühlerem und bei den hohen Außentemperaturen spürbar erfrischenderem Wasser. Zusätzlich sorgte die umliegende Vegetation für mehr natürlichen Schatten.
+
+Diese Kombination beeinflusste auch die eigene Poolwahl unmittelbar: Der Adults-only Pool wurde gerade wegen der kühleren Wassertemperatur und der schattigeren Umgebung bevorzugt.
+
+Auffällig war gleichzeitig, dass der deutlich größere zentrale Pool, der auch von Familien mit Kindern genutzt wurde, zeitweise wesentlich weniger frequentiert war. Sowohl dort als auch im Meer wurde das Wasser während des Aufenthalts als sehr warm wahrgenommen.
+
+Damit erscheint ein Zusammenhang zwischen **Wassertemperatur, Schattenangebot und Gästeverteilung** plausibel. Die hohe Auslastung des Adults-only Pools könnte somit nicht ausschließlich mit seiner Erwachsenenpositionierung, sondern auch mit dem dort angenehmeren Mikroklima zusammengehangen haben. Eine direkte Kausalität für das Verhalten aller Gäste wurde im Rahmen des Audits nicht überprüft.
+
+Am Adults-only Pool waren außerdem an der oberen Beckenkante bzw. an der in das Wasser übergehenden Beckenwand einzelne Fliesen sichtbar auseinandergegangen oder verschoben. In den entstandenen Zwischenräumen waren bereits Pflanzenwurzeln sichtbar. Die technische Ursache wurde im Rahmen der On-Site Verification nicht untersucht.
+
+Auch im Strandbereich bestanden Unterschiede im Zustand und in der Ausführung der Liegen. Unterschiedliche Matratzen und Designs erzeugten kein vollständig einheitliches Premium-Erscheinungsbild. Bei einigen Liegen ließ sich die Rückenlehne zudem nicht komfortabel in einer mittleren Position einstellen.
+
+Besonders relevant war eine beschädigte Liege, bei deren Nutzung die Sitzfläche nachgab und die Nutzerin teilweise in die Konstruktion einsank. Dieselbe beschädigte Liege befand sich auch mehrere Tage später noch im Strandbereich und wurde erst nach einem erneuten Hinweis an einen Mitarbeiter unmittelbar identifiziert. Bei der Suche nach einer funktionierenden und komfortablen Liege mussten mehrere Liegen auf sehr heißem Sand geprüft werden.
+
+Im Meer wurden außerdem an mindestens zwei Stellen ältere Seile bzw. Elemente einer früheren Abgrenzung unter Wasser wahrgenommen. Der unerwartete Kontakt mit diesen nicht sofort sichtbaren Elementen führte bei beiden Gästen zu Verunsicherung.
+
+Für erwachsene Gäste, die nicht oder nur unsicher schwimmen, waren zudem keine einfach erkennbaren praktischen Schwimmhilfen sichtbar. Die am Strand angebotenen aufblasbaren Produkte waren begrenzt und wirkten eher wie Freizeitartikel als wie unkomplizierte Unterstützung für unsichere Schwimmer.
+
+#### Gap
+
+Im Pool- und Strandbereich zeigen sich mehrere miteinander verbundene Gaps.
+
+Beim Adults-only Pool besteht ein möglicher **Pool Distribution & Tranquillity Gap**. Wenn bei sehr hohen Außentemperaturen nur ein Pool gleichzeitig deutlich kühleres Wasser und mehr natürlichen Schatten bietet, kann sich die Nachfrage unabhängig von der eigentlichen Zielgruppenfunktion auf diesen Bereich konzentrieren.
+
+Dadurch kann der Adults-only Pool einen Teil seiner Funktion als ruhiger Rückzugsbereich verlieren, obwohl im größeren Hauptpool gleichzeitig freie Kapazität vorhanden ist.
+
+Die sichtbaren Veränderungen an der Beckenkonstruktion sowie die beschädigte, über mehrere Tage nicht entfernte Liege weisen zusätzlich auf einen **Maintenance & Preventive Quality Control Gap** hin.
+
+Die unterschiedlichen Liegen, eingeschränkte Verstellbarkeit und uneinheitliche Ausstattung betreffen darüber hinaus die Konsistenz des Luxury Product.
+
+Die unter Wasser verbliebenen älteren Begrenzungselemente sowie die fehlenden klar erkennbaren einfachen Schwimmhilfen für Erwachsene betreffen schließlich die Vorhersehbarkeit, Sicherheit und funktionale Nutzbarkeit der Badeumgebung.
+
+#### Impact
+
+Pool und Strand gehören bei einem Beach Resort zu den zentralen Gründen für die Hotelwahl. Gerade bei einer Positionierung über **Tranquillity, Comfort, Private Beach und Luxury** müssen diese Bereiche deshalb nicht nur attraktiv aussehen, sondern auch zuverlässig, gepflegt und komfortabel funktionieren.
+
+Ein überfüllter Adults-only Pool schwächt unmittelbar das erwartete Ruhe-Erlebnis. Gleichzeitig zeigt die unterschiedliche Nutzung der beiden Pools, dass nicht nur deren Zielgruppenpositionierung, sondern auch Faktoren wie Wassertemperatur und Schatten die tatsächliche Gästeverteilung beeinflussen können.
+
+Sichtbare Veränderungen an der Beckenkonstruktion, ein nicht rechtzeitig erkannter beschädigter Liegestuhl und unerwartete Elemente unter Wasser können darüber hinaus das Vertrauen in die laufende Qualitäts- und Sicherheitskontrolle beeinträchtigen.
+
+Damit entsteht im Outdoor-Bereich ein **Tranquillity, Functional Comfort, Maintenance & Safety Consistency Gap** zwischen der grundsätzlich hochwertigen Resort-Positionierung und einzelnen Elementen der tatsächlich erlebten Pool- und Beach Experience.
