@@ -352,19 +352,13 @@ The **Aesop products** provided in the bathroom are generally well aligned with 
 
 However, in a resort located in Dubai, the suitability of bathroom amenities should be assessed not only in terms of brand positioning and product quality, but also in relation to the local climate and the way guests are likely to use the products.
 
-The provided **Aesop Rind Concentrate Body Balm** contains, among other ingredients, Orange Oil, Grapefruit Peel Oil, Lemon Peel Oil, d-Limonene, Citral and Linalool. Aesop itself describes the product as citrus-based and recommends its use particularly after sun exposure.
+The provided **Aesop Rind Concentrate Body Balm** contains, among other ingredients, Orange Oil, Grapefruit Peel Oil, Lemon Peel Oil, d-Limonene, Citral and Linalool. Aesop itself describes the product as citrus-based and recommends its use particularly after sun exposure ([Aesop – Rind Concentrate Body Balm](https://www.aesop.com/hand-body/body-balms-oils/rind-concentrate-body-balm/9319944030716.html)).
 
-[Source: Aesop – Rind Concentrate Body Balm]
+From a safety perspective, citrus-derived oils require additional consideration in connection with sun exposure. The **U.S. Food and Drug Administration (FDA)** specifically notes that some citrus oils used in cosmetics may be harmful when applied to skin that is subsequently exposed to sunlight ([U.S. FDA – Aromatherapy](https://www.fda.gov/cosmetics/cosmetic-products/aromatherapy)).
 
-From a safety perspective, citrus-derived oils require additional consideration in connection with sun exposure. The **U.S. Food and Drug Administration (FDA)** specifically notes that certain citrus oils can be harmful in cosmetics, particularly when applied to skin that is exposed to the sun.
+The **European Commission Scientific Committee on Consumer Products** has also evaluated furocoumarins in cosmetics. Its scientific opinion states that several furocoumarins are phototoxic and that these substances may occur in citrus oils, including lemon and grapefruit oils. The document also addresses photomutagenic and photocarcinogenic properties associated with certain furocoumarins in combination with ultraviolet radiation ([European Commission – Opinion on Furocoumarins in Cosmetic Products](https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_036.pdf)).
 
-[Source: U.S. FDA – Aromatherapy]
-
-The **European Commission Scientific Committee on Consumer Products** has also assessed furocoumarins in cosmetics. Its scientific opinion states that several furocoumarins have been recognized as phototoxic and notes that furocoumarins may occur in citrus oils, including grapefruit and lemon oils. The Committee also recognizes photomutagenicity and photocarcinogenicity as relevant concerns associated with certain furocoumarins in combination with ultraviolet radiation.
-
-[Source: European Commission – Scientific Committee on Consumer Products: Opinion on Furocoumarins in Cosmetic Products]
-
-At the same time, the publicly available ingredient list of the specific Aesop product does **not** establish that this product itself has a relevant phototoxic effect. The concentration of any relevant furocoumarins, the extraction method of the citrus oils and the final formulation cannot be determined from the published INCI list alone.
+At the same time, the publicly available ingredient list of the specific Aesop product does **not** establish that the product itself has a relevant phototoxic effect. The concentration of potentially relevant furocoumarins, the extraction method of the citrus oils and the characteristics of the final formulation cannot be determined from the published ingredient list alone.
 
 #### Gap
 
@@ -378,12 +372,11 @@ A guest in a luxury hotel should not require specialist knowledge about essentia
 
 Phototoxic reactions are not inherently limited to people with sensitive or allergic skin. The relevant factor is the interaction between certain photoreactive substances and ultraviolet radiation.
 
-The **World Health Organization (WHO)** identifies phototoxic reactions, DNA damage and sunburn among the acute effects of ultraviolet radiation. WHO also states that ultraviolet radiation is carcinogenic to humans and that skin cancers are caused primarily by exposure to UV radiation.
-
-[Source: World Health Organization – Ultraviolet Radiation]
+The **World Health Organization (WHO)** identifies phototoxic reactions, DNA damage and sunburn among the possible effects of ultraviolet exposure and states that ultraviolet radiation is carcinogenic to humans and a major cause of skin cancer ([World Health Organization – Ultraviolet Radiation](https://www.who.int/news-room/fact-sheets/detail/ultraviolet-radiation)).
 
 This does **not** mean that Aesop products cause skin cancer. The relevant conclusion for this audit is more specific:
 
 **In a high-UV luxury resort, standard cosmetic amenities should be evaluated not only according to brand quality, but also according to climate, expected usage conditions and avoidable phototoxic exposure.**
 
 This creates a **Climate Suitability Gap** between an otherwise premium amenity selection and the specific usage environment of a sun-intensive beach resort.
+
