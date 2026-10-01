@@ -221,4 +221,14 @@ and at the same time:
 
 This allows the hotel’s digital Recommendation Position to begin developing immediately while the long-term GEO infrastructure is built in parallel.
 
+### Next Step
+
+If you would like to further develop the GEO position of Waldorf Astoria Dubai Palm Jumeirah, the next step can be to define the concrete strategy and implementation together.
+
+**Anna Trocka**  
+Developer of her own GEO Methodology
+
+**WhatsApp:** [+49 176 64759492](https://wa.me/4917664759492?text=Hello%2C%20I%E2%80%99m%20interested%20in%20GEO%20for%20hotels)  
+**Email:** [info@anna-trocka.de](mailto:info@anna-trocka.de)
+
 ---
