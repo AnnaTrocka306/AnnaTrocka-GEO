@@ -303,3 +303,87 @@ The first minutes in a hotel strongly influence the perception of the entire sta
 In particular, a hospitality element that is visibly prepared but not actively used can create the impression that a previously intended premium service is no longer being operated.
 
 This creates an initial **Luxury Detail Consistency Gap** within the arrival area between the hotel’s high-end visual positioning and selected elements of the actual Guest Experience.
+
+### 6.2 Rooms, Maintenance & Functional Comfort
+
+#### Observation
+
+The rooms and suites at **Waldorf Astoria Dubai Palm Jumeirah** generally create a high-quality impression. They are spacious, elegantly furnished and offer a strong sense of privacy and comfort. In particular, the suite layout with separate sleeping, living and dining areas proved highly comfortable for adults travelling together.
+
+At the same time, several issues observed during the stay reduced the overall premium impression.
+
+Mould was identified in the first room, after which the hotel arranged a room change. However, visible signs of wear and maintenance were also present beyond this issue. These included scratches on high-quality furniture surfaces, clearly visible scratches on the floor of the first room, damage to door frames and colour-mismatched touch-up repairs. Individual marks were also visible on walls and skirting boards.
+
+In the bathroom, some marble surfaces appeared uneven and visibly aged. The colour impression varied between certain areas, making the marble look less fresh and less consistently maintained. The exact technical cause could not be determined within the scope of the On-Site Verification.
+
+The light curtains and **sheer curtains** also appeared yellowed or no longer fully fresh in some areas. It could not be determined whether this resulted from soiling, material ageing or intensive sun exposure.
+
+Further observations concerned comfort and functionality. The dining chairs were very low in relation to the table, making it noticeably more difficult to stand up. The floor in the hammam/shower area was perceived as very slippery. The toilet paper also felt noticeably basic compared with the overall quality and finish of the bathroom.
+
+A specific maintenance issue concerned the iron. During use, black or mineral-like particles came out of the appliance. After the iron was replaced, the second unit showed similar behaviour. This created a real risk of damaging clothing during ironing.
+
+The technical usability of the room was also not consistently stable. The internet connection was intermittently weak and was sometimes barely available or completely unavailable on the balcony. At the same time, the balcony door had to remain closed to avoid additional humidity or condensation inside the room. As a result, the balcony was only partially usable as a functional sitting or working area.
+
+Despite the generous size of the suite, with separate sleeping, living and dining areas, there was no small **kitchenette or comparable Residential Functionality**. This is also relevant from a brand-comparison perspective, as similar functionality is available in selected larger suite and residence categories at other Waldorf Astoria properties. For longer stays or families with small children, simple options for preparing or warming milk, baby food or small meals can be particularly relevant.
+
+#### Gap
+
+The central gap does not lie in the fundamental quality or size of the rooms, but in the **consistency between a high-quality Luxury Product, its actual condition and its functional usability**.
+
+The generous space, premium materials and strong room design create a correspondingly high expectation. Visible wear, individual maintenance issues, limited internet coverage and ergonomic or functional weaknesses therefore become particularly noticeable in this environment.
+
+In the large suite, an additional **Brand Consistency & Residential Functionality Gap** becomes visible: the size and layout already create the character of a private residential space suitable for longer stays, without fully providing the practical functionality that such a space suggests.
+
+#### Impact
+
+For guests who choose Waldorf Astoria because of **Comfort, Tranquillity, Service and Luxury**, the room is one of the most important proofs that this promise is actually delivered.
+
+Individual minor issues may appear relatively insignificant in isolation. In combination, however, they can create the impression that an otherwise high-quality room is not maintained and functionally developed to the same premium standard in every detail.
+
+This is particularly relevant for longer stays, mature guests, families, and guests who use their suite not only for sleeping, but as an actual private living, working and relaxation space.
+
+This creates a further **Luxury Detail, Functional Comfort & Brand Consistency Gap** between the hotel’s high-end room positioning and selected elements of the actual Guest Experience.
+
+### 6.3 Bathroom Amenities & Climate Suitability
+
+#### Observation
+
+The **Aesop products** provided in the bathroom are generally well aligned with a luxury hotel environment: the brand, packaging, fragrance and sensory experience feel premium.
+
+However, in a resort located in Dubai, the suitability of bathroom amenities should be assessed not only in terms of brand positioning and product quality, but also in relation to the local climate and the way guests are likely to use the products.
+
+The provided **Aesop Rind Concentrate Body Balm** contains, among other ingredients, Orange Oil, Grapefruit Peel Oil, Lemon Peel Oil, d-Limonene, Citral and Linalool. Aesop itself describes the product as citrus-based and recommends its use particularly after sun exposure.
+
+[Source: Aesop – Rind Concentrate Body Balm]
+
+From a safety perspective, citrus-derived oils require additional consideration in connection with sun exposure. The **U.S. Food and Drug Administration (FDA)** specifically notes that certain citrus oils can be harmful in cosmetics, particularly when applied to skin that is exposed to the sun.
+
+[Source: U.S. FDA – Aromatherapy]
+
+The **European Commission Scientific Committee on Consumer Products** has also assessed furocoumarins in cosmetics. Its scientific opinion states that several furocoumarins have been recognized as phototoxic and notes that furocoumarins may occur in citrus oils, including grapefruit and lemon oils. The Committee also recognizes photomutagenicity and photocarcinogenicity as relevant concerns associated with certain furocoumarins in combination with ultraviolet radiation.
+
+[Source: European Commission – Scientific Committee on Consumer Products: Opinion on Furocoumarins in Cosmetic Products]
+
+At the same time, the publicly available ingredient list of the specific Aesop product does **not** establish that this product itself has a relevant phototoxic effect. The concentration of any relevant furocoumarins, the extraction method of the citrus oils and the final formulation cannot be determined from the published INCI list alone.
+
+#### Gap
+
+The gap therefore does not concern the general quality of **Aesop**, but the **climate suitability of the standard bathroom amenity selection**.
+
+In a resort with intensive sun exposure, guests typically move several times a day between the room, bathroom, pool, beach and direct sunlight. Under these conditions, standard bathroom products should not be selected solely for brand image, fragrance and sensory appeal, but also for their suitability within this specific usage environment.
+
+A guest in a luxury hotel should not require specialist knowledge about essential oils, furocoumarins or phototoxicity in order to assess whether a standard hotel amenity is appropriate before returning to intensive sun exposure.
+
+#### Impact
+
+Phototoxic reactions are not inherently limited to people with sensitive or allergic skin. The relevant factor is the interaction between certain photoreactive substances and ultraviolet radiation.
+
+The **World Health Organization (WHO)** identifies phototoxic reactions, DNA damage and sunburn among the acute effects of ultraviolet radiation. WHO also states that ultraviolet radiation is carcinogenic to humans and that skin cancers are caused primarily by exposure to UV radiation.
+
+[Source: World Health Organization – Ultraviolet Radiation]
+
+This does **not** mean that Aesop products cause skin cancer. The relevant conclusion for this audit is more specific:
+
+**In a high-UV luxury resort, standard cosmetic amenities should be evaluated not only according to brand quality, but also according to climate, expected usage conditions and avoidable phototoxic exposure.**
+
+This creates a **Climate Suitability Gap** between an otherwise premium amenity selection and the specific usage environment of a sun-intensive beach resort.
