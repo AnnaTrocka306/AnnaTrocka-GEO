@@ -342,3 +342,37 @@ Einzelne kleinere Mängel wären isoliert betrachtet möglicherweise wenig relev
 Besonders relevant ist dies für längere Aufenthalte, ältere Gäste, Familien sowie Gäste, die ihre Suite nicht nur zum Schlafen, sondern als tatsächlichen privaten Wohn-, Arbeits- und Aufenthaltsbereich nutzen.
 
 Damit entsteht ein weiterer **Luxury Detail, Functional Comfort & Brand Consistency Gap** zwischen der grundsätzlich hochwertigen Zimmerpositionierung und einzelnen Elementen der tatsächlichen Guest Experience.
+
+### 6.3 Badezimmerkosmetik & Klimatauglichkeit
+
+#### Observation
+
+Die im Badezimmer bereitgestellten **Aesop-Produkte** passen grundsätzlich sehr gut zu einem Luxury Hotel: Marke, Verpackung, Duft und sensorische Wahrnehmung wirken hochwertig.
+
+Bei einem Resort in Dubai ist jedoch nicht nur die Qualität oder Positionierung einer Kosmetikmarke relevant, sondern auch die Frage, ob die verwendeten Produkte zum konkreten Klima und zum typischen Verhalten der Gäste passen.
+
+Beim bereitgestellten **Aesop Rind Concentrate Body Balm** werden unter anderem Orangenöl, Grapefruitschalenöl, Zitronenschalenöl sowie d-Limonene, Citral und Linalool als Inhaltsstoffe angegeben. Aesop selbst beschreibt das Produkt als zitrusbasierten Körperbalsam und empfiehlt die Anwendung ausdrücklich auch nach dem Sonnenbad.
+
+Aus wissenschaftlicher Sicht ist bei zitrusbasierten ätherischen Ölen jedoch ein zusätzlicher Aspekt relevant. Das **Bundesinstitut für Risikobewertung (BfR)** weist darauf hin, dass Furocumarine über ätherische Öle aus Zitrusfrüchten in kosmetische Produkte gelangen können. Bestimmte Furocumarine können in Verbindung mit UVA-Strahlung phototoxisch sowie mutagen bzw. genotoxisch wirken.
+
+Dabei lässt sich aus der veröffentlichten Inhaltsstoffliste des konkreten Aesop-Produkts nicht ableiten, ob dieses Produkt selbst eine relevante phototoxische Wirkung besitzt. Dafür wären unter anderem die genaue Zusammensetzung, Gewinnungsart und Konzentration der verwendeten Zitrusöle entscheidend.
+
+#### Gap
+
+Der Gap liegt deshalb nicht in der grundsätzlichen Qualität von **Aesop**, sondern in der **Klimatauglichkeit der standardmäßig bereitgestellten Badezimmerkosmetik**.
+
+In einem Resort mit intensiver Sonneneinstrahlung wechseln Gäste typischerweise mehrfach täglich zwischen Zimmer, Badezimmer, Pool, Strand und direkter Sonne. Unter diesen Bedingungen sollte die Auswahl der Standardkosmetik nicht ausschließlich nach Markenimage, Duft und sensorischem Erlebnis erfolgen, sondern auch danach, ob die Inhaltsstoffe für diesen Nutzungskontext optimal geeignet sind.
+
+Ein Gast eines Luxushotels sollte kein Fachwissen über ätherische Öle, Furocumarine oder Phototoxizität benötigen, um beurteilen zu können, ob ein standardmäßig bereitgestelltes Produkt unmittelbar vor erneuter Sonnenexposition sinnvoll ist.
+
+#### Impact
+
+Phototoxische Reaktionen sind nicht grundsätzlich auf Menschen mit empfindlicher oder allergischer Haut beschränkt. Entscheidend ist die mögliche Wechselwirkung bestimmter Stoffe mit UV-Strahlung. Solche Reaktionen können Hautreizungen und verbrennungsähnliche Reaktionen verursachen.
+
+Gleichzeitig ist UV-Strahlung selbst ein etablierter gesundheitlicher Risikofaktor. Das offizielle deutsche Gesundheitsportal **gesund.bund.de** bezeichnet UV-Strahlung als wichtigsten Risikofaktor für die Entstehung von Hautkrebs und weist darauf hin, dass bereits vor sichtbaren Hautreaktionen Schäden an der Erbsubstanz entstehen können.
+
+Daraus darf ausdrücklich **nicht** abgeleitet werden, dass Aesop-Produkte Hautkrebs verursachen. Der relevante Punkt für den Hotel-Audit ist ein anderer:
+
+**Bei einem Luxury Resort mit hoher UV-Belastung sollte die Auswahl der Standardkosmetik nicht nur marken-, sondern auch klima- und nutzungsspezifisch geprüft werden.**
+
+Damit entsteht ein **Climate Suitability Gap** zwischen einer grundsätzlich hochwertigen Amenity-Auswahl und der besonderen Nutzungssituation eines sonnintensiven Beach Resorts.
