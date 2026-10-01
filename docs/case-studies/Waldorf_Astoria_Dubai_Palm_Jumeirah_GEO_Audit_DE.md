@@ -223,9 +223,10 @@ So kann die digitale Recommendation Position des Hotels bereits gezielt weiteren
 
 ### Nächster Schritt
 
-Wenn Waldorf Astoria Dubai Palm Jumeirah seine Position in AI-basierten Empfehlungen gezielt weiterentwickeln möchte, kann im nächsten Schritt die konkrete **GEO Recommendation Strategy** für das Hotel definiert und daraus ein individueller Umsetzungsplan entwickelt werden.
+Wenn Sie die GEO-Position von Waldorf Astoria Dubai Palm Jumeirah gezielt weiterentwickeln möchten, können wir im nächsten Schritt die konkrete Strategie und Umsetzung gemeinsam definieren.
 
-Für eine persönliche Abstimmung oder ein erstes Strategiegespräch:
+**Anna Trocka**  
+Developer of her own GEO Methodology
 
 **WhatsApp:** [+49 176 64759492](https://wa.me/4917664759492?text=Hello%2C%20I%E2%80%99m%20interested%20in%20GEO%20for%20hotels)  
 **E-Mail:** [info@anna-trocka.de](mailto:info@anna-trocka.de)
