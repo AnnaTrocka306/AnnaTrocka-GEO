@@ -232,3 +232,14 @@ Developer of her own GEO Methodology
 **E-Mail:** [info@anna-trocka.de](mailto:info@anna-trocka.de)
 
 ---
+
+## 6. On-Site Gaps und konkrete Verbesserungsfelder
+
+Der folgende Abschnitt dokumentiert die während der On-Site Verification identifizierten konkreten Schwachstellen und Verbesserungsfelder.
+
+Jeder Punkt zeigt kurz und nachvollziehbar:
+
+**Observation → Gap → Impact → Recommendation**
+
+Damit wird sichtbar, **was konkret nicht vollständig zur erwarteten Positionierung und zum Qualitätsversprechen des Hotels passt, warum dies relevant ist und welche Verbesserung empfohlen wird**.
+
