@@ -380,3 +380,50 @@ This does **not** mean that Aesop products cause skin cancer. The relevant concl
 
 This creates a **Climate Suitability Gap** between an otherwise premium amenity selection and the specific usage environment of a sun-intensive beach resort.
 
+### 6.4 Pool, Beach & Outdoor Guest Experience
+
+#### Observation
+
+The pool and beach areas of **Waldorf Astoria Dubai Palm Jumeirah** generally fit the hotel’s calm resort atmosphere very well. During the stay, however, several points were observed that affected comfort, maintenance quality and, in some cases, safety.
+
+The **Adults-only Pool** was repeatedly very busy or overcrowded. At the same time, this was the only pool during the stay with noticeably cooler and more refreshing water in the very high outdoor temperatures. The surrounding vegetation also provided more natural shade.
+
+This combination directly influenced the guest’s own pool choice: the Adults-only Pool was preferred specifically because of the cooler water temperature and the more shaded environment.
+
+At the same time, the significantly larger central pool, which was also used by families with children, was noticeably less crowded at certain times. Both the central pool and the sea were perceived as very warm during the stay.
+
+A relationship between **water temperature, shade availability and guest distribution** therefore appears plausible. The high occupancy of the Adults-only Pool may not have been driven solely by its adults-only positioning, but also by the more comfortable microclimate in that area. A direct causal relationship for the behaviour of all guests was not verified within the scope of the audit.
+
+At the Adults-only Pool, individual tiles along the upper pool edge and the wall extending into the water were visibly separated or displaced. Plant roots were already visible in some of the resulting gaps. The technical cause was not investigated as part of the On-Site Verification.
+
+The beach area also showed inconsistencies in the condition and design of the loungers. Different mattress styles and designs reduced the visual consistency of the premium setup. On some loungers, the backrest could not be adjusted comfortably into an intermediate reclining position.
+
+A particularly relevant issue involved a damaged lounger whose seating surface gave way during use, causing the guest to partially fall into the structure. The same damaged lounger was still present in the beach area several days later and was only clearly identified after it was pointed out again to a member of staff. Several loungers had to be checked while walking on very hot sand before a functional and comfortable option was found.
+
+In the sea, older ropes or elements from a previous boundary system were also noticed underwater in at least two locations. Unexpected contact with these partially hidden elements caused uncertainty for both guests.
+
+For adult guests who cannot swim or feel insecure in the water, no clearly visible practical flotation aids were observed. The inflatable products available at the beach appeared limited and more like leisure products than simple support for less confident swimmers.
+
+#### Gap
+
+Several interconnected gaps become visible across the pool and beach areas.
+
+At the Adults-only Pool, there is a potential **Pool Distribution & Tranquillity Gap**. If, during very high outdoor temperatures, only one pool offers both noticeably cooler water and more natural shade, guest demand may concentrate there regardless of the intended target-group function of the pool.
+
+As a result, the Adults-only Pool can lose part of its role as a calm retreat even when capacity remains available at the larger central pool.
+
+The visible changes to the pool structure and the damaged lounger that remained in place for several days additionally indicate a **Maintenance & Preventive Quality Control Gap**.
+
+The differences in loungers, limited adjustability and inconsistent visual setup also affect the consistency of the Luxury Product.
+
+The older underwater boundary elements and the lack of clearly visible simple flotation aids for adults finally affect the predictability, safety and functional usability of the bathing environment.
+
+#### Impact
+
+Pool and beach facilities are among the central reasons for choosing a beach resort. For a property positioned around **Tranquillity, Comfort, Private Beach and Luxury**, these areas therefore need not only to look attractive, but also to function reliably, safely and comfortably.
+
+An overcrowded Adults-only Pool directly weakens the expected tranquillity experience. At the same time, the different usage patterns of the two pools show that actual guest distribution may be influenced not only by target-group positioning, but also by practical factors such as water temperature and shade.
+
+Visible changes to the pool structure, a damaged lounger that was not identified promptly, and unexpected underwater elements may also reduce confidence in ongoing quality and safety control.
+
+This creates a **Tranquillity, Functional Comfort, Maintenance & Safety Consistency Gap** between the hotel’s overall high-end resort positioning and selected elements of the actual Pool and Beach Guest Experience.
