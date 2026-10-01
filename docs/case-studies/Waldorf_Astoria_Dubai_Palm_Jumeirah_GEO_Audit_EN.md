@@ -485,3 +485,99 @@ The issue was therefore not a lack of willingness to spend, but **unrealized rev
 Over a stay of almost two weeks, this does not concern one lost dinner only, but potentially multiple breakfasts, lunches, dinners, drinks and spontaneous orders.
 
 This creates an **F&B Product Value & Revenue Capture Gap** between the guests’ actual spending potential and the share of that spending the hotel succeeded in retaining within the resort.
+
+### 6.6 Housekeeping & Quality Control
+
+#### Observation
+
+Overall, the hotel did **not** appear poorly maintained or dirty. Housekeeping staff were visibly active and worked continuously.
+
+However, several smaller details were repeatedly noticed that did not appear to be captured consistently by routine cleaning. These included marks on side surfaces in the bathroom, dust or dirt in less obvious elevator areas, and situations in which used dishes were removed but the table underneath was not cleaned afterwards.
+
+The latter appears less like an individual staff-performance issue and more like a possible handover gap between different responsibilities: the dishes are removed, but the complete restoration of the Guest Touchpoint is not always completed.
+
+#### Gap
+
+The central gap is therefore not basic cleanliness, but the **depth and consistency of quality control**.
+
+In a 5-star luxury hotel, not only the most visible surfaces but also less obvious areas, technical details and handovers between departments need to be monitored consistently.
+
+This creates a **Luxury Cleanliness & Quality Control Gap**.
+
+#### Impact
+
+In the Luxury segment, cleanliness is not defined only by whether a room is generally clean. What matters is that the guest ideally **does not discover the point where quality control visibly stops**.
+
+Several small inconsistencies across different areas can therefore have a stronger effect than one isolated issue and may create the impression that quality control is not applied with the same consistency everywhere.
+
+---
+
+### 6.7 Guest Transportation & Brand Consistency
+
+#### Observation
+
+The shuttle service to **Dubai Mall** is fundamentally a useful and guest-friendly part of the hotel offering and provides convenient access from Palm Jumeirah to shopping, dining and other activities in Dubai.
+
+However, the specific vehicle used did not fully match the hotel’s otherwise premium impression.
+
+The black minibus looked externally more like a functional commercial group or staff transport vehicle than a shuttle associated with a 5-star luxury hotel. The interior was more comfortable than the exterior suggested and was air-conditioned, but the ride itself was perceived as relatively rough and noticeably bumpy.
+
+#### Gap
+
+This creates a **Brand Consistency Gap**.
+
+The service itself offers clear value, but it is delivered through a Guest Touchpoint whose visual impression and ride comfort do not fully continue the standard of the wider Waldorf Astoria experience.
+
+For a Luxury Brand, the brand experience does not end at the hotel entrance.
+
+#### Impact
+
+A fundamentally positive additional service therefore loses part of its premium effect.
+
+For guests who choose Waldorf Astoria because of **Comfort, Service and Luxury**, a highly functional-looking transport vehicle can create a noticeable contrast with the hotel itself and interrupt the consistency of the Brand Experience.
+
+---
+
+### 6.8 Interior, Art & Curatorial Experience
+
+#### Observation
+
+The hotel’s interior architecture is high-quality and elegant. At the same time, some areas felt relatively restrained in terms of decoration; natural plants, flowers or subtle textile elements could add more warmth and atmosphere.
+
+The presentation of contemporary artworks was also noticeable. Several pieces displayed clearly visible sale prices of several thousand euros, in some cases up to approximately **€10,000**.
+
+This partially shifted attention away from the aesthetic effect of the artwork toward questions of material, production and price. With certain pieces, the result felt more commercial than curatorial.
+
+#### Gap
+
+This creates a **Luxury Atmosphere & Curatorial Consistency Gap**.
+
+Art can significantly enhance a Luxury Hotel when it is perceived as part of a clearly curated environment. Highly visible sale prices can weaken this effect and move the guest’s attention from experience toward transaction value.
+
+#### Impact
+
+The quality of a Luxury Interior is created not only through expensive materials, but also through atmosphere and presentation.
+
+When art is perceived more strongly as merchandise than as part of the overall experience, the sense of exclusivity and visual calm can be reduced.
+
+---
+
+### 6.9 On-Site Gap Summary
+
+The On-Site Verification does **not** indicate a fundamentally weak hotel product. On the contrary, Waldorf Astoria Dubai Palm Jumeirah has strong foundations: spacious rooms, high-quality architecture, an attractive Private Beach, a calm resort atmosphere and, in many situations, very strong personal service.
+
+The identified gaps appear mainly where this strong foundation is **not carried through with the same consistency in every detail**.
+
+Across the different areas, several recurring patterns become visible:
+
+- a **Luxury Detail Consistency Gap** between the overall high-quality product and selected visible details;
+- a **Maintenance & Preventive Quality Control Gap** across rooms, pool areas, loungers and less obvious public-space details;
+- a **Functional Comfort Gap** involving internet connectivity, ergonomics, pool usage and Residential Functionality;
+- a **Climate Suitability Gap** in the selection of bathroom amenities for a high-UV Beach Resort;
+- an **F&B Product Value & Revenue Capture Gap**, through which part of the guests’ existing willingness to spend was redirected outside the hotel;
+- a **Digital & AI Perception Gap**, particularly where outdated information — such as the historic association between Social and Heinz Beck — no longer clearly reflects the current product;
+- and an overarching **Brand Consistency Gap** at Guest Touchpoints where the service itself works, but does not fully reflect the expected Waldorf Astoria standard.
+
+The central conclusion of the On-Site Verification is therefore:
+
+**The hotel’s Luxury promise is fundamentally present and clearly visible across many parts of the Guest Experience. The strongest improvement opportunity lies not in a complete repositioning of the product, but in aligning details, functionality, quality control and current digital representation more consistently with the premium level that already exists.**
