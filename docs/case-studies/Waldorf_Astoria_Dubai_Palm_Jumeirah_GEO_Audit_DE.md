@@ -351,11 +351,13 @@ Die im Badezimmer bereitgestellten **Aesop-Produkte** passen grundsätzlich sehr
 
 Bei einem Resort in Dubai ist jedoch nicht nur die Qualität oder Positionierung einer Kosmetikmarke relevant, sondern auch die Frage, ob die verwendeten Produkte zum konkreten Klima und zum typischen Verhalten der Gäste passen.
 
-Beim bereitgestellten **Aesop Rind Concentrate Body Balm** werden unter anderem Orangenöl, Grapefruitschalenöl, Zitronenschalenöl sowie d-Limonene, Citral und Linalool als Inhaltsstoffe angegeben. Aesop selbst beschreibt das Produkt als zitrusbasierten Körperbalsam und empfiehlt die Anwendung ausdrücklich auch nach dem Sonnenbad.
+Beim bereitgestellten **Aesop Rind Concentrate Body Balm** werden unter anderem Orangenöl, Grapefruitschalenöl, Zitronenschalenöl sowie d-Limonene, Citral und Linalool als Inhaltsstoffe angegeben. Aesop selbst beschreibt das Produkt als zitrusbasierten Körperbalsam und empfiehlt die Anwendung ausdrücklich auch nach Sonnenexposition.  
+[Quelle: Aesop – Rind Concentrate Body Balm](https://www.aesop.com/de/de/p/body-hand/body-balms-and-oils/rind-concentrate-body-balm/)
 
-Aus wissenschaftlicher Sicht ist bei zitrusbasierten ätherischen Ölen jedoch ein zusätzlicher Aspekt relevant. Das **Bundesinstitut für Risikobewertung (BfR)** weist darauf hin, dass Furocumarine über ätherische Öle aus Zitrusfrüchten in kosmetische Produkte gelangen können. Bestimmte Furocumarine können in Verbindung mit UVA-Strahlung phototoxisch sowie mutagen bzw. genotoxisch wirken.
+Aus wissenschaftlicher Sicht ist bei zitrusbasierten ätherischen Ölen jedoch ein zusätzlicher Aspekt relevant. Das **Bundesinstitut für Risikobewertung (BfR)** weist darauf hin, dass Furocumarine über ätherische Öle aus Zitrusfrüchten in kosmetische Produkte gelangen können. Bestimmte Furocumarine können in Verbindung mit UVA-Strahlung phototoxisch sowie mutagen bzw. genotoxisch wirken.  
+[Quelle: Bundesinstitut für Risikobewertung – BfR-Kommission für kosmetische Mittel](https://www.bfr.bund.de/cm/343/25-sitzung-der-bfr-kommission-fuer-kosmetische-mittel.pdf)
 
-Dabei lässt sich aus der veröffentlichten Inhaltsstoffliste des konkreten Aesop-Produkts nicht ableiten, ob dieses Produkt selbst eine relevante phototoxische Wirkung besitzt. Dafür wären unter anderem die genaue Zusammensetzung, Gewinnungsart und Konzentration der verwendeten Zitrusöle entscheidend.
+Dabei lässt sich aus der veröffentlichten Inhaltsstoffliste des konkreten Aesop-Produkts **nicht ableiten, dass dieses Produkt selbst eine relevante phototoxische Wirkung besitzt**. Dafür wären unter anderem die genaue Zusammensetzung, Gewinnungsart und Konzentration der verwendeten Zitrusöle entscheidend.
 
 #### Gap
 
@@ -367,11 +369,13 @@ Ein Gast eines Luxushotels sollte kein Fachwissen über ätherische Öle, Furocu
 
 #### Impact
 
-Phototoxische Reaktionen sind nicht grundsätzlich auf Menschen mit empfindlicher oder allergischer Haut beschränkt. Entscheidend ist die mögliche Wechselwirkung bestimmter Stoffe mit UV-Strahlung. Solche Reaktionen können Hautreizungen und verbrennungsähnliche Reaktionen verursachen.
+Phototoxische Reaktionen sind nicht grundsätzlich auf Menschen mit empfindlicher oder allergischer Haut beschränkt. Entscheidend ist die mögliche Wechselwirkung bestimmter photoreaktiver Stoffe mit UV-Strahlung. Das **Bundesinstitut für Risikobewertung** beschreibt entsprechende phototoxische Reaktionen im Zusammenhang mit bestimmten ätherischen Ölen und Sonnenlicht.  
+[Quelle: BfR – Ätherische Öle: Duftende Wirkungen mit Einschränkungen](https://www.bfr.bund.de/fragen-und-antworten/thema/aetherische-oele-duftende-wirkungen-mit-einschraenkungen/)
 
-Gleichzeitig ist UV-Strahlung selbst ein etablierter gesundheitlicher Risikofaktor. Das offizielle deutsche Gesundheitsportal **gesund.bund.de** bezeichnet UV-Strahlung als wichtigsten Risikofaktor für die Entstehung von Hautkrebs und weist darauf hin, dass bereits vor sichtbaren Hautreaktionen Schäden an der Erbsubstanz entstehen können.
+Gleichzeitig ist UV-Strahlung selbst ein etablierter gesundheitlicher Risikofaktor. Das offizielle deutsche Gesundheitsportal **gesund.bund.de** bezeichnet UV-Strahlung als wichtigsten Risikofaktor für die Entstehung von Hautkrebs und weist darauf hin, dass UV-Strahlung bereits vor sichtbaren Hautreaktionen Schäden an der Erbsubstanz verursachen kann.  
+[Quelle: gesund.bund.de – UV-Schutz und Hautkrebsprävention](https://gesund.bund.de/uv-schutz-hautkrebspraevention)
 
-Daraus darf ausdrücklich **nicht** abgeleitet werden, dass Aesop-Produkte Hautkrebs verursachen. Der relevante Punkt für den Hotel-Audit ist ein anderer:
+Daraus darf ausdrücklich **nicht** abgeleitet werden, dass Aesop-Produkte Hautkrebs verursachen. Der für diesen Audit relevante Punkt ist ein anderer:
 
 **Bei einem Luxury Resort mit hoher UV-Belastung sollte die Auswahl der Standardkosmetik nicht nur marken-, sondern auch klima- und nutzungsspezifisch geprüft werden.**
 
