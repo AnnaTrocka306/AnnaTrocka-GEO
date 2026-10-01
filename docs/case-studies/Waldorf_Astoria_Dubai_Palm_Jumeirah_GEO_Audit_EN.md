@@ -432,56 +432,56 @@ This creates a **Tranquillity, Functional Comfort, Maintenance & Safety Consiste
 
 #### Observation
 
-Das **Food-&-Beverage-Angebot** war während des Aufenthalts einer der deutlichsten Bereiche, in denen vorhandene Zahlungsbereitschaft nicht vollständig in In-House-Umsatz umgewandelt wurde.
+The **Food & Beverage offering** was one of the clearest areas during the stay where existing guest willingness to spend was not fully converted into in-house revenue.
 
-Die Gäste hatten bewusst keine Verpflegungspauschale gebucht, um flexibel zu bleiben. Grundsätzlich bestand jedoch die Bereitschaft, **Frühstück, Lunch, Dinner und Getränke regelmäßig im Hotel zu konsumieren und dafür auch Premium-Preise zu bezahlen**.
+The guests had deliberately not booked a meal plan in order to remain flexible. This did not mean that they intended to dine outside the hotel. On the contrary, there was a clear willingness to spend on **breakfast, lunch, dinner and drinks within the hotel at premium price levels**.
 
-Beim Frühstück waren insbesondere frisches Brot und Gebäck positiv. Das Buffet wirkte für ein Hotel dieser Kategorie insgesamt jedoch eher begrenzt; insbesondere Gemüse, Obst und moderne gesundheitsorientierte Optionen waren vergleichsweise wenig präsent.
+Breakfast had some clear strengths, particularly the fresh bread and pastries. However, for a hotel of this category, the overall buffet selection felt comparatively limited, especially in terms of vegetables, fruit and modern health-oriented options.
 
-Beim **In-Room Dining** kosteten zwei gekochte Eier ungefähr **15 Euro**, ohne dass ein besonderer Mehrwert wie Bio-Qualität, Freilandhaltung, besondere Herkunft oder eine andere Premium-Eigenschaft erkennbar kommuniziert wurde. Gleichzeitig wurde im Room Service einfacher weißer Toast serviert, obwohl im Hotel selbst deutlich hochwertigere Brot- und Backwaren verfügbar waren.
+A similar value gap appeared in **In-Room Dining**. Two boiled eggs cost approximately **€15**, without any clearly communicated premium differentiation such as organic quality, free-range sourcing, special provenance or another identifiable quality attribute. At the same time, basic white toast was served in the room despite the hotel clearly having access to much higher-quality bread and bakery products.
 
-Gerade bei einfachen Produkten entsteht Luxury nicht allein durch einen hohen Preis, sondern durch **erkennbare Qualität, Herkunft, Auswahl und Präsentation**.
+For simple products, Luxury is not created by price alone, but by **visible quality, provenance, choice and presentation**.
 
-Besonders deutlich wurde der Product Value Gap beim italienischen Restaurant **Social**. Der Service war sehr aufmerksam, das Essen selbst überzeugte jedoch weder hinsichtlich Geschmack noch Portionsgröße. Die Lasagne war sehr klein und wurde eher wie ein aufgewärmtes Gericht wahrgenommen. Beim als Auberginen-/Ratatouille-Gericht präsentierten Gericht war Aubergine kaum wahrnehmbar; dominant war eine stark konzentrierte Tomatenbasis, die geschmacklich eher an fertige Tomatenpaste erinnerte. Ob tatsächlich ein Fertigprodukt verwendet wurde, konnte nicht festgestellt werden.
+The strongest Product Value Gap was observed at the Italian restaurant **Social**. Service was attentive and professional, but the food itself did not convince in terms of either taste or portion size. The lasagne was very small and was perceived more like a reheated dish than a freshly prepared premium restaurant product. In the aubergine/ratatouille dish, aubergine was barely noticeable; the dominant element was a highly concentrated tomato base that tasted more like concentrated ready-made tomato paste. It could not be determined whether any ready-made product had actually been used.
 
-Auch die Portionslogik wirkte für ein À-la-carte-Restaurant nicht stimmig. Kleine Portionen können innerhalb eines mehrgängigen Fine-Dining-Konzepts funktionieren, wenn zahlreiche aufeinander abgestimmte Gänge gemeinsam ein vollständiges Erlebnis ergeben. Hier waren die Portionen sehr klein, geschmacklich nicht überzeugend und nicht ausreichend sättigend – bei gleichzeitig hoher Preispositionierung.
+The portion logic was also difficult to reconcile with an à-la-carte concept. Small portions can work well within a multi-course Fine Dining experience where numerous coordinated dishes together create a complete and satisfying meal. Here, however, individual dishes were ordered à la carte. The portions were very small, the taste did not compensate for the size, and the meal was not sufficiently filling despite the high price level.
 
-Zusätzlich besteht bei Social ein relevanter **Digital & AI Perception Gap**. Das Restaurant wurde über viele Jahre unter der früheren Identität **Social by Heinz Beck** wahrgenommen. Diese ältere Zuordnung ist auch heute noch in externen Quellen vorhanden; beispielsweise führt Visit Dubai das Restaurant weiterhin unter diesem Namen ([Visit Dubai – Social by Heinz Beck](https://www.visitdubai.com/de/restaurants/social)).
+Social also presents a relevant **Digital & AI Perception Gap**. The restaurant was known for many years as **Social by Heinz Beck**, and this older identity remains highly visible in the digital information landscape. Visit Dubai, for example, still lists the restaurant under the name “Social by Heinz Beck” ([Visit Dubai – Social by Heinz Beck](https://www.visitdubai.com/de/restaurants/social)).
 
-Die aktuelle offizielle Waldorf-Astoria-Seite bezeichnet das Restaurant dagegen nur noch als **Social**, beschreibt ein modernes italienisches Konzept und nennt aktuell **One Toque – Gault&Millau 2026**; Heinz Beck wird dort nicht mehr als Bestandteil des aktuellen Restaurantkonzepts dargestellt ([Waldorf Astoria Dubai Palm Jumeirah – Social](https://www.hilton.com/en/hotels/dxbpdwa-waldorf-astoria-dubai-palm-jumeirah/dining/social/)).
+The current official Waldorf Astoria page, by contrast, refers to the restaurant simply as **Social**, describes a contemporary Italian concept and currently highlights **One Toque – Gault&Millau 2026**. Heinz Beck is no longer presented as part of the current restaurant concept ([Waldorf Astoria Dubai Palm Jumeirah – Social](https://www.hilton.com/en/hotels/dxbpdwa-waldorf-astoria-dubai-palm-jumeirah/dining/social/)).
 
-Damit kann veralteter Content weiterhin dazu führen, dass AI-Systeme und potenzielle Gäste Social mit einer früheren kulinarischen Identität verbinden. Gerade wenn ein Gast das Hotel oder Restaurant aufgrund dieser Assoziation auswählt, kann die Differenz zur heutigen Realität erheblich sein. Aus GEO-Sicht ist deshalb **aktueller, eindeutig zuordenbarer Content über das heutige Restaurantkonzept besonders wichtig**.
+This means that outdated external content can continue to influence how AI systems and potential guests understand the restaurant. Guests who choose the hotel or restaurant because of the historic Heinz Beck association may therefore arrive with an expectation that no longer corresponds to the current product. From a GEO perspective, this makes **current, clearly attributable content about the present restaurant identity particularly important**.
 
-Auch im **Palm Avenue**, dem Restaurant am Pool- und Strandbereich, war das Verhältnis zwischen Preis und wahrgenommenem Produktwert nicht immer überzeugend. Ein Tuna Bowl für **120 AED** wirkte eher wie ein kleiner standardisierter Poke Bowl als wie ein klar differenziertes Premium-Resort-Produkt. Auch ein bestellter Burger überzeugte nicht.
+At **Palm Avenue**, the hotel’s poolside and beach restaurant, the relationship between price and perceived product value was also not always convincing. A tuna bowl priced at **120 AED** felt closer to a small standardized poke bowl than to a clearly differentiated premium resort product. A burger ordered during the stay also failed to create a convincing overall impression.
 
-Die direkt am Pool gelegenen Outdoor-Sitzbereiche waren grundsätzlich attraktiv angelegt, wirkten an einzelnen Stellen jedoch sichtbar gealtert und teilweise abgenutzt. Gleichzeitig fehlte ihnen etwas gestalterische Wärme. Bereits einfache textile oder dekorative Elemente könnten die Atmosphäre stärker von einer funktionalen Pool-Gastronomie in Richtung eines gepflegten Luxury-Resort-Erlebnisses verschieben.
+The outdoor dining areas directly beside the pool were attractive in principle, but several of the small seating islands appeared visibly worn and tired. They also lacked some visual warmth and atmosphere. Even relatively simple decorative or textile elements could have helped the area feel less functional and more consistent with a Luxury Resort environment.
 
-Im Außenbereich war zudem wiederholt ein deutlicher Geruch nach sehr stark erhitztem bzw. verbrannt wirkendem Frittieröl wahrnehmbar. **Aus dem Geruch allein lässt sich nicht feststellen, dass das tatsächlich verwendete Öl qualitativ beeinträchtigt war.**
+A noticeable smell of very heavily heated or burnt frying oil was also repeatedly present in the outdoor area. **The smell alone does not establish that the oil in use was actually degraded or unsafe.**
 
-Die Beobachtung ist dennoch relevant: Dubai Municipality hat im August 2026 seine Kontrolle von Ölen und Fetten deutlich ausgebaut. Die neue Labortechnologie erfasst ausdrücklich Indikatoren für **Oxidation und Ölqualität** und erhöhte die tägliche Testkapazität von sechs auf 60 Proben ([Dubai Municipality – Oil and Fat Quality Testing Accelerates](https://www.dm.gov.ae/oil-and-fat-quality-testing-accelerates/)).
+The observation is nevertheless relevant because Dubai Municipality has recently strengthened its controls over oil and fat quality. In August 2026, the authority introduced technology designed to detect indicators related to **oil oxidation and quality**, increasing testing capacity from six to 60 samples per day ([Dubai Municipality – Oil and Fat Quality Testing Accelerates](https://www.dm.gov.ae/oil-and-fat-quality-testing-accelerates/)).
 
-Dass wiederholtes starkes Erhitzen von Speiseöl auch gesundheitlich relevant sein kann, bestätigt die Singapore Food Agency. Bei langer bzw. wiederholter Erhitzung bei hohen Temperaturen kann Öl degradieren und unter anderem Aldehyde und polyzyklische aromatische Kohlenwasserstoffe bilden ([Singapore Food Agency – Reusing Cooking Oils](https://www.sfa.gov.sg/food-safety-tips/food-risk-concerns/risk-at-a-glance/reusing-cooking-oils)).
+The potential health relevance of repeatedly heated cooking oil is also documented by the Singapore Food Agency. It states that prolonged or repeated heating at high temperatures can degrade cooking oil and contribute to the formation of compounds including aldehydes and polycyclic aromatic hydrocarbons ([Singapore Food Agency – Reusing Cooking Oils](https://www.sfa.gov.sg/food-safety-tips/food-risk-concerns/risk-at-a-glance/reusing-cooking-oils)).
 
-Auch die starke digitale **Family-Positionierung** des Hotels sollte sich im gastronomischen Produkt widerspiegeln. Dabei reicht nicht allein das Vorhandensein eines Kids Menu; relevant ist auch eine erkennbare Auswahl an ausgewogenen, hochwertigen und gesundheitsorientierten Optionen für Kinder. Das aktuelle Kids Menu wurde im Rahmen dieses Audits jedoch nicht vollständig bewertet.
+The hotel’s strong digital **Family positioning** should also be reflected in its F&B product. The presence of a Kids Menu alone is not sufficient; families should also be able to identify balanced, high-quality and health-oriented choices for children. The current Kids Menu was not reviewed comprehensively enough within this audit to make a final assessment.
 
 #### Gap
 
-Der zentrale Gap liegt nicht in einem einzelnen Gericht, sondern in der **Fähigkeit des F&B-Angebots, die vorhandene Zahlungsbereitschaft der Gäste innerhalb des Resorts zu halten**.
+The central gap is not one individual dish, but the **ability of the F&B offering to retain existing guest spending within the resort**.
 
-Bei mehreren Touchpoints war der Preis eindeutig premium, während Geschmack, Portionsgröße, Produktqualität, Auswahl oder sichtbare Differenzierung diesen Premium-Anspruch nicht in gleichem Maß bestätigten.
+Across several touchpoints, pricing was clearly premium, while taste, portion size, product quality, choice or visible differentiation did not consistently confirm the same premium level.
 
-Damit entstehen gleichzeitig ein **Premium Price vs. Premium Product Value Gap**, ein **Food Quality & Health Perception Gap** sowie bei Social ein zusätzlicher **Digital & AI Perception Gap**.
+This creates a **Premium Price vs. Premium Product Value Gap**, a **Food Quality & Health Perception Gap**, and in the case of Social an additional **Digital & AI Perception Gap**.
 
 #### Impact
 
-Die wirtschaftliche Folge war konkret beobachtbarer **Revenue Leakage**.
+The commercial consequence was directly observable **Revenue Leakage**.
 
-Während des Aufenthalts wurden insgesamt ungefähr **1.500 Euro in Restaurants außerhalb des Hotels ausgegeben**. Selbstverständlich wäre ein Teil dieser Ausgaben unabhängig vom Hotel entstanden, da auch andere Restaurants und Orte besucht werden sollten.
+During the stay, approximately **€1,500 was spent in restaurants outside the hotel**. Naturally, part of this spending would have occurred outside the resort regardless, as the guests also wanted to experience other locations.
 
-Nach Einschätzung der Gäste hätte bei einem überzeugenderen F&B-Angebot jedoch **etwa die Hälfte dieser Summe im Hotel verbleiben können** – zusätzlich zu den bereits tatsächlich im Resort getätigten Ausgaben.
+However, based on the actual guest behaviour during the stay, it is reasonable to estimate that **around half of this amount could have remained within the hotel** if the F&B experience had been more convincing — in addition to the expenditure already generated inside the resort.
 
-Damit geht es nicht um fehlende Zahlungsbereitschaft, sondern um **nicht ausgeschöpftes Umsatzpotenzial bei bereits anwesenden Gästen**.
+The issue was therefore not a lack of willingness to spend, but **unrealized revenue potential from guests who were already staying on property**.
 
-Gerade bei einem Aufenthalt von fast zwei Wochen betrifft dies nicht nur ein einzelnes Dinner, sondern potenziell zahlreiche Frühstücke, Lunches, Dinner, Getränke und spontane Bestellungen.
+Over a stay of almost two weeks, this does not concern one lost dinner only, but potentially multiple breakfasts, lunches, dinners, drinks and spontaneous orders.
 
-Es entsteht damit ein **F&B Product Value & Revenue Capture Gap** zwischen dem grundsätzlich hohen Ausgabepotenzial der Gäste und dem Umsatz, den das Hotel daraus tatsächlich innerhalb des eigenen Resorts realisiert.
+This creates an **F&B Product Value & Revenue Capture Gap** between the guests’ actual spending potential and the share of that spending the hotel succeeded in retaining within the resort.
