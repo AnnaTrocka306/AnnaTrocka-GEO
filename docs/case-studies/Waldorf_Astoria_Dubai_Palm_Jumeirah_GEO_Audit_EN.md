@@ -272,3 +272,34 @@ Each point follows a clear and consistent structure:
 **Observation → Gap → Impact → Recommendation**
 
 This makes it clear **what does not fully align with the hotel’s expected positioning and quality promise, why it matters, and what specific improvement is recommended**.
+
+### 6.1 Foyer & Arrival Experience
+
+#### Observation
+
+The first impression of **Waldorf Astoria Dubai Palm Jumeirah** is generally very positive. The foyer feels spacious, elegant and high-quality. The organized airport transfer was also well handled, with an air-conditioned waiting area, water offered to guests, and full luggage assistance.
+
+However, the lobby did not feature a visibly presented **Welcome Refreshment Point** with chilled water, fresh fruit, small premium sweets or pastries for guests during check-in.
+
+At the same time, clearly recognizable artificial flower arrangements were present. The beautifully designed **Arabic Coffee** area initially appeared to be a distinctive hospitality element, but during the stay it was not observed being used as an active service.
+
+In addition, heavily fingerprinted elevator buttons and a visible stain on the ceiling near the elevator area were noticeable within the public space.
+
+#### Gap
+
+For a **5-star luxury hotel**, several immediately visible details do not fully reflect a consistently premium execution:
+
+- artificial rather than fresh flowers;
+- no premium welcome offering with drinks and small refreshments;
+- an existing Arabic Coffee area without a clearly active function;
+- individual visible cleanliness and maintenance details within the public area.
+
+The high-quality architecture and interior design communicate Luxury very convincingly, but this impression is not confirmed with the same consistency through hospitality, upkeep and presentation in every visible detail.
+
+#### Impact
+
+The first minutes in a hotel strongly influence the perception of the entire stay. Small visible inconsistencies can therefore have a disproportionately strong effect.
+
+In particular, a hospitality element that is visibly prepared but not actively used can create the impression that a previously intended premium service is no longer being operated.
+
+This creates an initial **Luxury Detail Consistency Gap** within the arrival area between the hotel’s high-end visual positioning and selected elements of the actual Guest Experience.
