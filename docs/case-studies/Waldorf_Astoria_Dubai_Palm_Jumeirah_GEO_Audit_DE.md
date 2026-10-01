@@ -302,3 +302,43 @@ Gerade die ersten Minuten im Hotel prägen die Wahrnehmung des gesamten Aufentha
 Besonders ein dekorativ vorbereitetes, aber nicht genutztes Hospitality Element kann beim Gast den Eindruck erzeugen, dass ein ursprünglich vorgesehenes Premium-Angebot nicht mehr aktiv betrieben wird.
 
 Damit entsteht bereits im Arrival-Bereich ein erster **Luxury Detail Consistency Gap** zwischen der hochwertigen visuellen Positionierung des Hotels und einzelnen tatsächlich erlebbaren Details.
+
+### 6.2 Rooms, Maintenance & Functional Comfort
+
+#### Observation
+
+Die Zimmer und Suiten des **Waldorf Astoria Dubai Palm Jumeirah** hinterlassen grundsätzlich einen hochwertigen Eindruck. Sie sind großzügig geschnitten, elegant eingerichtet und bieten viel Raum und Privatsphäre. Besonders die Aufteilung der Suite mit separatem Schlaf-, Wohn- und Dining-Bereich erwies sich für gemeinsam reisende Erwachsene als sehr komfortabel.
+
+Gleichzeitig wurden während des Aufenthalts mehrere Punkte festgestellt, die das insgesamt hochwertige Raumgefühl beeinträchtigten.
+
+Im ersten Zimmer wurde Schimmel festgestellt, woraufhin das Hotel einen Zimmerwechsel organisierte. Sichtbare Abnutzungs- und Maintenance-Spuren waren jedoch auch darüber hinaus vorhanden. Dazu gehörten Kratzer auf hochwertigen Möbeloberflächen, deutliche Kratzer am Boden des ersten Zimmers, Beschädigungen an Türrahmen sowie farblich auffällige Ausbesserungen. Zusätzlich waren einzelne Flecken an Wänden und Sockelleisten sichtbar.
+
+Im Badezimmer wirkten einzelne Marmorflächen stellenweise ungleichmäßig und sichtbar gealtert. Teilweise veränderte sich die Farbwirkung zwischen einzelnen Bereichen, wodurch der Marmor insgesamt weniger frisch und hochwertig gepflegt erschien. Die konkrete technische Ursache konnte im Rahmen der On-Site Verification nicht festgestellt werden.
+
+Auch die hellen Gardinen bzw. **Sheer Curtains** wirkten stellenweise vergilbt oder nicht mehr vollständig frisch. Ob dies durch Verschmutzung, Materialalterung oder intensive Sonneneinstrahlung verursacht wurde, konnte nicht festgestellt werden.
+
+Weitere Auffälligkeiten betrafen Komfort und Funktionalität. Die Stühle im Dining-Bereich waren im Verhältnis zum Tisch sehr niedrig, wodurch das Aufstehen erschwert wurde. Der Boden im Hammam-/Duschbereich wurde als sehr rutschig wahrgenommen. Das Toilettenpapier wirkte im Vergleich zur sonstigen Qualität und Ausstattung des Badezimmers auffallend einfach.
+
+Ein konkreter Maintenance-Punkt betraf außerdem das Bügeleisen. Beim Bügeln traten schwarze bzw. mineralische Partikel aus dem Gerät aus. Nach dem Austausch zeigte auch das Ersatzgerät ein ähnliches Verhalten. Dadurch entstand für den Gast ein reales Risiko, Kleidung beim Bügeln zu beschädigen.
+
+Auch die technische Nutzbarkeit des Zimmers war nicht durchgehend stabil. Die Internetverbindung war zeitweise schwach und auf dem Balkon teilweise kaum oder gar nicht verfügbar. Gleichzeitig musste die Balkontür geschlossen bleiben, um zusätzliche Feuchtigkeit bzw. Kondensation im Zimmer zu vermeiden. Dadurch war der Balkon als Aufenthalts- oder Arbeitsbereich nur eingeschränkt nutzbar.
+
+Trotz der großzügigen Größe der Suite mit separatem Schlaf-, Wohn- und Dining-Bereich fehlte eine kleine **Kitchenette oder vergleichbare Residential Functionality**. Dies ist auch im Markenvergleich relevant, da entsprechende Funktionen in ausgewählten größeren Suite- und Residence-Kategorien anderer Waldorf-Astoria-Häuser vorhanden sind. Gerade bei längeren Aufenthalten oder für Familien mit kleinen Kindern können einfache Möglichkeiten zum Erwärmen oder Zubereiten von Milch, Baby Food oder kleinen Mahlzeiten relevant sein.
+
+#### Gap
+
+Der zentrale Gap liegt nicht in der grundsätzlichen Qualität oder Größe der Zimmer, sondern in der **Konsistenz zwischen hochwertigem Luxury Product, tatsächlichem Erhaltungszustand und funktionaler Nutzbarkeit**.
+
+Die großzügigen Räume, hochwertigen Materialien und die starke Raumgestaltung erzeugen eine entsprechend hohe Premium-Erwartung. Sichtbare Abnutzung, einzelne Maintenance-Probleme, eingeschränkte Internetabdeckung sowie ergonomische und funktionale Schwächen fallen in diesem Umfeld besonders deutlich auf.
+
+Bei der großen Suite entsteht zusätzlich ein **Brand Consistency & Residential Functionality Gap**: Die räumliche Größe und Aufteilung vermitteln bereits den Charakter eines länger nutzbaren privaten Wohnbereichs, ohne die dazu passende praktische Funktionalität vollständig anzubieten.
+
+#### Impact
+
+Für Gäste, die Waldorf Astoria aufgrund von **Comfort, Tranquillity, Service und Luxury** auswählen, ist das Zimmer einer der wichtigsten Beweise dafür, dass dieses Versprechen tatsächlich erfüllt wird.
+
+Einzelne kleinere Mängel wären isoliert betrachtet möglicherweise wenig relevant. In ihrer Summe können sie jedoch den Eindruck erzeugen, dass ein grundsätzlich hochwertiges Zimmer nicht in jedem Detail auf demselben Premium-Niveau gepflegt und funktional weiterentwickelt wird.
+
+Besonders relevant ist dies für längere Aufenthalte, ältere Gäste, Familien sowie Gäste, die ihre Suite nicht nur zum Schlafen, sondern als tatsächlichen privaten Wohn-, Arbeits- und Aufenthaltsbereich nutzen.
+
+Damit entsteht ein weiterer **Luxury Detail, Functional Comfort & Brand Consistency Gap** zwischen der grundsätzlich hochwertigen Zimmerpositionierung und einzelnen Elementen der tatsächlichen Guest Experience.
