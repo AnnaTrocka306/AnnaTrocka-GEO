@@ -232,3 +232,13 @@ Developer of her own GEO Methodology
 **Email:** [info@anna-trocka.de](mailto:info@anna-trocka.de)
 
 ---
+
+## 6. On-Site Gaps and Concrete Areas for Improvement
+
+The following section documents the specific weaknesses and areas for improvement identified during the On-Site Verification.
+
+Each point follows a clear and consistent structure:
+
+**Observation → Gap → Impact → Recommendation**
+
+This makes it clear **what does not fully align with the hotel’s expected positioning and quality promise, why it matters, and what specific improvement is recommended**.
