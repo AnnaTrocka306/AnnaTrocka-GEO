@@ -55,3 +55,23 @@ El informe distingue entre problemas técnicos confirmados, observaciones relati
 El resultado de la auditoría será una evaluación sistematizada del estado actual del sitio web, acompañada de recomendaciones concretas y prioridades de mejora.
 
 **La pregunta central de este estudio es: ¿hasta qué punto el sitio web de AXXOS Hotels & Resorts funciona actualmente no solo como un catálogo digital de hoteles, sino también como una herramienta eficaz para orientar al cliente, convencerlo y generar reservas?**
+
+---
+
+## 2. Evaluación general del sitio web
+
+Como resultado de la auditoría integral, el sitio web de AXXOS Hotels & Resorts ha recibido las siguientes puntuaciones en una escala del 1 al 10, donde 10 representa la máxima calificación.
+
+| Área de evaluación | Puntuación | Justificación resumida |
+|---|---|---|
+| **UX — Experiencia de usuario** | **3/10** | Deficiencias en la presentación visual, la legibilidad y la jerarquía de la información. El proceso de selección de hoteles no está suficientemente orientado a los objetivos y necesidades de los visitantes. |
+| **Marketing** | **2/10** | No se comunican claramente una propuesta de valor única, las ventajas competitivas ni las razones para elegir el grupo hotelero. |
+| **Estado técnico** | **4/10** | Las funciones principales están operativas, pero se han detectado deficiencias técnicas, incluido un bajo rendimiento móvil: 34/100 según Lighthouse. |
+| **SEO** | **4/10** | El sitio web es accesible para su indexación, pero presenta deficiencias en los metadatos, los encabezados y la estructura semántica. |
+| **GEO** | **4/10** | La información sobre los hoteles está disponible, pero las relaciones semánticas entre la marca, los establecimientos, sus características y las necesidades de los huéspedes no están expresadas con suficiente claridad. |
+
+### Evaluación general: 3/10 — baja
+
+**Nota.** Las puntuaciones representan una valoración profesional basada en criterios de auditoría y no constituyen mediciones de las tasas de conversión ni de la frecuencia de recomendaciones por parte de sistemas de inteligencia artificial.
+
+La justificación detallada de cada puntuación, las deficiencias detectadas, las evidencias técnicas, los resultados de las mediciones, los ejemplos visuales y las recomendaciones se presentan en los siguientes apartados del informe.
