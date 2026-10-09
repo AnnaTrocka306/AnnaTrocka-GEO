@@ -414,3 +414,160 @@ Por tanto, el INP móvil de 205 ms queda fuera de la categoría «bueno», aunqu
 Las evaluaciones SEO y GEO se presentan por separado, puesto que la accesibilidad técnica de una página no equivale a la calidad de su optimización para buscadores ni a la claridad de sus relaciones semánticas.
 
 ---
+
+## 6. Auditoría SEO del sitio web
+
+**Objeto de la auditoría:** [AXXOS Hotels & Resorts — versión alemana](https://www.axxoshotels.com/de)
+
+**Fecha de la auditoría:** 09.10.2026
+
+**Evaluación SEO: 4/10.**
+
+### 6.1. Fundamento de la evaluación
+
+La auditoría automatizada de Lighthouse obtuvo una puntuación de **SEO: 92/100**. Sin embargo, este resultado comprende un conjunto limitado de comprobaciones técnicas y no constituye una evaluación del rendimiento real del sitio web en los motores de búsqueda.
+
+La **evaluación experta de 4/10** considera parámetros adicionales: relevancia semántica, estructura del contenido, enlaces internos, coherencia lingüística y capacidad de las páginas para responder a las consultas de búsqueda.
+
+Por tanto, no existe contradicción entre ambas puntuaciones: una página puede superar la mayoría de las comprobaciones automáticas y, al mismo tiempo, presentar deficiencias en la forma de comunicar sus ofertas a los motores de búsqueda.
+
+**Fuentes:**
+
+- [Resultado de PageSpeed Insights — AXXOS](https://pagespeed.web.dev/analysis/https-www-axxoshotels-com-de/g6avonhc8b?form_factor=mobile)
+- [Chrome Developers — funciones y limitaciones de Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)
+
+### 6.2. Resultados de la auditoría SEO
+
+| N.º | Parámetro | Deficiencia identificada | Relevancia para SEO |
+|---|---|---|---|
+| 1 | **Title** | `Official Website Startseite by Axxos Hotels`: combinación de idiomas y descripción poco específica de la página. | El título refleja de forma insuficiente la oferta hotelera y su relevancia para las búsquedas. |
+| 2 | **Meta Description** | La descripción de la página alemana está redactada en inglés. | No corresponde al contexto lingüístico del público objetivo. |
+| 3 | **H1** | `Perfekte Lage`: expresión valorativa que no identifica al grupo hotelero, sus servicios ni el tipo de estancia. | El encabezado principal no define claramente el tema de la página. |
+| 4 | **Jerarquía de encabezados** | Estructura H1–H6 inconsistente, incluido un H4 anterior al H1 principal. | Las secciones temáticas no están organizadas con suficiente claridad. |
+| 5 | **Arquitectura de categorías** | La navegación combina hoteles, ofertas especiales, una categoría específica de tratamientos con radón, Wellness y Golf. | No existe un criterio uniforme de clasificación temática. |
+| 6 | **Enlaces internos** | Se utilizan textos idénticos como `Mehr Info` para diferentes hoteles. | Los textos de los enlaces describen de forma insuficiente sus páginas de destino. |
+| 7 | **Relevancia del contenido para las búsquedas** | Existe información sobre los hoteles, pero sus características diferenciales y su adecuación a las necesidades de los huéspedes se presentan de manera desigual. | Las relaciones temáticas entre servicios, necesidades y hoteles concretos no se establecen de forma suficientemente sistemática. |
+| 8 | **SEO multilingüe** | La versión alemana contiene elementos en otros idiomas y se ha observado una redirección de navegación hacia una página en checo. | Se pierde la coherencia lingüística durante el recorrido del usuario. |
+| 9 | **Datos estructurados** | No se detectó marcado JSON-LD que describiera al grupo hotelero y sus establecimientos en las páginas examinadas. | No se aprovecha la posibilidad de presentar los hoteles mediante datos estructurados explícitos. |
+| 10 | **Actualización del contenido** | Se detectó una oferta cuya fecha de validez había expirado. | Reduce la actualidad y la utilidad práctica de la información. |
+| 11 | **Indexación y descubrimiento de páginas** | El contenido principal está disponible en HTML; existen Sitemap y anotaciones lingüísticas. | Base positiva para SEO. No se ha determinado el alcance real de la indexación. |
+
+### 6.3. Principales problemas SEO
+
+**1. Definición semántica insuficiente de la página principal**
+
+La página principal debe permitir que Google identifique qué representa la empresa, qué servicios ofrece y a qué necesidades de búsqueda responde su contenido.
+
+El encabezado `Perfekte Lage` no proporciona esta información.
+
+Esto no constituye una infracción del estándar HTML ni permite afirmar que Google sea incapaz de interpretar la página. Sin embargo, la formulación desaprovecha el encabezado principal como elemento de identificación de la oferta hotelera.
+
+Google recomienda utilizar términos relevantes para las búsquedas en elementos importantes de la página, incluidos el Title y el encabezado principal.
+
+**Fuente:** [Google Search Essentials](https://developers.google.com/search/docs/essentials).
+
+**2. Arquitectura temática insuficientemente estructurada**
+
+El sitio presenta hoteles, servicios wellness, programas de salud, golf y ofertas especiales.
+
+Sin embargo, las categorías temáticas, las promociones comerciales y los establecimientos individuales aparecen en distintos niveles sin un criterio de organización claramente definido.
+
+Desde la perspectiva SEO, es necesario establecer relaciones comprensibles:
+
+- necesidad del huésped → categoría temática;
+- categoría temática → hoteles adecuados;
+- hotel → servicios y ofertas concretas.
+
+Un mismo hotel puede pertenecer a varias categorías temáticas.
+
+Esta estructura facilita la navegación y permite establecer una organización más clara de los enlaces internos.
+
+**Fuentes:**
+
+- [Google — SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+- [Google — SEO Link Best Practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)
+- [Google — recomendaciones sobre la estructura de URL](https://developers.google.com/search/docs/crawling-indexing/url-structure)
+
+**3. Contenido insuficientemente específico**
+
+El sitio contiene información real sobre sus hoteles. Sin embargo, la disponibilidad de información no equivale a su suficiencia para responder a una intención de búsqueda concreta.
+
+Las páginas de los hoteles deberían presentar de manera sistemática:
+
+- ubicación y características del establecimiento;
+- tratamientos, servicios e instalaciones disponibles;
+- tipos de estancia para los que resulta adecuado;
+- características diferenciales;
+- condiciones de alojamiento y acceso a la reserva.
+
+No se trata de incluir una cantidad determinada de palabras clave, sino de responder directamente a las preguntas del huésped potencial.
+
+Google recomienda crear contenido útil y fiable, orientado prioritariamente a las necesidades de las personas.
+
+**Fuente:** [Google — Creating Helpful, Reliable, People-First Content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content).
+
+**4. Incoherencia lingüística**
+
+La versión alemana contiene determinados elementos en otros idiomas. Además, uno de los recorridos analizados condujo a una página en checo.
+
+La presencia de `hreflang` es un aspecto positivo, pero no sustituye una localización adecuada del contenido y de la navegación.
+
+Es necesario comprobar las referencias lingüísticas recíprocas y verificar que Title, Meta Description y contenido principal correspondan al idioma de cada versión.
+
+**Fuentes:**
+
+- [Google — Localized Versions](https://developers.google.com/search/docs/specialty/international/localized-versions)
+- [Google — recomendaciones sobre Title](https://developers.google.com/search/docs/appearance/title-link)
+- [Google — recomendaciones sobre Meta Description](https://developers.google.com/search/docs/appearance/snippet)
+
+**5. Descripción estructurada insuficiente de los hoteles**
+
+Schema.org contempla tipos estandarizados como `Hotel`, `HotelRoom` y sus correspondientes propiedades.
+
+Para AXXOS resulta recomendable considerar una representación estructurada del grupo hotelero y de sus establecimientos mediante datos verificables.
+
+Esto permitiría presentar de forma más explícita las entidades y sus características a los sistemas que procesan información estructurada.
+
+Es importante aclarar que el marcado no garantiza mejores posiciones ni resultados enriquecidos en Google. La ausencia de JSON-LD, por sí sola, no constituye un error técnico universal.
+
+**Fuentes:**
+
+- [Schema.org — Hotel](https://schema.org/Hotel)
+- [Schema.org — hoteles y ofertas](https://schema.org/docs/hotels.html)
+- [Google — Structured Data](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data)
+
+### 6.4. Prioridades de corrección
+
+| Prioridad | Recomendación |
+|---|---|
+| **P1 — Alta** | Revisar Title, Meta Description y H1; definir claramente el tema semántico principal de la página de inicio; establecer una estructura coherente de categorías y enlaces internos. |
+| **P2 — Media** | Organizar la jerarquía H1–H6; completar las descripciones de los hoteles con características concretas; corregir las incoherencias lingüísticas y actualizar la información caducada. |
+| **P3 — Desarrollo** | Implementar el marcado estructurado correspondiente; verificar toda la red de `hreflang`, canonical y URL indexables; evaluar la cobertura de las consultas de búsqueda relacionadas con las categorías hoteleras. |
+
+### 6.5. Limitaciones de la auditoría
+
+La auditoría se ha realizado sobre la versión alemana del sitio web y determinadas páginas internas.
+
+Sin acceso a Google Search Console y a los datos analíticos, no es posible determinar de forma fiable:
+
+- el número real de páginas indexadas;
+- las consultas de búsqueda y las posiciones alcanzadas;
+- las impresiones y el CTR;
+- el tráfico orgánico y las conversiones;
+- el impacto de las deficiencias identificadas sobre los resultados comerciales reales.
+
+Por tanto, la evaluación refleja **la calidad de la implementación SEO**, no los resultados medidos del posicionamiento orgánico.
+
+### 6.6. Evaluación SEO final
+
+**4/10 — el sitio web es técnicamente accesible para los motores de búsqueda, pero su contenido y arquitectura no comunican de manera suficientemente sistemática las ofertas hoteleras.**
+
+Entre los aspectos positivos destacan la disponibilidad de contenido HTML indexable, las páginas individuales de los hoteles, el Sitemap y las anotaciones lingüísticas.
+
+El problema principal es la falta de correspondencia suficientemente clara entre **lo que busca el huésped potencial, qué oferta responde a su necesidad y en qué página del sitio puede encontrarla**.
+
+Para mejorar el SEO no basta con corregir los metadatos. Es necesario organizar sistemáticamente el contenido alrededor de los hoteles, sus características reales y las necesidades de búsqueda de los huéspedes.
+
+**Evaluación experta: 4/10.**
+
+---
