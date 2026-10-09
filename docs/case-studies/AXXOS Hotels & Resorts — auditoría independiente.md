@@ -571,3 +571,62 @@ Para mejorar el SEO no basta con corregir los metadatos. Es necesario organizar 
 **Evaluación experta: 4/10.**
 
 ---
+
+## 7. Auditoría GEO — 4/10
+
+La auditoría ha identificado una falta de definición semántica suficientemente clara del grupo hotelero AXXOS.
+
+El sitio web no comunica de manera precisa el ADN de la marca, presenta de forma insuficiente las características diferenciales de sus hoteles y no establece relaciones claras entre los establecimientos, las necesidades de los huéspedes y las situaciones en las que cada hotel representa una opción adecuada.
+
+**El problema principal: no es posible desarrollar una estrategia GEO eficaz sin una base sólida de marketing.**
+
+Para ello, es imprescindible responder claramente a cuatro preguntas:
+
+- ¿Qué representa la empresa y qué la diferencia de sus competidores?
+- ¿A quién se dirigen sus ofertas?
+- ¿Qué hotel es adecuado para cada tipo de huésped y en qué circunstancias?
+- ¿Por qué debería el huésped elegir precisamente ese establecimiento?
+
+Sin estas respuestas, la inteligencia artificial puede encontrar información sobre los hoteles, pero no dispone de fundamentos suficientemente claros para generar recomendaciones justificadas.
+
+**La puntuación de 4/10** refleja una evaluación preliminar de la estructura informativa del sitio web, no los resultados de una investigación GEO completa.
+
+**Puedo proporcionar una auditoría GEO exhaustiva, basada en la metodología propia que he desarrollado, si la empresa desea solicitar un análisis más profundo.**
+
+---
+
+## 8. Propuesta de colaboración
+
+Mi especialización profesional comprende la estrategia de marketing, el posicionamiento digital de empresas y el GEO: la creación de condiciones que permitan a los sistemas de inteligencia artificial identificar correctamente una empresa, comprender sus ventajas competitivas y tenerlas en cuenta al formular recomendaciones.
+
+**No me dedico directamente al diseño ni al desarrollo de sitios web.** Trabajo en estrecha colaboración con desarrolladores web, diseñadores UX/UI y especialistas SEO, proporcionando la base estratégica necesaria para su trabajo.
+
+### 8.1. Marca y estrategia comercial
+
+Puedo ayudar a la empresa a definir el ADN de su marca, identificar sus ventajas competitivas, determinar sus públicos objetivo y formular una propuesta de valor comercial única.
+
+Si estos elementos ya están definidos, mi función consiste en analizarlos y establecer cómo trasladar correctamente la estrategia existente al entorno digital.
+
+Presto especial atención al posicionamiento individual de cada hotel: para quién es adecuado, qué necesidades satisface y por qué un huésped debería elegirlo.
+
+### 8.2. Estrategia del sitio web y especificaciones técnicas
+
+A partir de una estrategia de marketing previamente acordada, desarrollo:
+
+- La arquitectura de la información del sitio web y la lógica de los recorridos del usuario.
+- La estructura de las propuestas comerciales y las relaciones semánticas entre hoteles, servicios y categorías de estancia.
+- Las especificaciones técnicas para diseñadores, desarrolladores web y especialistas SEO, teniendo en cuenta los requisitos de SEO y GEO.
+
+El trabajo se realiza en estrecha colaboración con el equipo responsable de la implementación técnica del sitio web.
+
+### 8.3. GEO — un ámbito de colaboración independiente
+
+**El GEO no se limita al sitio web.** Abarca la forma en que una empresa está representada, es identificada y puede ser recomendada por sistemas de inteligencia artificial a partir de la información disponible en diferentes fuentes.
+
+En el marco de la metodología GEO propia que he desarrollado, ofrezco dos modalidades de colaboración:
+
+**Modalidad de consultoría:** auditoría exhaustiva, desarrollo de una estrategia GEO individualizada y asesoramiento profesional al equipo de la empresa.
+
+**Modalidad de ejecución integral:** realización de los trabajos GEO, gestión de la implementación de la estrategia acordada y evaluación periódica de los resultados.
+
+**Mi objetivo es integrar la estrategia de marketing de la empresa, su presencia digital y las capacidades de la inteligencia artificial en un sistema coherente, orientado a atraer al público adecuado y aumentar las reservas directas.**
