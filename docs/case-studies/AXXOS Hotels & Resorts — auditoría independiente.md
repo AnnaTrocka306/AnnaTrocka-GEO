@@ -273,3 +273,144 @@ La principal deficiencia es la ausencia de una arquitectura comercial suficiente
 **Base probatoria:** las conclusiones se fundamentan en el contenido de las páginas examinadas de AXXOS, los recorridos de usuario documentados y las investigaciones sectoriales citadas. La evaluación es de carácter profesional y su impacto sobre la conversión real debe verificarse mediante datos de analítica web.
 
 ---
+
+## 5. Auditoría técnica del sitio web
+
+**Objeto de la auditoría:** [AXXOS Hotels & Resorts — versión alemana](https://www.axxoshotels.com/de)
+
+**Fecha de la auditoría:** 09.10.2026
+
+**Evaluación técnica: 4/10.**
+
+La auditoría abarca la página principal de la versión alemana, los recursos técnicos accesibles del sitio web y determinadas páginas internas, incluidos los recorridos del usuario hasta el proceso de reserva.
+
+La evaluación se basa en 22 parámetros agrupados en cinco áreas. Esta clasificación corresponde a la metodología del presente informe y no constituye una lista oficial de requisitos obligatorios de Google.
+
+### 5.1. Accesibilidad técnica e indexación
+
+| N.º | Parámetro | Resultado | Estado |
+|---|---|---|---|
+| 1 | HTTPS y respuesta del servidor | La página es accesible mediante HTTPS y el servidor devuelve HTTP 200. | Conforme |
+| 2 | Acceso de los motores de búsqueda | No se detectaron restricciones de indexación en la página analizada. | Conforme |
+| 3 | XML Sitemap | Se identificó un archivo `sitemap.xml.gz` con aproximadamente 602 URL, incluidas unas 205 correspondientes a la versión alemana. | Conforme |
+| 4 | Versiones lingüísticas | Se detectaron anotaciones `hreflang` para alemán, inglés y checo. La coherencia de todas las referencias recíprocas requiere una comprobación adicional. | Verificación parcial |
+| 5 | Canonical | No se identificó una etiqueta `rel="canonical"` explícita en la página principal alemana analizada. | Revisión recomendada |
+
+**Conclusión:** no se detectaron obstáculos fundamentales para el rastreo de la página principal alemana.
+
+La ausencia de una etiqueta canonical explícita no constituye, por sí sola, un error técnico: Google puede seleccionar automáticamente la URL canónica. Sin embargo, cuando existen varias versiones lingüísticas y diferentes variantes de URL, es necesario comprobar la coherencia de su indexación.
+
+**Referencias oficiales:**
+
+- [Google Search Central — rastreo e indexación](https://developers.google.com/search/docs/crawling-indexing)
+- [Google — creación y envío de sitemaps](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
+- [Google — versiones localizadas y hreflang](https://developers.google.com/search/docs/specialty/international/localized-versions)
+- [Google — URL canónicas](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+
+### 5.2. HTML, estructura semántica y contenido
+
+| N.º | Parámetro | Resultado | Estado |
+|---|---|---|---|
+| 6 | Disponibilidad del contenido en HTML | Los nombres y las descripciones de los 14 hoteles están presentes en el HTML original y no dependen exclusivamente de la ejecución de JavaScript. | Conforme |
+| 7 | Title | Título de la página: `Official Website Startseite by Axxos Hotels`. No describe el contenido con suficiente precisión y combina diferentes idiomas. | Deficiencia |
+| 8 | Meta description | Se identificó una descripción en inglés dentro de la página alemana. | Deficiencia |
+| 9 | H1 | Se utiliza `Perfekte Lage`. Esta formulación no identifica al grupo hotelero, la categoría de la oferta ni el servicio principal. | Deficiencia semántica |
+| 10 | Jerarquía H1–H6 | Se detectó una secuencia inconsistente de encabezados, incluido un H4 situado antes del H1 principal. | Deficiencia estructural |
+| 11 | Datos estructurados | No se detectó marcado JSON-LD que describiera la organización y sus hoteles en las páginas examinadas. | Oportunidad de mejora |
+| 12 | Enlaces internos | Se utilizan textos genéricos como `Mehr Info` para diferentes establecimientos, con escaso significado fuera de contexto. | Deficiencia |
+| 13 | Coherencia lingüística | La interfaz alemana contiene elementos en inglés y checo, incluidos `Lokalita`, `Změnit filtr` y `Filtrovat`. | Deficiencia |
+| 14 | Actualización de la información | Durante la auditoría se identificó una oferta cuya fecha de finalización correspondía a junio de 2026. | Deficiencia |
+| 15 | Textos alternativos de imágenes | De 48 imágenes HTML, 19 carecen de texto `alt` o lo tienen vacío. Lighthouse identificó por separado nueve imágenes sin atributo `alt`. | Requiere corregir las imágenes informativas |
+
+**Conclusión:** el contenido principal es técnicamente accesible, pero su organización semántica presenta deficiencias. Esto dificulta la identificación automática del propósito de la página, la estructura de las ofertas y las relaciones entre los establecimientos.
+
+Es importante distinguir entre requisitos técnicos y recomendaciones:
+
+- El encabezado `Perfekte Lage` no infringe el estándar HTML, pero describe de manera insuficiente el propósito de la página.
+- La ausencia de JSON-LD no constituye una infracción universal. Un marcado estructurado correctamente implementado puede ayudar a identificar la organización y sus establecimientos, pero no garantiza una mayor visibilidad.
+- Un atributo `alt` vacío es válido para imágenes decorativas. La corrección debe centrarse en las imágenes que transmiten información relevante.
+
+**Referencias oficiales:**
+
+- [WHATWG — HTML: secciones y encabezados](https://html.spec.whatwg.org/multipage/sections.html)
+- [Google — guía básica de SEO](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+- [Google — introducción a los datos estructurados](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data)
+- [Google — directrices para datos estructurados](https://developers.google.com/search/docs/appearance/structured-data/sd-policies)
+- [W3C — alternativas textuales para contenido no textual](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)
+
+### 5.3. Rendimiento y Core Web Vitals
+
+Los resultados se obtuvieron mediante Google PageSpeed Insights y Lighthouse.
+
+**[Consultar el informe completo de PageSpeed Insights](https://pagespeed.web.dev/analysis/https-www-axxoshotels-com-de/g6avonhc8b?form_factor=mobile)**
+
+| N.º | Parámetro | Resultado | Estado |
+|---|---|---|---|
+| 16 | Rendimiento móvil | **34/100** en Lighthouse. | Deficiencia crítica |
+| 17 | Rendimiento en ordenadores | **83/100** en Lighthouse. | Requiere optimización |
+| 18 | Métricas de laboratorio en dispositivos móviles | LCP: **40,4 s**; TBT: **1.440 ms** en las condiciones de la prueba. | Deficiencia crítica |
+| 19 | Volumen de recursos descargados | Aproximadamente **17,8 MB**. Se identificó un posible ahorro de **3,3 MB** en imágenes y **1,15 MB** en JavaScript no utilizado. | Deficiencia significativa |
+| 20 | Core Web Vitals de usuarios reales | Datos del dominio en móviles: LCP **2,1 s**, INP **205 ms**, CLS **0,01**. En ordenadores: LCP **1,3 s**, INP **139 ms**, CLS **0,03**. | El INP móvil requiere mejora |
+
+**Aclaración metodológica:** un LCP de laboratorio de 40,4 segundos no significa que todos los visitantes esperen exactamente ese tiempo. Lighthouse simula determinadas condiciones de dispositivo y conexión. Los datos de usuarios reales corresponden al dominio en su conjunto, no exclusivamente a la página `/de`.
+
+No obstante, la diferencia entre los resultados móviles y de escritorio demuestra una elevada sensibilidad de la página a las condiciones de carga.
+
+Valores recomendados por Google para una buena experiencia:
+
+- LCP: máximo **2,5 s**.
+- INP: máximo **200 ms**.
+- CLS: máximo **0,1**.
+
+Por tanto, el INP móvil de 205 ms queda fuera de la categoría «bueno», aunque la desviación respecto al límite es pequeña.
+
+**Referencias oficiales:**
+
+- [Google PageSpeed Insights — resultados de AXXOS](https://pagespeed.web.dev/analysis/https-www-axxoshotels-com-de/g6avonhc8b?form_factor=mobile)
+- [Google web.dev — Core Web Vitals](https://web.dev/articles/vitals)
+- [Chrome Developers — metodología de puntuación de Lighthouse](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring)
+- [Google web.dev — optimización del LCP](https://web.dev/articles/optimize-lcp)
+
+### 5.4. Accesibilidad digital y funcionamiento de la interfaz
+
+| N.º | Parámetro | Resultado | Estado |
+|---|---|---|---|
+| 21 | Accesibilidad digital | Lighthouse Accessibility: **84/100**. Entre los problemas identificados figuran nueve imágenes sin atributo `alt` y ocho enlaces sin nombre accesible. | Deficiencia |
+| 22 | JavaScript y procesos funcionales | La ventana de reservas se abre y el filtro por ciudad funciona. Sin embargo, se detectó un error de JavaScript en la consola y determinadas incidencias en los recorridos del usuario. | Funcionamiento parcial; requiere nueva verificación |
+
+**Resultados adicionales de las pruebas manuales:**
+
+1. El botón `PREISE UND ZIMMER` utiliza `href="#"`, pero abre correctamente la ventana de reservas mediante JavaScript. Por tanto, no sería correcto clasificarlo como un botón inoperativo.
+2. Durante uno de los recorridos de reserva de `Apartmány Dagmar`, el área principal de la siguiente pantalla apareció vacía. Es necesario repetir la prueba para determinar si se trató de un error de carga, falta de disponibilidad u otra circunstancia.
+3. Al acceder desde la versión alemana a uno de los establecimientos wellness, la interfaz cambió al checo sin que el usuario seleccionara ese idioma. Debe comprobarse la conservación del idioma durante la navegación entre páginas.
+4. Se detectó un error de JavaScript relacionado con una llamada a `addEventListener` sobre un elemento inexistente. No se ha demostrado que este error afecte directamente al proceso de reserva.
+
+**Conclusión:** las funciones básicas existen y, en parte, funcionan correctamente. Sin embargo, las incidencias identificadas requieren pruebas repetidas en diferentes dispositivos y navegadores, utilizando recorridos de usuario reproducibles.
+
+**Referencias oficiales:**
+
+- [W3C — Web Content Accessibility Guidelines 2.2](https://www.w3.org/TR/WCAG22/)
+- [Chrome Developers — evaluación de accesibilidad en Lighthouse](https://developer.chrome.com/docs/lighthouse/accessibility/scoring)
+- [Google — fundamentos de SEO para sitios con JavaScript](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)
+
+### 5.5. Prioridades de corrección
+
+| Prioridad | Acción necesaria |
+|---|---|
+| **P1 — Alta** | Optimizar la carga móvil; repetir la prueba de la pantalla vacía durante la reserva; corregir los errores de JavaScript que afecten a las acciones del usuario; garantizar nombres accesibles en los elementos interactivos. |
+| **P2 — Media** | Corregir las incoherencias lingüísticas, Title y Meta Description; reorganizar la jerarquía de encabezados; revisar los atributos `alt` de las imágenes informativas; eliminar o actualizar las ofertas caducadas. |
+| **P3 — Desarrollo** | Comprobar las etiquetas canonical y las referencias recíprocas `hreflang` en todas las versiones lingüísticas; implementar datos estructurados aplicables basados en información real de los hoteles. |
+
+### 5.6. Evaluación técnica final
+
+**4/10 — el sitio web funciona técnicamente, pero la calidad de su implementación no alcanza el nivel esperado de una plataforma hotelera comercial.**
+
+**Aspectos positivos:** el sitio utiliza HTTPS, las páginas principales son accesibles, la información de los hoteles está presente en HTML, existe un sitemap, se han implementado varias versiones lingüísticas y funcionan los mecanismos básicos de reserva.
+
+**Principales deficiencias:** bajo rendimiento móvil, estructura HTML semánticamente imprecisa, incoherencias lingüísticas, problemas de accesibilidad digital e incidencias puntuales en los procesos de reserva.
+
+**Limitación de la evaluación:** la puntuación de 4/10 representa una valoración experta basada en el conjunto de resultados observados. No constituye una calificación oficial de Google ni se calcula directamente a partir de Lighthouse.
+
+Las evaluaciones SEO y GEO se presentan por separado, puesto que la accesibilidad técnica de una página no equivale a la calidad de su optimización para buscadores ni a la claridad de sus relaciones semánticas.
+
+---
