@@ -78,11 +78,15 @@ La justificación detallada de cada puntuación, las deficiencias detectadas, la
 
 ---
 
-## 3.10. Fundamentos científicos y sectoriales de la auditoría UX
+## 3. Problemas de experiencia de usuario (UX) identificados
 
-Las deficiencias de experiencia de usuario detectadas se han contrastado con investigaciones científicas, pruebas de usabilidad del sector y estándares internacionales de accesibilidad.
+El fondo oscuro dificulta la lectura prolongada, especialmente para el público adulto. El sitio web carece de una identidad visual uniforme, una navegación intuitiva y una estructura coherente para presentar los hoteles y sus servicios. Al usuario le resulta difícil elegir el hotel adecuado, comprender sus ventajas y avanzar hacia la reserva: algunos enlaces conducen a documentos PDF, páginas incompletas u ofertas que aparecen sin una descripción previa del establecimiento. La falta de coherencia entre las interfaces y los cambios inesperados de idioma generan dificultades adicionales.
 
-### 1. Legibilidad del texto sobre fondo oscuro
+**En conjunto, estas deficiencias complican la elección del hotel y crean un riesgo de pérdida de reservas potenciales.**
+
+A continuación, se presentan los estudios científicos, los estándares del sector y los resultados de pruebas de usabilidad que fundamentan las conclusiones expuestas.
+
+### 3.1. Legibilidad del texto sobre fondo oscuro
 
 Un estudio de la Universidad Heinrich Heine de Düsseldorf (2013, 169 participantes) identificó una ventaja del texto oscuro sobre fondo claro en tareas de percepción visual y lectura, tanto entre participantes jóvenes (18–33 años) como mayores (60–85 años). Resultados similares fueron obtenidos por Buchner y Baumgartner (2007).
 
@@ -93,7 +97,7 @@ Un estudio de la Universidad Heinrich Heine de Düsseldorf (2013, 169 participan
 - [PubMed — Positive Display Polarity, 2013](https://pubmed.ncbi.nlm.nih.gov/23654206/)
 - [PubMed — Text–Background Polarity, 2007](https://pubmed.ncbi.nlm.nih.gov/17510822/)
 
-### 2. Contraste y accesibilidad de la información
+### 3.2. Contraste y accesibilidad de la información
 
 El estándar internacional WCAG 2.2 establece una relación mínima de contraste de 4,5:1 para el texto normal y de 3:1 para el texto grande. El W3C también analiza los cambios visuales asociados al envejecimiento y sus implicaciones para las interfaces web.
 
@@ -103,7 +107,7 @@ El estándar internacional WCAG 2.2 establece una relación mínima de contraste
 - [W3C — WCAG 2.2, Contrast Minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)
 - [W3C — Older Users and Web Accessibility](https://www.w3.org/WAI/older-users/)
 
-### 3. Coherencia visual y confianza
+### 3.3. Coherencia visual y confianza
 
 En un estudio de Stanford University, la apariencia visual del sitio web se mencionó en el 46,1 % de los comentarios de los participantes al evaluar su credibilidad. Nielsen Norman Group identifica la consistencia de la interfaz como un principio fundamental para mejorar la previsibilidad de la interacción.
 
@@ -113,7 +117,7 @@ En un estudio de Stanford University, la apariencia visual del sitio web se menc
 - [Stanford University — Web Credibility Research (PDF)](https://credibility.stanford.edu/pdf/How_Do_People_Evaluate_a_Web_Site%27s_Credibility_v37.pdf)
 - [Nielsen Norman Group — Consistency and Standards](https://www.nngroup.com/articles/consistency-and-standards/)
 
-### 4. Claridad de la navegación y de las denominaciones
+### 3.4. Claridad de la navegación y de las denominaciones
 
 Las investigaciones de Nielsen Norman Group sobre *Information Scent* demuestran que los usuarios evalúan los enlaces según su capacidad para anticipar el contenido al que conducen. Las denominaciones ambiguas aumentan el riesgo de realizar elecciones incorrectas.
 
@@ -121,7 +125,7 @@ Las investigaciones de Nielsen Norman Group sobre *Information Scent* demuestran
 
 **Fuente:** [Nielsen Norman Group — Information Scent](https://www.nngroup.com/articles/information-scent/)
 
-### 5. Selección del hotel y proceso de reserva
+### 3.5. Selección del hotel y proceso de reserva
 
 Baymard Institute realizó 992 horas de investigación, incluyendo más de 317 sesiones de pruebas de usabilidad en sitios web de hoteles y plataformas turísticas.
 
@@ -134,7 +138,7 @@ El estudio destaca la importancia de proporcionar información sobre las caracte
 - [Baymard — Booking Search UX](https://baymard.com/research-articles/travel-accommodations-booking-search)
 - [Baymard — Travel Site UX Best Practices](https://baymard.com/research-articles/travel-site-ux-best-practices)
 
-### 6. Transparencia de las tarifas
+### 3.6. Transparencia de las tarifas
 
 Las investigaciones de Baymard muestran que las tarifas ambiguas, los precios incompletos y los cargos adicionales dificultan la comparación de ofertas y la toma de decisiones de reserva.
 
@@ -142,7 +146,7 @@ Las investigaciones de Baymard muestran que las tarifas ambiguas, los precios in
 
 **Fuente:** [Baymard — Complexity of Pricing Information](https://baymard.com/research-articles/new-research-travel-accommodations)
 
-### 7. Recorrido del cliente y competencia con las OTA
+### 3.7. Recorrido del cliente y competencia con las OTA
 
 El estudio *Path to Purchase* de Expedia Group reveló que los viajeros consultan una media de 141 páginas de contenido turístico durante los 45 días anteriores a la reserva. Entre quienes reservaron directamente en el sitio web de un hotel, el 61 % también había visitado una agencia de viajes online (OTA) durante el proceso de búsqueda.
 
@@ -152,7 +156,7 @@ El estudio *Path to Purchase* de Expedia Group reveló que los viajeros consulta
 - [Expedia Group — The Path to Purchase, 2023](https://go2.advertising.expedia.com/path-to-purchase-2023)
 - [Expedia Group — Traveler Research and Booking Behavior](https://partner.expediagroup.com/en-us/resources/blog/travel-research-process-and-destination-decisions)
 
-### 8. Rendimiento móvil
+### 3.8. Rendimiento móvil
 
 Según datos de Google de 2016, aproximadamente el 53 % de las visitas móviles se abandonaban cuando la carga de la página superaba los tres segundos.
 
@@ -160,18 +164,11 @@ Según datos de Google de 2016, aproximadamente el 53 % de las visitas móviles 
 
 **Fuente:** [Google — Mobile Speed Scorecard and Impact Calculator](https://blog.google/products-and-platforms/products/ads/speed-scorecard-impact-calculator/)
 
-### Conclusión
+### Conclusión desde la perspectiva empresarial
 
-Las investigaciones citadas respaldan la importancia de la legibilidad, la coherencia de la interfaz, la claridad de la navegación, la disponibilidad de información suficiente para elegir un hotel y la transparencia del proceso de reserva.
+Los problemas de experiencia de usuario (UX) identificados dificultan la elección del hotel y la realización de reservas directas, generando el riesgo de perder clientes potenciales o de que estos recurran a la competencia y a plataformas intermediarias. Sin datos analíticos, no es posible cuantificar las posibles pérdidas económicas.
 
-**La base probatoria de la auditoría comprende tres niveles:**
-
-1. **Observaciones verificadas en AXXOS:** capturas de pantalla, recorridos de usuario y resultados de las comprobaciones técnicas.
-2. **Investigaciones externas:** publicaciones científicas, pruebas de usabilidad y estándares internacionales.
-3. **Evaluación de aplicabilidad:** riesgos identificados y recomendaciones para corregirlos.
-
-Las investigaciones externas fundamentan las conclusiones profesionales, pero no sustituyen las mediciones del comportamiento de los visitantes de AXXOS. Para confirmar el impacto de las deficiencias sobre la conversión se requieren datos de analítica web y pruebas de usabilidad con usuarios.
-
+Para mantener el informe conciso, no se incluyen capturas de pantalla ni ejemplos detallados de los recorridos problemáticos. **Si la empresa lo considera oportuno, puedo realizar una reunión por Zoom para mostrar directamente en el sitio web todas las deficiencias identificadas y explicar sus posibles consecuencias para el negocio.**
 ---
 
 ## 4. Auditoría de marketing
