@@ -1,0 +1,4 @@
+# This file is a preview/repository sample. For a GitHub Pages project URL, crawler controls apply at host level.
+# Do not use it as a substitute for access controls or legal review.
+User-agent: *
+Allow: /
