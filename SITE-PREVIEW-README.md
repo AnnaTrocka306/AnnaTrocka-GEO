@@ -29,7 +29,7 @@ GSC/Bing/GA4/IndexNow, Domain, korrektes `canonical`, produktive `sitemap.xml`, 
 - `docs/methodology/GEO_Methodik_Anna_Trocka_Base.md`
 - `docs/case-studies/Hotel-in-ChatGPT-sichtbar-machen.md` (laufend)
 - `docs/case-studies/Waldorf_Astoria_Dubai_Palm_Jumeirah_GEO_Audit_DE.md` (in Bearbeitung)
-- `docs/case-studies/Trocka_GEO für отелей_Предварительный аудит_AXXOS.md` (Entwurf)
+- `docs/case-studies/Trocka_GEO для отелей_Предварительный аудит_AXXOS.md` (Entwurf)
 - `docs/knowledge-base/Knowledge_Dictionary/` und KI-GEO-Insider auf Blogger.
 
 ## Abnahme für nächsten Schritt
