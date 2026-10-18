@@ -1,0 +1,103 @@
+{
+  "site": "Anna Trocka GEO – Preview",
+  "root": "https://annatrocka306.github.io/AnnaTrocka-GEO/",
+  "generated_at": "2026-10-18",
+  "policy": {
+    "preview_noindex": true,
+    "rights": "Source licences must be verified before a production launch; do not assert copyright or ownership without evidence.",
+    "accuracy": "AI visualizations are illustrative, not documentary evidence for hotel features.",
+    "approval": "Images and placement selected by the site owner."
+  },
+  "images": {
+    "hero-anna-trocka-geo-strategy": {
+      "url": "https://annatrocka306.github.io/AnnaTrocka-GEO/assets/images/hero-anna-trocka-geo-strategy.webp",
+      "alt": "KI-generierte Illustration von Anna Trocka in einem Büro mit Elementen ihrer GEO-Methodik",
+      "caption": "GEO-Methodik – Anna Trocka",
+      "ai_label": "KI-generiert",
+      "verified_author": false,
+      "verified_license": false,
+      "content_sha": "6280c349e07cad50f58cba4ae83eb306c5154a1c"
+    },
+    "geo-methodik-wissen-vor-content": {
+      "url": "https://annatrocka306.github.io/AnnaTrocka-GEO/assets/images/geo-methodik-wissen-vor-content.webp",
+      "alt": "KI-generierte Darstellung von Anna Trocka mit den Phasen Zielsetzung, Wissensabstand und semantische Entwicklung",
+      "caption": "Wissen vor Content – GEO-Methodik",
+      "ai_label": "KI-generiert",
+      "verified_author": false,
+      "verified_license": false,
+      "content_sha": "a07993f9057a9ebd48d440d65f36187c0d1db7c4"
+    },
+    "hotel-guest-experience-cabana": {
+      "url": "https://annatrocka306.github.io/AnnaTrocka-GEO/assets/images/hotel-guest-experience-cabana.webp",
+      "alt": "KI-generierte Szene zweier Frauen beim Essen an einem Tisch in einer Cabana am Pool",
+      "caption": "Das Hotel aus Gästesicht – illustrative Gästesituation",
+      "ai_label": "KI-generiert",
+      "verified_author": false,
+      "verified_license": false,
+      "content_sha": "4391e403331a2e169e30f8ef555dcdce063761bc"
+    },
+    "geo-research-evidence-workflow": {
+      "url": "https://annatrocka306.github.io/AnnaTrocka-GEO/assets/images/geo-research-evidence-workflow.webp",
+      "alt": "KI-generierte technische Illustration eines Forschungsablaufs mit Beobachtung, Evidenz, Abgleich und Interpretation",
+      "caption": "GEO-Forschung und Quellenprüfung",
+      "ai_label": "KI-generiert",
+      "verified_author": false,
+      "verified_license": false,
+      "content_sha": "8a8c1874a436487cb8fce8d2f3e340549ba87a13"
+    },
+    "hotel-geo-waldorf-berlin-illustration": {
+      "url": "https://annatrocka306.github.io/AnnaTrocka-GEO/assets/images/hotel-geo-waldorf-berlin-illustration.webp",
+      "alt": "KI-generierte Szene von Anna Trocka in rotem Kleid beim Betreten des Waldorf Astoria Berlin",
+      "caption": "Hotel-GEO – unterschiedliche Gäste, unterschiedliche Anforderungen",
+      "ai_label": "KI-generiert",
+      "verified_author": false,
+      "verified_license": false,
+      "content_sha": "a7802a3e2772bdaadb9ccf83ace9e1919bbec8f8"
+    },
+    "case-precise-bad-saarow-illustration": {
+      "url": "https://annatrocka306.github.io/AnnaTrocka-GEO/assets/images/case-precise-bad-saarow-illustration.webp",
+      "alt": "KI-generierte Resort-Visualisierung nach einer Bildreferenz des Precise Resort Bad Saarow; keine dokumentarische Luftaufnahme",
+      "caption": "Precise Resort Bad Saarow – illustrative Darstellung",
+      "ai_label": "KI-Visualisierung",
+      "verified_author": false,
+      "verified_license": false,
+      "content_sha": "c96a3843a287b4dc4d2e51624cebea68a77a7fd5"
+    },
+    "case-waldorf-dubai-palm": {
+      "url": "https://annatrocka306.github.io/AnnaTrocka-GEO/assets/images/case-waldorf-dubai-palm.webp",
+      "alt": "Hotelgebäude mit Pool und Liegebereich, für den GEO-Audit Waldorf Astoria Dubai Palm Jumeirah bereitgestellte Ansicht",
+      "caption": "Waldorf Astoria Dubai Palm Jumeirah – Hotelaussenansicht",
+      "ai_label": "Mit KI farblich angepasst",
+      "verified_author": false,
+      "verified_license": false,
+      "content_sha": "13d4fa6310eec3e61661029a32961bc234590a95"
+    },
+    "case-axxos-webpage-visual": {
+      "url": "https://annatrocka306.github.io/AnnaTrocka-GEO/assets/images/case-axxos-webpage-visual.webp",
+      "alt": "KI-generierte Montage von Smartphone, Laptop und grafischen Hotelangeboten zur Analyse der AXXOS-Website",
+      "caption": "AXXOS Hotels – illustrative Website-Audit-Montage",
+      "ai_label": "KI-Visualisierung",
+      "verified_author": false,
+      "verified_license": false,
+      "content_sha": "805c8bbcb439e4a502fa65ccfdb8e6714143ec99"
+    },
+    "anna-trocka-about-portrait": {
+      "url": "https://annatrocka306.github.io/AnnaTrocka-GEO/assets/images/anna-trocka-about-portrait.webp",
+      "alt": "KI-generiertes Editorial-Porträt nach Referenzaufnahmen von Anna Trocka am Schreibtisch",
+      "caption": "Anna Trocka – GEO-Strategie",
+      "ai_label": "KI-generiert",
+      "verified_author": false,
+      "verified_license": false,
+      "content_sha": "5aaafbfbeb267c280b8d7c415b694c4977e46f59"
+    },
+    "anna-trocka-contact-portrait": {
+      "url": "https://annatrocka306.github.io/AnnaTrocka-GEO/assets/images/anna-trocka-contact-portrait.webp",
+      "alt": "KI-generierte Editorial-Illustration von Anna Trocka bei der Arbeit an einem Laptop",
+      "caption": "Kontakt zu Anna Trocka",
+      "ai_label": "KI-generiert",
+      "verified_author": false,
+      "verified_license": false,
+      "content_sha": "c38501aa64341d8703fbb7625aa00ddd47c84d7b"
+    }
+  }
+}
