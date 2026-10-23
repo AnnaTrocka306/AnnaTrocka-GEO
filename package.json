@@ -1,0 +1,14 @@
+{
+  "name": "anna-trocka-website-quality",
+  "private": true,
+  "scripts": {
+    "check:static": "python3 qa/check_site.py",
+    "check:browser": "node qa/check_browser.cjs",
+    "check:lighthouse": "lhci autorun --config=qa/lighthouserc.cjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@lhci/cli": "0.15.1",
+    "playwright": "1.62.1"
+  }
+}

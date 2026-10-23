@@ -1,0 +1,79 @@
+name: Website quality and publication
+
+on:
+  push:
+    branches: [preview/anna-geo-website, maintenance/website-quality]
+  pull_request:
+    branches: [preview/anna-geo-website]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: website-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Static checks and approved public build
+        id: static
+        run: npm run check:static
+      - name: External links (warnings)
+        run: python3 qa/check_external.py
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium
+      - name: Mobile, navigation, privacy and accessibility checks
+        run: npm run check:browser
+      - name: Lighthouse performance report
+        if: ${{ always() && steps.static.outcome == 'success' }}
+        continue-on-error: true
+        run: |
+          export CHROME_PATH="$(node -p "require('playwright').chromium.executablePath()")"
+          npm run check:lighthouse
+      - name: Test report
+        if: always()
+        run: |
+          if [ -f qa-report/summary.md ]; then cat qa-report/summary.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - name: Save report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-quality-report
+          path: qa-report/
+          retention-days: 14
+      - name: Upload only validated website files
+        if: ${{ success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/preview/anna-geo-website' }}
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _qa_site/AnnaTrocka-GEO
+
+  deploy:
+    if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/preview/anna-geo-website' }}
+    needs: quality
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Publish validated website
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify published version and public pages
+        env:
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python3 qa/verify_live.py

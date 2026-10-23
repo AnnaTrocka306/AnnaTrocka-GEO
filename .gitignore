@@ -1,0 +1,4 @@
+node_modules/
+qa-report/
+.lighthouseci/
+_qa_site/
