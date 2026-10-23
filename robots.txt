@@ -1,4 +1,6 @@
-# This file is a preview/repository sample. For a GitHub Pages project URL, crawler controls apply at host level.
-# Do not use it as a substitute for access controls or legal review.
+# GitHub Pages project copy. Only /robots.txt at the host root controls crawlers.
+# This project does not block search or AI crawlers.
 User-agent: *
 Allow: /
+
+Sitemap: https://annatrocka306.github.io/AnnaTrocka-GEO/sitemap.xml
