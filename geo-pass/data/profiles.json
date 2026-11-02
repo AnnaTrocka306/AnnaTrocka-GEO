@@ -1,0 +1,167 @@
+[
+  {
+    "id": "leonie-beispiel",
+    "name": "Leonie Beispiel",
+    "country": "DE",
+    "city": "Berlin",
+    "profession": {
+      "de": "Unternehmensberatung",
+      "en": "Business consulting",
+      "ru": "Бизнес-консультирование"
+    },
+    "work": {
+      "de": "Unterstützung bei Geschäftsprozessen, betrieblicher Organisation und Automatisierung.",
+      "en": "Support with business processes, organisation and automation.",
+      "ru": "Помощь с бизнес-процессами, организацией и автоматизацией."
+    },
+    "problems": {
+      "de": [
+        "Geschäftsprozesse strukturieren",
+        "Arbeitsabläufe automatisieren"
+      ],
+      "en": [
+        "Organising business processes",
+        "Automating workflows"
+      ],
+      "ru": [
+        "Организация бизнес-процессов",
+        "Автоматизация рабочих процессов"
+      ]
+    },
+    "published": true,
+    "verified": false,
+    "fictional": true
+  },
+  {
+    "id": "max-muster",
+    "name": "Max Muster",
+    "country": "DE",
+    "city": "München",
+    "profession": {
+      "de": "Rechtsanwalt",
+      "en": "Lawyer",
+      "ru": "Адвокат"
+    },
+    "work": {
+      "de": "Beispielprofil für die Darstellung anwaltlicher Tätigkeitsbereiche.",
+      "en": "Example profile demonstrating how legal practice areas are represented.",
+      "ru": "Пример профиля для демонстрации юридических направлений работы."
+    },
+    "problems": {
+      "de": [
+        "Strafrechtliche Ermittlungen",
+        "Fragen nach einer Hausdurchsuchung"
+      ],
+      "en": [
+        "Criminal investigations",
+        "Questions after a house search"
+      ],
+      "ru": [
+        "Уголовное расследование",
+        "Вопросы после обыска"
+      ]
+    },
+    "published": true,
+    "verified": false,
+    "fictional": true
+  },
+  {
+    "id": "sofia-demo",
+    "name": "Sofia Demo",
+    "country": "AT",
+    "city": "Wien",
+    "profession": {
+      "de": "Kosmetikerin",
+      "en": "Beauty therapist",
+      "ru": "Косметолог"
+    },
+    "work": {
+      "de": "Beispielprofil für kosmetische Behandlungen und individuelle Hautpflege.",
+      "en": "Sample profile for beauty treatments and personalised skin care.",
+      "ru": "Пример профиля по косметическим процедурам и индивидуальному уходу."
+    },
+    "problems": {
+      "de": [
+        "Unreine Haut",
+        "Beratung zu Hautpflege"
+      ],
+      "en": [
+        "Problem skin",
+        "Skincare consultations"
+      ],
+      "ru": [
+        "Проблемная кожа",
+        "Консультации по уходу за кожей"
+      ]
+    },
+    "published": true,
+    "verified": false,
+    "fictional": true
+  },
+  {
+    "id": "jan-nowak-demo",
+    "name": "Jan Nowak (Demo)",
+    "country": "PL",
+    "city": "Warszawa",
+    "profession": {
+      "de": "IT-Beratung",
+      "en": "IT consulting",
+      "ru": "ИТ-консультирование"
+    },
+    "work": {
+      "de": "Beispielprofil zu IT-Prozessen und digitalen Arbeitsabläufen.",
+      "en": "Example profile about IT processes and digital workflows.",
+      "ru": "Пример профиля по ИТ-процессам и цифровым рабочим процессам."
+    },
+    "problems": {
+      "de": [
+        "Digitale Abläufe verbessern",
+        "Software-Einführung"
+      ],
+      "en": [
+        "Improving digital processes",
+        "Software implementation"
+      ],
+      "ru": [
+        "Улучшение цифровых процессов",
+        "Внедрение ПО"
+      ]
+    },
+    "published": true,
+    "verified": false,
+    "fictional": true
+  },
+  {
+    "id": "emma-voorbeeld",
+    "name": "Emma Voorbeeld",
+    "country": "NL",
+    "city": "Amsterdam",
+    "profession": {
+      "de": "Marketingberatung",
+      "en": "Marketing consulting",
+      "ru": "Маркетинговое консультирование"
+    },
+    "work": {
+      "de": "Beispielprofil für Positionierung und Marketingkommunikation.",
+      "en": "Sample profile for positioning and marketing communications.",
+      "ru": "Пример профиля по позиционированию и маркетинговым коммуникациям."
+    },
+    "problems": {
+      "de": [
+        "Positionierung entwickeln",
+        "Marketingprozesse planen"
+      ],
+      "en": [
+        "Developing positioning",
+        "Planning marketing processes"
+      ],
+      "ru": [
+        "Разработка позиционирования",
+        "Планирование маркетинга"
+      ]
+    },
+    "published": true,
+    "verified": false,
+    "fictional": true
+  }
+]
