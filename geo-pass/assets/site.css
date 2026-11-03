@@ -143,3 +143,15 @@ box-shadow:0 3px 10px #24181033
 .geo-pass-identity__link:focus-visible{outline:3px solid #1567ab;outline-offset:3px}
 @media(max-width:560px){.geo-pass-identity>.wrap{width:calc(100% - 32px)}.geo-pass-identity__heading{margin-bottom:28px}.geo-pass-identity__copy p{line-height:1.62;margin-bottom:17px}.geo-pass-identity__copy .geo-pass-identity__invitation{margin:24px 0 20px}.geo-pass-identity__link{width:100%;justify-content:space-between;padding:13px 18px}}
 @media(prefers-reduced-motion:reduce){.geo-pass-identity__link{transition:none}}
+
+
+/* GEO-Pass RU landing localization */
+.geo-pass-ru .hero-pass__mascot-cta--ru{position:relative;isolation:isolate}
+.geo-pass-ru .hero-pass__cta-plaque{position:absolute;left:24%;top:55%;width:49%;height:22%;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(180deg,#ffe2a7,#f4ca89 52%,#f8d99f);box-shadow:inset 0 2px 12px #fff4d5b5,0 0 5px #d89f58cc;color:#3f2013;text-align:center;font:800 clamp(10px,1.8vw,19px)/1.16 var(--sans);letter-spacing:-.028em;pointer-events:none;z-index:1}
+.geo-pass-ru .hero-pass__cta-plaque:after{content:"";position:absolute;right:-1px;top:5%;bottom:5%;width:1px;background:#bf813fa8}
+@media(max-width:560px){.geo-pass-ru .hero-pass__cta-plaque{left:24%;top:55%;width:49%;height:22%;font-size:clamp(9px,2.6vw,13px);border-radius:5px}}
+.geo-pass-ru .pass-scene__question-bubble{font-size:clamp(.73rem,1.16vw,1.02rem)}
+.geo-pass-ru .pass-scene__glow-button{font-size:clamp(.72rem,1.38vw,1.17rem)}
+.geo-pass-ru .geo-pass-step__content h3{overflow-wrap:break-word}
+@media(max-width:760px){.geo-pass-ru .pass-scene__question-bubble{font-size:clamp(.71rem,2.7vw,1rem)}.geo-pass-ru .pass-scene__glow-button{font-size:clamp(.72rem,3.05vw,1.14rem)}}
+@media(max-width:360px){.geo-pass-ru .pass-scene__question-bubble{right:3%;width:42%;padding:8px 9px}.geo-pass-ru .hero-pass__cta-plaque{font-size:9px}}
