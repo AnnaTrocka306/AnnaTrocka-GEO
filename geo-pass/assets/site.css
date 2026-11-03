@@ -42,3 +42,23 @@ padding:7px 12px;margin:0;border-radius:3px;
 box-shadow:0 3px 10px #24181033
 }
 @media(max-width:560px){.hero-pass__photo figcaption.hero-pass__ai-stamp{bottom:8px;right:8px;font-size:.6rem;padding:5px 8px}}
+
+
+/* GEO-Pass benefits: one card per row with alternating illustration sides. */
+.benefits-section{background:radial-gradient(circle at 50% 2%,#fffaf2 0%,#f8f0e5 46%,#f4e9db 100%);padding:clamp(60px,7vw,100px) 0 clamp(55px,6vw,80px)}
+.benefits-section>.wrap{width:min(100% - 38px,1160px)}
+.benefits-section__heading{text-align:center;margin:0 auto clamp(30px,4vw,52px);max-width:980px}
+.benefits-section__heading h2{font-family:var(--serif);font-size:clamp(2.25rem,5vw,4.75rem);line-height:1.13;letter-spacing:-.034em;color:#3d2419;font-weight:500;margin:0}
+.benefits-section__heading h2 em{font-style:normal;color:#ab703a}
+.benefits-section__rule{display:block;height:3px;width:170px;max-width:32%;margin:20px auto 0;border-radius:100px;background:linear-gradient(90deg,transparent,#cb9147 34%,#dcb275 65%,transparent)}
+.benefit-zigzag{display:grid;gap:clamp(15px,2vw,23px)}
+.benefit-zigzag__card{display:grid;grid-template-columns:minmax(0,40%) minmax(0,60%);align-items:center;gap:0;overflow:hidden;min-height:240px;border-radius:26px;border:1px solid #e7c99e;background:#fff9f0;box-shadow:0 10px 30px #49301d10,0 2px 5px #49301d08}
+.benefit-zigzag__visual{display:block;width:100%;height:100%;min-height:240px;max-height:315px;object-fit:cover;object-position:center}
+.benefit-zigzag__body{padding:clamp(20px,3vw,36px);min-width:0;color:#302019}
+.benefit-zigzag__number{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:50%;background:radial-gradient(circle at 36% 24%,#ffedce,#e7b574);color:#422719;border:1px solid #e8bf88;box-shadow:0 1px 4px #8a572519;font-size:1.1rem;line-height:1;font-weight:800;letter-spacing:.01em;margin-bottom:12px}
+.benefit-zigzag__body h3{font-family:var(--serif);color:#321b13;font-weight:700;font-size:clamp(1.55rem,2.2vw,2.15rem);line-height:1.16;letter-spacing:-.02em;margin:0 0 11px}
+.benefit-zigzag__body p{font-size:clamp(.94rem,1.2vw,1.075rem);line-height:1.65;margin:0;color:#4b382e;max-width:690px}
+.benefits-section__cta{display:flex;justify-content:center;margin:clamp(24px,4vw,45px) auto 0}
+.benefits-section__cta .hero-pass__mascot-cta{width:min(100%,500px);margin:0}
+@media(max-width:760px){.benefit-zigzag__card{grid-template-columns:minmax(0,34%) minmax(0,66%);min-height:0;border-radius:21px}.benefit-zigzag__visual{min-height:210px;max-height:none}.benefit-zigzag__body{padding:21px}.benefit-zigzag__body h3{font-size:clamp(1.32rem,3.5vw,1.8rem)}.benefit-zigzag__body p{font-size:.91rem;line-height:1.5}.benefit-zigzag__number{width:38px;height:38px;margin-bottom:9px;font-size:.98rem}}
+@media(max-width:560px){.benefits-section>.wrap{width:calc(100% - 30px)}.benefit-zigzag__card{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:12px;border-radius:20px}.benefit-zigzag__visual{width:75%;height:142px;min-height:142px;max-height:142px;object-fit:cover;border-radius:15px;align-self:flex-start}.benefit-zigzag__card:nth-child(even) .benefit-zigzag__visual{order:-1;align-self:flex-end}.benefit-zigzag__body{padding:16px 7px 8px}.benefit-zigzag__number{width:38px;height:38px;margin-bottom:9px}.benefit-zigzag__body h3{font-size:clamp(1.45rem,6vw,1.85rem);line-height:1.18;margin-bottom:10px}.benefit-zigzag__body p{font-size:.94rem;line-height:1.55}.benefits-section__cta .hero-pass__mascot-cta{width:min(100%,440px)}}
