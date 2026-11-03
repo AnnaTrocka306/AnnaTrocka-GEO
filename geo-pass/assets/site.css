@@ -109,3 +109,19 @@ box-shadow:0 3px 10px #24181033
 .pass-scene__notification-icon b{position:absolute;right:-5px;top:-6px;background:#c63724;color:white;width:21px;height:21px;line-height:21px;border-radius:50%;font:700 .77rem/21px var(--sans)}
 @media(max-width:760px){.geo-pass-process__grid{grid-template-columns:1fr;gap:22px}.geo-pass-process>.wrap{width:calc(100% - 32px)}.geo-pass-step__visual{height:clamp(190px,49vw,295px)}.geo-pass-step__content{padding:25px 24px 27px}.geo-pass-step__number{margin-top:-36px}.geo-pass-step__content h3{font-size:clamp(1.6rem,6.2vw,2rem)}.geo-pass-step__content p{font-size:1rem}.pass-scene__glow-button{font-size:clamp(.87rem,3.3vw,1.22rem)}.pass-scene__question-bubble{font-size:clamp(.8rem,3vw,1.07rem)}.pass-scene__work-heading{font-size:clamp(.78rem,3.1vw,1rem)}.pass-scene__screen-finish{font-size:clamp(.85rem,3.6vw,1.35rem)}.pass-scene__phone{font-size:clamp(.67rem,2.65vw,.95rem)}}
 @media(max-width:390px){.geo-pass-step__visual{height:188px}.pass-scene__question-bubble{padding:10px 11px;right:4%}.pass-scene__cup{transform:scale(.75);transform-origin:bottom left}.pass-scene__phone{right:4%}}
+
+
+/* GEO-Pass DE: rationale for starting GEO now */
+.geo-pass-why{background:radial-gradient(circle at 50% 0%,#fffaf2 0%,#f8f0e5 47%,#f4e9db 100%);padding:clamp(62px,7vw,98px) 0 clamp(55px,6vw,82px)}
+.geo-pass-why>.wrap{width:min(100% - 38px,1160px)}
+.geo-pass-why__heading{text-align:center;max-width:1110px;margin:0 auto clamp(32px,4vw,53px)}
+.geo-pass-why__heading h2{font-family:var(--serif);font-size:clamp(2.2rem,4.8vw,4.65rem);font-weight:500;line-height:1.14;letter-spacing:-.034em;color:#3d2419;margin:0}
+.geo-pass-why__heading h2 em{font-style:normal;color:#ab703a}
+.geo-pass-why__rule{display:block;width:170px;height:3px;max-width:32%;margin:20px auto 0;border-radius:100px;background:linear-gradient(90deg,transparent,#cb9147 34%,#dcb275 65%,transparent)}
+.geo-pass-why__copy{max-width:840px;margin:0 auto;color:#463329}
+.geo-pass-why__copy p{font-size:clamp(1rem,1.34vw,1.12rem);max-width:none;line-height:1.75;margin:0 0 23px}
+.geo-pass-why__copy h3{font:600 clamp(1.5rem,2.65vw,2.1rem)/1.25 var(--serif);color:#3d2419;margin:31px 0 17px}
+.geo-pass-why__copy .geo-pass-why__conclusion{color:#6b432b;font-weight:750;font-size:clamp(1.08rem,1.65vw,1.31rem);margin:29px 0 0}
+.geo-pass-why__cta{display:flex;justify-content:center;margin:clamp(26px,4vw,46px) auto 0}
+.geo-pass-why__cta .hero-pass__mascot-cta{width:min(100%,500px);margin:0}
+@media(max-width:560px){.geo-pass-why>.wrap{width:calc(100% - 32px)}.geo-pass-why__copy p{line-height:1.65;margin-bottom:18px}.geo-pass-why__copy h3{margin:27px 0 14px}.geo-pass-why__cta .hero-pass__mascot-cta{width:min(100%,440px)}}
