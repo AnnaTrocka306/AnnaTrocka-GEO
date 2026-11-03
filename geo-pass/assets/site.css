@@ -125,3 +125,21 @@ box-shadow:0 3px 10px #24181033
 .geo-pass-why__cta{display:flex;justify-content:center;margin:clamp(26px,4vw,46px) auto 0}
 .geo-pass-why__cta .hero-pass__mascot-cta{width:min(100%,500px);margin:0}
 @media(max-width:560px){.geo-pass-why>.wrap{width:calc(100% - 32px)}.geo-pass-why__copy p{line-height:1.65;margin-bottom:18px}.geo-pass-why__copy h3{margin:27px 0 14px}.geo-pass-why__cta .hero-pass__mascot-cta{width:min(100%,440px)}}
+
+
+/* GEO-Pass DE landing page: final project identity invitation. */
+.geo-pass-identity{background:linear-gradient(180deg,#fffaf3 0%,#f7ede0 100%);border-top:1px solid #e4c8a3;padding:clamp(66px,7vw,100px) 0 clamp(84px,8vw,122px)}
+.geo-pass-identity>.wrap{width:min(100% - 38px,1160px)}
+.geo-pass-identity__heading{text-align:center;max-width:960px;margin:0 auto clamp(29px,3.6vw,45px)}
+.geo-pass-identity__heading h2{font-family:var(--serif);font-size:clamp(2.15rem,4.6vw,4.5rem);font-weight:500;line-height:1.13;letter-spacing:-.034em;color:#3d2419;margin:0}
+.geo-pass-identity__heading h2 em{font-style:normal;color:#ab703a}
+.geo-pass-identity__rule{display:block;width:170px;height:3px;max-width:32%;margin:22px auto 0;border-radius:100px;background:linear-gradient(90deg,transparent,#cb9147 34%,#dcb275 65%,transparent)}
+.geo-pass-identity__copy{max-width:790px;margin:auto;color:#493529;text-align:left}
+.geo-pass-identity__copy p{max-width:none;font-size:clamp(1rem,1.32vw,1.1rem);line-height:1.72;margin:0 0 21px}
+.geo-pass-identity__copy .geo-pass-identity__invitation{font:600 clamp(1.2rem,2vw,1.55rem)/1.45 var(--serif);color:#4a2a1d;margin:29px 0 24px}
+.geo-pass-identity__link{display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:14px 23px;min-height:56px;border:1px solid #bb8a51;border-radius:12px;background:#fff6e7;color:#5a3621;font-weight:750;font-size:1rem;line-height:1.35;text-decoration:none;box-shadow:0 7px 22px #8c5a2b17;transition:background .18s,transform .18s,border-color .18s}
+.geo-pass-identity__link span{color:#a76b33;font-size:1.4rem;font-weight:500;line-height:1}
+.geo-pass-identity__link:hover{background:#f8e5c8;border-color:#a7743a;transform:translateY(-2px)}
+.geo-pass-identity__link:focus-visible{outline:3px solid #1567ab;outline-offset:3px}
+@media(max-width:560px){.geo-pass-identity>.wrap{width:calc(100% - 32px)}.geo-pass-identity__heading{margin-bottom:28px}.geo-pass-identity__copy p{line-height:1.62;margin-bottom:17px}.geo-pass-identity__copy .geo-pass-identity__invitation{margin:24px 0 20px}.geo-pass-identity__link{width:100%;justify-content:space-between;padding:13px 18px}}
+@media(prefers-reduced-motion:reduce){.geo-pass-identity__link{transition:none}}
