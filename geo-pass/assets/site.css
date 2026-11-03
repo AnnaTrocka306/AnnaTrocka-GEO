@@ -62,3 +62,50 @@ box-shadow:0 3px 10px #24181033
 .benefits-section__cta .hero-pass__mascot-cta{width:min(100%,500px);margin:0}
 @media(max-width:760px){.benefit-zigzag__card{grid-template-columns:minmax(0,34%) minmax(0,66%);min-height:0;border-radius:21px}.benefit-zigzag__visual{min-height:210px;max-height:none}.benefit-zigzag__body{padding:21px}.benefit-zigzag__body h3{font-size:clamp(1.32rem,3.5vw,1.8rem)}.benefit-zigzag__body p{font-size:.91rem;line-height:1.5}.benefit-zigzag__number{width:38px;height:38px;margin-bottom:9px;font-size:.98rem}}
 @media(max-width:560px){.benefits-section>.wrap{width:calc(100% - 30px)}.benefit-zigzag__card{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:12px;border-radius:20px}.benefit-zigzag__visual{width:75%;height:142px;min-height:142px;max-height:142px;object-fit:cover;border-radius:15px;align-self:flex-start}.benefit-zigzag__card:nth-child(even) .benefit-zigzag__visual{order:-1;align-self:flex-end}.benefit-zigzag__body{padding:16px 7px 8px}.benefit-zigzag__number{width:38px;height:38px;margin-bottom:9px}.benefit-zigzag__body h3{font-size:clamp(1.45rem,6vw,1.85rem);line-height:1.18;margin-bottom:10px}.benefit-zigzag__body p{font-size:.94rem;line-height:1.55}.benefits-section__cta .hero-pass__mascot-cta{width:min(100%,440px)}}
+
+
+/* GEO-Pass customer journey (DE landing page only). */
+.geo-pass-process{background:radial-gradient(ellipse at 50% 20%,#493125 0%,#2f211b 46%,#251b16 100%);color:#fff5e9;padding:clamp(64px,7vw,100px) 0 clamp(72px,7vw,108px)}
+.geo-pass-process>.wrap{width:min(100% - 40px,1160px)}
+.geo-pass-process__heading{text-align:center;margin:0 auto clamp(32px,4vw,55px);max-width:1100px}
+.geo-pass-process__heading h2{font:500 clamp(2.2rem,4.7vw,4.35rem)/1.11 var(--serif);letter-spacing:-.035em;color:#fff4e8;margin:0}
+.geo-pass-process__heading h2 em{font-style:normal;color:#edbf7c}
+.geo-pass-process__rule{display:block;width:170px;height:3px;max-width:32%;margin:20px auto 0;border-radius:10px;background:linear-gradient(90deg,transparent,#bd8445 30%,#f1c789 55%,transparent);box-shadow:0 0 17px #eda45a55}
+.geo-pass-process__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(17px,2.3vw,28px)}
+.geo-pass-step{min-width:0;overflow:hidden;border:1px solid #b58a5b;border-radius:26px;background:linear-gradient(135deg,#4b3023,#30211c 92%);box-shadow:0 15px 37px #130b073b}
+.geo-pass-step__visual{height:clamp(190px,19vw,258px);min-height:0;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 40%,#77513a 0%,#3f2c23 65%,#291e19 100%);isolation:isolate}
+.geo-pass-step__visual:after{content:"";position:absolute;bottom:0;inset-inline:0;height:36%;background:linear-gradient(transparent,#21160e85);pointer-events:none;z-index:6}
+.geo-pass-step__content{padding:clamp(21px,2.5vw,30px);position:relative}
+.geo-pass-step__number{display:grid;place-items:center;width:55px;height:55px;border-radius:50%;background:radial-gradient(circle at 37% 27%,#ffeac2,#eabb78);border:1px solid #eac390;color:#42291c;font:800 1.2rem/1 var(--sans);margin:-36px 0 16px;position:relative;z-index:7;box-shadow:0 2px 8px #24150e55}
+.geo-pass-step__content h3{font:600 clamp(1.5rem,2.35vw,2.1rem)/1.2 var(--serif);letter-spacing:-.024em;color:#fff5e9;margin:0 0 12px}
+.geo-pass-step__content p{font:400 clamp(.98rem,1.25vw,1.07rem)/1.59 var(--sans);color:#f1e7db;max-width:none;margin:0}
+.pass-scene__bokeh{position:absolute;inset:0;background:radial-gradient(circle at 7% 17%,#f6b75e44 0 4px,transparent 12px),radial-gradient(circle at 21% 48%,#ffd39d33 0 3px,transparent 17px),radial-gradient(circle at 87% 11%,#ffd38c50 0 8px,transparent 27px),radial-gradient(circle at 69% 74%,#ffcf8133 0 5px,transparent 28px)}
+.geo-pass-step__visual--start:before,.geo-pass-step__visual--finished:before{content:"";position:absolute;bottom:0;left:0;right:0;height:28%;background:linear-gradient(#67432c,#3a241a);box-shadow:0 -8px 20px #1c100b40}
+.pass-scene__device{position:absolute;left:19%;bottom:8%;width:66%;height:76%;z-index:3;transform:perspective(750px) rotateY(-6deg);filter:drop-shadow(0 12px 12px #0f0908b0)}
+.pass-scene__screen{width:100%;height:78%;border:9px solid #171519;border-radius:13px 13px 5px 5px;background:radial-gradient(circle at 52% 42%,#6a4227,#241b1b 73%);box-shadow:inset 0 0 0 1px #7d706a,0 0 25px #edaf5033;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.pass-scene__keyboard{width:117%;height:15%;margin-left:-8.5%;background:linear-gradient(#756e68,#252326 85%);clip-path:polygon(8% 0%,92% 0%,100% 100%,0% 100%);border-radius:0 0 13px 13px}
+.pass-scene__glow-button{display:inline-flex;align-items:center;gap:8px;justify-content:center;background:linear-gradient(#ffe9b4,#efac51);border:2px solid #ffe9af;box-shadow:0 0 30px #f1a631b3,0 2px 8px #7c481d;color:#291b14;border-radius:100px;padding:clamp(9px,1.4vw,17px) clamp(12px,2vw,24px);white-space:nowrap;font:750 clamp(.82rem,1.5vw,1.26rem)/1.15 var(--sans)}
+.pass-scene__glow-button span{font-size:1.4em;line-height:0}
+.pass-scene__cup{position:absolute;bottom:12%;left:8%;height:42px;width:48px;background:linear-gradient(110deg,#b68f67,#fff2d4,#c6a17a);border-radius:4px 4px 17px 17px;z-index:4;box-shadow:0 7px 14px #1c0f0ca6}
+.pass-scene__cup:after{content:"";position:absolute;top:7px;right:-19px;width:22px;height:21px;border:6px solid #e8d6bd;border-radius:50%}
+.pass-scene__cup span{position:absolute;inset:-5px 0 auto;height:10px;border-radius:50%;background:#f1d9ba;border:2px solid #fff3dd}
+.pass-scene__pointer{position:absolute;left:74%;top:49%;z-index:5;color:#fff2dd;text-shadow:0 0 9px #ffd796;font-size:4rem;transform:rotate(-28deg)}
+.pass-scene__octopus{position:absolute;z-index:3;width:82%;max-width:none;height:auto;filter:drop-shadow(0 11px 16px #160c0a80)}
+.pass-scene__octopus--questions{left:-15%;top:0}
+.pass-scene__octopus--send{left:-12%;top:-3%;transform:scaleX(-1)}
+.pass-scene__question-bubble{position:absolute;z-index:5;top:10%;right:6%;width:39%;border:2px solid #e7bb7f;border-radius:22px;background:linear-gradient(#ffefd3,#f4d7a4);color:#2f211a;padding:14px 18px;box-shadow:0 0 19px #eab56d77;display:grid;gap:6px;font:750 clamp(.85rem,1.2vw,1.05rem)/1.35 var(--sans)}
+.pass-scene__question-bubble:after{content:"";position:absolute;bottom:-13px;left:18px;border-style:solid;border-width:14px 15px 0 0;border-color:#f4d7a4 transparent transparent transparent}
+.pass-scene__work-panel{position:absolute;z-index:5;right:10%;top:16%;width:35%;height:64%;border:2px solid #f4c989;border-radius:16px;box-shadow:0 0 22px #e9b26599;background:linear-gradient(#ffeace,#edcb9e);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.pass-scene__work-heading{color:#4b3022;font:750 clamp(.82rem,1.2vw,1.05rem) var(--sans)}
+.pass-scene__work-line{width:62%;height:7px;background:#cba574;border-radius:12px}
+.pass-scene__work-line--short{width:42%}
+.pass-scene__work-done{display:grid;place-items:center;border:2px solid #b0793a;color:#6c401e;border-radius:50%;width:38px;height:38px;font:800 1.6rem var(--sans)}
+.pass-scene__work-gear{position:absolute;z-index:5;color:#ffe0a7;text-shadow:0 0 16px #ffbb52;left:7%;top:9%;font-size:3.2rem}
+.pass-scene__device--finished{left:7%;width:66%;height:72%;bottom:7%}
+.pass-scene__checkmark{display:grid;place-items:center;width:51px;height:51px;border:3px solid #fbd48c;border-radius:50%;color:#ffdb99;box-shadow:0 0 19px #f3b65d99;font-size:2rem;line-height:1;margin:0 0 12px}
+.pass-scene__screen-finish{text-align:center;color:#ffe2a4;text-shadow:0 0 14px #edb75d88;font:800 clamp(.94rem,1.8vw,1.5rem)/1.22 var(--sans)}
+.pass-scene__phone{position:absolute;z-index:5;right:7%;top:13%;width:27%;height:76%;border:8px solid #171416;border-radius:21px;background:linear-gradient(#fff0d3,#eed2a6);box-shadow:0 9px 15px #130a0980;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;text-align:center;color:#38231b;font:750 clamp(.72rem,1.1vw,.99rem)/1.3 var(--sans)}
+.pass-scene__notification-icon{font-size:2.5rem;position:relative;line-height:1}
+.pass-scene__notification-icon b{position:absolute;right:-5px;top:-6px;background:#c63724;color:white;width:21px;height:21px;line-height:21px;border-radius:50%;font:700 .77rem/21px var(--sans)}
+@media(max-width:760px){.geo-pass-process__grid{grid-template-columns:1fr;gap:22px}.geo-pass-process>.wrap{width:calc(100% - 32px)}.geo-pass-step__visual{height:clamp(190px,49vw,295px)}.geo-pass-step__content{padding:25px 24px 27px}.geo-pass-step__number{margin-top:-36px}.geo-pass-step__content h3{font-size:clamp(1.6rem,6.2vw,2rem)}.geo-pass-step__content p{font-size:1rem}.pass-scene__glow-button{font-size:clamp(.87rem,3.3vw,1.22rem)}.pass-scene__question-bubble{font-size:clamp(.8rem,3vw,1.07rem)}.pass-scene__work-heading{font-size:clamp(.78rem,3.1vw,1rem)}.pass-scene__screen-finish{font-size:clamp(.85rem,3.6vw,1.35rem)}.pass-scene__phone{font-size:clamp(.67rem,2.65vw,.95rem)}}
+@media(max-width:390px){.geo-pass-step__visual{height:188px}.pass-scene__question-bubble{padding:10px 11px;right:4%}.pass-scene__cup{transform:scale(.75);transform-origin:bottom left}.pass-scene__phone{right:4%}}
