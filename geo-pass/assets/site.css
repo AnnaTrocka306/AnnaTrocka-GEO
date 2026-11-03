@@ -147,9 +147,9 @@ box-shadow:0 3px 10px #24181033
 
 /* GEO-Pass RU landing localization */
 .geo-pass-ru .hero-pass__mascot-cta--ru{position:relative;isolation:isolate}
-.geo-pass-ru .hero-pass__cta-plaque{position:absolute;left:24%;top:55%;width:49%;height:22%;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(180deg,#ffe2a7,#f4ca89 52%,#f8d99f);box-shadow:inset 0 2px 12px #fff4d5b5,0 0 5px #d89f58cc;color:#3f2013;text-align:center;font:800 clamp(10px,1.8vw,19px)/1.16 var(--sans);letter-spacing:-.028em;pointer-events:none;z-index:1}
-.geo-pass-ru .hero-pass__cta-plaque:after{content:"";position:absolute;right:-1px;top:5%;bottom:5%;width:1px;background:#bf813fa8}
-@media(max-width:560px){.geo-pass-ru .hero-pass__cta-plaque{left:24%;top:55%;width:49%;height:22%;font-size:clamp(9px,2.6vw,13px);border-radius:5px}}
+.geo-pass-ru .hero-pass__cta-plaque{position:absolute;left:25%;top:58%;width:44%;height:19%;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(180deg,#ffe2a7,#f4ca89 52%,#f8d99f);box-shadow:inset 0 2px 12px #fff4d5b5,0 0 5px #d89f58cc;color:#3f2013;text-align:center;font:800 clamp(10px,1.8vw,19px)/1.16 var(--sans);letter-spacing:-.028em;pointer-events:none;z-index:1}
+.geo-pass-ru .hero-pass__cta-copy{display:block;max-width:100%;white-space:nowrap;text-align:center}
+@media(max-width:560px){.geo-pass-ru .hero-pass__cta-plaque{left:25%;top:58%;width:44%;height:19%;font-size:clamp(9px,2.6vw,13px);border-radius:5px}}
 .geo-pass-ru .pass-scene__question-bubble{font-size:clamp(.73rem,1.16vw,1.02rem)}
 .geo-pass-ru .pass-scene__glow-button{font-size:clamp(.72rem,1.38vw,1.17rem)}
 .geo-pass-ru .geo-pass-step__content h3{overflow-wrap:break-word}
