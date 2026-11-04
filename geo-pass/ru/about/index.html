@@ -1,3 +1,159 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f8f5ef"><meta name="robots" content="noindex, nofollow"><title>Зачем существует GEO-Pass? | GEO-Pass</title><meta name="description" content="Люди рассказывают искусственному интеллекту о своей проблеме и спрашивают, к кому обратиться. GEO-Pass помогает представить твои услуги в открытом машиночитаемом формате — даже без собственного сайта."><link rel="stylesheet" href="../../assets/site.css"><link rel="alternate" hreflang="de" href="../../de/about/"><link rel="alternate" hreflang="en" href="../../en/about/"><link rel="alternate" hreflang="ru" href="../../ru/about/"></head>
-<body><a href="#main" style="position:absolute;left:-200vw" onfocus="this.style.left='8px'">Skip to content</a><div class="topline">GEO · PROFESSIONAL IDENTITY · AI-READABLE PROFILES</div><div class="development-notice" role="status">САЙТ В РАЗРАБОТКЕ · ПРЕДВАРИТЕЛЬНАЯ ВЕРСИЯ · РЕГИСТРАЦИЯ ПОКА НЕ РАБОТАЕТ</div><header class="masthead"><div class="wrap head"><a class="logo" href="../../ru/"><span class="logo-main">GEO-Pass</span><span class="logo-sub">Проект Анны Троцкой</span></a><nav class="nav" aria-label="Main navigation"><a href="../../ru/" >GEO-Pass</a><a href="../../ru/search/" >Поиск</a><a href="../../ru/about/" aria-current="page">О проекте</a></nav><div class="languages" aria-label="Language"><a href="../../de/about/" lang="de" >DE</a><a href="../../en/about/" lang="en" >EN</a><a href="../../ru/about/" lang="ru" aria-current="page">RU</a></div></div></header><main id="main"><section class="page-intro"><div class="wrap"><span class="kicker">ABOUT</span><h1>Зачем существует GEO-Pass?</h1><p class="lead">Мы создаём открытый профессиональный регистр с понятными сведениями, прямыми контактами и структурой для чтения машинными системами.</p></div></section><section class="section"><div class="wrap about-text"><p>GEO расшифровывается как Generative Engine Optimization. Специальная структура помогает автоматизированным системам точнее различать профессию, услуги и решаемые проблемы. Она не гарантирует ни попадания в ответы AI, ни рекомендации. Регистрация через Octopus и аналитика краулеров пока запланированы.</p><div class="notice">Проект Анны Троцкой. Будущая юридическая и организационная структура будет определена отдельно.</div><p style="margin-top:30px"><a class="btn" href="../../ru/create/">Создай GEO-Pass бесплатно за 10 минут</a></p></div></section></main><footer class="footer"><div class="wrap"><div class="footer-columns"><div><span class="logo-main" style="font-size:1.65rem">GEO-Pass</span><div style="font-size:.82rem;margin-top:9px;color:#d7c6b0">Проект Анны Троцкой</div></div><nav class="footer-links" aria-label="Footer"><a href="../../ru/register/">Регистр</a><a href="../../ru/legal/">Юридическая информация</a><a href="../../ru/search/">Поиск</a></nav></div><div class="footnote">© GEO-Pass · Проект Анны Троцкой · Прототип · регистрация и AI-аналитика не подключены</div></div></footer></body></html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f8f5ef">
+  <meta name="robots" content="noindex, nofollow">
+  <title>GEO-Pass и Octopus — бесплатный старт в GEO и автоматизация для бизнеса</title>
+  <meta name="description" content="Узнай, как GEO-Pass помогает бесплатно представить бизнес для AI-систем, а Octopus создаётся для автоматизации GEO-контента и публикаций.">
+  <link rel="stylesheet" href="../../assets/site.css">
+  <link rel="alternate" hreflang="de" href="../../de/about/">
+  <link rel="alternate" hreflang="en" href="../../en/about/">
+  <link rel="alternate" hreflang="ru" href="../../ru/about/">
+  <style>
+    .about-project .page-intro{background:radial-gradient(circle at 92% 8%,#fbefdc 0%,#f8f4ec 49%,#f4e9da 100%);padding:clamp(46px,6vw,86px) 0 clamp(38px,5vw,62px)}
+    .about-project .page-intro .wrap{max-width:1020px}
+    .about-project .page-intro h1{font-size:clamp(2.35rem,4.5vw,4.4rem);line-height:1.12;max-width:1000px;margin:16px 0 24px;letter-spacing:-.035em}
+    .about-project .page-intro .lead{font:600 clamp(1.22rem,2.1vw,1.62rem)/1.48 var(--serif);max-width:850px;color:#5a3725;margin:0 0 21px}
+    .about-project .about-project__intro{max-width:820px;font-size:clamp(1.03rem,1.5vw,1.15rem);line-height:1.75;margin:0 0 17px;color:#49382d}
+    .about-project .about-project__intro:last-child{margin-bottom:0}
+    .about-project .about-project__content{background:#fffaf3;padding:clamp(44px,6vw,78px) 0}
+    .about-project .about-project__article{max-width:840px;margin:0 auto}
+    .about-project .about-project__section{margin:0 0 clamp(42px,5vw,64px);padding:0 0 clamp(34px,4vw,46px);border-bottom:1px solid #e4ceb3}
+    .about-project .about-project__section:last-of-type{border-bottom:0;margin-bottom:18px}
+    .about-project .about-project__number{display:block;font:800 .76rem/1.3 var(--sans);letter-spacing:.15em;color:#a77740;margin-bottom:13px}
+    .about-project .about-project__section h2{font:500 clamp(1.85rem,3.5vw,2.9rem)/1.19 var(--serif);letter-spacing:-.028em;color:#392319;margin:0 0 25px}
+    .about-project .about-project__section p{font-size:clamp(1rem,1.3vw,1.075rem);line-height:1.78;color:#46362c;margin:0 0 18px}
+    .about-project .about-project__section p:last-child{margin-bottom:0}
+    .about-project .about-project__section strong{color:#392317;font-weight:750}
+    .about-project .about-project__end{background:#f3e7d7;border:1px solid #dfc5a4;border-radius:15px;padding:clamp(24px,4vw,35px);margin-top:25px;text-align:center}
+    .about-project .about-project__end p{margin:0 0 20px;font:600 clamp(1.4rem,2.25vw,1.85rem)/1.3 var(--serif);color:#3a241b}
+    .about-project .about-project__end .btn{border-radius:7px}
+    .about-project .about-project__disclaimer{max-width:780px;margin:30px auto 0;font-size:.86rem;line-height:1.67;color:#6b5849}
+    @media(max-width:740px){.about-project .about-project__article{width:min(100% - 34px,840px)}.about-project .page-intro h1{font-size:clamp(2.2rem,8vw,3.15rem)}.about-project .about-project__section h2{font-size:clamp(1.72rem,6.4vw,2.35rem)}}
+  </style>
+</head>
+<body class="about-project">
+  <a href="#main" style="position:absolute;left:-200vw" onfocus="this.style.left='8px'">К содержимому</a>
+  <div class="topline">GEO · ПРОФЕССИОНАЛЬНАЯ ИДЕНТИЧНОСТЬ · ПРОФИЛИ ДЛЯ ИИ</div>
+  <div class="development-notice" role="status">САЙТ В РАЗРАБОТКЕ · ПРЕДВАРИТЕЛЬНАЯ ВЕРСИЯ · РЕГИСТРАЦИЯ ПОКА НЕ РАБОТАЕТ</div>
+  <header class="masthead">
+    <div class="wrap head">
+      <a class="logo" href="../../ru/"><span class="logo-main">GEO-Pass</span><span class="logo-sub">Проект · Анна Трока</span></a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="../../ru/">GEO-Pass</a>
+        <a href="../../ru/search/">Поиск</a>
+        <a href="../../ru/about/" aria-current="page">О проекте</a>
+      </nav>
+      <div class="languages" aria-label="Выбор языка">
+        <a href="../../de/about/" lang="de">DE</a>
+        <a href="../../en/about/" lang="en">EN</a>
+        <a href="../../ru/about/" lang="ru" aria-current="page">RU</a>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-intro" aria-labelledby="about-project-title">
+      <div class="wrap">
+        <span class="kicker">О ПРОЕКТЕ</span>
+        <h1 id="about-project-title">GEO-Pass и Octopus — проект для развития AI-присутствия бизнеса</h1>
+        <p class="lead">Ты занимаешься своим бизнесом. Мы помогаем сделать его понятным для искусственного интеллекта.</p>
+        <p class="about-project__intro">Представь: потенциальный клиент описывает ChatGPT свою проблему и спрашивает, кто может ему помочь.</p>
+        <p class="about-project__intro">Возможно, именно ты предлагаешь подходящее решение. Но понимает ли искусственный интеллект, чем ты занимаешься, какие задачи решаешь и в каких ситуациях к тебе стоит обращаться?</p>
+        <p class="about-project__intro"><strong>Знать, что твой бизнес существует, и понимать, почему именно ты можешь помочь конкретному человеку, — не одно и то же.</strong></p>
+        <p class="about-project__intro">Именно поэтому мы создали этот проект.</p>
+      </div>
+    </section>
+    <div class="about-project__content">
+      <article class="wrap about-project__article">
+      <section class="about-project__section" aria-labelledby="about-project-heading-1">
+        <span class="about-project__number" aria-hidden="true">01</span>
+        <h2 id="about-project-heading-1">Почему предпринимателям нужен GEO?</h2>
+        <p>Реклама, сайты, поисковые системы и социальные сети остаются важными инструментами маркетинга. Но сегодня потенциальные клиенты могут искать специалистов и компании непосредственно через искусственный интеллект.</p>
+        <p>Если ChatGPT рекомендует подходящего специалиста и объясняет свой выбор, часть работы маркетинга и продаж может происходить ещё до первого контакта с клиентом.</p>
+        <p>Однако AI не всегда располагает достаточной информацией о специализации предпринимателя и конкретных проблемах, которые он решает.</p>
+        <p>Здесь появляется GEO — Generative Engine Optimization.</p>
+        <p>GEO помогает работать над тем, чтобы сведения о бизнесе были доступны и понятны генеративным AI-системам, а его компетенции могли соотноситься с потребностями пользователей.</p>
+        <p>Для этого наш проект объединяет два взаимосвязанных инструмента: GEO-Pass и Octopus.</p>
+      </section>
+
+      <section class="about-project__section" aria-labelledby="about-project-heading-2">
+        <span class="about-project__number" aria-hidden="true">02</span>
+        <h2 id="about-project-heading-2">GEO-Pass — бесплатный первый шаг к AI-присутствию</h2>
+        <p>Как сделать свою компанию понятнее для ChatGPT? Можно ли начать GEO без собственного сайта, технических знаний и маркетингового агентства?</p>
+        <p>Для таких задач мы создали <strong>GEO-Pass — бесплатный профессиональный профиль для людей и AI-систем</strong>.</p>
+        <p>Он структурирует информацию о твоей специализации, услугах и компетенциях. Но главное — показывает конкретные ситуации, в которых ты можешь помочь клиенту.</p>
+        <p>Например, недостаточно указать, что ты адвокат. Важно объяснить, с какими правовыми проблемами к тебе можно обращаться.</p>
+        <p>Так формируются смысловые связи между потребностями потенциальных клиентов и возможностями предпринимателя.</p>
+        <p><strong>GEO-Pass — самостоятельный бесплатный инструмент и первый большой шаг к развитию твоего AI-присутствия.</strong></p>
+        <p>Но наш проект не заканчивается созданием профессионального профиля.</p>
+      </section>
+
+      <section class="about-project__section" aria-labelledby="about-project-heading-3">
+        <span class="about-project__number" aria-hidden="true">03</span>
+        <h2 id="about-project-heading-3">Octopus — автоматизация GEO-контента и публикаций</h2>
+        <p>Одного профиля не всегда достаточно, чтобы раскрыть профессиональный опыт, особенности услуг и ответы на многочисленные вопросы клиентов.</p>
+        <p>Для этого нужны дополнительные достоверные материалы, представляющие компетенции бизнеса в разных ситуациях.</p>
+        <p>Но как развивать GEO-присутствие, если у тебя нет маркетингового отдела и времени самостоятельно создавать контент?</p>
+        <p><strong>Для этого мы разрабатываем Octopus — интеллектуальную систему автоматизации GEO-процессов.</strong></p>
+        <p>На основе структурированной информации о бизнесе Octopus будет формировать контент-стратегию, определять темы, подготавливать материалы и организовывать публикации.</p>
+        <p>Для этого проект предусматривает собственные тематические платформы — самостоятельные информационные издания с оригинальными полезными материалами, а не площадки для массового размещения одинаковой рекламы.</p>
+        <p>Публикации будут опираться на реальные компетенции, профессиональный опыт и достоверные сведения.</p>
+        <p>Так предприниматель сможет последовательно раскрывать свою деятельность в разных контекстах и создавать дополнительные источники информации, доступные AI-системам.</p>
+        <p><strong>Ты занимаешься своим бизнесом. Octopus берёт на себя автоматизируемую работу с контентом и его распространением.</strong></p>
+        <p>Система находится в разработке. Её функции будут запускаться постепенно.</p>
+      </section>
+
+      <section class="about-project__section" aria-labelledby="about-project-heading-4">
+        <span class="about-project__number" aria-hidden="true">04</span>
+        <h2 id="about-project-heading-4">Как узнать, обращаются ли AI-боты к GEO-Pass?</h2>
+        <p>Мы разрабатываем аналитику обращений автоматизированных систем к опубликованным GEO-Pass.</p>
+        <p>После запуска этой функции предприниматель сможет видеть, какие идентифицированные AI-боты посещали его страницу и когда происходили обращения.</p>
+        <p>Это поможет оценивать техническую доступность профиля для таких систем.</p>
+        <p>При этом <strong>посещение AI-ботом страницы не означает, что ChatGPT порекомендовал бизнес клиенту</strong>. Мы разделяем наблюдаемые технические данные и реальные рекомендации.</p>
+      </section>
+
+      <section class="about-project__section" aria-labelledby="about-project-heading-5">
+        <span class="about-project__number" aria-hidden="true">05</span>
+        <h2 id="about-project-heading-5">Что бесплатно, а какие возможности будут платными?</h2>
+        <p><strong>GEO-Pass остаётся бесплатным.</strong> Создание и размещение базового профессионального профиля не требуют подписки или покупки дополнительных услуг.</p>
+        <p><strong>Octopus — добровольный следующий этап.</strong> Дополнительные инструменты автоматизации контента и публикаций будут предоставляться на платной основе.</p>
+        <p>Ты сам решаешь, достаточно ли тебе GEO-Pass или ты хочешь расширять своё AI-присутствие дальше.</p>
+      </section>
+
+      <section class="about-project__section" aria-labelledby="about-project-heading-6">
+        <span class="about-project__number" aria-hidden="true">06</span>
+        <h2 id="about-project-heading-6">Наша GEO-методика: чем она отличается от SEO?</h2>
+        <p>Автор проекта и собственной GEO-методики — <strong>Анна Трока</strong>.</p>
+        <p>Традиционное SEO помогает улучшать доступность и видимость информации в поисковых системах.</p>
+        <p>Наша GEO-методика дополнительно уделяет внимание профессиональной идентичности, роли, контексту и причинно-следственным связям между проблемами клиентов и решениями бизнеса.</p>
+        <p>Мы не просто описываем, какие услуги предлагает предприниматель. Мы стремимся показать, <strong>кому, когда и почему эти услуги могут быть полезны</strong>.</p>
+        <p>GEO не заменяет традиционный маркетинг и не гарантирует рекомендаций ChatGPT или продаж.</p>
+        <p>Наша цель — сделать GEO доступным предпринимателям, а дальнейшее развитие AI-присутствия максимально автоматизированным.</p>
+        <p><strong>Тебе не нужно становиться GEO-экспертом. Тебе нужно хорошо делать своё дело.</strong></p>
+      </section>
+        <div class="about-project__end">
+          <p>Начни с GEO-Pass. Это бесплатно.</p>
+          <a class="btn" href="../../ru/create/">Создать GEO-Pass</a>
+        </div>
+        <p class="about-project__disclaimer">Проект находится в разработке. Автоматическое создание GEO-Pass через Octopus, расширенные функции публикаций и аналитика AI-обращений пока не запущены.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-columns">
+        <div><span class="logo-main" style="font-size:1.65rem">GEO-Pass</span><div style="font-size:.82rem;margin-top:9px;color:#d7c6b0">Проект · Анна Трока</div></div>
+        <nav class="footer-links" aria-label="Нижняя навигация">
+          <a href="../../ru/register/">Каталог специалистов</a>
+          <a href="../../ru/legal/">Юридическая информация</a>
+          <a href="../../ru/search/">Поиск</a>
+        </nav>
+      </div>
+      <div class="footnote">© GEO-Pass · Проект Анны Трока · Прототип · регистрация и AI-аналитика не подключены</div>
+    </div>
+  </footer>
+</body>
+</html>
