@@ -221,3 +221,8 @@
 .q-service-entry textarea{min-height:46px;font-size:13px}
 .q-screen--service .q-mascot{width:min(100%,calc(45dvh * 2.105));max-height:45dvh}
 }
+
+/* Bright graphic warning asset, replaces the plain exclamation mark. */
+.q-continue-alert__image{width:52px;height:58px;display:block;object-fit:contain;flex:none;filter:drop-shadow(0 3px 3px rgba(180,0,20,.13))}
+@media(max-width:620px){.q-continue-alert__image{width:42px;height:46px}}
+@media(max-height:690px) and (max-width:620px){.q-continue-alert__image{width:35px;height:39px}}
