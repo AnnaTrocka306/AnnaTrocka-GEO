@@ -30,7 +30,8 @@
     },
     "published": true,
     "verified": false,
-    "fictional": true
+    "fictional": true,
+    "district": "Charlottenburg"
   },
   {
     "id": "max-muster",
@@ -63,7 +64,8 @@
     },
     "published": true,
     "verified": false,
-    "fictional": true
+    "fictional": true,
+    "district": "Schwabing"
   },
   {
     "id": "sofia-demo",
