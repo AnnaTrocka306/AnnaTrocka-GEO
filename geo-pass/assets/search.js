@@ -26,6 +26,6 @@ host.replaceChildren();const count=document.createElement("p");count.className="
 found.sort((a,b)=>a.name.localeCompare(b.name,lang,{sensitivity:"base"})).forEach(p=>{
 const a=document.createElement("a");a.className="search-item";a.href=root+lang+"/experts/"+encodeURIComponent(p.id)+"/?q="+encodeURIComponent(query);
 const content=document.createElement("span"),name=document.createElement("strong"),detail=document.createElement("span");
-name.textContent=p.name;detail.className="meta";detail.textContent=[local(p.profession),local(p.district),p.city,(countries[lang]||{})[p.country]||p.country,p.fictional?labels.demo:""].filter(Boolean).join(" · ");
+name.textContent=p.name;detail.className="meta";detail.textContent=[local(p.profession),local(p.district),local(p.locality)||local(p.city),local(p.region),(countries[lang]||{})[p.country]||p.country,p.fictional?labels.demo:""].filter(Boolean).join(" · ");
 content.append(name,detail);const arrow=document.createElement("span");arrow.setAttribute("aria-hidden","true");arrow.textContent="→";a.append(content,arrow);host.append(a)})}).catch(()=>{host.textContent=labels.error});
 })();
