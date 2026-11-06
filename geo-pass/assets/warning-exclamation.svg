@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 132" role="img" aria-labelledby="title">
+<title id="title">Red exclamation warning</title>
+<defs>
+ <linearGradient id="outer" x1="0" y1="0" x2="0.7" y2="1"><stop offset="0" stop-color="#ff7677"/><stop offset=".32" stop-color="#ff0b22"/><stop offset="1" stop-color="#ab0017"/></linearGradient>
+ <linearGradient id="inner" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".8" stop-color="#fff7f7"/><stop offset="1" stop-color="#ffe1e3"/></linearGradient>
+ <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff3847"/><stop offset=".45" stop-color="#f0001b"/><stop offset="1" stop-color="#b60012"/></linearGradient>
+ <filter id="shadow" x="-20%" y="-10%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#b90017" flood-opacity=".28"/></filter>
+</defs>
+<path d="M60 5C43 10 28 24 9 31Q4 35 5 45C7 81 24 108 60 126C96 108 113 81 115 45Q116 35 111 31C92 24 77 10 60 5Z" fill="url(#outer)" stroke="#dc0a20" stroke-width="2.4" filter="url(#shadow)"/>
+<path d="M60 21C45 26 33 36 19 41C20 74 33 97 60 114C87 97 100 74 101 41C87 36 75 26 60 21Z" fill="url(#inner)" stroke="#ff929b" stroke-width="2"/>
+<path d="M14 37C29 31 43 17 60 12C77 17 91 31 106 37" fill="none" stroke="#ffccd0" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+<path d="M44 45Q44 37 52 37H68Q76 37 76 45L70 78Q69 86 61 86H59Q51 86 50 78Z" fill="url(#mark)"/>
+<circle cx="60" cy="99" r="9" fill="url(#mark)"/>
+<path d="M54 42H66" stroke="#ffb6be" stroke-width="2.5" opacity=".8" stroke-linecap="round"/>
+</svg>
