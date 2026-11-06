@@ -46,6 +46,22 @@ function normalizeUrls(){
       input.value="https://"+input.value.trim();
   }
 }
+// Fallback link on informational steps: native navigation works without JS.
+// When JS is available, capture the last contact preferences and validate them.
+const nextLink=form.querySelector('a.welcome-mascot[role="button"]');
+if(nextLink)nextLink.addEventListener("click",e=>{
+  refresh();
+  if(step==="channels"){
+    const options=[...form.querySelectorAll('input[type="checkbox"][name^="channel"]')];
+    const anchor=options[0];
+    if(anchor){
+      const m={de:"Bitte wähle mindestens einen Kontaktweg.",en:"Please choose at least one contact method.",ru:"Выбери хотя бы один способ связи."};
+      anchor.setCustomValidity(options.some(x=>x.checked)?"":(m[document.documentElement.lang]||m.en));
+    }
+  }
+  if(!form.reportValidity()){e.preventDefault();return;}
+  capture();
+});
 form.addEventListener("submit",e=>{
   e.preventDefault();
   normalizeUrls();refresh();
