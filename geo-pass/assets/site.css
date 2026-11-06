@@ -155,3 +155,13 @@ box-shadow:0 3px 10px #24181033
 .geo-pass-ru .geo-pass-step__content h3{overflow-wrap:break-word}
 @media(max-width:760px){.geo-pass-ru .pass-scene__question-bubble{font-size:clamp(.71rem,2.7vw,1rem)}.geo-pass-ru .pass-scene__glow-button{font-size:clamp(.72rem,3.05vw,1.14rem)}}
 @media(max-width:360px){.geo-pass-ru .pass-scene__question-bubble{right:3%;width:42%;padding:8px 9px}.geo-pass-ru .hero-pass__cta-plaque{font-size:9px}}
+
+/* GEO-Pass: registry hierarchy and isolated name-search results. */
+.registry .reg-links strong{font-weight:700;display:block}
+.registry .reg-links .meta{display:block;margin-top:3px}
+.search-empty{text-align:center;max-width:660px;margin:12px auto 0;padding:26px 24px 36px;border:1px solid var(--line);background:var(--white)}
+.search-empty img{display:block;width:min(100%,360px);height:auto;margin:0 auto 12px}
+.search-empty h2{font-size:clamp(1.8rem,3vw,2.6rem);margin:0 auto 16px}
+.search-empty p{margin:0 auto 24px;color:var(--muted)}
+.search-empty .btn{max-width:100%;white-space:normal}
+@media(max-width:740px){.search-empty{padding:20px 15px 28px}}
