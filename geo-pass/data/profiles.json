@@ -3,7 +3,8 @@
     "id": "leonie-beispiel",
     "name": "Leonie Beispiel",
     "country": "DE",
-    "city": "Berlin",
+    "locality": "Berlin",
+    "localityType": "city",
     "profession": {
       "de": "Unternehmensberatung",
       "en": "Business consulting",
@@ -37,7 +38,8 @@
     "id": "max-muster",
     "name": "Max Muster",
     "country": "DE",
-    "city": "München",
+    "locality": "München",
+    "localityType": "city",
     "profession": {
       "de": "Rechtsanwalt",
       "en": "Lawyer",
@@ -71,7 +73,8 @@
     "id": "sofia-demo",
     "name": "Sofia Demo",
     "country": "AT",
-    "city": "Wien",
+    "locality": "Wien",
+    "localityType": "city",
     "profession": {
       "de": "Kosmetikerin",
       "en": "Beauty therapist",
@@ -104,7 +107,8 @@
     "id": "jan-nowak-demo",
     "name": "Jan Nowak (Demo)",
     "country": "PL",
-    "city": "Warszawa",
+    "locality": "Warszawa",
+    "localityType": "city",
     "profession": {
       "de": "IT-Beratung",
       "en": "IT consulting",
@@ -137,7 +141,8 @@
     "id": "emma-voorbeeld",
     "name": "Emma Voorbeeld",
     "country": "NL",
-    "city": "Amsterdam",
+    "locality": "Amsterdam",
+    "localityType": "city",
     "profession": {
       "de": "Marketingberatung",
       "en": "Marketing consulting",
