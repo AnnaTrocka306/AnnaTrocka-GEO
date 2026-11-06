@@ -244,3 +244,21 @@
 .q-screen--needs .q-intro .q-service-question{font-size:14px;margin:5px auto}
 .q-screen--needs .q-mascot{max-height:16dvh;width:calc(16dvh * 2.105)}
 }
+
+/* Two compact client-context cards: when help is needed and desired outcome. */
+.q-screen--situation .q-intro,.q-screen--outcome .q-intro{max-width:min(790px,100%)}
+.q-screen--situation .q-intro h1,.q-screen--outcome .q-intro h1{font-size:clamp(22px,2.85vw,32px)}
+.q-screen--situation .q-intro .q-service-question,.q-screen--outcome .q-intro .q-service-question{font-size:clamp(17px,1.95vw,22px)}
+.q-screen--situation .q-mascot,.q-screen--outcome .q-mascot{max-height:23dvh;width:min(460px,100%,calc(23dvh * 2.105))}
+@media(max-width:620px){
+.q-screen--situation .q-intro h1,.q-screen--outcome .q-intro h1{font-size:clamp(20px,5.25vw,25px)}
+.q-screen--situation .q-intro p,.q-screen--outcome .q-intro p{font-size:clamp(12px,3.45vw,14px);line-height:1.28}
+.q-screen--situation .q-intro .q-service-question,.q-screen--outcome .q-intro .q-service-question{font-size:clamp(15px,4.1vw,18px);margin:8px auto}
+.q-screen--situation .q-mascot,.q-screen--outcome .q-mascot{max-height:19dvh;width:min(390px,100%,calc(19dvh * 2.105))}
+}
+@media(max-height:690px) and (max-width:620px){
+.q-screen--situation .q-intro h1,.q-screen--outcome .q-intro h1{font-size:19px;margin-bottom:4px}
+.q-screen--situation .q-intro p,.q-screen--outcome .q-intro p{font-size:12px;line-height:1.2;margin-bottom:5px}
+.q-screen--situation .q-intro .q-service-question,.q-screen--outcome .q-intro .q-service-question{font-size:14px;margin:5px auto}
+.q-screen--situation .q-mascot,.q-screen--outcome .q-mascot{max-height:16dvh;width:calc(16dvh * 2.105)}
+}
