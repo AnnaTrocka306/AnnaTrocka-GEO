@@ -3,7 +3,7 @@
    No account, database connection, publication, or notification is live. */
 const form=document.querySelector("[data-octopus-form]");if(!form)return;
 const step=form.dataset.step,key="octopus-geo-pass-draft-v1";
-const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","matching","service","needs"];
+const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","matching","service","needs","situation","outcome"];
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
 const inputs=[...form.querySelectorAll("input[name],textarea[name]")];
 function put(input){
