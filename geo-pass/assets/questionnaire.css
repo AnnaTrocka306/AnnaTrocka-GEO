@@ -1,0 +1,64 @@
+/* Octopus questionnaire: each step is one viewport, using the SAME mascot/button as WELCOME. */
+.q-screen{height:100vh;height:100dvh;min-height:0;display:grid;grid-template-rows:auto minmax(0,1fr);overflow:hidden}
+.q-header{height:clamp(43px,7dvh,58px);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(14px,4vw,56px)}
+.q-back{color:#665044;font-size:clamp(12px,1.4vw,14px);font-weight:650;text-decoration:none;padding:6px 0}
+.q-back:focus-visible,.q-fields input:focus-visible{outline:3px solid #1267ad;outline-offset:2px}
+.q-main{min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4px 16px clamp(5px,2dvh,18px);gap:clamp(5px,1dvh,12px)}
+.q-intro{max-width:690px;text-align:center;flex:0 0 auto}
+.q-intro h1{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:clamp(22px,3vw,32px);line-height:1.18;letter-spacing:-.025em;font-weight:800;margin:0 0 7px}
+.q-intro p{font-size:clamp(13px,1.42vw,17px);line-height:1.38;color:#6b5245;margin:0 auto;max-width:690px;text-wrap:pretty}
+.q-form{display:flex;flex-direction:column;align-items:center;gap:clamp(4px,1dvh,12px);width:min(700px,100%);min-height:0}
+.q-fields{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(5px,1dvh,12px) clamp(9px,1.5vw,16px);width:100%;flex:0 0 auto}
+.q-field{display:flex;flex-direction:column;gap:3px;min-width:0;grid-column:span 3}
+.q-field--short{grid-column:span 2}
+.q-field label{font-size:clamp(12px,1.2vw,14px);font-weight:700;line-height:1.2;color:#3c2d24;white-space:normal}
+.q-field input{display:block;width:100%;min-height:44px;border:1px solid #d9c5ad;border-radius:9px;background:#fffdfa;color:#2f251e;padding:8px 13px;font:500 clamp(14px,1.45vw,16px)/1.2 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;box-shadow:0 2px 0 #f0e9dd}
+.q-field input::placeholder{color:#9c8b7d;font-weight:400}
+.q-field input:user-invalid{border-color:#bc5a40}
+.q-mascot{width:min(485px,100%,calc(24dvh * 2.105));height:auto;max-height:24dvh;flex-shrink:1;margin:0 auto}
+.q-mascot .welcome-mascot__text{font-size:clamp(14px,2.3vw,25px);top:57%;height:22%}
+.q-fields--address{max-width:590px;margin:auto}
+.q-fields--address .q-field{grid-column:span 3}
+.q-screen--workplace .q-intro{max-width:650px}
+.q-screen--workplace .q-main{gap:clamp(8px,2dvh,22px)}
+.q-screen--workplace .q-mascot{width:min(535px,100%,calc(31dvh * 2.105));max-height:31dvh}
+@media(max-width:620px){
+.q-header{height:47px;padding:0 13px}
+.q-main{padding:1px 12px 7px;gap:clamp(3px,.8dvh,7px)}
+.q-intro h1{font-size:clamp(21px,5.9vw,27px);margin-bottom:6px}
+.q-intro p{font-size:clamp(12px,3.45vw,14px);line-height:1.32}
+.q-fields{grid-template-columns:1fr;gap:clamp(4px,.9dvh,8px)}
+.q-field,.q-field--short,.q-fields--address .q-field{grid-column:1}
+.q-field{gap:2px}
+.q-field label{font-size:12px;line-height:1.1}
+.q-field input{min-height:38px;padding:6px 10px;font-size:14px;border-radius:7px}
+.q-mascot{width:min(370px,100%,calc(21dvh * 2.105));max-height:21dvh}
+.q-mascot .welcome-mascot__text{font-size:clamp(12px,3.6vw,18px)}
+.q-screen--workplace .q-mascot{width:min(460px,100%,calc(33dvh * 2.105));max-height:33dvh}
+.q-screen--workplace .q-main{gap:clamp(8px,2dvh,16px)}
+}
+@media(max-height:610px) and (max-width:620px){
+.q-header{height:40px}
+.q-intro h1{font-size:clamp(19px,4.7dvh,24px);margin-bottom:3px}
+.q-intro p{font-size:12px;line-height:1.22}
+.q-main{gap:2px;padding:0 12px 3px}
+.q-fields{gap:3px}
+.q-field label{font-size:11px;line-height:1.06}
+.q-field input{min-height:34px;padding:4px 10px;font-size:13px}
+.q-mascot{width:min(320px,100%,calc(19dvh * 2.105));max-height:19dvh}
+.q-screen--workplace .q-mascot{width:min(360px,100%,calc(32dvh * 2.105));max-height:32dvh}
+}
+@media(max-height:440px) and (min-width:621px){
+.q-header{height:37px}
+.q-main{flex-direction:row;gap:2vw;padding:0 2vw 6px}
+.q-intro{text-align:left;width:33%}
+.q-intro h1{font-size:20px}
+.q-intro p{font-size:12px}
+.q-form{width:65%;gap:3px}
+.q-fields{gap:3px 8px}
+.q-field label{font-size:11px}
+.q-field input{min-height:31px;padding:3px 8px;font-size:12px}
+.q-mascot{max-height:30dvh;width:calc(30dvh * 2.105)}
+.q-screen--workplace .q-mascot{max-height:40dvh;width:calc(40dvh * 2.105)}
+}
+@media(max-height:365px) and (max-width:620px){.q-screen{overflow:auto;height:auto;min-height:100dvh}.q-main{justify-content:flex-start}.q-mascot{flex-shrink:0}}
