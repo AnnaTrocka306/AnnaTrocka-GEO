@@ -262,3 +262,24 @@
 .q-screen--situation .q-intro .q-service-question,.q-screen--outcome .q-intro .q-service-question{font-size:14px;margin:5px auto}
 .q-screen--situation .q-mascot,.q-screen--outcome .q-mascot{max-height:16dvh;width:calc(16dvh * 2.105)}
 }
+
+/* How the professional works: compact explanation, a few sentences and one response field. */
+.q-screen--approach .q-intro{max-width:min(830px,100%)}
+.q-screen--approach .q-intro h1{font-size:clamp(21px,2.8vw,31px);margin-bottom:clamp(7px,1.4dvh,15px)}
+.q-screen--approach .q-intro .q-service-question{font-size:clamp(16px,1.82vw,21px);margin:clamp(7px,1.3dvh,14px) auto}
+.q-screen--approach .q-service-entry textarea{min-height:83px;max-height:135px}
+.q-screen--approach .q-mascot{max-height:22dvh;width:min(460px,100%,calc(22dvh * 2.105))}
+@media(max-width:620px){
+.q-screen--approach .q-intro h1{font-size:clamp(19px,5.1vw,24px);margin-bottom:6px}
+.q-screen--approach .q-intro p{font-size:clamp(12px,3.4vw,14px);line-height:1.27;margin-bottom:6px}
+.q-screen--approach .q-intro .q-service-question{font-size:clamp(14px,4vw,17px);margin:7px auto}
+.q-screen--approach .q-service-entry textarea{min-height:68px;max-height:95px}
+.q-screen--approach .q-mascot{max-height:18dvh;width:min(385px,100%,calc(18dvh * 2.105))}
+}
+@media(max-height:690px) and (max-width:620px){
+.q-screen--approach .q-intro h1{font-size:18px;margin-bottom:4px}
+.q-screen--approach .q-intro p{font-size:12px;line-height:1.19;margin-bottom:4px}
+.q-screen--approach .q-intro .q-service-question{font-size:14px;margin:5px auto}
+.q-screen--approach .q-service-entry textarea{min-height:56px;max-height:74px}
+.q-screen--approach .q-mascot{max-height:15dvh;width:calc(15dvh * 2.105)}
+}
