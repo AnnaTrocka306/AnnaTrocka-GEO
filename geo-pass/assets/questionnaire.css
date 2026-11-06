@@ -135,3 +135,52 @@
 .q-legal{gap:5px}
 }
 @media(max-height:570px) and (max-width:620px){.q-screen--social .q-mascot{max-height:12dvh;width:calc(12dvh * 2.105)}}
+
+/* Approved "we're not finished" reminder on the final contact card. */
+.q-continue-alert{display:flex;align-items:center;justify-content:center;gap:12px;max-width:670px;width:100%;text-align:left;padding:5px 10px;margin:0 auto;color:#a72222}
+.q-continue-alert__sign{font-size:clamp(24px,3vw,38px);line-height:1;font-weight:900;border:3px solid #c62a2a;border-radius:50%;width:clamp(32px,4vw,46px);height:clamp(32px,4vw,46px);flex:none;display:flex;align-items:center;justify-content:center}
+.q-continue-alert strong{font-size:clamp(19px,2.2vw,27px);line-height:1.1;display:block;font-weight:850}
+.q-continue-alert p{margin:3px 0 0;font-size:clamp(12px,1.35vw,16px);line-height:1.25;color:#522d29;font-weight:620}
+.q-screen--channels .q-main{gap:clamp(3px,.8dvh,9px)}
+.q-screen--channels .q-form{gap:clamp(3px,.8dvh,9px)}
+.q-screen--channels .q-mascot{max-height:19dvh;width:min(435px,100%,calc(19dvh * 2.105))}
+
+/* Separate introduction screen, without added forms or extra call-to-action. */
+.q-screen--matching .q-main{gap:clamp(5px,1.5dvh,15px);justify-content:center;padding-bottom:clamp(7px,2dvh,18px)}
+.q-intro--matching{max-width:min(820px,100%)}
+.q-intro--matching h1{font-size:clamp(22px,3vw,33px);margin-bottom:clamp(7px,1.3dvh,13px)}
+.q-intro--matching p{font-size:clamp(13px,1.55vw,17px);max-width:790px;line-height:1.36;margin:0 auto clamp(6px,1.15dvh,12px)}
+.q-intro--matching .q-matching-message{color:#442c1c;font-size:clamp(15px,1.8vw,20px);font-weight:750;line-height:1.3;margin:clamp(9px,1.4dvh,16px) auto 0}
+.q-screen--matching .q-form{width:100%}
+.q-screen--matching .q-mascot{width:min(520px,100%,calc(27dvh * 2.105));max-height:27dvh}
+@media(max-width:620px){
+.q-continue-alert{gap:8px;padding:2px 0}
+.q-continue-alert__sign{width:30px;height:30px;font-size:23px;border-width:2px}
+.q-continue-alert strong{font-size:clamp(16px,4.5vw,19px)}
+.q-continue-alert p{font-size:12px;margin-top:1px}
+.q-screen--channels .q-intro h1{font-size:clamp(19px,5.25vw,23px)}
+.q-screen--channels .q-intro p{font-size:12px}
+.q-screen--channels .q-mascot{max-height:17dvh;width:min(350px,100%,calc(17dvh * 2.105))}
+.q-intro--matching h1{font-size:clamp(21px,5.9vw,26px);margin-bottom:8px}
+.q-intro--matching p{font-size:clamp(12px,3.4vw,15px);line-height:1.32;margin-bottom:7px}
+.q-intro--matching .q-matching-message{font-size:clamp(14px,3.85vw,17px);line-height:1.29;margin-top:9px}
+.q-screen--matching .q-mascot{max-height:24dvh;width:min(405px,100%,calc(24dvh * 2.105))}
+}
+@media(max-height:690px) and (max-width:620px){
+.q-continue-alert strong{font-size:15px}
+.q-continue-alert p{font-size:11px}
+.q-continue-alert__sign{width:27px;height:27px;font-size:20px}
+.q-screen--channels .q-mascot{max-height:13dvh;width:calc(13dvh * 2.105)}
+.q-intro--matching h1{font-size:20px;margin-bottom:4px}
+.q-intro--matching p{font-size:12px;line-height:1.24;margin-bottom:5px}
+.q-intro--matching .q-matching-message{font-size:13px;margin-top:6px}
+.q-screen--matching .q-mascot{max-height:20dvh;width:calc(20dvh * 2.105)}
+}
+@media(max-height:440px) and (min-width:621px){
+.q-screen--matching .q-intro{text-align:left;width:64%}
+.q-screen--matching .q-intro p{font-size:12px;line-height:1.18;margin-bottom:4px}
+.q-screen--matching .q-intro h1{font-size:20px}
+.q-screen--matching .q-intro .q-matching-message{font-size:13px}
+.q-screen--matching .q-form{width:34%}
+.q-screen--matching .q-mascot{max-height:53dvh;width:min(100%,calc(53dvh * 2.105))}
+}
