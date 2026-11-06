@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title id="title">Яркий красный восклицательный знак</title>
+<desc id="desc">Объёмный красный восклицательный знак на светлой глянцевой табличке с лучами предупреждения</desc>
+<defs>
+<linearGradient id="plaque" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#fffdf9"/><stop offset=".46" stop-color="#fff2e4"/><stop offset="1" stop-color="#f1cfb6"/></linearGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9b83"/><stop offset=".3" stop-color="#f42a21"/><stop offset=".73" stop-color="#b1080b"/><stop offset="1" stop-color="#8a0b12"/></linearGradient>
+<linearGradient id="mark" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#ff9080"/><stop offset=".2" stop-color="#ff3424"/><stop offset=".64" stop-color="#ec0b0d"/><stop offset="1" stop-color="#b4070b"/></linearGradient>
+<filter id="shadow" x="-40%" y="-40%" width="180%" height="190%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#9c2413" flood-opacity=".28"/></filter>
+<filter id="rays" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#ec220d" flood-opacity=".35"/></filter>
+</defs>
+<g filter="url(#rays)" fill="#f42b18">
+<path d="M204 46 228 26 219 61Z"/><path d="M221 91 248 85 242 102 217 102Z"/><path d="M216 134 243 142 233 158 207 145Z"/>
+<path d="M52 40 27 20 35 57Z"/><path d="M29 91 7 80 5 99 34 105Z"/>
+</g>
+<g filter="url(#shadow)">
+<rect x="36" y="31" width="184" height="190" rx="46" fill="url(#edge)"/>
+<rect x="43" y="38" width="170" height="176" rx="40" fill="url(#plaque)" stroke="#ffb0a0" stroke-width="2"/>
+<path d="M57 77C67 47 91 42 125 42h39" fill="none" stroke="#ffffff" stroke-width="7" opacity=".8" stroke-linecap="round"/>
+<path d="M118 69q-5 0-7 6l5 83q1 9 12 9t12-9l6-83q-1-7-9-7z" fill="url(#mark)" stroke="#ad0610" stroke-width="2"/>
+<ellipse cx="128" cy="188" rx="15" ry="15" fill="url(#mark)" stroke="#ad0610" stroke-width="2"/>
+<path d="M119 80 123 139" stroke="#ff9b85" stroke-width="7" stroke-linecap="round" opacity=".67"/>
+<ellipse cx="124" cy="184" rx="5" ry="3" fill="#ffb59b" opacity=".75"/>
+</g>
+</svg>
