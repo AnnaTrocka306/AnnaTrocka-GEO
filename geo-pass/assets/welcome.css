@@ -24,3 +24,7 @@ html,body{overflow:hidden}body{-webkit-font-smoothing:antialiased}
 @media(max-height:650px){.welcome-header{height:44px}.welcome-main{gap:4px;padding-bottom:4px}.welcome-copy h1{font-size:clamp(19px,4.8dvh,27px);margin-bottom:6px}.welcome-copy p{font-size:clamp(12px,2.65dvh,15px);line-height:1.3}.welcome-mascot{max-height:38dvh}}
 @media(max-height:440px) and (min-width:700px){.welcome-main{flex-direction:row;gap:2vw;padding:0 3vw 15px}.welcome-copy{width:54%;text-align:left}.welcome-copy h1{font-size:clamp(19px,4.2dvh,24px);line-height:1.16}.welcome-copy p{font-size:13px}.welcome-mascot{width:45%;max-height:74dvh}.welcome-mascot__text{font-size:clamp(12px,1.7vw,17px)}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+
+/* Shared illustrated call-to-action is both a link (WELCOME) and a submit button (questionnaire). */
+a.welcome-mascot{text-decoration:none;color:inherit}
+a.welcome-mascot:hover{text-decoration:none}
