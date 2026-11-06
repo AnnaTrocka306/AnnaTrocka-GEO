@@ -37,7 +37,7 @@ function refresh(){
   });
 }
 form.addEventListener("input",()=>{capture();refresh()});
-form.addEventListener("change",()=>{capture();refresh()});
+form.addEventListener("change",()=>{const anchor=form.querySelector('input[name="channelEmail"]');if(anchor)anchor.setCustomValidity("");capture();refresh()});
 refresh();
 const submit=form.querySelector('button[type="submit"]');if(submit)submit.disabled=false;
 function normalizeUrls(){
@@ -49,6 +49,21 @@ function normalizeUrls(){
 form.addEventListener("submit",e=>{
   e.preventDefault();
   normalizeUrls();refresh();
+  // A contact cannot be marked public without its contact value.
+  for(const pair of [["emailAddress","emailPublic"],["phoneNumber","phonePublic"],["websiteUrl","websitePublic"],["whatsappNumber","whatsappPublic"]]){
+    const value=form.querySelector('[name="'+pair[0]+'"]');
+    const privateChoice=form.querySelector('input[name="'+pair[1]+'"][value="no"]');
+    if(value&&!value.value.trim()&&privateChoice)privateChoice.checked=true;
+  }
+  if(step==="channels"){
+    const options=[...form.querySelectorAll('input[type="checkbox"][name^="channel"]')];
+    const anchor=options[0];
+    if(anchor){
+      const messages={de:"Bitte wähle mindestens einen Kontaktweg.",en:"Please choose at least one contact method.",ru:"Выбери хотя бы один способ связи."};
+      anchor.setCustomValidity(options.some(x=>x.checked)?"":(messages[document.documentElement.lang]||messages.en));
+      if(!anchor.checkValidity()){anchor.reportValidity();return}
+    }
+  }
   if(!form.reportValidity())return;
   capture();
   const at=steps.indexOf(step);
