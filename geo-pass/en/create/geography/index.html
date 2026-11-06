@@ -19,12 +19,12 @@
 <p>Choose the areas where you can work with clients. You can select more than one.</p>
 </div>
 <form class="q-form q-form--geography" data-octopus-form data-step="geography">
-<fieldset class="q-geo-group" data-required-group data-required-message="Please choose at least one service area."><legend class="q-geo-group__sr">Where do you offer your services?</legend><div class="q-geo-options"><label class="q-geo-option"><input type="checkbox" name="geoAtWorkplace" value="yes"><span>At the business address I provided</span></label>
+<fieldset class="q-geo-group" data-required-group data-required-message="Please choose at least one service area."><legend class="q-geo-group__sr">Where do you offer your services?</legend><div class="q-geo-options"><label class="q-geo-option"><input type="checkbox" name="geoAtWorkplace" value="yes" data-requires-draft="street"><span>At the business address I provided</span></label>
 <label class="q-geo-option"><input type="checkbox" name="geoLocal" value="yes"><span>In my city and nearby</span></label>
 <label class="q-geo-option"><input type="checkbox" name="geoNational" value="yes"><span>Throughout my country</span></label>
 <label class="q-geo-option"><input type="checkbox" name="geoSelectedRegions" value="yes"><span>In specific regions or countries</span></label>
 <label class="q-geo-option"><input type="checkbox" name="geoWorldwide" value="yes"><span>Worldwide</span></label></div></fieldset>
-<label class="q-geo-extra"><span>Specify cities, regions or countries (optional)</span><input type="text" name="geoAreaDetails" maxlength="240" autocomplete="off"></label>
+<label class="q-geo-extra"><span>Specify cities, regions or countries (optional)</span><input type="text" name="geoAreaDetails" maxlength="240" autocomplete="off" aria-label="Specify regions or countries"></label>
 <fieldset class="q-geo-group q-geo-format" data-required-group data-required-message="Please choose at least one way of working."><legend>How do you work?</legend><div class="q-geo-options"><label class="q-geo-option"><input type="checkbox" name="serviceInPerson" value="yes"><span>In person</span></label>
 <label class="q-geo-option"><input type="checkbox" name="serviceRemote" value="yes"><span>Online / remotely</span></label></div></fieldset>
 <button type="submit" disabled class="welcome-mascot q-mascot" aria-label="Continue"><img src="../../../assets/octopus-cta.webp" alt="" width="740" height="357" loading="eager" fetchpriority="high"><span class="welcome-mascot__text" aria-hidden="true"><span>Continue</span></span></button>
