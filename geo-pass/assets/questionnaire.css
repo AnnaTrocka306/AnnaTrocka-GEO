@@ -283,3 +283,36 @@
 .q-screen--approach .q-service-entry textarea{min-height:56px;max-height:74px}
 .q-screen--approach .q-mascot{max-height:15dvh;width:calc(15dvh * 2.105)}
 }
+
+/* Friendly final card. This is a local-only prototype, not a submitted application. */
+.q-screen--complete .q-main{gap:clamp(13px,2.4dvh,26px)}
+.q-intro--complete{max-width:min(740px,100%)}
+.q-intro--complete h1{font-size:clamp(30px,4.3vw,49px);margin-bottom:clamp(11px,2dvh,21px)}
+.q-intro--complete p{font-size:clamp(16px,1.8vw,20px);line-height:1.45;margin:0 auto clamp(10px,1.7dvh,18px);max-width:700px}
+.q-intro--complete .q-complete-promise{font-size:clamp(18px,2.2vw,25px);color:#533923;line-height:1.35}
+.q-complete-preview{max-width:660px;margin:0 auto;text-align:center;font-size:clamp(12px,1.2vw,14px);line-height:1.35;color:#8b3f25;background:#fff6e8;border:1px solid #eed6b8;border-radius:10px;padding:10px 14px}
+.q-screen--complete .q-mascot{width:min(505px,100%,calc(29dvh * 2.105));max-height:29dvh}
+.q-screen--complete .q-mascot .welcome-mascot__text{font-size:clamp(12px,1.9vw,21px)}
+@media(max-width:620px){
+.q-screen--complete .q-main{gap:clamp(9px,1.6dvh,15px)}
+.q-intro--complete h1{font-size:clamp(28px,8.1vw,38px);margin-bottom:clamp(9px,1.7dvh,16px)}
+.q-intro--complete p{font-size:clamp(14px,3.8vw,17px);line-height:1.36;margin-bottom:clamp(9px,1.4dvh,15px)}
+.q-intro--complete .q-complete-promise{font-size:clamp(16px,4.65vw,20px)}
+.q-complete-preview{font-size:12px;line-height:1.3;padding:9px 10px}
+.q-screen--complete .q-mascot{width:min(405px,100%,calc(27dvh * 2.105));max-height:27dvh}
+.q-screen--complete .q-mascot .welcome-mascot__text{font-size:clamp(11px,3vw,17px)}
+}
+@media(max-height:690px) and (max-width:620px){
+.q-intro--complete h1{font-size:27px;margin-bottom:7px}
+.q-intro--complete p{font-size:13px;line-height:1.25;margin-bottom:7px}
+.q-intro--complete .q-complete-promise{font-size:15px}
+.q-screen--complete .q-main{gap:7px}
+.q-complete-preview{padding:6px 9px;font-size:11px}
+.q-screen--complete .q-mascot{width:calc(21dvh * 2.105);max-height:21dvh}
+}
+@media(max-height:440px) and (min-width:621px){
+.q-screen--complete .q-intro{width:55%;text-align:left}
+.q-screen--complete .q-intro h1{font-size:28px}
+.q-screen--complete .q-intro p,.q-screen--complete .q-complete-preview{font-size:12px}
+.q-screen--complete .q-mascot{width:min(32%,calc(48dvh * 2.105));max-height:48dvh}
+}
