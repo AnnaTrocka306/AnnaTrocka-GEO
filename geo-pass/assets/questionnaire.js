@@ -3,7 +3,7 @@
    No account, database connection, publication, or notification is live. */
 const form=document.querySelector("[data-octopus-form]");if(!form)return;
 const step=form.dataset.step,key="octopus-geo-pass-draft-v1";
-const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","matching","service","needs","situation","outcome","approach","exclusions","complete"];
+const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","matching","service","needs","situation","outcome","approach","geography","languages","exclusions","complete"];
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
 const inputs=[...form.querySelectorAll("input[name],textarea[name]")];
 function put(input){
@@ -20,6 +20,22 @@ function capture(){
   }
   try{sessionStorage.setItem(key,JSON.stringify(draft))}catch(e){/* private browsing may deny storage */}
 }
+// Geographic reach, work mode and spoken language are separate, explicit answers.
+// No geographic area or language is inferred from residence, UI language or nationality.
+const requiredGroups=[...form.querySelectorAll("[data-required-group]")];
+function clearRequiredGroupErrors(){for(const group of requiredGroups){const first=group.querySelector('input[type="checkbox"]');if(first)first.setCustomValidity("");}}
+function validateRequiredGroups(){
+  for(const group of requiredGroups){
+    const first=group.querySelector('input[type="checkbox"]');if(!first)continue;
+    const choices=[...group.querySelectorAll('input[type="checkbox"]')];
+    const additionalName=group.dataset.additionalInput;
+    const additional=additionalName?form.querySelector('[name="'+additionalName+'"]'):null;
+    const valid=choices.some(x=>x.checked)||!!(additional&&additional.value.trim());
+    first.setCustomValidity(valid?"":(group.dataset.requiredMessage||"Please choose at least one option."));
+    if(!valid){first.reportValidity();return false;}
+  }
+  return true;
+}
 const toggles=[...form.querySelectorAll("[data-conditional]")];
 function refresh(){
   for(const block of toggles){
@@ -29,6 +45,9 @@ function refresh(){
     block.hidden=!visible;
     const field=block.querySelector("input,textarea");if(field)field.required=visible&&block.dataset.required==="true";
   }
+  const selectedRegions=form.querySelector('input[name="geoSelectedRegions"]');
+  const areaDetails=form.querySelector('input[name="geoAreaDetails"]');
+  if(areaDetails)areaDetails.required=!!(selectedRegions&&selectedRegions.checked);
   const fieldsUsingAvailability=[...form.querySelectorAll("input[data-requires-draft]")];
   fieldsUsingAvailability.forEach(input=>{
     const has=!!String(draft[input.dataset.requiresDraft]||"").trim();
@@ -36,8 +55,8 @@ function refresh(){
     if(!has)input.checked=false;
   });
 }
-form.addEventListener("input",()=>{capture();refresh()});
-form.addEventListener("change",()=>{const anchor=form.querySelector('input[name="channelEmail"]');if(anchor)anchor.setCustomValidity("");capture();refresh()});
+form.addEventListener("input",()=>{clearRequiredGroupErrors();capture();refresh()});
+form.addEventListener("change",()=>{clearRequiredGroupErrors();const anchor=form.querySelector('input[name="channelEmail"]');if(anchor)anchor.setCustomValidity("");capture();refresh()});
 refresh();
 const submit=form.querySelector('button[type="submit"]');if(submit)submit.disabled=false;
 function normalizeUrls(){
@@ -81,6 +100,7 @@ form.addEventListener("submit",e=>{
     }
   }
   if(!form.reportValidity())return;
+  if(!validateRequiredGroups())return;
   capture();
   const at=steps.indexOf(step);
   if(at>=0&&at<steps.length-1)window.location.assign("../"+steps[at+1]+"/");
