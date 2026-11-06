@@ -16,6 +16,7 @@ function save(){
  draft=record;
  try{sessionStorage.setItem(key,JSON.stringify(record))}catch(e){/* preview: storage unavailable */}
 }
+const submit=form.querySelector('button[type="submit"]');if(submit)submit.disabled=false;
 form.addEventListener("submit",e=>{
  e.preventDefault();
  if(!form.reportValidity())return;
