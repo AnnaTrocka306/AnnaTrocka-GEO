@@ -14,6 +14,6 @@ countries.forEach(country=>{const c=level(country.name,country.items,countries.l
 group(country.items,p=>p.city).forEach(city=>{const town=level(city.name,city.items,city.items.length<=5),direct=city.items.filter(p=>!local(p.district));if(direct.length)town.append(links(direct));
 group(city.items.filter(p=>local(p.district)),p=>local(p.district)).forEach(district=>{const area=level(district.name,district.items,false);area.append(links(district.items));town.append(area)});
 c.append(town)});host.append(c)})}
-host.textContent=words[0];
-fetch(root+"data/profiles.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(data=>{if(!Array.isArray(data))throw Error("Invalid data");render(data.filter(p=>p&&p.published===true&&p.id&&p.name&&p.country&&p.city))}).catch(()=>{host.textContent=words[1]});
+if(!host.querySelector("details"))host.textContent=words[0];
+fetch(root+"data/profiles.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(data=>{if(!Array.isArray(data))throw Error("Invalid data");render(data.filter(p=>p&&p.published===true&&p.id&&p.name&&p.country&&p.city))}).catch(()=>{if(!host.querySelector("details"))host.textContent=words[1]});
 })();
