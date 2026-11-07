@@ -1,27 +1,34 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#ffffff">
-<meta name="robots" content="noindex, nofollow">
-<title>You did great! · GEO Pass</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff"><meta name="robots" content="noindex,nofollow">
+<title>I'm checking your details · GEO Pass</title>
 <link rel="stylesheet" href="../../../assets/welcome.css">
-<link rel="stylesheet" href="../../../assets/questionnaire.css?v=20261106h">
+<link rel="stylesheet" href="../../../assets/questionnaire.css?v=20261107a">
+<link rel="stylesheet" href="../../../assets/free-pass-preview.css?v=20261107a">
 <link rel="alternate" hreflang="de" href="../../../de/create/complete/">
 <link rel="alternate" hreflang="en" href="../../../en/create/complete/">
 <link rel="alternate" hreflang="ru" href="../../../ru/create/complete/">
 </head>
 <body>
-<div class="q-screen q-screen--complete">
+<div class="q-screen q-screen--pass-preview" data-free-pass-preview>
 <header class="q-header"><a class="q-back" href="../exclusions/">← Back</a><nav class="welcome-langs" aria-label="Language / Sprache / Язык"><a lang="de" href="../../../de/create/complete/">DE</a><a lang="en" href="../../../en/create/complete/" aria-current="page">EN</a><a lang="ru" href="../../../ru/create/complete/">RU</a></nav></header>
-<main class="q-main">
-<section class="q-intro q-intro--complete" aria-labelledby="complete-heading">
-<h1 id="complete-heading">You did great!</h1>
-<p>I've got all the information I need. Thank you for telling me about yourself and your work!</p>
-<p class="q-complete-promise"><strong>I'll email you at the address you provided when your GEO Pass is ready.</strong></p>
-</section>
-<p class="q-complete-preview"><span aria-hidden="true">⚠️</span> Test version: your answers currently remain in your browser. No application is submitted and no email will be sent.</p>
-<a href="../../" role="button" class="welcome-mascot q-mascot" aria-label="Home"><img src="../../../assets/octopus-cta.webp" alt="" width="740" height="357" loading="eager" fetchpriority="high"><span class="welcome-mascot__text" aria-hidden="true"><span>Home</span></span></a>
+<main class="q-main q-flow-main">
+<div class="q-flow-hero">
+<div class="q-flow-mascot is-checking" data-pass-mascot>
+<img src="../../../assets/octopus-cta.webp" alt="" width="740" height="357" loading="eager" fetchpriority="high">
+<span class="q-flow-mascot-label" aria-hidden="true">Working</span>
+</div>
+<div class="q-flow-hero-copy">
+<h1 data-pass-heading>I'm checking your details</h1>
+<p data-pass-status role="status">Stay on this page. I'm checking your details and preparing your GEO Pass. I may have some more questions.</p>
+</div>
+</div>
+<p class="q-flow-test" data-pass-notice>Test version: your data stays in the browser. Cloud saving, publishing and email are not connected yet.</p>
+<div class="q-flow-body" data-pass-content aria-live="polite"></div>
 </main>
 </div>
+<script src="../../../assets/free-pass-preview.js?v=20261107a" defer></script>
 </body>
 </html>
