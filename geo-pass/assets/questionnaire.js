@@ -55,14 +55,28 @@ function refresh(){
     if(!has)input.checked=false;
   });
 }
-form.addEventListener("input",()=>{clearRequiredGroupErrors();capture();refresh()});
+form.addEventListener("input",()=>{clearRequiredGroupErrors();for(const el of inputs)if(el.type==="url")el.setCustomValidity("");capture();refresh()});
 form.addEventListener("change",()=>{clearRequiredGroupErrors();const anchor=form.querySelector('input[name="channelEmail"]');if(anchor)anchor.setCustomValidity("");capture();refresh()});
 refresh();
 const submit=form.querySelector('button[type="submit"]');if(submit)submit.disabled=false;
 function normalizeUrls(){
   for(const input of inputs){
-    if(input.type==="url"&&input.value.trim()&&!/^[a-z][a-z0-9+.-]*:\/\//i.test(input.value.trim()))
-      input.value="https://"+input.value.trim();
+    if(input.type!=="url")continue;
+    input.setCustomValidity("");
+    let entered=input.value.trim();
+    if(!entered)continue;
+    // Common omission: http//example.org or https//example.org
+    entered=entered.replace(/^(https?)(\/\/)/i,"$1:$2");
+    if(!/^[a-z][a-z0-9+.-]*:\/\//i.test(entered))entered="https://"+entered;
+    try{
+      const parsed=new URL(entered);
+      if(!["https:","http:"].includes(parsed.protocol)||!parsed.hostname.includes(".")||parsed.username||parsed.password)
+        throw new Error("unsafe_website_url");
+      input.value=parsed.href;
+    }catch{
+      const messages={ru:"Укажи корректный адрес сайта, например https://example.com",de:"Bitte eine gültige Webadresse eingeben, zum Beispiel https://example.com",en:"Please enter a valid website address, for example https://example.com"};
+      input.setCustomValidity(messages[document.documentElement.lang]||messages.en);
+    }
   }
 }
 // Fallback link on informational steps: native navigation works without JS.
