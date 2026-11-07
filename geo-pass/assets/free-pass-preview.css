@@ -59,3 +59,47 @@
 .q-flow-hero-copy p{font-size:11px}
 .q-flow-test{padding:4px;font-size:10px}
 }
+
+
+/* 2026-11-07 owner-approved responsive and usable local demo preview. */
+.q-screen--pass-preview{height:auto;min-height:100dvh;overflow:visible;display:grid;grid-template-rows:auto 1fr}
+.q-screen--pass-preview .q-flow-main{max-width:760px;min-height:calc(100dvh - 62px);justify-content:flex-start;overflow:visible;padding:clamp(18px,4vw,32px) clamp(18px,5.5vw,30px) 60px;gap:18px}
+.q-flow-hero{width:100%;max-width:680px;justify-content:center;gap:20px}
+.q-flow-mascot--head{width:170px;height:44px;max-height:44px;overflow:hidden;flex:0 0 170px;align-self:center;border-radius:20px}
+.q-flow-mascot--head img{display:block;width:170px;height:auto;object-fit:unset;max-width:none}
+.q-flow-mascot--head .q-flow-mascot-label{display:none}
+.q-flow-hero-copy h1{font-size:clamp(25px,5.5vw,34px);line-height:1.2;color:#322218}
+.q-flow-hero-copy p{font-size:clamp(15px,3.85vw,17px);line-height:1.48}
+.q-flow-test{width:100%;max-width:680px;font-size:clamp(14px,3.75vw,16px);line-height:1.47;padding:13px 15px;text-align:left;border-radius:13px}
+.q-flow-body{flex:0 0 auto;width:100%;max-width:680px;min-height:0;overflow:visible;scrollbar-gutter:auto;gap:16px;padding:0;margin:0 auto}
+.q-flow-card{background:#fffdf9;border:1px solid #e0c6a8;border-radius:18px;box-shadow:0 8px 22px #59311817;padding:clamp(18px,4vw,29px);gap:16px}
+.q-flow-label{font-size:13px;font-weight:790;letter-spacing:.02em}
+.q-flow-title{font-size:clamp(20px,4.9vw,26px);line-height:1.3}
+.q-flow-text{font-size:clamp(16px,4.1vw,18px);line-height:1.5}
+.q-flow-button{min-height:48px;font-size:clamp(15px,3.9vw,17px);line-height:1.3;padding:12px 17px;border-radius:12px}
+.q-flow-button--secondary{background:#fff6ea}
+.q-flow-note{font-size:15px;line-height:1.45}
+.q-flow-checkbox{font-size:clamp(15px,4vw,17px);line-height:1.45;min-height:44px;align-items:center;gap:13px}
+.q-flow-checkbox input{width:24px;height:24px;flex:0 0 24px;accent-color:#87562f}
+.q-demo-approval{border:1px solid #d9b992;border-radius:14px;background:#fff4e4;padding:15px}
+.q-flow-form,.q-flow-field textarea{max-width:100%}
+.q-flow-field{font-size:16px;line-height:1.35}
+.q-flow-field textarea{font-size:16px;min-height:100px}
+@media(max-width:620px){
+ .q-screen--pass-preview{height:auto;overflow:visible}
+ .q-screen--pass-preview .q-flow-main{padding:20px clamp(17px,5.5vw,28px) 55px;gap:16px}
+ .q-flow-hero{display:flex;flex-direction:column;gap:9px;text-align:center}
+ .q-flow-mascot--head{width:150px;height:39px;max-height:39px;flex:0 0 39px}
+ .q-flow-mascot--head img{width:150px}
+ .q-flow-hero-copy h1{font-size:clamp(24px,6vw,30px);margin:0 0 8px}
+ .q-flow-hero-copy p{font-size:16px;line-height:1.42}
+ .q-flow-test{font-size:14px;padding:13px}
+ .q-flow-card{padding:18px;gap:14px}
+ .q-flow-section{padding-bottom:12px}
+ .q-flow-label{font-size:13px}
+ .q-flow-title{font-size:clamp(19px,5vw,24px)}
+ .q-flow-text{font-size:16px;line-height:1.5}
+ .q-flow-actions{display:flex;flex-direction:column;align-items:stretch;gap:10px;width:100%}
+ .q-flow-button{font-size:16px;min-height:50px;width:100%}
+ .q-flow-note{font-size:14px}
+}
