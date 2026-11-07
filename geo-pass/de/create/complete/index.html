@@ -1,27 +1,34 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#ffffff">
-<meta name="robots" content="noindex, nofollow">
-<title>Das hast du toll gemacht! · GEO Pass</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff"><meta name="robots" content="noindex,nofollow">
+<title>Ich prüfe deine Angaben · GEO Pass</title>
 <link rel="stylesheet" href="../../../assets/welcome.css">
-<link rel="stylesheet" href="../../../assets/questionnaire.css?v=20261106h">
+<link rel="stylesheet" href="../../../assets/questionnaire.css?v=20261107a">
+<link rel="stylesheet" href="../../../assets/free-pass-preview.css?v=20261107a">
 <link rel="alternate" hreflang="de" href="../../../de/create/complete/">
 <link rel="alternate" hreflang="en" href="../../../en/create/complete/">
 <link rel="alternate" hreflang="ru" href="../../../ru/create/complete/">
 </head>
 <body>
-<div class="q-screen q-screen--complete">
+<div class="q-screen q-screen--pass-preview" data-free-pass-preview>
 <header class="q-header"><a class="q-back" href="../exclusions/">← Zurück</a><nav class="welcome-langs" aria-label="Language / Sprache / Язык"><a lang="de" href="../../../de/create/complete/" aria-current="page">DE</a><a lang="en" href="../../../en/create/complete/">EN</a><a lang="ru" href="../../../ru/create/complete/">RU</a></nav></header>
-<main class="q-main">
-<section class="q-intro q-intro--complete" aria-labelledby="complete-heading">
-<h1 id="complete-heading">Das hast du toll gemacht!</h1>
-<p>Ich habe alle benötigten Informationen. Danke, dass du mir von dir und deiner Arbeit erzählt hast!</p>
-<p class="q-complete-promise"><strong>Sobald dein GEO Pass fertig ist, melde ich mich per E-Mail bei dir.</strong></p>
-</section>
-<p class="q-complete-preview"><span aria-hidden="true">⚠️</span> Testversion: Deine Antworten bleiben derzeit nur im Browser. Es wird keine Anmeldung übermittelt und keine E-Mail verschickt.</p>
-<a href="../../" role="button" class="welcome-mascot q-mascot" aria-label="Zur Startseite"><img src="../../../assets/octopus-cta.webp" alt="" width="740" height="357" loading="eager" fetchpriority="high"><span class="welcome-mascot__text" aria-hidden="true"><span>Zur Startseite</span></span></a>
+<main class="q-main q-flow-main">
+<div class="q-flow-hero">
+<div class="q-flow-mascot is-checking" data-pass-mascot>
+<img src="../../../assets/octopus-cta.webp" alt="" width="740" height="357" loading="eager" fetchpriority="high">
+<span class="q-flow-mascot-label" aria-hidden="true">Ich prüfe</span>
+</div>
+<div class="q-flow-hero-copy">
+<h1 data-pass-heading>Ich prüfe deine Angaben</h1>
+<p data-pass-status role="status">Bleib bitte auf dieser Seite. Ich prüfe deine Angaben und bereite deinen GEO Pass vor. Es können noch weitere Fragen auftauchen.</p>
+</div>
+</div>
+<p class="q-flow-test" data-pass-notice>Testversion: Die Daten bleiben im Browser. Cloud-Speicherung, Veröffentlichung und E-Mail sind noch nicht verbunden.</p>
+<div class="q-flow-body" data-pass-content aria-live="polite"></div>
 </main>
 </div>
+<script src="../../../assets/free-pass-preview.js?v=20261107a" defer></script>
 </body>
 </html>
