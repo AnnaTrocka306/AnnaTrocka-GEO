@@ -476,3 +476,5 @@ html,body{overflow-x:hidden;overflow-y:auto}
 
 /* Hide conditional custom workplace type until Other is selected. */
 [data-workplace-other][hidden]{display:none!important}
+
+.q-field--full{grid-column:1/-1}
