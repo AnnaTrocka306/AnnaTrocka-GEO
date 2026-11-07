@@ -1,0 +1,61 @@
+/* Local-only GEO Pass draft/clarification prototype. Uses the ORIGINAL brand mascot. */
+.q-screen--pass-preview{height:100dvh;overflow:hidden}
+.q-screen--pass-preview .q-flow-main{justify-content:flex-start;gap:clamp(7px,1.3dvh,15px);padding:5px 14px 12px;overflow:hidden}
+.q-flow-hero{display:flex;align-items:center;gap:clamp(10px,2vw,30px);width:min(960px,100%);flex:none}
+.q-flow-mascot{position:relative;display:block;width:clamp(150px,27vw,260px);aspect-ratio:1536/729;flex:none}
+.q-flow-mascot img{display:block;width:100%;height:100%;object-fit:contain;transform-origin:center center}
+.q-flow-mascot-label{position:absolute;left:25%;top:57%;width:48%;height:22%;display:flex;align-items:center;justify-content:center;text-align:center;font-size:clamp(11px,1.6vw,18px);font-weight:800;color:#42291a;pointer-events:none}
+.q-flow-mascot.is-checking img{animation:q-flow-breathe 2.4s ease-in-out infinite alternate}
+@keyframes q-flow-breathe{0%{transform:translateY(0)}100%{transform:translateY(-6px)}}
+@media(prefers-reduced-motion:reduce){.q-flow-mascot.is-checking img{animation:none}}
+.q-flow-hero-copy{min-width:0;flex:1}
+.q-flow-hero-copy h1{font-size:clamp(23px,3vw,36px);line-height:1.15;margin:0 0 7px;letter-spacing:-.025em}
+.q-flow-hero-copy p{font-size:clamp(13px,1.4vw,16px);line-height:1.4;color:#614a3d;margin:0;max-width:620px}
+.q-flow-test{width:min(860px,100%);font-size:clamp(11px,1.2vw,13px);line-height:1.32;text-align:center;color:#8b4d28;background:#fff8eb;border:1px solid #e9d7bd;border-radius:9px;padding:8px 11px;margin:0;flex:none}
+.q-flow-body{width:min(800px,100%);min-height:0;flex:1;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:0 4px 6px;display:flex;flex-direction:column;align-items:stretch;gap:10px}
+.q-flow-card{border:1px solid #e3d4c2;background:#fffdf9;border-radius:15px;padding:clamp(12px,2vw,22px);display:grid;gap:12px}
+.q-flow-section{min-width:0;display:grid;gap:4px;padding-bottom:9px;border-bottom:1px solid #f0e6d8}
+.q-flow-section:last-child{border:0;padding-bottom:0}
+.q-flow-label{font-size:11px;font-weight:750;letter-spacing:.035em;color:#806857;text-transform:uppercase;margin:0}
+.q-flow-title{font-size:clamp(17px,2vw,24px);font-weight:800;line-height:1.27;overflow-wrap:anywhere;margin:0}
+.q-flow-text{font-size:clamp(13px,1.45vw,16px);line-height:1.42;overflow-wrap:anywhere;margin:0}
+.q-flow-checkbox{display:flex;align-items:flex-start;gap:10px;font-size:13px;line-height:1.3;color:#543f30}
+.q-flow-checkbox input{width:18px;height:18px;accent-color:#845632;flex:none;margin:1px 0 0}
+.q-flow-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;flex:none}
+.q-flow-button{display:inline-flex;align-items:center;justify-content:center;text-align:center;background:#be873c;color:#21190f;border:1px solid #a27436;border-radius:11px;padding:11px 16px;min-height:42px;font:750 14px/1.2 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;cursor:pointer;text-decoration:none}
+.q-flow-button:hover:not(:disabled){background:#d39b4a}
+.q-flow-button:disabled{cursor:not-allowed;opacity:.55;filter:grayscale(.2)}
+.q-flow-button--secondary{background:#fffaf3;border-color:#d6b992}
+.q-flow-note{font-size:clamp(12px,1.24vw,14px);color:#8a5a38;line-height:1.35;margin:0 auto;text-align:center;max-width:660px}
+.q-flow-form{display:grid;gap:10px;width:100%}
+.q-flow-field{display:grid;gap:5px;font-weight:750;font-size:13px;color:#473428}
+.q-flow-field textarea{display:block;width:100%;font:500 14px/1.35 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:#fffdfa;color:#30241c;border:1px solid #d8c0a3;border-radius:9px;padding:10px;resize:vertical;min-height:65px}
+.q-flow-button:focus-visible,.q-flow-field textarea:focus-visible{outline:3px solid #1267ad;outline-offset:3px}
+@media(max-width:620px){
+.q-screen--pass-preview .q-flow-main{padding:2px 10px 8px;gap:7px}
+.q-flow-hero{flex-direction:column;align-items:center;gap:2px;text-align:center}
+.q-flow-mascot{width:min(235px,100%,calc(21dvh * 2.105))}
+.q-flow-mascot-label{font-size:clamp(10px,3vw,15px)}
+.q-flow-hero-copy h1{font-size:clamp(20px,5.7vw,26px);margin-bottom:4px}
+.q-flow-hero-copy p{font-size:12px;line-height:1.3}
+.q-flow-test{font-size:11px;padding:6px 8px}
+.q-flow-card{gap:9px;padding:12px}
+.q-flow-section{padding-bottom:6px}
+.q-flow-title{font-size:17px}
+.q-flow-text{font-size:13px}
+.q-flow-actions{gap:6px}
+.q-flow-button{font-size:12px;min-height:39px;padding:9px 12px}
+}
+@media(max-height:700px) and (max-width:620px){
+.q-flow-mascot{width:calc(14dvh * 2.105)}
+.q-flow-hero-copy h1{font-size:19px}
+.q-flow-hero-copy p{font-size:11px;line-height:1.2}
+.q-flow-test{font-size:10px;padding:5px}
+.q-screen--pass-preview .q-flow-main{gap:5px}
+}
+@media(max-height:390px) and (min-width:621px){
+.q-flow-mascot{width:140px}
+.q-flow-hero-copy h1{font-size:19px}
+.q-flow-hero-copy p{font-size:11px}
+.q-flow-test{padding:4px;font-size:10px}
+}
