@@ -17,7 +17,7 @@ function node(tag,text,cls){const n=document.createElement(tag);if(typeof text==
 function button(text,action,disabled=false){const b=node("button",text,"q-flow-button");b.type="button";b.disabled=disabled;if(action)b.addEventListener("click",action);return b}
 function persist(){try{sessionStorage.setItem(key,JSON.stringify(data))}catch{}}
 function persistEdits(){try{sessionStorage.setItem(editKey,JSON.stringify(edits))}catch{}}
-function required(){const fields=[["fullName",t.h1],["profession",t.h1],["priorityService",t.service],["clientNeeds",t.need],["professionalApproach",t.method],["expectedOutcome",t.outcome],["country",t.location],["locality",t.location],["postalCode",t.postal],["emailAddress",t.email]];const missing=fields.filter(([k])=>!str(k));
+function required(){const fields=[["fullName",t.h1],["profession",t.h1],["priorityService",t.service],["clientNeeds",t.need],["professionalApproach",t.method],["expectedOutcome",t.outcome],["country",t.location],["locality",t.location],["postalCode",t.postal],["emailAddress",t.email]];const missing=fields.filter(([k])=>!str(k));if(str("emailAddress")&&!/^\S+@\S+\.\S+$/.test(str("emailAddress")))missing.push(["emailAddress",t.email]);
 if(!["geoLocal","geoNational","geoWorldwide","geoSelectedRegions","geoAtWorkplace"].some(yes)&&!str("geoAreaDetails"))missing.push(["geoAreaDetails",t.area]);
 if(yes("geoSelectedRegions")&&!str("geoAreaDetails"))missing.push(["geoAreaDetails",t.regions]);
 if(!yes("serviceInPerson")&&!yes("serviceRemote"))missing.push(["serviceRemote",t.delivery]);
