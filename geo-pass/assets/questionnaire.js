@@ -5,7 +5,7 @@ const form=document.querySelector("[data-octopus-form]");if(!form)return;
 const step=form.dataset.step,key="octopus-geo-pass-draft-v1";
 const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","matching","service","needs","situation","outcome","approach","geography","languages","exclusions","complete"];
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
-const inputs=[...form.querySelectorAll("input[name],textarea[name]")];
+const inputs=[...form.querySelectorAll("input[name],textarea[name],select[name]")];
 function put(input){
   if(input.type==="checkbox"||input.type==="radio"){
     if(Object.hasOwn(draft,input.name))input.checked=(input.type==="checkbox" ? draft[input.name]===true : draft[input.name]===input.value);
