@@ -23,6 +23,8 @@ let data={},edits={};try{const v=JSON.parse(sessionStorage.getItem(key)||"{}");i
 try{const v=JSON.parse(sessionStorage.getItem(editKey)||"{}");if(v&&typeof v==="object"&&!Array.isArray(v))edits=v;}catch{}
 function str(k){return typeof data[k]==="string"?data[k].trim().replace(/\s+/g," "):""}
 function yes(k){return data[k]===true||data[k]==="yes"}
+function revisionKey(){return [str("priorityService"),str("clientNeeds"),str("professionalApproach"),str("expectedOutcome")].join("\u241f")}
+function approvedExclusion(){return !!(edits.showLimit&&edits.exclusionApprovalKey===str("excludedWork")&&str("excludedWork"))}
 function node(tag,text,cls){const n=document.createElement(tag);if(typeof text==="string")n.textContent=text;if(cls)n.className=cls;return n}
 function button(text,action,disabled=false){const b=node("button",text,"q-flow-button");b.type="button";b.disabled=disabled;if(action)b.addEventListener("click",action);return b}
 function persist(){try{sessionStorage.setItem(key,JSON.stringify(data))}catch{}}
@@ -35,7 +37,7 @@ if(!["langDe","langEn","langRu"].some(yes)&&!str("otherLanguages"))missing.push(
 if(str("priorityService")&&str("priorityService").toLowerCase()===str("excludedWork").toLowerCase())missing.push(["excludedWork",t.contradiction]);
 return missing;}
 function draft(){
-const methods=str("professionalApproach"),outcome=str("expectedOutcome");
+const methods=str("professionalApproach"),outcome=str("expectedOutcome"),validEdits=edits.sourceKey===revisionKey();
 const dot=s=>s?(/[.!?]$/.test(s)?s:s+"."):"";
 const description=dot(methods)+(outcome?" "+(lang==="ru"?"Цель работы — ":lang==="de"?"Angestrebtes Ziel: ":"Intended outcome: ")+dot(outcome):"");
 const area=[];
@@ -58,7 +60,7 @@ for(const [v,flag] of [["emailAddress","emailPublic"],["phoneNumber","phonePubli
  publicContacts[contactKeys[v]]=val;
  contact.push(contactNames[v]+": "+val);
 }
-return {h1:str("fullName")+" — "+str("profession"),h2:edits.h2||str("priorityService")+" — "+str("clientNeeds"),desc:edits.desc||description,h3:str("excludedWork"),area:area.filter(Boolean).join(" · "),langs:languages.join(" · "),contacts:contact.join(" · "),publicContacts,territory:area.filter(Boolean),languages};}
+return {h1:str("fullName")+" — "+str("profession"),h2:(validEdits&&edits.h2)||str("priorityService")+" — "+str("clientNeeds"),desc:(validEdits&&edits.desc)||description,h3:str("excludedWork"),area:area.filter(Boolean).join(" · "),langs:languages.join(" · "),contacts:contact.join(" · "),publicContacts,territory:area.filter(Boolean),languages};}
 function section(parent,label,value,title=false){
 const wrap=node("div",null,"q-flow-section");wrap.append(node("p",label,"q-flow-label"));
 wrap.append(node(title?"h2":"p",value||"—",title?"q-flow-title":"q-flow-text"));parent.append(wrap);}
@@ -87,17 +89,17 @@ const wrapper=node("label",null,"q-flow-field"),input=node("textarea");wrapper.a
 }
 const controls=node("div",null,"q-flow-actions"),save=node("button",t.saveEdit,"q-flow-button");save.type="submit";
 controls.append(save,button(t.cancel,showPreview));form.append(controls);
-form.addEventListener("submit",e=>{e.preventDefault();const fd=new FormData(form);edits.h2=String(fd.get("h2")||"").trim();edits.desc=String(fd.get("desc")||"").trim();persistEdits();showPreview();});
+form.addEventListener("submit",e=>{e.preventDefault();const fd=new FormData(form);edits.h2=String(fd.get("h2")||"").trim();edits.desc=String(fd.get("desc")||"").trim();edits.sourceKey=revisionKey();persistEdits();showPreview();});
 main.append(form,node("p",t.unavailable,"q-flow-note"));}
 function showPreview(){
 const p=draft();heading.textContent=t.preview;status.textContent=t.previewHelp;main.replaceChildren();document.querySelector("[data-pass-mascot]")?.classList.remove("is-checking");
 const card=node("article",null,"q-flow-card");
 section(card,t.h1,p.h1,true);section(card,t.h2,p.h2,true);section(card,t.desc,p.desc);
 if(p.h3){
-const label=node("label",null,"q-flow-checkbox"),input=node("input");input.type="checkbox";input.checked=Boolean(edits.showLimit);
-input.addEventListener("change",()=>{edits.showLimit=input.checked;persistEdits();showPreview();});
+const label=node("label",null,"q-flow-checkbox"),input=node("input");input.type="checkbox";input.checked=approvedExclusion();
+input.addEventListener("change",()=>{edits.showLimit=input.checked;edits.exclusionApprovalKey=input.checked?str("excludedWork"):"";persistEdits();showPreview();});
 label.append(input,node("span",t.limitChoice));card.append(label);
-if(edits.showLimit)section(card,t.h3,p.h3);
+if(approvedExclusion())section(card,t.h3,p.h3);
 }
 section(card,t.area,p.area);section(card,t.langs,p.langs);if(p.contacts)section(card,t.contacts,p.contacts);main.append(card);
 const approval=node("label",null,"q-flow-checkbox q-demo-approval"),consent=node("input"),consentText=node("span",t.demoConsent);
@@ -116,7 +118,7 @@ function saveBrowserDemo(){
    name:str("fullName"),profession:str("profession"),h1:p.h1,h2:p.h2,
    description:p.desc,country:str("country"),locality:str("locality"),
    territory:p.territory,languages:p.languages,contacts:p.publicContacts,
-   excluded:p.h3,includeExclusion:!!edits.showLimit,locale:lang
+   excluded:p.h3,includeExclusion:approvedExclusion(),locale:lang
   });
   showDemoSuccess();
  }catch(error){
