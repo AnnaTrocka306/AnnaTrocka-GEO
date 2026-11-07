@@ -34,7 +34,7 @@ a.welcome-mascot:hover{text-decoration:none}
 html,body{overflow-x:hidden;overflow-y:auto}
 .welcome{height:auto;min-height:100dvh;overflow:visible}
 .welcome-main{min-height:calc(100dvh - 65px);padding:28px clamp(18px,5.5vw,36px) 52px;gap:22px}
-.welcome-copy{max-width:650px;width:100%}
+.welcome-copy{max-width:590px;width:100%}
 .welcome-copy h1{
   max-width:100%;box-sizing:border-box;
   background:radial-gradient(ellipse at 20% 5%,#96532b 0%,#5b321e 40%,#321a11 100%);
