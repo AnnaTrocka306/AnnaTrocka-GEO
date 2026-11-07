@@ -28,3 +28,35 @@ html,body{overflow:hidden}body{-webkit-font-smoothing:antialiased}
 /* Shared illustrated call-to-action is both a link (WELCOME) and a submit button (questionnaire). */
 a.welcome-mascot{text-decoration:none;color:inherit}
 a.welcome-mascot:hover{text-decoration:none}
+
+
+/* Approved 2026-11-07 premium business welcome card, adaptive to narrow phones. */
+html,body{overflow-x:hidden;overflow-y:auto}
+.welcome{height:auto;min-height:100dvh;overflow:visible}
+.welcome-main{min-height:calc(100dvh - 65px);padding:28px clamp(18px,5.5vw,36px) 52px;gap:22px}
+.welcome-copy{max-width:650px;width:100%}
+.welcome-copy h1{
+  max-width:100%;box-sizing:border-box;
+  background:radial-gradient(ellipse at 20% 5%,#96532b 0%,#5b321e 40%,#321a11 100%);
+  color:#fff8f0;border:1px solid #a66c3a;border-radius:18px;
+  box-shadow:0 10px 22px #3e251f31, inset 0 1px 2px #efc18c80;
+  padding:clamp(20px,5vw,31px) clamp(17px,4vw,28px);
+  font-size:clamp(23px,5.9vw,34px);line-height:1.22;
+  margin:0 auto 23px;letter-spacing:-.025em
+}
+.welcome-copy p{font-size:clamp(16px,4.25vw,20px);line-height:1.5;color:#4c352a;max-width:600px;font-weight:520}
+.welcome-mascot{width:min(590px,100%);max-height:none;flex:0 0 auto;height:auto}
+.welcome-header{min-height:54px}
+@media(max-width:560px){
+ .welcome{height:auto;min-height:100dvh;overflow:visible}
+ .welcome-main{min-height:calc(100dvh - 54px);gap:20px;padding:23px clamp(18px,5.5vw,28px) 54px}
+ .welcome-copy h1{font-size:clamp(22px,5.7vw,29px);line-height:1.23;margin-bottom:21px;border-radius:17px;padding:20px 17px}
+ .welcome-copy p{font-size:clamp(16px,4.1vw,18px);line-height:1.47}
+ .welcome-mascot{width:min(390px,100%);max-height:none}
+ .welcome-mascot__text{font-size:clamp(14px,3.6vw,19px)}
+}
+@media(max-height:690px) and (max-width:560px){
+ .welcome-main{justify-content:flex-start;min-height:calc(100dvh - 54px)}
+ .welcome-copy h1{font-size:clamp(21px,5.5vw,26px)}
+ .welcome-copy p{font-size:16px}
+}
