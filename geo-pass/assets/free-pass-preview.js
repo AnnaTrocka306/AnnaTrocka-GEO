@@ -39,7 +39,7 @@ const methods=str("professionalApproach"),outcome=str("expectedOutcome");
 const dot=s=>s?(/[.!?]$/.test(s)?s:s+"."):"";
 const description=dot(methods)+(outcome?" "+(lang==="ru"?"Цель работы — ":lang==="de"?"Angestrebtes Ziel: ":"Intended outcome: ")+dot(outcome):"");
 const area=[];
-if(yes("geoAtWorkplace")&&str("street"))area.push(str("street")+" "+str("houseNumber"));
+if(yes("geoAtWorkplace"))area.push(lang==="ru"?"Приём по рабочему адресу":lang==="de"?"Am Arbeitsort":"At the workplace");
 if(yes("geoLocal"))area.push(str("locality"));
 if(yes("geoNational"))area.push(str("country"));
 if(yes("geoSelectedRegions")||(!["geoLocal","geoNational","geoWorldwide","geoAtWorkplace"].some(yes)&&str("geoAreaDetails")))area.push(str("geoAreaDetails"));
