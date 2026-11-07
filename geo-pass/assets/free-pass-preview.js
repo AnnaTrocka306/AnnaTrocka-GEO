@@ -18,7 +18,7 @@ function button(text,action,disabled=false){const b=node("button",text,"q-flow-b
 function persist(){try{sessionStorage.setItem(key,JSON.stringify(data))}catch{}}
 function persistEdits(){try{sessionStorage.setItem(editKey,JSON.stringify(edits))}catch{}}
 function required(){const fields=[["fullName",t.h1],["profession",t.h1],["priorityService",t.service],["clientNeeds",t.need],["professionalApproach",t.method],["expectedOutcome",t.outcome],["country",t.location],["locality",t.location]];const missing=fields.filter(([k])=>!str(k));
-if(!["geoLocal","geoNational","geoWorldwide","geoSelectedRegions","geoAtWorkplace"].some(yes))missing.push(["geoAreaDetails",t.area]);
+if(!["geoLocal","geoNational","geoWorldwide","geoSelectedRegions","geoAtWorkplace"].some(yes)&&!str("geoAreaDetails"))missing.push(["geoAreaDetails",t.area]);
 if(!["langDe","langEn","langRu"].some(yes)&&!str("otherLanguages"))missing.push(["otherLanguages",t.langs]);
 if(str("priorityService")&&str("priorityService").toLowerCase()===str("excludedWork").toLowerCase())missing.push(["excludedWork",t.contradiction]);
 return missing;}
@@ -29,7 +29,7 @@ const area=[];
 if(yes("geoAtWorkplace")&&str("street"))area.push(str("street")+" "+str("houseNumber"));
 if(yes("geoLocal"))area.push(str("locality"));
 if(yes("geoNational"))area.push(str("country"));
-if(yes("geoSelectedRegions"))area.push(str("geoAreaDetails"));
+if(yes("geoSelectedRegions")||(!["geoLocal","geoNational","geoWorldwide","geoAtWorkplace"].some(yes)&&str("geoAreaDetails")))area.push(str("geoAreaDetails"));
 if(yes("geoWorldwide"))area.push(t.world);
 if(yes("serviceInPerson"))area.push(t.offline);
 if(yes("serviceRemote"))area.push(t.online);
@@ -43,7 +43,7 @@ function showMissing(){
 heading.textContent=t.heading;status.textContent=t.missing;main.replaceChildren();
 const a=node("a",t.start,"q-flow-button");a.href="../identity/";main.append(a);}
 function showQuestions(items){
-heading.textContent=t.clarify;status.textContent=t.clarifyHelp;main.replaceChildren();
+heading.textContent=t.clarify;status.textContent=t.clarifyHelp;main.replaceChildren();document.querySelector("[data-pass-mascot]")?.classList.remove("is-checking");
 const form=node("form",null,"q-flow-form");
 for(const [field,label] of items){
 const wrapper=node("label",null,"q-flow-field"),input=node("textarea");wrapper.append(node("span",label));
@@ -53,7 +53,7 @@ const save=node("button",t.save,"q-flow-button");save.type="submit";form.append(
 form.addEventListener("submit",e=>{e.preventDefault();for(const input of form.querySelectorAll("textarea"))data[input.name]=input.value.trim();persist();show();});main.append(form);
 }
 function showEditor(p){
-heading.textContent=t.edit;main.replaceChildren();
+heading.textContent=t.edit;main.replaceChildren();document.querySelector("[data-pass-mascot]")?.classList.remove("is-checking");
 const form=node("form",null,"q-flow-form");
 for(const [key,label] of [["h2",t.h2],["desc",t.desc]]){
 const wrapper=node("label",null,"q-flow-field"),input=node("textarea");wrapper.append(node("span",label));input.name=key;input.rows=key==="h2"?3:5;input.maxLength=key==="h2"?650:1200;input.required=true;input.value=p[key];wrapper.append(input);form.append(wrapper);
@@ -63,7 +63,7 @@ controls.append(save,button(t.cancel,showPreview));form.append(controls);
 form.addEventListener("submit",e=>{e.preventDefault();const fd=new FormData(form);edits.h2=String(fd.get("h2")||"").trim();edits.desc=String(fd.get("desc")||"").trim();persistEdits();showPreview();});
 main.append(form,node("p",t.unavailable,"q-flow-note"));}
 function showPreview(){
-const p=draft();heading.textContent=t.preview;status.textContent=t.previewHelp;main.replaceChildren();
+const p=draft();heading.textContent=t.preview;status.textContent=t.previewHelp;main.replaceChildren();document.querySelector("[data-pass-mascot]")?.classList.remove("is-checking");
 const card=node("article",null,"q-flow-card");
 section(card,t.h1,p.h1,true);section(card,t.h2,p.h2,true);section(card,t.desc,p.desc);
 if(p.h3){
