@@ -48,6 +48,14 @@ function refresh(){
   const selectedRegions=form.querySelector('input[name="geoSelectedRegions"]');
   const areaDetails=form.querySelector('input[name="geoAreaDetails"]');
   if(areaDetails)areaDetails.required=!!(selectedRegions&&selectedRegions.checked);
+  const workplaceType=form.querySelector('select[name="workplaceType"]');
+  const workplaceOther=form.querySelector("[data-workplace-other]");
+  if(workplaceOther){
+    const showOther=!!(workplaceType&&workplaceType.value==="other");
+    workplaceOther.hidden=!showOther;
+    const otherInput=workplaceOther.querySelector('input[name="workplaceTypeOther"]');
+    if(otherInput)otherInput.required=showOther;
+  }
   const fieldsUsingAvailability=[...form.querySelectorAll("input[data-requires-draft]")];
   fieldsUsingAvailability.forEach(input=>{
     const has=!!String(draft[input.dataset.requiresDraft]||"").trim();
