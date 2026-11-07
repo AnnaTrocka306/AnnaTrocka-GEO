@@ -1,0 +1,21 @@
+/* Premium, responsive local-only demo cards; separate from public registry. */
+.oct-local-demo-banner{display:block;padding:11px 15px;border:1px solid #d7b98e;border-radius:12px;background:#fff3db;color:#4f311f;font-weight:780;font-size:clamp(14px,3.8vw,16px);line-height:1.36;text-align:center;margin:0 auto 18px;max-width:680px}
+.oct-local-card,.oct-local-register-card{border:1px solid #dfc3a5;background:#fffcf7;border-radius:18px;padding:clamp(19px,5vw,32px);box-shadow:0 7px 20px #54311818;margin:0 auto 20px;max-width:700px}
+.oct-local-card h1,.oct-local-register-card h2{font-size:clamp(25px,6.1vw,35px);line-height:1.23;margin:0 0 18px;color:#38251b}
+.oct-local-title{font-weight:850}
+.oct-local-card .oct-local-subtitle{font-size:clamp(19px,4.6vw,25px);font-weight:770;line-height:1.3;color:#512e1b;background:linear-gradient(110deg,#fff0d9,#f9e5ca);border:1px solid #e9d0ad;padding:16px;border-radius:13px}
+.oct-local-paragraph,.oct-local-card p,.oct-local-register-card p{font-size:clamp(16px,4vw,18px);line-height:1.55;color:#4b3c32;overflow-wrap:anywhere}
+.oct-local-field{padding:15px 0;border-top:1px solid #e8dac8}
+.oct-local-field h3{font-size:14px;letter-spacing:.035em;color:#765b4a;font-weight:850;text-transform:uppercase;margin:0 0 6px}
+.oct-local-field p{margin:0}
+.oct-local-field ul{padding-left:20px;margin:0}
+.oct-local-field li{font-size:16px;line-height:1.6;overflow-wrap:anywhere}
+.oct-local-field a{color:#6d3f21;text-decoration:underline}
+.oct-local-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;max-width:700px;margin:0 auto 20px}
+.oct-local-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 19px;background:linear-gradient(135deg,#c98f43,#e9bc77);border:1px solid #b57b37;border-radius:12px;color:#311d12;font-size:16px;font-weight:760;text-align:center;text-decoration:none;cursor:pointer;font-family:inherit}
+.oct-local-btn--secondary{background:#fffaf4;border-color:#d6c0a4}
+.oct-local-register-card{margin-bottom:22px}
+.oct-local-register-card h2{font-size:clamp(21px,5.5vw,27px)}
+.oct-local-register-card p{margin:0 0 14px}
+.oct-local-register-card .oct-local-btn{width:auto;max-width:100%}
+@media(max-width:500px){.oct-local-actions{flex-direction:column;align-items:stretch}.oct-local-actions>.oct-local-btn{width:100%}.oct-local-card,.oct-local-register-card{margin-inline:0}}
