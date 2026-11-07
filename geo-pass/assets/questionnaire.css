@@ -373,3 +373,103 @@
 .q-form--geography,.q-form--languages{gap:3px}
 .q-screen--geography .q-mascot,.q-screen--languages .q-mascot{max-height:13dvh;width:calc(13dvh * 2.105)}
 }
+
+
+/* OCTOPUS 2026-11-07: approved premium business mobile system.
+   Readable rather than shrinking all copy to fit a single viewport.
+   Does not change the original orange Octopus CTA. */
+:root{--oct-dark:#3f2417;--oct-ink:#30231c;--oct-gold:#c28c49;--oct-cream:#fff8ed}
+html,body{overflow-x:hidden;overflow-y:auto}
+.q-screen{height:auto;min-height:100dvh;overflow:visible;grid-template-rows:auto minmax(0,1fr)}
+.q-header{padding-inline:clamp(16px,5vw,34px);flex-wrap:wrap;gap:8px;min-height:52px}
+.q-main{width:100%;max-width:660px;min-height:calc(100dvh - 70px);margin:0 auto;padding:clamp(16px,4dvh,40px) clamp(18px,5.5vw,34px) 52px;justify-content:center;gap:16px;overflow:visible}
+.q-form,.q-fields,.q-fields--single,.q-fields--address,.q-social,.q-legal,.q-channels{width:100%;max-width:100%;min-width:0}
+.q-intro{width:100%;max-width:560px;text-align:center}
+.q-intro h1{font-size:clamp(26px,6.6vw,35px);font-weight:850;letter-spacing:-.035em;line-height:1.13;margin:0 auto 14px;color:var(--oct-ink)}
+.q-intro p,.q-intro--matching p,.q-intro--service p,.q-help,.q-legal-notice{font-size:clamp(16px,4.3vw,18px);line-height:1.46;color:#59493e;max-width:100%;margin:0 auto 12px}
+.q-field label,.q-social__item>label:first-child,.q-extra-channel label{font-size:16px;line-height:1.3;font-weight:750}
+.q-field input,.q-social__item input[type=url],.q-extra-channel input,.q-service-entry textarea,
+.q-fields textarea,.q-flow-field textarea{min-height:50px;border-radius:12px;padding:12px 14px;font-size:16px;box-shadow:0 3px 0 #efe3d4;width:100%;max-width:100%;background:#fffdfa;color:var(--oct-ink)}
+.q-field{gap:6px}
+.q-fields{gap:13px 14px}
+.q-form{gap:16px}
+.q-choice{border:0;min-width:0;display:block;max-width:100%}
+.q-choice legend{font-size:clamp(16px,4.1vw,19px);line-height:1.35;font-weight:780;text-align:left;padding:0 0 10px}
+.q-choice__options{display:grid;grid-template-columns:1fr;gap:10px;width:100%}
+.q-choice label{display:flex;align-items:center;gap:12px;padding:14px 15px;border:1px solid #dec8ae;border-radius:13px;min-height:54px;font-size:clamp(15px,4vw,17px);line-height:1.35;background:#fffaf4;white-space:normal;cursor:pointer}
+.q-choice label:has(input:checked),.q-check:has(input:checked),.q-channels label:has(input:checked){background:#fff2dc;border-color:#b47b3f;box-shadow:0 0 0 1px #b47b3f55}
+.q-choice input,.q-check input,.q-channels input{min-width:23px;min-height:23px;width:23px;height:23px;flex:0 0 23px;accent-color:#83532d}
+.q-help{font-size:clamp(15px,4vw,17px)}
+.q-social{display:grid;grid-template-columns:1fr;gap:15px}
+.q-social__item{display:flex;flex-direction:column;align-items:stretch;gap:7px;width:100%}
+.q-social__item>label:first-child{display:block}
+.q-social__item input[type=url]{min-height:50px}
+.q-social__item .q-check{display:flex;align-items:center;gap:10px;padding:9px 10px;width:100%;white-space:normal;font-size:15px}
+.q-social__item .q-check input{width:22px;height:22px;flex:0 0 22px}
+.q-channels{display:grid;grid-template-columns:1fr;gap:10px}
+.q-channels label,.q-legal .q-check{display:flex;min-height:54px;align-items:center;gap:12px;padding:14px 16px;border-radius:13px;font-size:16px;line-height:1.35;white-space:normal}
+.q-legal{gap:12px}
+.q-legal-notice{font-size:15px}
+.q-mascot,.q-screen--workplace .q-mascot,.q-screen--contact .q-mascot,
+.q-screen--social .q-mascot,.q-screen--terms .q-mascot,.q-screen--channels .q-mascot,
+.q-screen--matching .q-mascot,.q-screen--service .q-mascot{width:min(390px,100%);height:auto;max-height:none;min-height:0;flex:0 0 auto}
+.q-continue-alert{border:1px solid #d7b98e;background:#fff7eb;border-radius:15px;padding:14px;max-width:100%;color:#5a321d}
+.q-continue-alert strong{color:#60391e}
+.q-continue-alert p{font-size:15px}
+.q-screen--matching .q-main,.q-screen--service .q-main,.q-screen--channels .q-main,
+.q-screen--workplace .q-main,.q-screen--contact .q-main{gap:16px;padding-bottom:52px}
+.q-intro--matching,.q-intro--service{max-width:100%}
+.q-intro--matching p,.q-intro--service p{font-size:clamp(16px,4.2vw,18px);line-height:1.46}
+.q-intro--matching p:nth-of-type(2){
+  background:radial-gradient(circle at 20% 0%,#89502c 0%,#502b19 44%,#32190f 100%);
+  border:1px solid #a76f3f;border-radius:18px;box-shadow:0 9px 21px #41251526, inset 0 1px 2px #f0bf7a70;
+  padding:20px;color:#fff7ee;font-weight:600
+}
+.q-intro--matching .q-matching-message,.q-intro--service .q-service-question{
+  font-size:clamp(18px,4.8vw,22px);line-height:1.35;
+  background:linear-gradient(120deg,#fff1da,#f7dfbb);border:1px solid #e9c99e;
+  border-radius:16px;box-shadow:0 5px 16px #75452416;padding:16px;
+  color:#42291b;font-weight:800
+}
+.q-service-entry{width:100%;max-width:100%}
+.q-service-entry textarea{min-height:106px;max-height:none;resize:vertical}
+.q-screen--workplace .q-fields::before{content:"";display:none}
+.q-fields select{width:100%;min-height:50px;border:1px solid #d9c5ad;border-radius:12px;background:#fffdfa;color:var(--oct-ink);font-size:16px;padding:12px}
+.q-workplace-optional{color:#593921;font-size:16px;font-weight:760;background:#fff0d9;border:1px solid #deb68a;border-radius:12px;padding:13px;line-height:1.38}
+.q-screen--workplace .q-fields--address{max-width:100%}
+@media(max-width:620px){
+ .q-screen{height:auto;min-height:100dvh;overflow:visible}
+ .q-main,.q-screen--matching .q-main,.q-screen--service .q-main,
+ .q-screen--contact .q-main,.q-screen--workplace .q-main,
+ .q-screen--channels .q-main{padding:28px clamp(18px,5.5vw,28px) 54px;gap:16px;justify-content:center;min-height:calc(100dvh - 58px)}
+ .q-intro h1,.q-intro--matching h1,.q-intro--service h1{font-size:clamp(25px,6.5vw,31px);line-height:1.17;margin-bottom:12px}
+ .q-intro p,.q-intro--matching p,.q-intro--service p,.q-screen--channels .q-intro p{font-size:clamp(16px,4.2vw,18px);line-height:1.46;margin-bottom:12px}
+ .q-field label,.q-social__item>label:first-child{font-size:16px;line-height:1.25}
+ .q-field input,.q-social__item input[type=url],.q-service-entry textarea{min-height:50px;font-size:16px;padding:12px 13px}
+ .q-form,.q-screen--contact .q-form,.q-screen--channels .q-form,.q-screen--service .q-form{gap:14px}
+ .q-fields,.q-social{gap:12px}
+ .q-choice{gap:9px}
+ .q-choice legend{font-size:17px;text-align:left}
+ .q-choice__options{display:grid;grid-template-columns:1fr;gap:10px}
+ .q-choice label,.q-check{font-size:16px}
+ .q-choice input,.q-check input{min-width:23px;min-height:23px;width:23px;height:23px}
+ .q-help,.q-legal-notice{font-size:15px;line-height:1.4}
+ .q-social__item{display:flex;flex-direction:column;gap:7px}
+ .q-social__item>label:first-child{font-size:16px}
+ .q-social__item input[type=url]{min-height:50px;font-size:16px}
+ .q-social__item .q-check{font-size:15px;white-space:normal}
+ .q-channels{grid-template-columns:1fr;gap:10px}
+ .q-channels label,.q-legal .q-check{font-size:16px;padding:14px}
+ .q-mascot,.q-screen--workplace .q-mascot,.q-screen--contact .q-mascot,.q-screen--social .q-mascot,
+ .q-screen--terms .q-mascot,.q-screen--channels .q-mascot,.q-screen--matching .q-mascot,
+ .q-screen--service .q-mascot{width:min(330px,95%);max-height:none;height:auto}
+ .q-screen--matching .q-intro .q-matching-message{font-size:19px;line-height:1.35}
+ .q-screen--service .q-intro .q-service-question{font-size:19px;line-height:1.35}
+}
+@media(max-height:690px) and (max-width:620px){
+ .q-screen{height:auto;min-height:100dvh;overflow:visible}
+ .q-main,.q-screen--channels .q-main,.q-screen--service .q-main,.q-screen--matching .q-main{justify-content:flex-start;min-height:calc(100dvh - 50px)}
+ .q-intro p,.q-intro--matching p,.q-intro--service p{font-size:16px;line-height:1.43}
+ .q-mascot,.q-screen--contact .q-mascot,.q-screen--social .q-mascot,.q-screen--terms .q-mascot,
+ .q-screen--channels .q-mascot,.q-screen--matching .q-mascot{width:min(290px,85%);max-height:none}
+}
