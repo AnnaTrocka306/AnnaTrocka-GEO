@@ -473,3 +473,6 @@ html,body{overflow-x:hidden;overflow-y:auto}
  .q-mascot,.q-screen--contact .q-mascot,.q-screen--social .q-mascot,.q-screen--terms .q-mascot,
  .q-screen--channels .q-mascot,.q-screen--matching .q-mascot{width:min(290px,85%);max-height:none}
 }
+
+/* Hide conditional custom workplace type until Other is selected. */
+[data-workplace-other][hidden]{display:none!important}
