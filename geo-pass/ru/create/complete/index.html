@@ -1,27 +1,34 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#ffffff">
-<meta name="robots" content="noindex, nofollow">
-<title>Ты молодец! · GEO Pass</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff"><meta name="robots" content="noindex,nofollow">
+<title>Я проверяю твои данные · GEO Pass</title>
 <link rel="stylesheet" href="../../../assets/welcome.css">
-<link rel="stylesheet" href="../../../assets/questionnaire.css?v=20261106h">
+<link rel="stylesheet" href="../../../assets/questionnaire.css?v=20261107a">
+<link rel="stylesheet" href="../../../assets/free-pass-preview.css?v=20261107a">
 <link rel="alternate" hreflang="de" href="../../../de/create/complete/">
 <link rel="alternate" hreflang="en" href="../../../en/create/complete/">
 <link rel="alternate" hreflang="ru" href="../../../ru/create/complete/">
 </head>
 <body>
-<div class="q-screen q-screen--complete">
+<div class="q-screen q-screen--pass-preview" data-free-pass-preview>
 <header class="q-header"><a class="q-back" href="../exclusions/">← Назад</a><nav class="welcome-langs" aria-label="Language / Sprache / Язык"><a lang="de" href="../../../de/create/complete/">DE</a><a lang="en" href="../../../en/create/complete/">EN</a><a lang="ru" href="../../../ru/create/complete/" aria-current="page">RU</a></nav></header>
-<main class="q-main">
-<section class="q-intro q-intro--complete" aria-labelledby="complete-heading">
-<h1 id="complete-heading">Ты молодец!</h1>
-<p>Я получил всю необходимую информацию. Спасибо, что рассказал о себе и своей работе!</p>
-<p class="q-complete-promise"><strong>Когда твой GEO Pass будет готов, я пришлю письмо на указанный email.</strong></p>
-</section>
-<p class="q-complete-preview"><span aria-hidden="true">⚠️</span> Тестовая версия: сейчас ответы остаются только в браузере, заявка не отправляется и письма не приходят.</p>
-<a href="../../" role="button" class="welcome-mascot q-mascot" aria-label="На главную"><img src="../../../assets/octopus-cta.webp" alt="" width="740" height="357" loading="eager" fetchpriority="high"><span class="welcome-mascot__text" aria-hidden="true"><span>На главную</span></span></a>
+<main class="q-main q-flow-main">
+<div class="q-flow-hero">
+<div class="q-flow-mascot is-checking" data-pass-mascot>
+<img src="../../../assets/octopus-cta.webp" alt="" width="740" height="357" loading="eager" fetchpriority="high">
+<span class="q-flow-mascot-label" aria-hidden="true">Работаю</span>
+</div>
+<div class="q-flow-hero-copy">
+<h1 data-pass-heading>Я проверяю твои данные</h1>
+<p data-pass-status role="status">Оставайся на этой странице. Я проверяю твои данные и готовлю GEO Pass. Это важно: у меня могут возникнуть дополнительные вопросы.</p>
+</div>
+</div>
+<p class="q-flow-test" data-pass-notice>Тестовая версия: данные остаются только в браузере. Сохранение в облако, публикация и email ещё не подключены.</p>
+<div class="q-flow-body" data-pass-content aria-live="polite"></div>
 </main>
 </div>
+<script src="../../../assets/free-pass-preview.js?v=20261107a" defer></script>
 </body>
 </html>
