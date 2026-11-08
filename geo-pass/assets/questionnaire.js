@@ -7,6 +7,8 @@ const steps=["identity","workplace","email","phone","website","whatsapp","social
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
 // The profession field was removed from the active identity screen.
 delete draft.profession;
+// A surgical choice from a previous doctor draft is never carried into other roles.
+if(step==="medical-services"&&draft.medicalRole!=="doctor")delete draft.medicalSurgery;
 const inputs=[...form.querySelectorAll("input[name],textarea[name],select[name]")];
 // Medical branch is a short self-declared profile, not a credentials audit.
 if(step==="medical-services"){
