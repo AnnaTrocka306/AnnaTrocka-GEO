@@ -60,3 +60,6 @@ html,body{overflow-x:hidden;overflow-y:auto}
  .welcome-copy h1{font-size:clamp(21px,5.5vw,26px)}
  .welcome-copy p{font-size:16px}
 }
+
+/* GEO-Pass 2026-11-08: readable regular-weight welcome headline */
+.welcome-copy h1{font-weight:400}

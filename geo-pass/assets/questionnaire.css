@@ -478,3 +478,33 @@ html,body{overflow-x:hidden;overflow-y:auto}
 [data-workplace-other][hidden]{display:none!important}
 
 .q-field--full{grid-column:1/-1}
+
+/* GEO-Pass 2026-11-08: separate spacious writing step and narrower geographic choices. */
+.q-screen--approach-answer .q-main{max-width:900px;justify-content:flex-start;min-height:calc(100dvh - 58px);padding:18px clamp(20px,5vw,42px) 50px;gap:16px}
+.q-screen--approach-answer .q-intro{max-width:800px}
+.q-screen--approach-answer .q-intro h1{font-size:clamp(24px,4vw,32px);line-height:1.2}
+.q-screen--approach-answer .q-intro .q-service-question{font-size:clamp(16px,2.1vw,21px);line-height:1.38;padding:14px 17px}
+.q-screen--approach-answer .q-form{width:100%;max-width:800px;gap:14px}
+.q-screen--approach-answer .q-service-entry{width:100%;max-width:800px}
+.q-screen--approach-answer .q-service-entry textarea{display:block;width:100%;min-height:clamp(360px,57dvh,760px);max-height:none;resize:vertical;overflow:auto;padding:18px;font:400 17px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;border:1px solid #cba981;border-radius:16px;background:#fffdfa;color:#30241c;box-shadow:0 4px 14px #42271817}
+.q-screen--approach-answer .q-mascot{width:min(390px,100%);max-height:none;height:auto;flex:none}
+.q-screen--geography .q-main{justify-content:flex-start;max-width:720px}
+.q-screen--geography .q-form--geography{width:100%;max-width:490px;gap:18px}
+.q-screen--geography .q-geo-options{display:grid;grid-template-columns:1fr;gap:10px;width:100%}
+.q-screen--geography .q-geo-option{width:100%;min-height:58px;padding:13px 16px;gap:13px;font-size:16px;line-height:1.4;font-weight:560;border-radius:13px;white-space:normal}
+.q-screen--geography .q-geo-option span{min-width:0;overflow-wrap:break-word}
+.q-screen--geography .q-geo-option input{width:23px;height:23px;flex:0 0 23px}
+.q-screen--geography .q-geo-option:has(input:checked){background:#fff0d6;border-color:#a9773e;box-shadow:0 0 0 1px #a9773e55}
+.q-screen--geography .q-geo-option:focus-within{outline:2px solid #166aaa;outline-offset:2px}
+.q-screen--geography .q-geo-extra{width:100%;font-size:15px;line-height:1.35;gap:8px}
+.q-screen--geography .q-geo-extra input{min-height:48px;height:auto;font-size:16px;padding:11px 13px}
+.q-screen--geography .q-geo-group legend:not(.q-geo-group__sr){font-size:16px;line-height:1.4;padding-bottom:11px}
+@media(max-width:620px){
+.q-screen--approach-answer .q-main{padding:18px clamp(18px,6vw,28px) 52px;gap:12px}
+.q-screen--approach-answer .q-intro h1{font-size:clamp(24px,6vw,29px)}
+.q-screen--approach-answer .q-service-entry textarea{min-height:60dvh;font-size:17px;padding:16px}
+.q-screen--approach-answer .q-mascot{width:min(310px,90%);max-height:none}
+.q-screen--geography .q-main{padding-inline:clamp(20px,6vw,30px)}
+.q-screen--geography .q-form--geography{max-width:480px;width:100%}
+.q-screen--geography .q-geo-option{font-size:16px;min-height:60px;padding:14px 13px}
+}
