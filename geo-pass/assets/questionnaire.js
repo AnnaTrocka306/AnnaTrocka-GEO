@@ -3,11 +3,21 @@
    No account, database connection, publication, or notification is live. */
 const form=document.querySelector("[data-octopus-form]");if(!form)return;
 const step=form.dataset.step,key="octopus-geo-pass-draft-v1";
-const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector","matching","beauty-direction"];
+const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector","matching","beauty-direction","medical-role","medical-services","podology-services"];
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
 // The profession field was removed from the active identity screen.
 delete draft.profession;
 const inputs=[...form.querySelectorAll("input[name],textarea[name],select[name]")];
+// Medical branch is a short self-declared profile, not a credentials audit.
+if(step==="medical-services"){
+  const surgery=form.querySelector('[data-doctor-only]');
+  if(surgery){
+    const show=draft.medicalRole==="doctor";
+    surgery.hidden=!show;
+    const field=surgery.querySelector('input');
+    if(field){field.disabled=!show;if(!show)field.checked=false;}
+  }
+}
 function put(input){
   if(input.type==="checkbox"||input.type==="radio"){
     if(Object.hasOwn(draft,input.name))input.checked=(input.type==="checkbox" ? draft[input.name]===true : draft[input.name]===input.value);
@@ -154,9 +164,25 @@ form.addEventListener("submit",e=>{
     const errors={ru:"Выбери сферу из списка или напиши свою.",de:"Wähle einen Bereich oder trage deinen eigenen ein.",en:"Choose an area or enter your own."};
     sector.setCustomValidity(sector.value||other.value.trim()?"":(errors[document.documentElement.lang]||errors.en));
   }
+  if(step==="medical-role"){
+    const choice=form.querySelector('input[name="medicalRole"]:checked');
+    if(!choice){form.querySelector('input[name="medicalRole"]')?.reportValidity();return;}
+    const previous=draft.medicalRole;
+    if(previous&&previous!==choice.value){
+      for(const name of ["medicalInjection","medicalDevice","medicalLaser","medicalSkin","medicalMinimallyInvasive","medicalSurgery","medicalOtherProcedure","podNail","podSkin","podIngrown","podRiskFoot","podProtection","podFullCare","podOtherProcedure"])delete draft[name];
+    }
+  }
   if(!form.reportValidity())return;
   if(!validateRequiredGroups())return;
   capture();
+  if(step==="beauty-direction" && draft.beautyMedical===true){
+    window.location.assign("../medical-role/");
+    return;
+  }
+  if(step==="medical-role"){
+    window.location.assign(draft.medicalRole==="podologist"?"../podology-services/":"../medical-services/");
+    return;
+  }
   const at=steps.indexOf(step);
   if(at>=0&&at<steps.length-1)window.location.assign("../"+steps[at+1]+"/");
   else{

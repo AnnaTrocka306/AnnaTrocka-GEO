@@ -1,0 +1,29 @@
+/* Small, accessible, self-declared medical aesthetics branch. */
+.q-screen--medical-role,.q-screen--medical-services,.q-screen--podology-services{height:auto;min-height:100dvh;overflow:visible}
+.q-screen--medical-role .q-main,.q-screen--medical-services .q-main,.q-screen--podology-services .q-main{min-height:calc(100dvh - 58px);padding:22px clamp(18px,4vw,44px) 48px;gap:clamp(13px,2dvh,20px);justify-content:center}
+.q-medical-head{width:100%;max-width:740px}
+.q-medical-head h1{font-size:clamp(25px,3.4vw,35px);line-height:1.2;margin:0 auto 10px}
+.q-medical-head p{font-size:clamp(15px,1.55vw,18px);line-height:1.44;color:#654e40;max-width:730px}
+.q-medical-form{width:min(690px,100%);gap:17px}
+.q-medical-list{width:100%;margin:0;padding:0;border:0;min-width:0;display:grid;gap:10px}
+.q-medical-list legend{padding:0 0 12px;color:#4b3425;font-size:clamp(15px,1.5vw,18px);font-weight:750}
+.q-medical-option{display:flex;gap:13px;align-items:center;min-height:54px;width:100%;padding:13px 16px;border:1px solid #dfc5a8;border-radius:13px;background:#fffbf6;box-shadow:0 2px 0 #f0e4d6;cursor:pointer;color:#392d26;font-size:clamp(15px,1.5vw,18px);line-height:1.3}
+.q-medical-option input{width:23px;height:23px;flex:0 0 23px;margin:0;accent-color:#885933}
+.q-medical-option:has(input:checked){background:#fff0d8;border-color:#b47b3f;box-shadow:0 0 0 1px #b47b3f55}
+.q-medical-option:focus-within{outline:3px solid #1267ad;outline-offset:2px}
+.q-medical-option[hidden]{display:none!important}
+.q-medical-other{width:100%;display:grid;gap:7px}
+.q-medical-other label{font-size:16px;font-weight:740;color:#4b3425}
+.q-medical-other input{width:100%;min-height:52px;border:1px solid #d4b795;border-radius:12px;background:#fffdfa;padding:11px 14px;font:500 16px/1.3 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+.q-medical-other input:focus-visible{outline:3px solid #1267ad;outline-offset:2px}
+.q-medical-note{max-width:670px;font-size:14px;line-height:1.4;color:#755948;text-align:center;margin:0}
+.q-screen--medical-role .q-mascot,.q-screen--medical-services .q-mascot,.q-screen--podology-services .q-mascot{width:min(425px,100%);max-height:none;flex:0 0 auto}
+@media(max-width:620px){
+.q-screen--medical-role .q-main,.q-screen--medical-services .q-main,.q-screen--podology-services .q-main{min-height:calc(100dvh - 58px);padding:20px clamp(18px,5.5vw,28px) 46px;gap:14px;justify-content:center}
+.q-medical-head h1{font-size:clamp(25px,6.4vw,31px)}
+.q-medical-head p{font-size:clamp(15px,4vw,17px)}
+.q-medical-list{gap:9px}
+.q-medical-option{font-size:16px;padding:13px 14px;min-height:52px}
+.q-screen--medical-role .q-mascot,.q-screen--medical-services .q-mascot,.q-screen--podology-services .q-mascot{width:min(325px,90%)}
+}
+@media(max-height:690px) and (max-width:620px){.q-screen--medical-role .q-main,.q-screen--medical-services .q-main,.q-screen--podology-services .q-main{justify-content:flex-start}}
