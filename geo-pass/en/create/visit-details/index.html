@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#ffffff"><title>Where do you see clients? · GEO-Pass</title>
+<link rel="stylesheet" href="../../../assets/welcome.css?v=20261107b"><link rel="stylesheet" href="../../../assets/questionnaire.css?v=20261108matching2">
+<link rel="stylesheet" href="../../../assets/medical-branch.css?v=20261108repeat1"><link rel="stylesheet" href="../../../assets/visit-details.css?v=20261108visit2">
+<link rel="alternate" hreflang="ru" href="../../../ru/create/visit-details/"><link rel="alternate" hreflang="de" href="../../../de/create/visit-details/"><link rel="alternate" hreflang="en" href="../../../en/create/visit-details/">
+</head><body><div class="q-screen q-screen--visit-details">
+<header class="q-header"><a class="q-back" href="../medical-services/" data-medical-back>← Back</a><nav class="welcome-langs" aria-label="Language / Sprache / Язык"><a lang="de" href="../../../de/create/visit-details/">DE</a><a lang="en" href="../../../en/create/visit-details/" aria-current="page">EN</a><a lang="ru" href="../../../ru/create/visit-details/">RU</a></nav></header>
+<main class="q-main"><div class="q-intro"><h1>Where do you see clients?</h1><p>If you've already entered your first practice address, you don't need to repeat it.</p></div>
+<form class="q-form" data-octopus-form data-step="visit-details">
+<section class="q-visit-group"><strong>How do you work?</strong>
+<label class="q-visit-choice"><input type="checkbox" name="visitFixed">I see clients at a practice or treatment room</label>
+<label class="q-visit-choice"><input type="checkbox" name="visitMobile">I offer mobile appointments or home visits</label></section>
+<section class="q-visit-group"><strong>Do you work at additional practices or clinics? Add their addresses.</strong>
+<div class="q-visit-repeat" data-visit-repeater="additionalPracticeAddress" data-visit-label="Additional practice address" data-visit-remove="Remove address">
+<label for="additionalPracticeAddress">Additional practice address</label><input name="additionalPracticeAddress" id="additionalPracticeAddress" type="text" maxlength="300" placeholder="Street, number, postcode, city, country">
+<div data-visit-rows></div><button type="button" data-visit-add><span class="q-visit-plus" aria-hidden="true">+</span>Add another address</button></div></section>
+<section class="q-visit-group"><strong>Online booking</strong><p>If clients can book appointments online, add your booking calendar link.</p>
+<div class="q-visit-repeat" data-visit-repeater="bookingCalendarUrl" data-visit-label="Online booking link" data-visit-remove="Remove link">
+<label for="bookingCalendarUrl">Online booking link</label><input name="bookingCalendarUrl" id="bookingCalendarUrl" type="url" maxlength="1100" inputmode="url" placeholder="https://...">
+<div data-visit-rows></div><button type="button" data-visit-add><span class="q-visit-plus" aria-hidden="true">+</span>Add another link</button></div></section>
+<button type="submit" disabled class="welcome-mascot q-mascot" aria-label="Continue"><img src="../../../assets/octopus-cta.webp" alt="" width="740" height="357" loading="eager" fetchpriority="high"><span class="welcome-mascot__text" aria-hidden="true"><span>Continue</span></span></button>
+</form>
+<dialog class="q-matching-stage-pause" data-next-unavailable aria-labelledby="q-visit-done"><h2 id="q-visit-done">The first part is complete</h2><p>Your answers remain in this browser tab. Nothing has been sent to Octopus. The next GEO-Pass step is still being developed.</p><form method="dialog"><button type="submit">Got it</button></form></dialog>
+</main></div><script src="../../../assets/questionnaire.js?v=20261108visit2" defer></script></body></html>

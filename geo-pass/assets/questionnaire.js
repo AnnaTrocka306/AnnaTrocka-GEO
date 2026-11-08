@@ -3,7 +3,7 @@
    No account, database connection, publication, or notification is live. */
 const form=document.querySelector("[data-octopus-form]");if(!form)return;
 const step=form.dataset.step,key="octopus-geo-pass-draft-v1";
-const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector","matching","beauty-direction","medical-role","medical-services","podology-services"];
+const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector","matching","beauty-direction","medical-role","medical-services","podology-services","visit-details"];
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
 // The profession field was removed from the active identity screen.
 delete draft.profession;
@@ -68,6 +68,36 @@ function setupProcedureRepeater(){
   });
 }
 setupProcedureRepeater();
+
+// Additional practice addresses and calendar URLs are optional repeatable inputs.
+function setupVisitRepeaters(){
+ if(step!=="visit-details")return;
+ const back=document.querySelector("[data-medical-back]");
+ if(back&&draft.medicalRole==="podologist")back.href="../podology-services/";
+ for(const block of form.querySelectorAll("[data-visit-repeater]")){
+  const base=block.dataset.visitRepeater,orig=block.querySelector('input[name="'+base+'"]');
+  const rows=block.querySelector("[data-visit-rows]"),add=block.querySelector("[data-visit-add]");
+  if(!orig||!rows||!add)continue;
+  let next=2;
+  function row(n){
+   const name=base+n,el=document.createElement("div"),field=document.createElement("div");
+   el.className="q-procedure-extra";field.className="q-procedure-extra__field";
+   const label=document.createElement("label");label.htmlFor=name;label.textContent=(block.dataset.visitLabel||"Extra")+" "+n;
+   const inp=document.createElement("input");inp.id=name;inp.name=name;inp.type=orig.type;inp.maxLength=orig.maxLength;
+   inp.placeholder=orig.placeholder;inp.autocomplete="off";
+   if(typeof draft[name]==="string")inp.value=draft[name];
+   const del=document.createElement("button");del.type="button";del.className="q-procedure-remove";
+   del.setAttribute("aria-label",(block.dataset.visitRemove||"Remove")+" "+n);del.textContent="×";
+   del.addEventListener("click",()=>{el.remove();const i=inputs.indexOf(inp);if(i>=0)inputs.splice(i,1);delete draft[name];capture();orig.focus()});
+   field.append(label,inp);el.append(field,del);rows.append(el);inputs.push(inp);
+   next=Math.max(next,n+1);return inp;
+  }
+  for(const n of Object.keys(draft).filter(k=>k.startsWith(base)&&/^\d+$/.test(k.slice(base.length))).map(k=>Number(k.slice(base.length))).filter(n=>Number.isSafeInteger(n)&&n>=2&&n<1000).sort((a,b)=>a-b))row(n);
+  add.addEventListener("click",()=>{const inp=row(next);capture();inp.focus()});
+ }
+}
+setupVisitRepeaters();
+
 // Medical branch is a short self-declared profile, not a credentials audit.
 if(step==="medical-services"){
   const surgery=form.querySelector('[data-doctor-only]');
@@ -145,7 +175,7 @@ function syncSectorChoice(event){
   selected.setCustomValidity("");
 }
 form.addEventListener("input",e=>{syncSectorChoice(e);clearRequiredGroupErrors();for(const el of inputs)if(el.type==="url")el.setCustomValidity("");capture();refresh()});
-form.addEventListener("change",e=>{syncSectorChoice(e);clearRequiredGroupErrors();const anchor=form.querySelector('input[name="channelEmail"]');if(anchor)anchor.setCustomValidity("");capture();refresh()});
+form.addEventListener("change",e=>{syncSectorChoice(e);clearRequiredGroupErrors();const anchor=form.querySelector('input[name="channelEmail"]');if(anchor)anchor.setCustomValidity("");const v=form.querySelector('input[name="visitFixed"]');if(v)v.setCustomValidity("");capture();refresh()});
 refresh();
 const submit=form.querySelector('button[type="submit"]');if(submit)submit.disabled=false;
 function normalizeUrls(){
@@ -233,6 +263,14 @@ form.addEventListener("submit",e=>{
       for(const name of Object.keys(draft))if(/^medicalOtherProcedure\d+$|^podOtherProcedure\d+$/.test(name))delete draft[name];
     }
   }
+  if(step==="visit-details"){
+    const first=form.querySelector('input[name="visitFixed"]');
+    const other=form.querySelector('input[name="visitMobile"]');
+    if(first&&other){
+      const errors={ru:"Выбери, как ты работаешь: в кабинете или с выездом.",de:"Bitte wähle mindestens eine Art der Tätigkeit.",en:"Choose at least one way you see clients."};
+      first.setCustomValidity(first.checked||other.checked?"":(errors[document.documentElement.lang]||errors.en));
+    }
+  }
   if(!form.reportValidity())return;
   if(!validateRequiredGroups())return;
   capture();
@@ -243,6 +281,9 @@ form.addEventListener("submit",e=>{
   if(step==="medical-role"){
     window.location.assign(draft.medicalRole==="podologist"?"../podology-services/":"../medical-services/");
     return;
+  }
+  if(step==="medical-services"||step==="podology-services"){
+    window.location.assign("../visit-details/");return;
   }
   const at=steps.indexOf(step);
   if(at>=0&&at<steps.length-1)window.location.assign("../"+steps[at+1]+"/");

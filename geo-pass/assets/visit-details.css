@@ -1,0 +1,28 @@
+/* Lightweight shared mobile / extra-practices / booking card */
+.q-screen--visit-details{height:auto;min-height:100dvh;overflow:visible}
+.q-screen--visit-details .q-main{min-height:calc(100dvh - 58px);padding:23px clamp(18px,4vw,44px) 48px;gap:15px;justify-content:center}
+.q-screen--visit-details .q-intro{max-width:740px}
+.q-screen--visit-details .q-intro h1{font-size:clamp(25px,3.4vw,35px);margin-bottom:10px}
+.q-screen--visit-details .q-intro p{font-size:clamp(15px,1.6vw,18px);line-height:1.45}
+.q-screen--visit-details .q-form{width:min(690px,100%);gap:17px}
+.q-visit-group{display:grid;gap:10px;width:100%}
+.q-visit-group>strong{font-size:clamp(16px,1.6vw,19px);color:#3e2c20;line-height:1.3}
+.q-visit-group>p{font-size:14px;color:#765b49;margin:0}
+.q-visit-choice{display:flex;align-items:center;gap:12px;background:#fffbf6;border:1px solid #ddc4a7;padding:14px 16px;min-height:53px;border-radius:13px;cursor:pointer;color:#3c2a1e;font-size:16px}
+.q-visit-choice input{width:23px;height:23px;flex:0 0 23px;accent-color:#85542d;margin:0}
+.q-visit-choice:has(input:checked){background:#fff0d8;border-color:#b47b3f}
+.q-visit-choice:focus-within{outline:3px solid #1267ad;outline-offset:2px}
+.q-visit-repeat{display:grid;gap:8px}
+.q-visit-repeat>label,.q-visit-repeat .q-procedure-extra__field label{color:#493628;font-size:15px;font-weight:700}
+.q-visit-repeat input{width:100%;min-height:50px;border:1px solid #d4b795;border-radius:11px;padding:11px 14px;background:#fffdfa;color:#30241c;font:500 16px/1.3 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+.q-visit-repeat input:focus-visible{outline:3px solid #1267ad;outline-offset:2px}
+.q-visit-repeat [data-visit-rows]{display:grid;gap:9px}
+.q-visit-repeat .q-procedure-extra{display:flex;align-items:flex-end;gap:8px}
+.q-visit-repeat .q-procedure-extra__field{flex:1;min-width:0;display:grid;gap:7px}
+.q-visit-repeat .q-procedure-remove{flex:0 0 42px;height:50px;border:1px solid #d6b99b;border-radius:10px;background:#fff8ef;color:#704b33;font-size:26px;cursor:pointer}
+.q-visit-repeat [data-visit-add]{display:flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:10px;border:1px solid #caa47e;border-radius:11px;background:#fff3df;color:#624125;font:750 15px/1.3 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;cursor:pointer}
+.q-visit-plus{display:grid;place-items:center;width:24px;height:24px;border:1.5px solid #a66d38;border-radius:50%;font-size:22px;line-height:1}
+.q-visit-repeat [data-visit-add]:focus-visible,.q-visit-repeat .q-procedure-remove:focus-visible{outline:3px solid #1267ad;outline-offset:2px}
+.q-screen--visit-details .q-mascot{width:min(410px,100%);height:auto;max-height:none}
+@media(max-width:620px){.q-screen--visit-details .q-main{padding:20px clamp(18px,5.5vw,28px) 46px;justify-content:flex-start}
+.q-screen--visit-details .q-intro h1{font-size:clamp(25px,6.4vw,31px)}.q-screen--visit-details .q-mascot{width:min(325px,92%)}}
