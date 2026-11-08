@@ -535,3 +535,40 @@ html,body{overflow-x:hidden;overflow-y:auto}
  .q-screen--beauty-intro .q-main{justify-content:flex-start;padding-top:16px}
  .q-screen--beauty-intro .q-mascot{width:min(292px,90%)}
 }
+
+/* Octopus expert niche selector: first card after the shared contact flow.
+   One taxonomy ID OR custom free-form category, no product/service split. */
+.q-screen--sector{height:auto;min-height:100dvh;overflow:visible}
+.q-screen--sector .q-main{min-height:calc(100dvh - 58px);padding:24px clamp(18px,4vw,42px) 48px;gap:clamp(12px,2dvh,22px)}
+.q-screen--sector .q-intro{max-width:740px}
+.q-screen--sector .q-intro h1{font-size:clamp(25px,3.4vw,35px);margin-bottom:12px}
+.q-screen--sector .q-intro p{font-size:clamp(15px,1.6vw,18px);line-height:1.43;max-width:720px}
+.q-screen--sector .q-form{width:min(650px,100%);gap:clamp(12px,2dvh,19px)}
+.q-sector-fields{display:grid;gap:clamp(14px,2dvh,20px);width:100%;max-width:620px}
+.q-sector-field{display:grid;gap:8px}
+.q-sector-field label{font-size:clamp(15px,1.5vw,17px);font-weight:750;color:#3b2c23}
+.q-sector-field select,.q-sector-field input{font:500 16px/1.35 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;min-height:54px;width:100%;padding:12px 16px;background:#fffdfa;color:#30241c;border:1px solid #cfb18c;border-radius:12px;box-shadow:0 3px 0 #f0e9dd}
+.q-sector-field select{cursor:pointer;padding-right:36px}
+.q-sector-field select:invalid{color:#715d4c}
+.q-sector-field select option{color:#30241c}
+.q-sector-field select:focus-visible,.q-sector-field input:focus-visible{outline:3px solid #1267ad;outline-offset:2px}
+.q-sector-divider{margin:0;color:#765c4d;font-size:14px;text-align:center}
+.q-sector-note{color:#765c4d;font-size:clamp(13px,1.25vw,15px);text-align:center;line-height:1.35;margin:0 auto}
+.q-screen--sector .q-mascot{width:min(445px,100%);max-height:none;height:auto;flex:0 0 auto}
+.q-sector-stage-pause{max-width:min(490px,calc(100% - 32px));padding:24px;border-radius:16px;border:1px solid #dec5a8;box-shadow:0 12px 35px #321e153d;color:#3c2d24;background:#fffcf8}
+.q-sector-stage-pause::backdrop{background:#24160b88}
+.q-sector-stage-pause h2{font-size:21px;line-height:1.25;margin:0 0 12px}
+.q-sector-stage-pause p{font-size:15px;line-height:1.45;margin:0 0 18px}
+.q-sector-stage-pause button{padding:12px 20px;min-height:44px;background:#8d5933;border:0;color:white;border-radius:10px;font-weight:750;font-size:16px}
+@media(max-width:620px){
+  .q-screen--sector .q-main{min-height:calc(100dvh - 58px);padding:24px clamp(18px,5.5vw,28px) 45px;gap:16px;justify-content:center}
+  .q-screen--sector .q-intro h1{font-size:clamp(25px,6.3vw,30px)}
+  .q-screen--sector .q-intro p{font-size:clamp(15px,4vw,17px)}
+  .q-sector-field label{font-size:16px}
+  .q-sector-field select,.q-sector-field input{min-height:54px;font-size:16px}
+  .q-screen--sector .q-mascot{width:min(345px,93%)}
+}
+@media(max-height:690px) and (max-width:620px){
+  .q-screen--sector .q-main{justify-content:flex-start;padding-top:18px}
+  .q-screen--sector .q-mascot{width:min(290px,84%)}
+}

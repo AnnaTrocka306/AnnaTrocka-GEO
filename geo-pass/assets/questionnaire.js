@@ -3,7 +3,7 @@
    No account, database connection, publication, or notification is live. */
 const form=document.querySelector("[data-octopus-form]");if(!form)return;
 const step=form.dataset.step,key="octopus-geo-pass-draft-v1";
-const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels"];
+const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector"];
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
 // The profession field was removed from the active identity screen.
 delete draft.profession;
@@ -65,8 +65,17 @@ function refresh(){
     if(!has)input.checked=false;
   });
 }
-form.addEventListener("input",()=>{clearRequiredGroupErrors();for(const el of inputs)if(el.type==="url")el.setCustomValidity("");capture();refresh()});
-form.addEventListener("change",()=>{clearRequiredGroupErrors();const anchor=form.querySelector('input[name="channelEmail"]');if(anchor)anchor.setCustomValidity("");capture();refresh()});
+function syncSectorChoice(event){
+  if(step!=="sector")return;
+  const selected=form.querySelector('[name="sectorId"]');
+  const custom=form.querySelector('[name="sectorOther"]');
+  if(!selected||!custom)return;
+  if(event.target===selected&&selected.value)custom.value="";
+  if(event.target===custom&&custom.value.trim())selected.value="";
+  selected.setCustomValidity("");
+}
+form.addEventListener("input",e=>{syncSectorChoice(e);clearRequiredGroupErrors();for(const el of inputs)if(el.type==="url")el.setCustomValidity("");capture();refresh()});
+form.addEventListener("change",e=>{syncSectorChoice(e);clearRequiredGroupErrors();const anchor=form.querySelector('input[name="channelEmail"]');if(anchor)anchor.setCustomValidity("");capture();refresh()});
 refresh();
 const submit=form.querySelector('button[type="submit"]');if(submit)submit.disabled=false;
 function normalizeUrls(){
@@ -105,15 +114,6 @@ if(nextLink)nextLink.addEventListener("click",e=>{
   }
   if(!form.reportValidity()){e.preventDefault();return;}
   capture();
-  if(step==="channels"){
-    e.preventDefault();
-    const dialog=document.querySelector("[data-next-unavailable]");
-    if(dialog&&typeof dialog.showModal==="function")dialog.showModal();
-    else {
-      const fallback={ru:"Профессиональная анкета ещё готовится. Ответы не отправлены Octopus.",de:"Der nächste Teil wird vorbereitet. Deine Daten wurden noch nicht an Octopus gesendet.",en:"The next section is being prepared. No data has been sent to Octopus."};
-      window.alert(fallback[document.documentElement.lang]||fallback.en);
-    }
-  }
 });
 form.addEventListener("submit",e=>{
   e.preventDefault();
@@ -132,6 +132,12 @@ form.addEventListener("submit",e=>{
       anchor.setCustomValidity(options.some(x=>x.checked)?"":(messages[document.documentElement.lang]||messages.en));
       if(!anchor.checkValidity()){anchor.reportValidity();return}
     }
+  }
+  if(step==="sector"){
+    const sector=form.querySelector('[name="sectorId"]');
+    const other=form.querySelector('[name="sectorOther"]');
+    const errors={ru:"Выбери сферу из списка или напиши свою.",de:"Wähle einen Bereich oder trage deinen eigenen ein.",en:"Choose an area or enter your own."};
+    sector.setCustomValidity(sector.value||other.value.trim()?"":(errors[document.documentElement.lang]||errors.en));
   }
   if(!form.reportValidity())return;
   if(!validateRequiredGroups())return;
