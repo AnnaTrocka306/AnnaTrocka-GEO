@@ -1,0 +1,30 @@
+/* Beauty expert intake: medical aesthetics and cosmetic/beauty services.
+   Selection does not establish professional authorisation; verified later. */
+.q-screen--beauty-direction{height:auto;min-height:100dvh;overflow:visible}
+.q-screen--beauty-direction .q-main{min-height:calc(100dvh - 58px);padding:22px clamp(18px,4vw,44px) 45px;gap:clamp(12px,2dvh,22px)}
+.q-screen--beauty-direction .q-intro{max-width:750px}
+.q-screen--beauty-direction .q-intro h1{font-size:clamp(25px,3.4vw,35px);line-height:1.2;margin-bottom:14px}
+.q-screen--beauty-direction .q-intro p{font-size:clamp(15px,1.6vw,18px);line-height:1.45;max-width:730px}
+.q-screen--beauty-direction .q-form{width:min(700px,100%);gap:15px}
+.q-beauty-direction-options{display:grid;gap:14px;width:100%;border:0;margin:0;padding:0;min-width:0}
+.q-beauty-direction-options legend{font-size:clamp(15px,1.5vw,18px);font-weight:750;color:#4b3425;padding:0 0 11px}
+.q-beauty-direction-option{display:flex;align-items:flex-start;gap:14px;width:100%;padding:19px;border:1px solid #ddc4a7;border-radius:17px;background:#fffbf5;color:#32261f;cursor:pointer;box-shadow:0 3px 0 #efe3d3}
+.q-beauty-direction-option input{flex:0 0 24px;width:24px;height:24px;accent-color:#85542d;margin:2px 0 0}
+.q-beauty-direction-option__body{display:flex;flex-direction:column;gap:6px;min-width:0}
+.q-beauty-direction-option__title{font-size:clamp(17px,1.85vw,21px);font-weight:800;line-height:1.25}
+.q-beauty-direction-option__desc{font-size:clamp(14px,1.4vw,16px);line-height:1.4;color:#665144;font-weight:450}
+.q-beauty-direction-option:has(input:checked){background:#fff1da;border-color:#b47b3f;box-shadow:0 0 0 1px #b47b3f55,0 3px 0 #ead6b9}
+.q-beauty-direction-option:focus-within{outline:3px solid #1267ad;outline-offset:2px}
+.q-beauty-direction-help{max-width:660px;font-size:clamp(14px,1.35vw,16px);color:#725948;text-align:center;line-height:1.42;margin:0 auto}
+.q-screen--beauty-direction .q-mascot{width:min(450px,100%);max-height:none;height:auto;flex:0 0 auto}
+@media(max-width:620px){.q-screen--beauty-direction .q-main{min-height:calc(100dvh - 58px);padding:24px clamp(18px,5.5vw,28px) 46px;gap:15px;justify-content:center}
+.q-screen--beauty-direction .q-intro h1{font-size:clamp(25px,6.5vw,31px)}
+.q-screen--beauty-direction .q-intro p{font-size:clamp(15px,4vw,17px)}
+.q-beauty-direction-options{gap:12px}
+.q-beauty-direction-option{padding:16px 15px;gap:12px;border-radius:15px}
+.q-beauty-direction-option__title{font-size:clamp(17px,4.5vw,19px)}
+.q-beauty-direction-option__desc{font-size:clamp(14px,3.8vw,16px)}
+.q-beauty-direction-help{font-size:14px}
+.q-screen--beauty-direction .q-mascot{width:min(335px,94%)}}
+@media(max-height:690px) and (max-width:620px){.q-screen--beauty-direction .q-main{justify-content:flex-start;padding-top:17px}
+.q-screen--beauty-direction .q-mascot{width:min(290px,86%)}}
