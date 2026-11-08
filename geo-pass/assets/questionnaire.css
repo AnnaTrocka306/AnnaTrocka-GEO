@@ -572,3 +572,30 @@ html,body{overflow-x:hidden;overflow-y:auto}
   .q-screen--sector .q-main{justify-content:flex-start;padding-top:18px}
   .q-screen--sector .q-mascot{width:min(290px,84%)}
 }
+
+/* Shared professional-intent reminder after niche selection (all expert niches).
+   Previous contact cards and profession-independent navigation remain unchanged. */
+.q-screen--matching{height:auto;min-height:100dvh;overflow:visible}
+.q-screen--matching .q-main{min-height:calc(100dvh - 58px);padding:22px clamp(18px,4vw,44px) 44px;gap:clamp(12px,2dvh,20px)}
+.q-screen--matching .q-intro--matching{width:100%;max-width:800px}
+.q-screen--matching .q-intro--matching p{font-size:clamp(15px,1.6vw,18px);line-height:1.43}
+.q-screen--matching .q-intro--matching p:nth-of-type(2){font-size:clamp(15px,1.7vw,18px);line-height:1.46}
+.q-screen--matching .q-intro--matching .q-matching-message{font-size:clamp(16px,1.8vw,21px);line-height:1.36}
+.q-screen--matching .q-mascot{width:min(460px,100%);max-height:none;height:auto;flex:0 0 auto}
+.q-matching-stage-pause{max-width:min(500px,calc(100% - 32px));padding:24px;border-radius:16px;border:1px solid #dec5a8;box-shadow:0 12px 35px #321e153d;color:#3c2d24;background:#fffcf8}
+.q-matching-stage-pause::backdrop{background:#24160b88}
+.q-matching-stage-pause h2{font-size:21px;line-height:1.25;margin:0 0 12px}
+.q-matching-stage-pause p{font-size:15px;line-height:1.45;margin:0 0 18px}
+.q-matching-stage-pause button{padding:12px 20px;min-height:44px;background:#8d5933;border:0;color:#fff;border-radius:10px;font-weight:750;font-size:16px}
+@media(max-width:620px){
+ .q-screen--matching .q-main{min-height:calc(100dvh - 58px);padding:24px clamp(18px,5.5vw,28px) 48px;gap:14px;justify-content:center}
+ .q-screen--matching .q-intro--matching h1{font-size:clamp(25px,6.4vw,31px)}
+ .q-screen--matching .q-intro--matching p{font-size:clamp(15px,4vw,17px);line-height:1.43}
+ .q-screen--matching .q-intro--matching p:nth-of-type(2){font-size:clamp(15px,4vw,17px)}
+ .q-screen--matching .q-intro--matching .q-matching-message{font-size:clamp(17px,4.5vw,20px)}
+ .q-screen--matching .q-mascot{width:min(335px,94%)}
+}
+@media(max-height:690px) and (max-width:620px){
+ .q-screen--matching .q-main{justify-content:flex-start;padding-top:17px}
+ .q-screen--matching .q-mascot{width:min(290px,86%)}
+}

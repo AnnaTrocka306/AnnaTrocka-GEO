@@ -3,7 +3,7 @@
    No account, database connection, publication, or notification is live. */
 const form=document.querySelector("[data-octopus-form]");if(!form)return;
 const step=form.dataset.step,key="octopus-geo-pass-draft-v1";
-const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector"];
+const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector","matching"];
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
 // The profession field was removed from the active identity screen.
 delete draft.profession;
@@ -114,6 +114,15 @@ if(nextLink)nextLink.addEventListener("click",e=>{
   }
   if(!form.reportValidity()){e.preventDefault();return;}
   capture();
+  if(step==="matching"){
+    e.preventDefault();
+    const dialog=document.querySelector("[data-next-unavailable]");
+    if(dialog&&typeof dialog.showModal==="function")dialog.showModal();
+    else {
+      const message={ru:"Следующий этап анкеты ещё готовится. Твои данные пока хранятся только в этой вкладке.",de:"Der nächste Teil wird noch vorbereitet. Deine Angaben bleiben vorerst nur in diesem Browser-Tab.",en:"The next section is still being prepared. Your answers remain in this browser tab only."};
+      window.alert(message[document.documentElement.lang]||message.en);
+    }
+  }
 });
 form.addEventListener("submit",e=>{
   e.preventDefault();
