@@ -508,3 +508,30 @@ html,body{overflow-x:hidden;overflow-y:auto}
 .q-screen--geography .q-form--geography{max-width:480px;width:100%}
 .q-screen--geography .q-geo-option{font-size:16px;min-height:60px;padding:14px 13px}
 }
+
+/* Profession-aware cosmetology introduction. Both preceding shared cards and every
+   later questionnaire card remain unchanged. Use the approved Octopus CTA asset. */
+.q-screen--beauty-intro{height:auto;min-height:100dvh;overflow:visible}
+.q-screen--beauty-intro .q-main{padding:22px clamp(16px,4vw,40px) 42px;min-height:calc(100dvh - 58px);gap:clamp(12px,2dvh,24px)}
+.q-screen--beauty-intro .q-intro{width:100%;max-width:780px}
+.q-beauty-eyebrow{display:inline-block!important;font-size:13px!important;letter-spacing:.04em;text-transform:uppercase;font-weight:760!important;color:#85562f!important;margin:0 auto 10px!important}
+.q-screen--beauty-intro .q-intro h1{font-size:clamp(24px,3.2vw,35px);line-height:1.18;margin:0 auto 14px}
+.q-screen--beauty-intro .q-intro p{font-size:clamp(15px,1.6vw,18px);line-height:1.46;max-width:730px;margin:0 auto 14px;color:#564336}
+.q-screen--beauty-intro .q-beauty-example{max-width:720px;background:radial-gradient(circle at 20% 0%,#89502c 0%,#502b19 44%,#32190f 100%);color:#fff7ee!important;border:1px solid #a76f3f;border-radius:18px;box-shadow:0 9px 21px #41251526, inset 0 1px 2px #f0bf7a70;padding:18px 22px;font-weight:620}
+.q-screen--beauty-intro .q-beauty-key{max-width:740px;background:linear-gradient(120deg,#fff1da,#f7dfbb);border:1px solid #e9c99e;border-radius:16px;box-shadow:0 5px 16px #75452416;padding:18px 22px;font-size:clamp(16px,1.8vw,21px);line-height:1.38;color:#42291b;font-weight:800;text-align:center;margin:10px auto 0}
+.q-screen--beauty-intro .q-form{width:100%;max-width:740px}
+.q-screen--beauty-intro .q-mascot{width:min(430px,100%);height:auto;max-height:none;flex:0 0 auto}
+.q-screen--beauty-intro .welcome-mascot__text{font-size:clamp(13px,1.75vw,19px)}
+@media(max-width:620px){
+ .q-screen--beauty-intro .q-main{padding:24px clamp(18px,5.5vw,28px) 48px;min-height:calc(100dvh - 58px);gap:12px;justify-content:center}
+ .q-screen--beauty-intro .q-intro h1{font-size:clamp(25px,6.3vw,30px);margin-bottom:12px}
+ .q-screen--beauty-intro .q-intro p{font-size:clamp(15px,4.1vw,17px);line-height:1.43;margin-bottom:12px}
+ .q-screen--beauty-intro .q-beauty-example{padding:17px 18px;border-radius:16px}
+ .q-screen--beauty-intro .q-beauty-key{padding:16px;font-size:clamp(16px,4.4vw,19px);line-height:1.37}
+ .q-screen--beauty-intro .q-mascot{width:min(335px,95%)}
+ .q-screen--beauty-intro .welcome-mascot__text{font-size:clamp(12px,3.6vw,16px)}
+}
+@media(max-height:690px) and (max-width:620px){
+ .q-screen--beauty-intro .q-main{justify-content:flex-start;padding-top:16px}
+ .q-screen--beauty-intro .q-mascot{width:min(292px,90%)}
+}

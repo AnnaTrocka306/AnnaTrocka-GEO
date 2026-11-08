@@ -3,7 +3,13 @@
    No account, database connection, publication, or notification is live. */
 const form=document.querySelector("[data-octopus-form]");if(!form)return;
 const step=form.dataset.step,key="octopus-geo-pass-draft-v1";
-const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","matching","service","needs","situation","outcome","approach","approach-answer","geography","languages","exclusions","complete"];
+// Profession is entered on the earlier identity screen. Route only cosmetology
+// profiles to the new note; other professions retain the existing question flow.
+function isCosmetologyProfession(value){
+  const normalized=String(value||"").normalize("NFKC").toLowerCase();
+  return /(косметолог|косметик|косметич|kosmetik|kosmetolog|cosmetolog|cosmetici|esthetician|aesthetician|beautician)/u.test(normalized);
+}
+const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","matching","beauty-intro","service","needs","situation","outcome","approach","approach-answer","geography","languages","exclusions","complete"];
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
 const inputs=[...form.querySelectorAll("input[name],textarea[name],select[name]")];
 function put(input){
@@ -89,7 +95,14 @@ function normalizeUrls(){
 }
 // Fallback link on informational steps: native navigation works without JS.
 // When JS is available, capture the last contact preferences and validate them.
+// Keep all existing post-introduction cards in place for editorial review.
+if(step==="service"&&isCosmetologyProfession(draft.profession)){
+  const backLink=document.querySelector(".q-back");
+  if(backLink)backLink.href="../beauty-intro/";
+}
 const nextLink=form.querySelector('a.welcome-mascot[role="button"]');
+if(nextLink&&step==="matching"&&isCosmetologyProfession(draft.profession))
+  nextLink.href="../beauty-intro/";
 if(nextLink)nextLink.addEventListener("click",e=>{
   refresh();
   if(step==="channels"){
