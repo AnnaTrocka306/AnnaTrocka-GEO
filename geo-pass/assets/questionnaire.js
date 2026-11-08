@@ -3,7 +3,7 @@
    No account, database connection, publication, or notification is live. */
 const form=document.querySelector("[data-octopus-form]");if(!form)return;
 const step=form.dataset.step,key="octopus-geo-pass-draft-v1";
-const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector","matching","beauty-direction","medical-role","medical-services","podology-services","visit-details"];
+const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector","matching","beauty-direction","medical-role","medical-services","podology-services","visit-details","generating"]
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
 // The profession field was removed from the active identity screen.
 delete draft.profession;
@@ -284,6 +284,9 @@ form.addEventListener("submit",e=>{
   }
   if(step==="medical-services"||step==="podology-services"){
     window.location.assign("../visit-details/");return;
+  }
+  if(step==="visit-details"){
+    window.location.assign("../generating/");return;
   }
   const at=steps.indexOf(step);
   if(at>=0&&at<steps.length-1)window.location.assign("../"+steps[at+1]+"/");
