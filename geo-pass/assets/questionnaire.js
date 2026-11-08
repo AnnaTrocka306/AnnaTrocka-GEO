@@ -10,6 +10,64 @@ delete draft.profession;
 // A surgical choice from a previous doctor draft is never carried into other roles.
 if(step==="medical-services"&&draft.medicalRole!=="doctor")delete draft.medicalSurgery;
 const inputs=[...form.querySelectorAll("input[name],textarea[name],select[name]")];
+// Repeatable "other procedure" answers use separately named fields so each entry
+// survives backwards navigation. No server-side collection is enabled.
+function setupProcedureRepeater(){
+  const block=form.querySelector("[data-procedure-repeater]");
+  if(!block)return;
+  const base=block.dataset.procedureRepeater;
+  const rows=block.querySelector("[data-procedure-rows]");
+  const original=form.querySelector('[name="'+base+'"]');
+  const addButton=block.querySelector("[data-add-procedure]");
+  if(!rows||!original||!addButton)return;
+  const labelText=block.dataset.procedureLabel||"Other treatment";
+  const removeText=block.dataset.procedureRemove||"Remove treatment";
+  let next=2;
+  function createRow(n){
+    const name=base+n;
+    const row=document.createElement("div");
+    row.className="q-procedure-extra";
+    const field=document.createElement("div");
+    field.className="q-procedure-extra__field";
+    const label=document.createElement("label");
+    label.htmlFor=name;
+    label.textContent=labelText+" "+n;
+    const input=document.createElement("input");
+    input.type="text";input.id=name;input.name=name;input.maxLength=180;
+    input.placeholder=original.placeholder;
+    input.autocomplete="off";
+    if(typeof draft[name]==="string")input.value=draft[name];
+    field.append(label,input);
+    const remove=document.createElement("button");
+    remove.type="button";remove.className="q-procedure-remove";
+    remove.setAttribute("aria-label",removeText+" "+n);
+    remove.textContent="×";
+    remove.addEventListener("click",()=>{
+      row.remove();
+      const at=inputs.indexOf(input);
+      if(at!==-1)inputs.splice(at,1);
+      delete draft[name];
+      capture();clearRequiredGroupErrors();
+      original.focus();
+    });
+    row.append(field,remove);
+    rows.append(row);
+    inputs.push(input);
+    next=Math.max(next,n+1);
+    return input;
+  }
+  // Restore the complete set, not just the first free-text answer.
+  for(const n of Object.keys(draft)
+    .filter(k=>k.startsWith(base)&&/^\d+$/.test(k.slice(base.length)))
+    .map(k=>Number(k.slice(base.length)))
+    .filter(n=>Number.isSafeInteger(n)&&n>=2)
+    .sort((a,b)=>a-b))createRow(n);
+  addButton.addEventListener("click",()=>{
+    const field=createRow(next);
+    capture();field.focus();
+  });
+}
+setupProcedureRepeater();
 // Medical branch is a short self-declared profile, not a credentials audit.
 if(step==="medical-services"){
   const surgery=form.querySelector('[data-doctor-only]');
@@ -43,8 +101,8 @@ function validateRequiredGroups(){
     const first=group.querySelector('input[type="checkbox"]');if(!first)continue;
     const choices=[...group.querySelectorAll('input[type="checkbox"]')];
     const additionalName=group.dataset.additionalInput;
-    const additional=additionalName?form.querySelector('[name="'+additionalName+'"]'):null;
-    const valid=choices.some(x=>x.checked)||!!(additional&&additional.value.trim());
+    const additional=additionalName?[...form.querySelectorAll('input[name^="'+additionalName+'"],textarea[name^="'+additionalName+'"]')]:[];
+    const valid=choices.some(x=>x.checked&&!x.disabled)||additional.some(x=>x.value.trim());
     first.setCustomValidity(valid?"":(group.dataset.requiredMessage||"Please choose at least one option."));
     if(!valid){first.reportValidity();return false;}
   }
@@ -172,6 +230,7 @@ form.addEventListener("submit",e=>{
     const previous=draft.medicalRole;
     if(previous&&previous!==choice.value){
       for(const name of ["medicalInjection","medicalDevice","medicalLaser","medicalSkin","medicalMinimallyInvasive","medicalSurgery","medicalOtherProcedure","podNail","podSkin","podIngrown","podRiskFoot","podProtection","podFullCare","podOtherProcedure"])delete draft[name];
+      for(const name of Object.keys(draft))if(/^medicalOtherProcedure\d+$|^podOtherProcedure\d+$/.test(name))delete draft[name];
     }
   }
   if(!form.reportValidity())return;

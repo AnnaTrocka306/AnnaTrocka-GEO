@@ -27,3 +27,13 @@
 .q-screen--medical-role .q-mascot,.q-screen--medical-services .q-mascot,.q-screen--podology-services .q-mascot{width:min(325px,90%)}
 }
 @media(max-height:690px) and (max-width:620px){.q-screen--medical-role .q-main,.q-screen--medical-services .q-main,.q-screen--podology-services .q-main{justify-content:flex-start}}
+
+/* User-defined multiple procedures, consistent across doctors, Heilpraktiker and podology. */
+.q-medical-other [data-procedure-rows]{display:grid;gap:9px;width:100%}
+.q-procedure-extra{display:flex;align-items:flex-end;gap:9px;width:100%}
+.q-procedure-extra__field{flex:1;min-width:0;display:grid;gap:6px}
+.q-medical-other .q-procedure-add{display:flex;align-items:center;justify-content:center;gap:9px;min-height:48px;width:100%;padding:10px 15px;border:1px solid #caa47e;border-radius:11px;background:#fff3df;color:#624125;font:750 15px/1.35 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;cursor:pointer}
+.q-procedure-add__plus{display:grid;place-items:center;width:25px;height:25px;border:1.5px solid #a66d38;border-radius:50%;font-size:23px;line-height:1;font-weight:650}
+.q-medical-other .q-procedure-remove{flex:0 0 42px;height:52px;border:1px solid #d6b99b;border-radius:10px;background:#fff8ef;color:#704b33;font-size:26px;cursor:pointer}
+.q-medical-other .q-procedure-add:focus-visible,.q-medical-other .q-procedure-remove:focus-visible{outline:3px solid #1267ad;outline-offset:2px}
+@media(max-width:620px){.q-medical-other .q-procedure-add{font-size:15px;min-height:48px}.q-procedure-extra{gap:7px}.q-medical-other .q-procedure-remove{flex-basis:40px}}

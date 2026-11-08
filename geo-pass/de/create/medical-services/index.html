@@ -3,7 +3,7 @@
 <title>Für welche Behandlungen möchtest du Anfragen erhalten? · GEO-Pass</title>
 <link rel="stylesheet" href="../../../assets/welcome.css?v=20261107b">
 <link rel="stylesheet" href="../../../assets/questionnaire.css?v=20261108matching2">
-<link rel="stylesheet" href="../../../assets/medical-branch.css?v=20261108med1">
+<link rel="stylesheet" href="../../../assets/medical-branch.css?v=20261108repeat1">
 <link rel="alternate" hreflang="de" href="../../../de/create/medical-services/"><link rel="alternate" hreflang="en" href="../../../en/create/medical-services/"><link rel="alternate" hreflang="ru" href="../../../ru/create/medical-services/">
 </head><body><div class="q-screen q-screen--medical-services">
 <header class="q-header"><a class="q-back" href="../medical-role/">← Zurück</a><nav class="welcome-langs" aria-label="Language / Sprache / Язык"><a lang="de" href="../../../de/create/medical-services/" aria-current="page">DE</a><a lang="en" href="../../../en/create/medical-services/">EN</a><a lang="ru" href="../../../ru/create/medical-services/">RU</a></nav></header>
@@ -15,7 +15,12 @@
 <label class="q-medical-option"><input type="checkbox" name="medicalSkin"><span>Peelings und Hautbehandlungen</span></label>
 <label class="q-medical-option"><input type="checkbox" name="medicalMinimallyInvasive"><span>Fadenbehandlungen und weitere minimalinvasive Verfahren</span></label>
 <label class="q-medical-option" data-doctor-only><input type="checkbox" name="medicalSurgery"><span>Ästhetische Chirurgie</span></label></fieldset>
-<div class="q-medical-other"><label for="medicalOtherProcedure">Andere Behandlung</label><input type="text" id="medicalOtherProcedure" name="medicalOtherProcedure" maxlength="180" placeholder="Eigene Behandlung eintragen …"></div><p class="q-medical-note">Wähle nur Leistungen aus, die du tatsächlich anbietest.</p>
+<div class="q-medical-other" data-procedure-repeater="medicalOtherProcedure" data-procedure-label="Andere Behandlung" data-procedure-remove="Behandlung entfernen">
+<label for="medicalOtherProcedure">Andere Behandlung</label>
+<input type="text" id="medicalOtherProcedure" name="medicalOtherProcedure" maxlength="180" placeholder="Eigene Behandlung eintragen …">
+<div data-procedure-rows></div>
+<button type="button" class="q-procedure-add" data-add-procedure><span class="q-procedure-add__plus" aria-hidden="true">+</span>Weitere Behandlung hinzufügen</button>
+</div><p class="q-medical-note">Wähle nur Leistungen aus, die du tatsächlich anbietest.</p>
 <button type="submit" disabled class="welcome-mascot q-mascot" aria-label="Weiter"><img src="../../../assets/octopus-cta.webp" alt="" width="740" height="357" loading="eager" fetchpriority="high"><span class="welcome-mascot__text" aria-hidden="true"><span>Weiter</span></span></button>
 </form><dialog class="q-matching-stage-pause" data-next-unavailable aria-labelledby="med-next-title"><h2 id="med-next-title">Die nächste Karte wird vorbereitet</h2><p>Hier endet der aktuelle Teil des Medizin-Zweigs. Deine Angaben bleiben nur in diesem Browser-Tab und werden noch nicht an Octopus gesendet.</p><form method="dialog"><button type="submit">Verstanden</button></form></dialog></main></div>
-<script src="../../../assets/questionnaire.js?v=20261108med1" defer></script></body></html>
+<script src="../../../assets/questionnaire.js?v=20261108repeat1" defer></script></body></html>
