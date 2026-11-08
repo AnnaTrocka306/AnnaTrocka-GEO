@@ -49,13 +49,15 @@ if(fields.length){
  section.append(ul);card.append(section);
 }
 host.append(card);
+const passActionsHost=node("div");host.append(passActionsHost);
+window.OctopusPassActions?.mount(passActionsHost,{local:true,profileName:p.h1||p.name,contacts:p.publicContacts||{},editUrl:root+lang+"/create/complete/"});
 const actions=node("div",null,"oct-local-actions");
 const registry=node("a",words.registry,"oct-local-btn");registry.href=root+lang+"/register/";
 const remove=node("button",words.delete,"oct-local-btn oct-local-btn--secondary");remove.type="button";
 remove.addEventListener("click",()=>{
  if(!window.confirm(words.confirm))return;
  if(window.OctopusLocalPass.remove()){
-  card.remove();actions.remove();empty(words.deleted);
+  card.remove();passActionsHost.remove();actions.remove();empty(words.deleted);
  }
 });
 actions.append(registry,remove);host.append(actions);
