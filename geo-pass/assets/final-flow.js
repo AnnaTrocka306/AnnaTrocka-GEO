@@ -23,6 +23,10 @@ if(document.querySelector("[data-pass-name]")){
   if(yes("visitFixed"))places.unshift(t.fixed);
   if(yes("visitMobile"))places.push(t.mobile);
   set("[data-pass-places]",places.join("\n")||t.none);
+  const expLabels={ru:{under5:"Менее 5 лет","5to9":"От 5 до 9 лет","10to19":"От 10 до 19 лет","20plus":"20 лет и более"},de:{under5:"Weniger als 5 Jahre","5to9":"5 bis 9 Jahre","10to19":"10 bis 19 Jahre","20plus":"20 Jahre oder mehr"},en:{under5:"Less than 5 years","5to9":"5 to 9 years","10to19":"10 to 19 years","20plus":"20 years or more"}};
+  const expRow=document.querySelector("[data-pass-experience-row]");
+  const expLabel=expLabels[lang]?.[draft.experienceRange];
+  if(expRow&&expLabel){expRow.hidden=false;set("[data-pass-experience]",expLabel);}
   const contacts=[];
   if(draft.emailPublic==="yes"&&filled(draft.emailAddress))contacts.push(draft.emailAddress);
   if(draft.phonePublic==="yes"&&filled(draft.phoneNumber))contacts.push(draft.phoneNumber);
