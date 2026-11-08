@@ -3,7 +3,7 @@
    No account, database connection, publication, or notification is live. */
 const form=document.querySelector("[data-octopus-form]");if(!form)return;
 const step=form.dataset.step,key="octopus-geo-pass-draft-v1";
-const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector","matching"];
+const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector","matching","beauty-direction"];
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
 // The profession field was removed from the active identity screen.
 delete draft.profession;
@@ -116,6 +116,12 @@ if(nextLink)nextLink.addEventListener("click",e=>{
   capture();
   if(step==="matching"){
     e.preventDefault();
+    // Route only the explicitly selected Beauty category to its own branch.
+    // All other categories retain the existing development placeholder.
+    if(draft.sectorId==="beauty"&&!String(draft.sectorOther||"").trim()){
+      window.location.assign("../beauty-direction/");
+      return;
+    }
     const dialog=document.querySelector("[data-next-unavailable]");
     if(dialog&&typeof dialog.showModal==="function")dialog.showModal();
     else {
