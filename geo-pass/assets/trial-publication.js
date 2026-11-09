@@ -1,4 +1,4 @@
-/* Closed publication verification for three approved fictional identities.
+/* Open fictional-profile publication trial for the three existing professions.
  * The real-client legal workflow remains disabled, independent of this
  * fictional trial. Neither GitHub nor Cloudflare secrets exist in this file.
  */
@@ -8,11 +8,11 @@ if(!card)return;
 const lang=['ru','de','en'].includes(document.documentElement.lang)?document.documentElement.lang:'ru';
 const T={
 ru:{
- intro:'Сейчас проверяем публикацию только заранее подготовленных вымышленных профилей. Настоящие данные пока не публикуются.',
+ intro:'Мы проверяем публикацию вымышленных профилей. Можно создавать разные карточки без ограничения по количеству. Не используйте данные реальных людей.',
  check:'Подтверждаю, что сведения относятся к вымышленному персонажу, и разрешаю разместить эту карточку в открытом реестре в рамках испытания.',
  button:'Опубликовать GEO-Pass',working:'Octopus создаёт страницу и добавляет GEO-Pass в реестр…',
  disabled:'Публикация ещё не подключена. Карточка не размещена в интернете.',
- noProof:'Эта карточка создана до подключения публикации или не входит в разрешённые вымышленные профили. Для проверки создай новую карточку с согласованным вымышленным именем.',
+ noProof:'Эта карточка создана до подключения публикации. Для проверки публикации создай новый GEO-Pass с вымышленными данными.',
  failed:'Публикация не завершилась. Профиль не подтверждён как опубликованный; можно повторить проверку.',
  updating:'GitHub принял изменения. Проверяем, когда страница и запись в реестре появятся на сайте…',
  pending:'Карточка передана для публикации. Сайт ещё обновляется — повторное нажатие не требуется.',
@@ -20,11 +20,11 @@ ru:{
  page:'Открыть GEO-Pass',registry:'Открыть реестр',search:'Найти по имени'
 },
 de:{
- intro:'Wir prüfen die Veröffentlichung nur mit zuvor festgelegten fiktiven Personen. Echte Personendaten werden noch nicht veröffentlicht.',
+ intro:'Wir testen die Veröffentlichung mit frei erfundenen Profilen. Du kannst beliebig viele neue Profile erstellen. Bitte keine echten personenbezogenen Daten verwenden.',
  check:'Ich bestätige, dass die Angaben eine fiktive Person betreffen, und erlaube ihre Veröffentlichung im offenen Register im Rahmen des Versuchs.',
  button:'GEO-Pass veröffentlichen',working:'Octopus erstellt die Profilseite und aktualisiert das Register…',
  disabled:'Die Veröffentlichung ist noch nicht angeschlossen. Es wurden keine Daten veröffentlicht.',
- noProof:'Dieser Entwurf entstand vor dem Anschluss der Veröffentlichung oder gehört nicht zu den zugelassenen fiktiven Profilen. Erstelle für den Versuch einen neuen fiktiven GEO-Pass.',
+ noProof:'Dieser Entwurf wurde vor dem Anschluss der Veröffentlichung erstellt. Für den Veröffentlichungstest erstelle bitte einen neuen GEO-Pass mit erfundenen Daten.',
  failed:'Die Veröffentlichung konnte noch nicht abgeschlossen werden. Du kannst die Überprüfung erneut starten.',
  updating:'GitHub hat die Änderungen angenommen. Wir prüfen die Verfügbarkeit von Profil und Register…',
  pending:'Die Veröffentlichung wurde angenommen. Die Webseite wird noch aktualisiert; bitte nicht erneut absenden.',
@@ -32,11 +32,11 @@ de:{
  page:'GEO-Pass öffnen',registry:'Register öffnen',search:'Nach Namen suchen'
 },
 en:{
- intro:'We are testing publication only with predefined fictional identities. Real-person data are not being published yet.',
+ intro:'We are testing publication with fictional profiles. You can create as many different profiles as you like. Please do not use real people’s information.',
  check:'I confirm that this profile describes a fictional person and allow its publication in the public registry for this trial.',
  button:'Publish GEO-Pass',working:'Octopus is creating the page and updating the register…',
  disabled:'Publication is not yet connected. No profile has been made public.',
- noProof:'This draft predates publication integration or is not one of the approved fictional identities. Create a new fictional profile for the trial.',
+ noProof:'This draft predates publication integration. For the publication test, create a new GEO-Pass using fictional data.',
  failed:'Publication has not been confirmed. You can retry the verification.',
  updating:'GitHub accepted the changes. We are checking when the profile and register record are live…',
  pending:'Publication was accepted. The website is still updating; there is no need to submit again.',
