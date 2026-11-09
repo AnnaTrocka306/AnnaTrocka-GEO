@@ -25,3 +25,11 @@ html:not(.oct-ai-needs-generation) .q-screen--final-flow .q-running-dots,
 html:not(.oct-ai-needs-generation) .q-screen--final-flow .q-oct-clock{
   visibility:hidden;
 }
+
+
+/* Initial-pass reading experience: calm non-editable typography instead of form inputs. */
+.oct-ai-reading{margin:18px 0 24px}
+.oct-ai-reading h3{margin:0 0 9px;font-size:15px;font-weight:750;color:#4c564f}
+.oct-ai-reading p{margin:0;line-height:1.65;font-size:16px;color:#28302a;overflow-wrap:anywhere}
+.oct-ai-reading .oct-ai-focus{font-weight:650;font-size:17px}
+.oct-ai-reading .oct-ai-description{white-space:pre-line}
