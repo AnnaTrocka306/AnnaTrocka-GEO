@@ -52,3 +52,9 @@
 .q-pass-label{flex-direction:column;gap:6px}
 }
 @media(prefers-reduced-motion:reduce){.q-running-dot,.q-clock-hand{animation:none!important}}
+
+
+/* Stage 1: one action, no editor. Reminder is informational, not a CTA. */
+.q-first-version-note{width:min(660px,100%);margin:0 auto;color:#6f625b;font-size:15px;line-height:1.65;text-align:center}
+.q-final-actions.q-final-actions--single{display:block;width:min(660px,100%)}
+.q-final-actions--single>.q-final-primary{width:100%;box-sizing:border-box}
