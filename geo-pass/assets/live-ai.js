@@ -1,7 +1,7 @@
 /* Octopus: browser-to-Worker editorial bridge for three existing professional branches.
  * No API key or permanent login credential in this public file.
- * The owner enters a private access phrase into the page; a signed, short-lived
- * session is held only in sessionStorage. Never log the phrase or request body.
+ * An automatic Cloudflare Turnstile proof may issue a short-lived session.
+ * No passwords or test codes are requested from the visitor. Server must verify proof.
  * Profile generation does not publish; publishing is a separate approved step.
  */
 (()=>{'use strict';
@@ -11,9 +11,9 @@ const sessionKey='octopus-geo-pass-session-v1';
 const passKey='octopus-geo-pass-ai-draft-v1';
 const lang=['ru','de','en'].includes(document.documentElement.lang)?document.documentElement.lang:'ru';
 const ui={
- ru:{login:'Подтверди доступ к созданию GEO-Pass',code:'Код доступа',go:'Продолжить',working:'Octopus создаёт твой GEO-Pass…',badCode:'Неверный код доступа. Проверь его и попробуй снова.',network:'Не удалось связаться с Octopus. Проверь соединение и попробуй снова.',badInput:'Не удалось подготовить анкету. Вернись назад и проверь профессию, имя и услуги.',failed:'Не удалось создать профиль. Попробуй ещё раз.',retry:'Повторить',title:'Твой GEO-Pass',h2:'Профессиональное направление',description:'Описание профессиональной деятельности',schema:'Предварительный просмотр Schema.org',save:'Изменения сохраняются автоматически',missing:'Готового описания пока нет. Вернись к предыдущему шагу.',noPublish:'Готовый текст можно проверить и изменить перед подтверждением.'},
- de:{login:'Zugang zur Erstellung deines GEO-Pass bestätigen',code:'Zugangscode',go:'Weiter',working:'Octopus erstellt deinen GEO-Pass…',badCode:'Der Zugangscode ist nicht korrekt. Bitte erneut versuchen.',network:'Octopus ist nicht erreichbar. Prüfe die Verbindung und versuche es erneut.',badInput:'Die Angaben sind unvollständig. Bitte prüfe Name, Berufsrolle und Leistungen.',failed:'Der GEO-Pass konnte nicht erstellt werden. Bitte erneut versuchen.',retry:'Erneut versuchen',title:'Dein GEO-Pass',h2:'Beruflicher Schwerpunkt',description:'Beschreibung deiner Tätigkeit',schema:'Schema.org-Vorschau',save:'Änderungen werden automatisch gespeichert',missing:'Noch keine Beschreibung vorhanden. Bitte einen Schritt zurückgehen.',noPublish:'Du kannst den Text vor der Bestätigung prüfen und bearbeiten.'},
- en:{login:'Confirm access to create your GEO-Pass',code:'Access code',go:'Continue',working:'Octopus is preparing your GEO-Pass…',badCode:'Incorrect access code. Please try again.',network:'Could not contact Octopus. Check your connection and try again.',badInput:'The questionnaire is incomplete. Check your name, role and services.',failed:'Could not generate your profile. Please try again.',retry:'Try again',title:'Your GEO-Pass',h2:'Professional focus',description:'Professional description',schema:'Schema.org preview',save:'Changes are saved automatically',missing:'No description yet. Return to the previous step.',noPublish:'Review and edit the text before confirming.'}
+ ru:{login:'Подтверди доступ к созданию GEO-Pass',code:'Код доступа',go:'Продолжить',working:'Octopus создаёт твой GEO-Pass…',badCode:'Неверный код доступа. Проверь его и попробуй снова.',network:'Не удалось связаться с Octopus. Проверь соединение и попробуй снова.',badInput:'Не удалось подготовить анкету. Вернись назад и проверь профессию, имя и услуги.',failed:'Не удалось создать профиль. Попробуй ещё раз.',retry:'Повторить',title:'Твой GEO-Pass',h2:'Профессиональное направление',description:'Описание профессиональной деятельности',schema:'Предварительный просмотр Schema.org',save:'Изменения сохраняются автоматически',missing:'Готового описания пока нет. Вернись к предыдущему шагу.',noPublish:'Готовый текст можно проверить и изменить перед подтверждением.',unavailable:'Создание GEO-Pass временно недоступно. Попробуй позже.'},
+ de:{login:'Zugang zur Erstellung deines GEO-Pass bestätigen',code:'Zugangscode',go:'Weiter',working:'Octopus erstellt deinen GEO-Pass…',badCode:'Der Zugangscode ist nicht korrekt. Bitte erneut versuchen.',network:'Octopus ist nicht erreichbar. Prüfe die Verbindung und versuche es erneut.',badInput:'Die Angaben sind unvollständig. Bitte prüfe Name, Berufsrolle und Leistungen.',failed:'Der GEO-Pass konnte nicht erstellt werden. Bitte erneut versuchen.',retry:'Erneut versuchen',title:'Dein GEO-Pass',h2:'Beruflicher Schwerpunkt',description:'Beschreibung deiner Tätigkeit',schema:'Schema.org-Vorschau',save:'Änderungen werden automatisch gespeichert',missing:'Noch keine Beschreibung vorhanden. Bitte einen Schritt zurückgehen.',noPublish:'Du kannst den Text vor der Bestätigung prüfen und bearbeiten.',unavailable:'Die GEO-Pass-Erstellung ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.'},
+ en:{login:'Confirm access to create your GEO-Pass',code:'Access code',go:'Continue',working:'Octopus is preparing your GEO-Pass…',badCode:'Incorrect access code. Please try again.',network:'Could not contact Octopus. Check your connection and try again.',badInput:'The questionnaire is incomplete. Check your name, role and services.',failed:'Could not generate your profile. Please try again.',retry:'Try again',title:'Your GEO-Pass',h2:'Professional focus',description:'Professional description',schema:'Schema.org preview',save:'Changes are saved automatically',missing:'No description yet. Return to the previous step.',noPublish:'Review and edit the text before confirming.',unavailable:'GEO-Pass creation is temporarily unavailable. Please try again later.'}
 }[lang];
 const label={
  ru:{medicalInjection:'Инъекционные процедуры',medicalDevice:'Аппаратная косметология',medicalLaser:'Лазерные процедуры',medicalSkin:'Пилинги и процедуры для кожи',medicalMinimallyInvasive:'Нитевые и другие малоинвазивные процедуры',medicalSurgery:'Эстетическая хирургия',podNail:'Обработка ногтей',podSkin:'Обработка мозолей и огрубевшей кожи',podIngrown:'Работа с вросшими ногтями и коррекция ногтей',podRiskFoot:'Подологический уход при диабете и других особенностях стоп',podProtection:'Разгрузка и защита проблемных участков стопы',podFullCare:'Комплексная подологическая обработка'},
@@ -61,6 +61,17 @@ function makeSchema(source,pass){
  if(source.practiceCities.length)person.workLocation=source.practiceCities.map(name=>({'@type':'Place',name}));
  return {'@context':'https://schema.org','@graph':[person,...source.services.map(serviceType=>({'@type':'Service',serviceType,provider:{'@type':'Person',name:source.fullName}}))]};
 }
+async function loadTurnstile(){
+ if(window.turnstile)return window.turnstile;
+ return new Promise((resolve,reject)=>{
+   const script=document.createElement('script');
+   script.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+   script.async=true;script.defer=true;
+   script.onload=()=>window.turnstile?resolve(window.turnstile):reject(Error('turnstile_unavailable'));
+   script.onerror=()=>reject(Error('turnstile_unavailable'));
+   document.head.append(script);
+ });
+}
 async function generating(){
  const screen=document.querySelector('.q-screen--final-flow');if(!screen)return;
  const disclaimer=document.querySelector('.q-final-disclaimer');if(disclaimer)disclaimer.hidden=true;
@@ -74,48 +85,65 @@ async function generating(){
  if(cached&&cached.fingerprint===fingerprint&&validText(cached.result?.description)){
    location.replace('../preview/');return;
  }
- async function generate(token){
+ const retry=(fn,msg)=>{
+  showStatus(panel,msg);
+  const b=elt('button',ui.retry,'oct-ai-button');
+  b.type='button';b.addEventListener('click',fn,{once:true});panel.append(b);
+ };
+ async function generate(session){
    showStatus(panel,ui.working);
    try{
-    const result=await jsonRequest('/api/generate',source,token);
-    if(!validText(result.h2)||!validText(result.description))throw Error('bad_response');
-    sessionStorage.setItem(passKey,JSON.stringify({fingerprint,source,result}));
-    location.replace('../preview/');
+     const result=await jsonRequest('/api/generate',source,session);
+     if(!validText(result.h2)||!validText(result.description))throw Error('bad_response');
+     sessionStorage.setItem(passKey,JSON.stringify({fingerprint,source,result}));
+     location.replace('../preview/');
    }catch(err){
-    if(err.message==='unauthorized'){
-      sessionStorage.removeItem(sessionKey);return askForAccess();
-    }
-    showStatus(panel,err.message==='invalid_input'?ui.badInput:ui.failed);
-    const retry=elt('button',ui.retry,'oct-ai-button');retry.type='button';retry.addEventListener('click',()=>generate(token));panel.append(retry);
+     if(err.message==='unauthorized'){
+       sessionStorage.removeItem(sessionKey);return startSession();
+     }
+     retry(()=>generate(session),err.message==='invalid_input'?ui.badInput:ui.failed);
    }
  }
- function askForAccess(){
-   panel.replaceChildren();
-   const title=elt('h2',ui.login);const form=elt('form',null,'oct-ai-login');
-   const field=elt('input');field.type='password';field.required=true;field.autocomplete='off';field.placeholder=ui.code;field.setAttribute('aria-label',ui.code);field.maxLength=256;
-   const button=elt('button',ui.go,'oct-ai-button');button.type='submit';
-   const error=elt('p',null,'oct-ai-error');error.setAttribute('role','alert');
-   form.append(field,button,error);panel.append(title,form);
-   form.addEventListener('submit',async event=>{
-    event.preventDefault();
-    if(!field.value)return;
-    button.disabled=true;error.textContent='';
-    const entered=field.value;
-    field.value='';
-    try{
-      const session=await jsonRequest('/api/session',{testToken:entered});
-      if(!validText(session.session)||!Number.isFinite(session.expiresAt))throw Error('bad_response');
-      sessionStorage.setItem(sessionKey,JSON.stringify({token:session.session,expiresAt:session.expiresAt}));
-      await generate(session.session);
-    }catch(err){
-      if(!panel.contains(form))return;
-      error.textContent=err.message==='unauthorized'?ui.badCode:ui.network;
-      button.disabled=false;field.focus();
-    }
-   });
-   field.focus();
+ async function startSession(){
+   showStatus(panel,ui.working);
+   let config;
+   try{
+     const resp=await fetch(worker+'/api/config',{cache:'no-store',referrerPolicy:'no-referrer'});
+     if(!resp.ok)throw Error('config_error');
+     config=await resp.json();
+   }catch(_){retry(startSession,ui.network);return}
+   if(!config.ready||!validText(config.turnstileSiteKey)){
+     showStatus(panel,ui.unavailable);return;
+   }
+   let turnstile;
+   try{turnstile=await loadTurnstile()}catch(_){retry(startSession,ui.network);return}
+   panel.replaceChildren(elt('p',ui.working,'oct-ai-status'));
+   const widget=elt('div');panel.append(widget);
+   let done=false;
+   const fail=()=>{if(done)return;done=true;retry(startSession,ui.network)};
+   try{
+     const id=turnstile.render(widget,{
+       sitekey:config.turnstileSiteKey,
+       action:'geo-pass-generate',
+       execution:'execute',
+       appearance:'interaction-only',
+       callback:async proof=>{
+         if(done)return;done=true;
+         try{
+           const result=await jsonRequest('/api/session',{turnstileToken:proof});
+           if(!validText(result.session)||!Number.isFinite(result.expiresAt))throw Error('bad_response');
+           sessionStorage.setItem(sessionKey,JSON.stringify({token:result.session,expiresAt:result.expiresAt}));
+           await generate(result.session);
+         }catch(_){retry(startSession,ui.network)}
+       },
+       'error-callback':fail,
+       'timeout-callback':fail,
+       'expired-callback':fail
+     });
+     turnstile.execute(id);
+   }catch(_){fail()}
  }
- const token=getSession();if(token)generate(token);else askForAccess();
+ const token=getSession();if(token)generate(token);else startSession();
 }
 function preview(){
  const root=document.querySelector('.q-final-main');if(!root)return;
