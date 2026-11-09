@@ -21,8 +21,8 @@ host.textContent="…";
 fetch(root+"data/profiles.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(data=>{
 if(!Array.isArray(data))throw Error("Invalid index");
 const found=data.filter(p=>p&&p.published===true&&normalize(p.name).includes(normalize(query))&&/^[a-z0-9-]+$/.test(p.id));
-const local=window.OctopusLocalPass?.asRegistryEntry();
-if(local&&normalize(local.name).includes(normalize(query)))found.push(local);
+const localDemo=window.OctopusLocalPass?.asRegistryEntry();
+if(localDemo&&normalize(localDemo.name).includes(normalize(query)))found.push(localDemo);
 if(!found.length){noResults();return}
 host.replaceChildren();const count=document.createElement("p");count.className="tiny";count.textContent=labels.found+" "+found.length;host.append(count);
 found.sort((a,b)=>a.name.localeCompare(b.name,lang,{sensitivity:"base"})).forEach(p=>{
