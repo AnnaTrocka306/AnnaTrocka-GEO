@@ -6,7 +6,7 @@
   try {
     const key='octopus-geo-pass-ai-draft-v1';
     const saved=JSON.parse(sessionStorage.getItem(key)||'null');
-    if(saved?.result?.publicationAccepted?.state!=='publishing')return;
+    if(saved?.result?.publicationVerified!==true)return;
     sessionStorage.removeItem('octopus-geo-pass-draft-v1');
     sessionStorage.removeItem('octopus-geo-pass-ai-draft-v1');
     sessionStorage.removeItem('octopus-geo-pass-ai-pending-v1');
