@@ -93,7 +93,7 @@ async function generating(){
    const restart=elt('button',ui.retryPaid,'oct-ai-button');restart.type='button';
    restart.addEventListener('click',()=>{
      sessionStorage.removeItem(pendingKey);
-     panel.replaceChildren();startSession();
+     location.reload();
    },{once:true});
    panel.append(restart);
    return;
