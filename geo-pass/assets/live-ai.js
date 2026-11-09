@@ -123,7 +123,7 @@ async function generating(){
    sessionStorage.setItem(pendingKey,JSON.stringify({fingerprint,at:Date.now()}));
    showStatus(panel,ui.working);
    try{
-     const result=await jsonRequest('/api/generate',source,session);
+     const result=await jsonRequest('/api/generate',{...source,workplace:workplaceFromDraft(d)},session);
      if(!validText(result.h2)||!validText(result.description))throw Error('bad_response');
      sessionStorage.setItem(passKey,JSON.stringify({fingerprint,source,result}));
      sessionStorage.removeItem(pendingKey);
