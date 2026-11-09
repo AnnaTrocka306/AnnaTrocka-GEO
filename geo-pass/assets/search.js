@@ -26,8 +26,8 @@ if(local&&normalize(local.name).includes(normalize(query)))found.push(local);
 if(!found.length){noResults();return}
 host.replaceChildren();const count=document.createElement("p");count.className="tiny";count.textContent=labels.found+" "+found.length;host.append(count);
 found.sort((a,b)=>a.name.localeCompare(b.name,lang,{sensitivity:"base"})).forEach(p=>{
-const a=document.createElement("a");a.className="search-item";a.href=p.localDemo?root+lang+"/demo-profile/":root+lang+"/experts/"+encodeURIComponent(p.id)+"/?q="+encodeURIComponent(query);
+const a=document.createElement("a");a.className="search-item";const destination=['ru','de','en'].includes(p.profileLocale)?p.profileLocale:lang;a.href=p.localDemo?root+lang+"/demo-profile/":root+destination+"/experts/"+encodeURIComponent(p.id)+"/?q="+encodeURIComponent(query);
 const content=document.createElement("span"),name=document.createElement("strong"),detail=document.createElement("span");
-name.textContent=p.name;detail.className="meta";detail.textContent=[local(p.profession),local(p.district),local(p.locality)||local(p.city),local(p.region),(countries[lang]||{})[p.country]||p.country,p.localDemo?({ru:"ЛОКАЛЬНОЕ ДЕМО · Только в этом браузере",de:"LOKALE DEMO · Nur in diesem Browser",en:"LOCAL DEMO · This browser only"}[lang]):(p.fictional?labels.demo:"")].filter(Boolean).join(" · ");
+name.textContent=p.name;detail.className="meta";detail.textContent=[local(p.profession),local(p.district),local(p.locality)||local(p.city),local(p.region),(countries[lang]||{})[p.country]||p.country,p.localDemo?({ru:"ЛОКАЛЬНОЕ ДЕМО · Только в этом браузере",de:"LOKALE DEMO · Nur in diesem Browser",en:"LOCAL DEMO · This browser only"}[lang]):(p.fictional&&p.displayDemoBadge!==false?labels.demo:"")].filter(Boolean).join(" · ");
 content.append(name,detail);const arrow=document.createElement("span");arrow.setAttribute("aria-hidden","true");arrow.textContent="→";a.append(content,arrow);host.append(a)})}).catch(()=>{host.textContent=labels.error});
 })();
