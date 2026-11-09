@@ -93,7 +93,14 @@ async function liveCheck(profile){
 }
 async function monitor(profile){
  for(let i=0;i<14;i++){
-  if(await liveCheck(profile)){setLinks(profile);return}
+  if(await liveCheck(profile)){
+   const saved=read();
+   if(saved?.result?.publicationAccepted?.id===profile.id){
+     saved.result.publicationVerified=true;
+     save(saved);
+   }
+   setLinks(profile);return;
+  }
   await new Promise(resolve=>setTimeout(resolve,3500));
  }
  say(T.pending);
