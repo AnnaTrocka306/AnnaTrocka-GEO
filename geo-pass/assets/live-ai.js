@@ -12,9 +12,9 @@ const passKey='octopus-geo-pass-ai-draft-v1';
 const pendingKey='octopus-geo-pass-ai-pending-v1';
 const lang=['ru','de','en'].includes(document.documentElement.lang)?document.documentElement.lang:'ru';
 const ui={
- ru:{login:'Подтверди доступ к созданию GEO-Pass',code:'Код доступа',go:'Продолжить',working:'Octopus создаёт твой GEO-Pass…',badCode:'Неверный код доступа. Проверь его и попробуй снова.',network:'Не удалось связаться с Octopus. Проверь соединение и попробуй снова.',badInput:'Не удалось подготовить анкету. Вернись назад и проверь профессию, имя и услуги.',failed:'Не удалось создать профиль. Попробуй ещё раз.',retry:'Повторить',title:'Твой GEO-Pass',h2:'Профессиональное направление',description:'Описание профессиональной деятельности',schema:'Предварительный просмотр Schema.org',save:'Изменения сохраняются автоматически',missing:'Готового описания пока нет. Вернись к предыдущему шагу.',noPublish:'Готовый текст можно проверить и изменить перед подтверждением.',unavailable:'Создание GEO-Pass временно недоступно. Попробуй позже.',pending:'Запрос на создание уже был отправлен. Чтобы не оплачивать повторную генерацию, Octopus не отправляет его снова автоматически.',retryPaid:'Создать заново (новый запрос к AI)',schemaUpdate:'Обновляем Schema.org…',schemaError:'Не удалось обновить Schema.org. Текст сохранён — попробуй открыть эту карточку снова.'},
- de:{login:'Zugang zur Erstellung deines GEO-Pass bestätigen',code:'Zugangscode',go:'Weiter',working:'Octopus erstellt deinen GEO-Pass…',badCode:'Der Zugangscode ist nicht korrekt. Bitte erneut versuchen.',network:'Octopus ist nicht erreichbar. Prüfe die Verbindung und versuche es erneut.',badInput:'Die Angaben sind unvollständig. Bitte prüfe Name, Berufsrolle und Leistungen.',failed:'Der GEO-Pass konnte nicht erstellt werden. Bitte erneut versuchen.',retry:'Erneut versuchen',title:'Dein GEO-Pass',h2:'Beruflicher Schwerpunkt',description:'Beschreibung deiner Tätigkeit',schema:'Schema.org-Vorschau',save:'Änderungen werden automatisch gespeichert',missing:'Noch keine Beschreibung vorhanden. Bitte einen Schritt zurückgehen.',noPublish:'Du kannst den Text vor der Bestätigung prüfen und bearbeiten.',unavailable:'Die GEO-Pass-Erstellung ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.',pending:'Die Erstellung wurde bereits gestartet. Octopus sendet keine weitere kostenpflichtige Anfrage automatisch.',retryPaid:'Neue KI-Erstellung ausdrücklich starten',schemaUpdate:'Schema.org wird aktualisiert…',schemaError:'Schema.org konnte nicht aktualisiert werden. Der Text ist gespeichert.'},
- en:{login:'Confirm access to create your GEO-Pass',code:'Access code',go:'Continue',working:'Octopus is preparing your GEO-Pass…',badCode:'Incorrect access code. Please try again.',network:'Could not contact Octopus. Check your connection and try again.',badInput:'The questionnaire is incomplete. Check your name, role and services.',failed:'Could not generate your profile. Please try again.',retry:'Try again',title:'Your GEO-Pass',h2:'Professional focus',description:'Professional description',schema:'Schema.org preview',save:'Changes are saved automatically',missing:'No description yet. Return to the previous step.',noPublish:'Review and edit the text before confirming.',unavailable:'GEO-Pass creation is temporarily unavailable. Please try again later.',pending:'Generation has already been requested. Octopus will not send a second paid request automatically.',retryPaid:'Explicitly request new generation',schemaUpdate:'Updating Schema.org…',schemaError:'Could not update Schema.org. Your text is saved.'}
+ ru:{login:'Подтверди доступ к созданию GEO-Pass',code:'Код доступа',go:'Продолжить',working:'Octopus создаёт твой GEO-Pass…',badCode:'Неверный код доступа. Проверь его и попробуй снова.',network:'Не удалось связаться с Octopus. Проверь соединение и попробуй снова.',badInput:'Не удалось подготовить анкету. Вернись назад и проверь профессию, имя и услуги.',failed:'Не удалось создать профиль. Попробуй ещё раз.',retry:'Повторить',title:'Твой GEO-Pass',h2:'Профессиональное направление',description:'Описание профессиональной деятельности',schema:'Предварительный просмотр Schema.org',save:'Изменения сохраняются автоматически',missing:'Готового описания пока нет. Вернись к предыдущему шагу.',noPublish:'Перед тобой первая версия GEO-Pass. Продолжай, чтобы завершить создание.',unavailable:'Создание GEO-Pass временно недоступно. Попробуй позже.',pending:'Запрос на создание уже был отправлен. Чтобы не оплачивать повторную генерацию, Octopus не отправляет его снова автоматически.',retryPaid:'Создать заново (новый запрос к AI)',schemaUpdate:'Обновляем Schema.org…',schemaError:'Не удалось обновить Schema.org. Текст сохранён — попробуй открыть эту карточку снова.'},
+ de:{login:'Zugang zur Erstellung deines GEO-Pass bestätigen',code:'Zugangscode',go:'Weiter',working:'Octopus erstellt deinen GEO-Pass…',badCode:'Der Zugangscode ist nicht korrekt. Bitte erneut versuchen.',network:'Octopus ist nicht erreichbar. Prüfe die Verbindung und versuche es erneut.',badInput:'Die Angaben sind unvollständig. Bitte prüfe Name, Berufsrolle und Leistungen.',failed:'Der GEO-Pass konnte nicht erstellt werden. Bitte erneut versuchen.',retry:'Erneut versuchen',title:'Dein GEO-Pass',h2:'Beruflicher Schwerpunkt',description:'Beschreibung deiner Tätigkeit',schema:'Schema.org-Vorschau',save:'Änderungen werden automatisch gespeichert',missing:'Noch keine Beschreibung vorhanden. Bitte einen Schritt zurückgehen.',noPublish:'Hier ist die erste Fassung deines GEO-Pass. Fahre fort, um die Erstellung abzuschließen.',unavailable:'Die GEO-Pass-Erstellung ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.',pending:'Die Erstellung wurde bereits gestartet. Octopus sendet keine weitere kostenpflichtige Anfrage automatisch.',retryPaid:'Neue KI-Erstellung ausdrücklich starten',schemaUpdate:'Schema.org wird aktualisiert…',schemaError:'Schema.org konnte nicht aktualisiert werden. Der Text ist gespeichert.'},
+ en:{login:'Confirm access to create your GEO-Pass',code:'Access code',go:'Continue',working:'Octopus is preparing your GEO-Pass…',badCode:'Incorrect access code. Please try again.',network:'Could not contact Octopus. Check your connection and try again.',badInput:'The questionnaire is incomplete. Check your name, role and services.',failed:'Could not generate your profile. Please try again.',retry:'Try again',title:'Your GEO-Pass',h2:'Professional focus',description:'Professional description',schema:'Schema.org preview',save:'Changes are saved automatically',missing:'No description yet. Return to the previous step.',noPublish:'Here is the first version of your GEO-Pass. Continue to finish creating it.',unavailable:'GEO-Pass creation is temporarily unavailable. Please try again later.',pending:'Generation has already been requested. Octopus will not send a second paid request automatically.',retryPaid:'Explicitly request new generation',schemaUpdate:'Updating Schema.org…',schemaError:'Could not update Schema.org. Your text is saved.'}
 }[lang];
 const label={
  ru:{medicalInjection:'Инъекционные процедуры',medicalDevice:'Аппаратная косметология',medicalLaser:'Лазерные процедуры',medicalSkin:'Пилинги и процедуры для кожи',medicalMinimallyInvasive:'Нитевые и другие малоинвазивные процедуры',medicalSurgery:'Эстетическая хирургия',podNail:'Обработка ногтей',podSkin:'Обработка мозолей и огрубевшей кожи',podIngrown:'Работа с вросшими ногтями и коррекция ногтей',podRiskFoot:'Подологический уход при диабете и других особенностях стоп',podProtection:'Разгрузка и защита проблемных участков стопы',podFullCare:'Комплексная подологическая обработка'},
@@ -194,62 +194,55 @@ function preview(){
  const previous=document.querySelector('.q-pass-preview');
  const panel=elt('section',null,'oct-ai-card');
  panel.append(elt('div','GEO-Pass','oct-ai-eyebrow'),elt('h2',pass.h1,'oct-ai-name'));
- const labelH2=elt('label',ui.h2),h2=elt('textarea');h2.rows=2;h2.maxLength=150;h2.value=pass.h2;
- const labelDesc=elt('label',ui.description),desc=elt('textarea');desc.rows=6;desc.maxLength=520;desc.value=pass.description;
- labelH2.append(h2);labelDesc.append(desc);
+ // The Stage-1 pass is intentionally presented as read-only.
+ // Corrections belong to the post-publication owner workflow.
+ const focus=elt('section',null,'oct-ai-reading'),focusTitle=elt('h3',ui.h2),
+       focusText=elt('p',pass.h2,'oct-ai-focus');
+ const body=elt('section',null,'oct-ai-reading'),bodyTitle=elt('h3',ui.description),
+       bodyText=elt('p',pass.description,'oct-ai-description');
+ focus.append(focusTitle,focusText);body.append(bodyTitle,bodyText);
  const details=elt('details'),summary=elt('summary',ui.schema),pre=elt('pre');
  details.append(summary,pre);
- const schemaStatus=elt('p',null,'oct-ai-save');schemaStatus.setAttribute('role','status');
- const saveNote=elt('p',ui.save,'oct-ai-save');
- panel.append(labelH2,labelDesc,saveNote,details);
- details.append(schemaStatus);
+ const schemaStatus=elt('p',null,'oct-ai-save');schemaStatus.setAttribute('role','status');details.append(schemaStatus);
+ panel.append(focus,body,details);
  if(previous)previous.replaceWith(panel);else root.append(panel);
  const next=document.querySelector('.q-final-primary');
  function setReady(ready){
-  if(!next)return;
-  next.style.pointerEvents=ready?'':'none';
-  next.setAttribute('aria-disabled',String(!ready));
-  next.tabIndex=ready?0:-1;
+   if(!next)return;
+   next.style.pointerEvents=ready?'':'none';
+   next.setAttribute('aria-disabled',String(!ready));
+   next.tabIndex=ready?0:-1;
  }
  if(next)next.addEventListener('click',e=>{
-  if(next.getAttribute('aria-disabled')==='true')e.preventDefault();
+   if(next.getAttribute('aria-disabled')==='true')e.preventDefault();
  });
- let revision=0,timeout=null;
- const signature=()=>JSON.stringify({source,workplace,h2:pass.h2,description:pass.description});
- async function refreshSchema(n){
-  schemaStatus.textContent=ui.schemaUpdate;
-  try{
-   const fp=signature();
-   const fresh=await jsonRequest('/api/schema',{source,workplace,h2:pass.h2,description:pass.description,draftId:pass.draftId});
-   if(n!==revision)return;
-   if(!fresh.schemaPreview||fresh.schemaVersion!==2)throw Error('schema_version');
-   pass.schemaPreview=fresh.schemaPreview;pass.schemaVersion=2;pass.schemaSourceFingerprint=fp;
-   pre.textContent=JSON.stringify(fresh.schemaPreview,null,2);
-   schemaStatus.textContent='';
-   sessionStorage.setItem(passKey,JSON.stringify(saved));
-   setReady(true);
-  }catch(_){if(n===revision){
-    pre.textContent='';schemaStatus.textContent=ui.schemaError;setReady(false);
-  }}
+ const signature=JSON.stringify({source,workplace,h2:pass.h2,description:pass.description});
+ async function refreshSchema(){
+   schemaStatus.textContent=ui.schemaUpdate;
+   try{
+     const fresh=await jsonRequest('/api/schema',{source,workplace,h2:pass.h2,description:pass.description,draftId:pass.draftId});
+     if(!fresh.schemaPreview||fresh.schemaVersion!==2)throw Error('schema_version');
+     pass.schemaPreview=fresh.schemaPreview;
+     pass.schemaVersion=2;
+     pass.schemaSourceFingerprint=signature;
+     pre.textContent=JSON.stringify(fresh.schemaPreview,null,2);
+     schemaStatus.textContent='';
+     sessionStorage.setItem(passKey,JSON.stringify(saved));
+     setReady(true);
+   }catch(_){
+     pre.textContent='';
+     schemaStatus.textContent=ui.schemaError;
+     setReady(false);
+   }
  }
- function update(){
-  pass.h2=h2.value.trim().slice(0,150);pass.description=desc.value.trim().slice(0,520);
-  sessionStorage.setItem(passKey,JSON.stringify(saved));
-  const n=++revision;
-  if(timeout)clearTimeout(timeout);
-  setReady(false);
-  if(pass.h2&&pass.description)timeout=setTimeout(()=>refreshSchema(n),500);
-  else {pre.textContent='';schemaStatus.textContent=''}
- }
- h2.addEventListener('input',update);desc.addEventListener('input',update);
- if(pass.schemaVersion===2&&pass.schemaPreview&&pass.schemaSourceFingerprint===signature()){
+ if(pass.schemaVersion===2&&pass.schemaPreview&&pass.schemaSourceFingerprint===signature){
    pre.textContent=JSON.stringify(pass.schemaPreview,null,2);
    setReady(!!pass.h2?.trim()&&!!pass.description?.trim());
  }else{
    setReady(false);
-   refreshSchema(++revision);
+   refreshSchema();
  }
- // No AI generation from the preview: human edits are saved locally.
+ // Preview neither invokes OpenAI nor publishes a profile.
 }
 
 const route=location.pathname;
