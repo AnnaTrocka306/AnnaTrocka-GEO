@@ -58,3 +58,9 @@
 .q-first-version-note{width:min(660px,100%);margin:0 auto;color:#6f625b;font-size:15px;line-height:1.65;text-align:center}
 .q-final-actions.q-final-actions--single{display:block;width:min(660px,100%)}
 .q-final-actions--single>.q-final-primary{width:100%;box-sizing:border-box}
+
+/* Trial publication: status appears beneath the sole confirmation action. */
+.q-trial-publication-status{width:min(660px,100%);margin:0 auto;min-height:24px;text-align:center;color:#5b5048;font-size:15px;line-height:1.6}
+.q-trial-publication-status .oct-publication-links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 20px;max-width:100%;margin:14px auto}
+.oct-publication-links a{color:#4a3021;text-decoration:underline;font-weight:700}
+.q-publication-consent .q-final-primary:disabled{opacity:.48;cursor:not-allowed}
