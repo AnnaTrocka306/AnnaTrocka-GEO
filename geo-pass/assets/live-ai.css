@@ -17,3 +17,11 @@
 .oct-ai-card pre{padding:16px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.45;font-size:.8rem;background:#f4f6f3;border-radius:8px;overflow:auto}
 .oct-ai-save{font-size:.85rem;color:#66716b}
 @media(max-width:560px){.oct-ai-panel,.oct-ai-card{padding:18px;margin:16px auto}.oct-ai-login{display:block}.oct-ai-login input,.oct-ai-login button{width:100%;margin-top:10px}}
+
+/* Don't flash the animated generation clock while loading a previously
+   completed draft from sessionStorage. JS enables it only for a fresh request. */
+html:not(.oct-ai-needs-generation) .q-screen--final-flow .q-live-title,
+html:not(.oct-ai-needs-generation) .q-screen--final-flow .q-running-dots,
+html:not(.oct-ai-needs-generation) .q-screen--final-flow .q-oct-clock{
+  visibility:hidden;
+}
