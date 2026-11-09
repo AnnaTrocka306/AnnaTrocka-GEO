@@ -46,6 +46,18 @@ function sourceFromDraft(d){
   publicBookingChannels:channels
  };
 }
+function workplaceFromDraft(d) {
+ const street=[d.street,d.houseNumber].filter(validText).join(' ').trim();
+ return {
+  primary:{
+   streetAddress:street,
+   postalCode:validText(d.postalCode)?d.postalCode.trim():'',
+   addressLocality:validText(d.locality)?d.locality.trim():'',
+   addressCountry:validText(d.country)?d.country.trim():''
+  },
+  additional:series(d,'additionalPracticeAddress')
+ };
+}
 function elt(tag,text,cls){const e=document.createElement(tag);if(text!=null)e.textContent=text;if(cls)e.className=cls;return e}
 function showStatus(host,msg){host.replaceChildren(elt('p',msg,'oct-ai-status'))}
 function getSession(){const s=read(sessionKey);return s&&typeof s.token==='string'&&Number(s.expiresAt)>Date.now()+10000?s.token:null}
@@ -173,7 +185,7 @@ function preview(){
  if(!saved||!source||saved.fingerprint!==JSON.stringify(source)||!saved.result){
    const notice=elt('p',ui.missing,'oct-ai-status');root.prepend(notice);return;
  }
- const pass=saved.result;
+ const pass=saved.result,workplace=workplaceFromDraft(d);
  if(!validText(pass.draftId)){
    pass.draftId=crypto.randomUUID();saved.result=pass;
    sessionStorage.setItem(passKey,JSON.stringify(saved));
@@ -192,39 +204,52 @@ function preview(){
  panel.append(labelH2,labelDesc,saveNote,details);
  details.append(schemaStatus);
  if(previous)previous.replaceWith(panel);else root.append(panel);
+ const next=document.querySelector('.q-final-primary');
+ function setReady(ready){
+  if(!next)return;
+  next.style.pointerEvents=ready?'':'none';
+  next.setAttribute('aria-disabled',String(!ready));
+  next.tabIndex=ready?0:-1;
+ }
+ if(next)next.addEventListener('click',e=>{
+  if(next.getAttribute('aria-disabled')==='true')e.preventDefault();
+ });
  let revision=0,timeout=null;
+ const signature=()=>JSON.stringify({source,workplace,h2:pass.h2,description:pass.description});
  async function refreshSchema(n){
   schemaStatus.textContent=ui.schemaUpdate;
   try{
-   const fresh=await jsonRequest('/api/schema',{source,h2:pass.h2,description:pass.description,draftId:pass.draftId});
+   const fp=signature();
+   const fresh=await jsonRequest('/api/schema',{source,workplace,h2:pass.h2,description:pass.description,draftId:pass.draftId});
    if(n!==revision)return;
    if(!fresh.schemaPreview||fresh.schemaVersion!==2)throw Error('schema_version');
-   pass.schemaPreview=fresh.schemaPreview;pass.schemaVersion=2;
+   pass.schemaPreview=fresh.schemaPreview;pass.schemaVersion=2;pass.schemaSourceFingerprint=fp;
    pre.textContent=JSON.stringify(fresh.schemaPreview,null,2);
    schemaStatus.textContent='';
    sessionStorage.setItem(passKey,JSON.stringify(saved));
-  }catch(_){if(n===revision){pre.textContent='';schemaStatus.textContent=ui.schemaError}}
+   setReady(true);
+  }catch(_){if(n===revision){
+    pre.textContent='';schemaStatus.textContent=ui.schemaError;setReady(false);
+  }}
  }
  function update(){
   pass.h2=h2.value.trim().slice(0,150);pass.description=desc.value.trim().slice(0,520);
   sessionStorage.setItem(passKey,JSON.stringify(saved));
-  const next=document.querySelector('.q-final-primary');
-  if(next){const ok=pass.h2.length>0&&pass.description.length>0;next.style.pointerEvents=ok?'':'none';next.setAttribute('aria-disabled',String(!ok))}
   const n=++revision;
   if(timeout)clearTimeout(timeout);
+  setReady(false);
   if(pass.h2&&pass.description)timeout=setTimeout(()=>refreshSchema(n),500);
   else {pre.textContent='';schemaStatus.textContent=''}
  }
  h2.addEventListener('input',update);desc.addEventListener('input',update);
- if(pass.schemaVersion===2&&pass.schemaPreview){
+ if(pass.schemaVersion===2&&pass.schemaPreview&&pass.schemaSourceFingerprint===signature()){
    pre.textContent=JSON.stringify(pass.schemaPreview,null,2);
+   setReady(!!pass.h2?.trim()&&!!pass.description?.trim());
  }else{
-   schemaStatus.textContent=ui.schemaUpdate;
+   setReady(false);
    refreshSchema(++revision);
  }
- // No automatic rewrite: the AI result and human edits are kept exactly as saved.
- const next=document.querySelector('.q-final-primary');
- if(next){const ok=pass.h2?.trim()&&pass.description?.trim();next.style.pointerEvents=ok?'':'none';next.setAttribute('aria-disabled',String(!ok))}
+ // No AI generation from the preview: human edits are saved locally.
 }
 
 const route=location.pathname;
