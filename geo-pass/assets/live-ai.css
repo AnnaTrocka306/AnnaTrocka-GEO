@@ -1,0 +1,19 @@
+/* Minimal accessible GEO-Pass editorial card and one-time owner access. */
+.oct-ai-panel,.oct-ai-card{box-sizing:border-box;width:min(100%,760px);margin:26px auto;padding:26px;border:1px solid #dfd8cd;border-radius:20px;background:#fff;color:#272927;box-shadow:0 8px 28px rgba(27,30,25,.065)}
+.oct-ai-panel h2{font-size:1.3rem;line-height:1.35;margin:0 0 16px}
+.oct-ai-login{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}
+.oct-ai-login input{min-width:210px;flex:1;font:inherit;font-size:1rem;border-radius:10px;border:1px solid #b7b7b7;padding:14px}
+.oct-ai-button{font:inherit;font-weight:700;border:0;background:#22574a;color:#fff;border-radius:10px;padding:14px 23px;cursor:pointer}
+.oct-ai-button:disabled{opacity:.65;cursor:wait}
+.oct-ai-error{flex-basis:100%;color:#922f2f;margin:0}
+.oct-ai-status{font-weight:600;line-height:1.5;margin:5px 0 16px}
+.oct-ai-eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#537466;font-weight:700}
+.oct-ai-card .oct-ai-name{font-size:clamp(1.4rem,4vw,2.1rem);line-height:1.2;margin:10px 0 24px}
+.oct-ai-card label{display:block;font-weight:700;font-size:1rem;margin:18px 0;color:#252927}
+.oct-ai-card textarea{display:block;box-sizing:border-box;width:100%;margin-top:9px;padding:13px;border:1px solid #b7b7b7;border-radius:9px;font:400 1rem/1.55 inherit;min-height:72px;resize:vertical}
+.oct-ai-card textarea:focus,.oct-ai-login input:focus{outline:2px solid #22574a;outline-offset:2px}
+.oct-ai-card details{margin-top:22px;border-top:1px solid #ddd;padding-top:18px}
+.oct-ai-card summary{font-weight:700;cursor:pointer}
+.oct-ai-card pre{padding:16px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.45;font-size:.8rem;background:#f4f6f3;border-radius:8px;overflow:auto}
+.oct-ai-save{font-size:.85rem;color:#66716b}
+@media(max-width:560px){.oct-ai-panel,.oct-ai-card{padding:18px;margin:16px auto}.oct-ai-login{display:block}.oct-ai-login input,.oct-ai-login button{width:100%;margin-top:10px}}
