@@ -170,5 +170,23 @@
     "published": true,
     "verified": false,
     "fictional": true
+  },
+  {
+    "id": "oct-anna-podolo-7ae06222f22a44678551e85483079d4d",
+    "name": "Anna Podolo",
+    "country": "DE",
+    "locality": "Berlin",
+    "profession": {
+      "de": "Heilpraktiker / Heilpraktikerin"
+    },
+    "work": {
+      "de": "Anna Podolo ist Heilpraktikerin in Berlin und arbeitet im Bereich medizinische Ästhetik. Ihr Angebot umfasst Injektionsbehandlungen und apparative Kosmetik und verbindet damit zwei unterschiedliche Arbeitsrichtungen der ästhetischen Praxis."
+    },
+    "published": true,
+    "verified": false,
+    "fictional": true,
+    "displayDemoBadge": false,
+    "profileLocale": "de",
+    "trialDraftId": "7ae06222-f22a-4467-8551-e85483079d4d"
   }
 ]
