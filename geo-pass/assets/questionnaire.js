@@ -175,7 +175,7 @@ function syncSectorChoice(event){
   selected.setCustomValidity("");
 }
 form.addEventListener("input",e=>{syncSectorChoice(e);clearRequiredGroupErrors();for(const el of inputs)if(el.type==="url")el.setCustomValidity("");capture();refresh()});
-form.addEventListener("change",e=>{syncSectorChoice(e);clearRequiredGroupErrors();const anchor=form.querySelector('input[name="channelEmail"]');if(anchor)anchor.setCustomValidity("");const v=form.querySelector('input[name="visitFixed"]');if(v)v.setCustomValidity("");capture();refresh()});
+form.addEventListener("change",e=>{if(step==="beauty-direction"&&e.target.matches("input[type=checkbox]")&&e.target.checked){for(const other of form.querySelectorAll(".q-beauty-direction-options input[type=checkbox]"))if(other!==e.target)other.checked=false;}syncSectorChoice(e);clearRequiredGroupErrors();const anchor=form.querySelector('input[name="channelEmail"]');if(anchor)anchor.setCustomValidity("");const v=form.querySelector('input[name="visitFixed"]');if(v)v.setCustomValidity("");capture();refresh()});
 refresh();
 const submit=form.querySelector('button[type="submit"]');if(submit)submit.disabled=false;
 function normalizeUrls(){
@@ -274,9 +274,9 @@ form.addEventListener("submit",e=>{
   if(!form.reportValidity())return;
   if(!validateRequiredGroups())return;
   capture();
-  if(step==="beauty-direction" && draft.beautyMedical===true){
-    window.location.assign("../medical-role/");
-    return;
+  if(step==="beauty-direction"){
+    const destination=draft.beautyMedical===true?"medical-role":draft.beautyCosmetic===true?"beauty-cosmetic":draft.beautyHair===true?"beauty-hair":draft.beautyBodyArt===true?"beauty-body-art":null;
+    if(destination){window.location.assign("../"+destination+"/");return;}
   }
   if(step==="medical-role"){
     window.location.assign(draft.medicalRole==="podologist"?"../podology-services/":"../medical-services/");
