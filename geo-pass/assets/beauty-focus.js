@@ -18,6 +18,9 @@ for(const check of checks)check.checked=!!saved?.selected?.includes(check.value)
 function customInputs(){return [...rows.querySelectorAll("input[data-custom-item]")]}
 function total(){return checks.filter(c=>c.checked).length+customInputs().filter(c=>c.value.trim()).length}
 function persist(){
+ // Opening a direct Beauty card also establishes its branch without a prior sector page.
+ draft.sectorId="beauty";draft.beautyMedical=false;
+ for(const [b,flag] of Object.entries({cosmetic:"beautyCosmetic",hair:"beautyHair","body-art":"beautyBodyArt"}))draft[flag]=b===branch;
  draft.beautyFocus={branch,selected:checks.filter(c=>c.checked).map(c=>c.value),
    selectedLabels:checks.filter(c=>c.checked).map(c=>c.closest("label")?.querySelector("span")?.textContent?.trim()||c.value),
    custom:customInputs().map(c=>c.value.trim()).filter(Boolean)};
