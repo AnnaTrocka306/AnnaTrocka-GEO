@@ -246,7 +246,33 @@ function preview(){
  // Preview neither invokes OpenAI nor publishes a profile.
 }
 
+function isBeautyDraft(){
+ const d=read(draftKey),focus=d?.beautyFocus;
+ const flags={cosmetic:"beautyCosmetic",hair:"beautyHair","body-art":"beautyBodyArt"};
+ return !!(d?.sectorId==="beauty"&&d.beautyMedical!==true&&focus&&
+   flags[focus.branch]&&d[flags[focus.branch]]===true);
+}
+function beautyGenerating(){
+ const main=document.querySelector('.q-final-main');if(!main)return;
+ for(const selector of ['.q-running-dots','.q-oct-clock','.q-live-title','.q-final-info']){
+   const e=document.querySelector(selector);if(e)e.hidden=true;
+ }
+ const copy={
+  de:["Deine Angaben sind gespeichert","Du hast die gemeinsamen Karten abgeschlossen. Die KI-Erstellung für diesen Beauty-Bereich wird später angeschlossen.","Es wird keine KI-Generierung oder Veröffentlichung gestartet. Die Antworten bleiben in dieser Browser-Registerkarte.","Deine Angaben ansehen"],
+  ru:["Твои ответы сохранены","Ты заполнила общие карточки. Генерацию GEO-Pass для этого направления Beauty подключим позднее.","AI-генерация и публикация не запускаются. Ответы остаются в этой вкладке браузера.","Посмотреть мои ответы"],
+  en:["Your answers have been saved","You have completed the shared cards. AI generation for this Beauty area is not yet connected.","No AI generation or publication starts. Answers remain in this browser tab.","Review my answers"]
+ }[lang];
+ const h=document.querySelector('.q-final-intro h1'),p=document.querySelector('.q-final-intro p');
+ if(h)h.textContent=copy[0];if(p)p.textContent=copy[1];
+ const disclaimer=document.querySelector('.q-final-disclaimer');
+ if(disclaimer){disclaimer.hidden=false;disclaimer.textContent=copy[2]}
+ const next=document.querySelector('.q-final-demo-link');
+ if(next){next.hidden=false;next.href='../preview/';next.textContent=copy[3]}
+}
 const route=location.pathname;
-if(route.endsWith('/generating/'))generating();
-else if(route.endsWith('/preview/'))preview();
+if(route.endsWith('/generating/')){
+ if(isBeautyDraft())beautyGenerating();else generating();
+}else if(route.endsWith('/preview/')){
+ if(!isBeautyDraft())preview();
+}
 })();

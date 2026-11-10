@@ -13,11 +13,31 @@ if(document.querySelector("[data-pass-name]")){
     const actions=document.querySelector(".q-final-actions");if(actions)actions.querySelector(".q-final-primary")?.setAttribute("aria-disabled","true");
   }else set("[data-pass-name]",draft.fullName);
   set("[data-pass-sector]",filled(draft.sectorOther)?draft.sectorOther:sectors[draft.sectorId]||t.none);
-  const role=draft.medicalRole==="doctor"?t.doctor:draft.medicalRole==="heilpraktiker"?t.heil:draft.medicalRole==="podologist"?t.pod:t.none;
+  const focus=draft.beautyFocus;
+  const beautyRoles={
+    cosmetic:{de:"Kosmetik",ru:"Косметология",en:"Cosmetics"},
+    hair:{de:"Haare & Friseur",ru:"Волосы и парикмахерские услуги",en:"Hair & Hairdressing"},
+    "body-art":{de:"Tattoo, Piercing & Body Art",ru:"Татуировки, пирсинг и боди-арт",en:"Tattoo, Piercing & Body Art"}};
+  const flags={cosmetic:"beautyCosmetic",hair:"beautyHair","body-art":"beautyBodyArt"};
+  const beautyActive=draft.sectorId==="beauty"&&draft.beautyMedical!==true&&focus&&
+    flags[focus.branch]&&draft[flags[focus.branch]]===true;
+  const role=beautyActive?beautyRoles[focus.branch][lang]:
+    draft.medicalRole==="doctor"?t.doctor:draft.medicalRole==="heilpraktiker"?t.heil:draft.medicalRole==="podologist"?t.pod:t.none;
   set("[data-pass-role]",role);
-  const serviceNames=Object.keys(names).filter(k=>yes(k) && (k!=="medicalSurgery"||draft.medicalRole==="doctor")).map(k=>names[k]);
-  const extra=(draft.medicalRole==="podologist"?series("podOtherProcedure"):series("medicalOtherProcedure"));
+  const serviceNames=beautyActive?
+    (Array.isArray(focus.selectedLabels)?focus.selectedLabels.filter(filled):[]):
+    Object.keys(names).filter(k=>yes(k) && (k!=="medicalSurgery"||draft.medicalRole==="doctor")).map(k=>names[k]);
+  const extra=beautyActive?(Array.isArray(focus.custom)?focus.custom.filter(filled):[]):
+    (draft.medicalRole==="podologist"?series("podOtherProcedure"):series("medicalOtherProcedure"));
   set("[data-pass-services]",[...serviceNames,...extra].join(", ")||t.none);
+  if(beautyActive){
+    const note=document.querySelector(".q-first-version-note");
+    if(note)note.textContent={de:"Hier siehst du nur die Angaben deiner ausgefüllten Karten. Ein KI-generierter GEO-Pass wird für diesen Beauty-Bereich noch nicht erstellt.",
+      ru:"Это просмотр заполненных карточек. AI GEO-Pass для этого направления Beauty пока не создаётся.",
+      en:"This is a review of your completed cards. An AI GEO-Pass for this Beauty area is not generated yet."}[lang];
+    const actions=document.querySelector(".q-final-actions");
+    if(actions)actions.hidden=true;
+  }
   const first=[draft.street,draft.houseNumber].filter(filled).join(" ");
   const places=[...(first?[first]:[]),...series("additionalPracticeAddress")];
   if(yes("visitFixed"))places.unshift(t.fixed);

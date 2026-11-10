@@ -9,7 +9,7 @@ const rows=form.querySelector("[data-custom-rows]");
 const add=form.querySelector("[data-custom-add]");
 const count=form.querySelector("[data-focus-count]");
 const submit=form.querySelector('button[type="submit"]');
-const dialog=document.querySelector("[data-focus-dialog]");
+
 const labels={input:form.dataset.customPlaceholder||"",remove:form.dataset.customRemove||"",more:form.dataset.customLabel||""};
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x;}catch(_){}
 const saved=draft.beautyFocus?.branch===branch?draft.beautyFocus:null;
@@ -19,6 +19,7 @@ function customInputs(){return [...rows.querySelectorAll("input[data-custom-item
 function total(){return checks.filter(c=>c.checked).length+customInputs().filter(c=>c.value.trim()).length}
 function persist(){
  draft.beautyFocus={branch,selected:checks.filter(c=>c.checked).map(c=>c.value),
+   selectedLabels:checks.filter(c=>c.checked).map(c=>c.closest("label")?.querySelector("span")?.textContent?.trim()||c.value),
    custom:customInputs().map(c=>c.value.trim()).filter(Boolean)};
  try{sessionStorage.setItem(key,JSON.stringify(draft))}catch(_){}
 }
@@ -55,7 +56,7 @@ add.addEventListener("click",()=>{if(total()>=3||customInputs().length>=3)return
 form.addEventListener("submit",e=>{
  e.preventDefault();if(total()<1||total()>3)return;
  persist();
- if(dialog&&typeof dialog.showModal==="function")dialog.showModal();
+ window.location.assign("../visit-details/");
 });
 persist();refresh();
 })();

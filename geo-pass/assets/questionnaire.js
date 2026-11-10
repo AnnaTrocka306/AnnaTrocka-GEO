@@ -73,7 +73,29 @@ setupProcedureRepeater();
 function setupVisitRepeaters(){
  if(step!=="visit-details")return;
  const back=document.querySelector("[data-medical-back]");
- if(back&&draft.medicalRole==="podologist")back.href="../podology-services/";
+ if(back){
+  const branch=draft.beautyFocus?.branch;
+  const flag={cosmetic:"beautyCosmetic",hair:"beautyHair","body-art":"beautyBodyArt"}[branch];
+  if(draft.sectorId==="beauty"&&draft.beautyMedical!==true&&flag&&draft[flag]===true)
+    back.href="../beauty-"+branch+"/";
+  else if(draft.medicalRole==="podologist")back.href="../podology-services/";
+  if(back.href.includes("beauty-")){
+   const lang=document.documentElement.lang;
+   const label=form.querySelector('input[name="visitFixed"]')?.closest("label");
+   const descriptions=[
+     document.querySelector(".q-intro p"),
+     form.querySelector(".q-visit-group:nth-of-type(2) strong")
+   ];
+   const labels={
+    de:["Ich empfange Kunden in einer Praxis, einem Salon, Studio oder Behandlungsraum","Wenn du deinen ersten Arbeitsort schon angegeben hast, brauchst du ihn nicht zu wiederholen.","Hast du weitere Arbeitsorte oder Behandlungsräume? Trage die Adressen ein."],
+    ru:["Принимаю в клинике, салоне, студии или кабинете","Если основной рабочий адрес уже указан, повторять его не нужно.","Есть другие места приёма? Впиши их адреса."],
+    en:["I see clients at a practice, salon, studio or treatment room","If you have already entered your main work address, you do not need to repeat it.","Do you have other work locations or treatment rooms? Add their addresses."]
+   }[lang]||[];
+   if(label&&label.lastChild?.nodeType===3)label.lastChild.textContent=labels[0];
+   if(descriptions[0])descriptions[0].textContent=labels[1];
+   if(descriptions[1])descriptions[1].textContent=labels[2];
+  }
+ }
  for(const block of form.querySelectorAll("[data-visit-repeater]")){
   const base=block.dataset.visitRepeater,orig=block.querySelector('input[name="'+base+'"]');
   const rows=block.querySelector("[data-visit-rows]"),add=block.querySelector("[data-visit-add]");
