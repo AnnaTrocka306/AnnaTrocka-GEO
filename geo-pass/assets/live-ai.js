@@ -89,7 +89,8 @@ async function generating(){
  const info=document.querySelector('.q-final-info');if(info)info.hidden=true;
  const root=document.querySelector('.q-final-main');if(!root)return;
  const panel=elt('section',null,'oct-ai-panel');panel.setAttribute('aria-live','polite');root.append(panel);
- let source;try{source=sourceFromDraft(read(draftKey))}catch{showStatus(panel,ui.badInput);return}
+ const d=read(draftKey);
+ let source;try{source=sourceFromDraft(d)}catch{showStatus(panel,ui.badInput);return}
  const fingerprint=JSON.stringify(source);
  const cached=read(passKey);
  if(cached&&cached.fingerprint===fingerprint&&validText(cached.result?.description)){
