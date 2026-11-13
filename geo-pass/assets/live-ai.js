@@ -252,12 +252,21 @@ function isBeautyDraft(){
  return !!(d?.sectorId==="beauty"&&d.beautyMedical!==true&&focus&&
    flags[focus.branch]&&d[flags[focus.branch]]===true);
 }
+function isLegalDraft(){
+ const d=read(draftKey);
+ return !!(d?.sectorId==="legal"&&d.legalRole==="lawyer"&&d.legalFocus?.role==="lawyer");
+}
 function beautyGenerating(){
  const main=document.querySelector('.q-final-main');if(!main)return;
  for(const selector of ['.q-running-dots','.q-oct-clock','.q-live-title','.q-final-info']){
    const e=document.querySelector(selector);if(e)e.hidden=true;
  }
- const copy={
+ const legal=isLegalDraft();
+ const copy=legal?{
+   de:["Deine Angaben sind gespeichert","Die gemeinsamen Karten sind abgeschlossen. Die KI-Erstellung für Rechtsanwälte ist noch nicht angeschlossen.","Es wird keine KI-Generierung oder Veröffentlichung gestartet. Die Antworten bleiben in dieser Browser-Registerkarte.","Deine Angaben ansehen"],
+   ru:["Твои ответы сохранены","Общие карточки заполнены. Генерацию GEO-Pass для адвокатов подключим позднее.","AI-генерация и публикация не запускаются. Ответы остаются в этой вкладке браузера.","Посмотреть мои ответы"],
+   en:["Your answers have been saved","You have completed the shared cards. AI generation for lawyers is not connected yet.","No AI generation or publication starts. Answers remain in this browser tab.","Review my answers"]
+ }[lang]:{
   de:["Deine Angaben sind gespeichert","Du hast die gemeinsamen Karten abgeschlossen. Die KI-Erstellung für diesen Beauty-Bereich wird später angeschlossen.","Es wird keine KI-Generierung oder Veröffentlichung gestartet. Die Antworten bleiben in dieser Browser-Registerkarte.","Deine Angaben ansehen"],
   ru:["Твои ответы сохранены","Ты заполнила общие карточки. Генерацию GEO-Pass для этого направления Beauty подключим позднее.","AI-генерация и публикация не запускаются. Ответы остаются в этой вкладке браузера.","Посмотреть мои ответы"],
   en:["Your answers have been saved","You have completed the shared cards. AI generation for this Beauty area is not yet connected.","No AI generation or publication starts. Answers remain in this browser tab.","Review my answers"]
@@ -271,8 +280,8 @@ function beautyGenerating(){
 }
 const route=location.pathname;
 if(route.endsWith('/generating/')){
- if(isBeautyDraft())beautyGenerating();else generating();
+ if(isBeautyDraft()||isLegalDraft())beautyGenerating();else generating();
 }else if(route.endsWith('/preview/')){
- if(!isBeautyDraft())preview();
+ if(!isBeautyDraft()&&!isLegalDraft())preview();
 }
 })();

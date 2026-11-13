@@ -3,7 +3,7 @@
    No account, database connection, publication, or notification is live. */
 const form=document.querySelector("[data-octopus-form]");if(!form)return;
 const step=form.dataset.step,key="octopus-geo-pass-draft-v1";
-const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector","matching","beauty-direction","medical-role","medical-services","podology-services","visit-details","experience","generating"]
+const steps=["identity","workplace","email","phone","website","whatsapp","social","terms","channels","sector","matching","beauty-direction","legal-role","medical-role","medical-services","podology-services","visit-details","experience","generating"]
 let draft={};try{const x=JSON.parse(sessionStorage.getItem(key)||"{}");if(x&&typeof x==="object"&&!Array.isArray(x))draft=x}catch(e){}
 // The profession field was removed from the active identity screen.
 delete draft.profession;
@@ -79,6 +79,25 @@ function setupVisitRepeaters(){
   if(draft.sectorId==="beauty"&&draft.beautyMedical!==true&&flag&&draft[flag]===true)
     back.href="../beauty-"+branch+"/";
   else if(draft.medicalRole==="podologist")back.href="../podology-services/";
+  if(draft.sectorId==="legal"&&draft.legalRole==="lawyer"&&draft.legalFocus?.role==="lawyer")
+   back.href="../legal-lawyer/";
+  if(back.href.includes("/legal-lawyer/")){
+   const lang=document.documentElement.lang;
+   const words={
+     de:["Wo empfängst du deine Mandanten?","Falls du deine erste Kanzleiadresse bereits angegeben hast, brauchst du sie nicht zu wiederholen.","Ich empfange Mandanten in meiner Kanzlei oder in Besprechungsräumen","Ich biete Termine außerhalb der Kanzlei oder Besuche bei Mandanten an","Hast du weitere Kanzleistandorte oder Besprechungsräume? Trage die Adressen ein."],
+     ru:["Где ты принимаешь доверителей?","Если основной адрес адвокатского бюро уже указан, повторять его не нужно.","Принимаю доверителей в адвокатском бюро или переговорной","Встречаюсь с доверителями вне бюро или выезжаю к ним","Есть другие офисы или места приёма? Впиши адреса."],
+     en:["Where do you meet your clients?","If you have already entered your main law office address, you need not repeat it.","I meet clients at my law office or in meeting rooms","I offer appointments outside the office or visit clients","Do you have additional offices or meeting rooms? Add their addresses."]
+   }[lang]||[];
+   const title=document.querySelector(".q-intro h1"),description=document.querySelector(".q-intro p");
+   const fixed=form.querySelector('input[name="visitFixed"]')?.closest("label");
+   const mobile=form.querySelector('input[name="visitMobile"]')?.closest("label");
+   const additional=form.querySelector(".q-visit-group:nth-of-type(2) strong");
+   if(title)title.textContent=words[0];
+   if(description)description.textContent=words[1];
+   if(fixed&&fixed.lastChild?.nodeType===3)fixed.lastChild.textContent=words[2];
+   if(mobile&&mobile.lastChild?.nodeType===3)mobile.lastChild.textContent=words[3];
+   if(additional)additional.textContent=words[4];
+  }
   if(back.href.includes("beauty-")){
    const lang=document.documentElement.lang;
    const label=form.querySelector('input[name="visitFixed"]')?.closest("label");
@@ -244,6 +263,10 @@ if(nextLink)nextLink.addEventListener("click",e=>{
       window.location.assign("../beauty-direction/");
       return;
     }
+    if(draft.sectorId==="legal"&&!String(draft.sectorOther||"").trim()){
+      window.location.assign("../legal-role/");
+      return;
+    }
     const dialog=document.querySelector("[data-next-unavailable]");
     if(dialog&&typeof dialog.showModal==="function")dialog.showModal();
     else {
@@ -299,6 +322,10 @@ form.addEventListener("submit",e=>{
   if(step==="beauty-direction"){
     const destination=draft.beautyMedical===true?"medical-role":draft.beautyCosmetic===true?"beauty-cosmetic":draft.beautyHair===true?"beauty-hair":draft.beautyBodyArt===true?"beauty-body-art":null;
     if(destination){window.location.assign("../"+destination+"/");return;}
+  }
+  if(step==="legal-role"){
+    if(draft.legalRole==="lawyer")window.location.assign("../legal-lawyer/");
+    return;
   }
   if(step==="medical-role"){
     window.location.assign(draft.medicalRole==="podologist"?"../podology-services/":"../medical-services/");

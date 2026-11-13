@@ -21,18 +21,26 @@ if(document.querySelector("[data-pass-name]")){
   const flags={cosmetic:"beautyCosmetic",hair:"beautyHair","body-art":"beautyBodyArt"};
   const beautyActive=draft.sectorId==="beauty"&&draft.beautyMedical!==true&&focus&&
     flags[focus.branch]&&draft[flags[focus.branch]]===true;
-  const role=beautyActive?beautyRoles[focus.branch][lang]:
+  const legalActive=draft.sectorId==="legal"&&draft.legalRole==="lawyer"&&
+    draft.legalFocus?.role==="lawyer";
+  const role=legalActive?{de:"Rechtsanwalt / Rechtsanwältin",ru:"Адвокат",en:"Lawyer / Attorney"}[lang]:
+    beautyActive?beautyRoles[focus.branch][lang]:
     draft.medicalRole==="doctor"?t.doctor:draft.medicalRole==="heilpraktiker"?t.heil:draft.medicalRole==="podologist"?t.pod:t.none;
   set("[data-pass-role]",role);
-  const serviceNames=beautyActive?
+  const serviceNames=legalActive?
+    (Array.isArray(draft.legalFocus.selectedLabels)?draft.legalFocus.selectedLabels.filter(filled):[]):
+    beautyActive?
     (Array.isArray(focus.selectedLabels)?focus.selectedLabels.filter(filled):[]):
     Object.keys(names).filter(k=>yes(k) && (k!=="medicalSurgery"||draft.medicalRole==="doctor")).map(k=>names[k]);
-  const extra=beautyActive?(Array.isArray(focus.custom)?focus.custom.filter(filled):[]):
+  const extra=legalActive?
+    (Array.isArray(draft.legalFocus.custom)?draft.legalFocus.custom.filter(filled):[]):
+    beautyActive?(Array.isArray(focus.custom)?focus.custom.filter(filled):[]):
     (draft.medicalRole==="podologist"?series("podOtherProcedure"):series("medicalOtherProcedure"));
   set("[data-pass-services]",[...serviceNames,...extra].join(", ")||t.none);
-  if(beautyActive){
+  if(beautyActive||legalActive){
     const note=document.querySelector(".q-first-version-note");
-    if(note)note.textContent={de:"Hier siehst du nur die Angaben deiner ausgefüllten Karten. Ein KI-generierter GEO-Pass wird für diesen Beauty-Bereich noch nicht erstellt.",
+    if(note&&legalActive)note.textContent={de:"Dies ist die Vorschau deiner Angaben. Ein KI-generierter GEO-Pass für Rechtsanwälte wird noch nicht erstellt.",ru:"Это просмотр заполненной анкеты. AI GEO-Pass адвоката пока не создаётся.",en:"This is a review of your answers. An AI GEO-Pass for lawyers is not generated yet."}[lang];
+    else if(note)note.textContent={de:"Hier siehst du nur die Angaben deiner ausgefüllten Karten. Ein KI-generierter GEO-Pass wird für diesen Beauty-Bereich noch nicht erstellt.",
       ru:"Это просмотр заполненных карточек. AI GEO-Pass для этого направления Beauty пока не создаётся.",
       en:"This is a review of your completed cards. An AI GEO-Pass for this Beauty area is not generated yet."}[lang];
     const actions=document.querySelector(".q-final-actions");
