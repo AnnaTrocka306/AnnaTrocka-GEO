@@ -10,7 +10,7 @@ if(allowed.has(draft.careRole)){const field=radios.find(x=>x.value===draft.careR
 if(typeof draft.careRoleOther==="string")own.value=draft.careRoleOther;
 function refresh(){
  const current=radios.find(x=>x.checked),isOther=current?.value==="other";
- other.hidden=!isOther;own.required=isOther;own.disabled=!isOther;
+ other.hidden=!isOther;other.style.display=isOther?'grid':'none';own.required=isOther;own.disabled=!isOther;
  draft.sectorId="care";draft.sectorOther="";
  draft.careRole=current?.value||"";
  draft.careRoleOther=isOther?own.value.trim():"";
