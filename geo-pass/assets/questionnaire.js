@@ -81,6 +81,24 @@ function setupVisitRepeaters(){
   else if(draft.medicalRole==="podologist")back.href="../podology-services/";
   if(draft.sectorId==="legal"&&draft.legalRole==="lawyer"&&draft.legalFocus?.role==="lawyer")
    back.href="../legal-lawyer/";
+  if(draft.sectorId==="care"&&draft.careRole){
+   back.href="../pflege-role/";
+   const lang=document.documentElement.lang;
+   const words={
+     de:["Wo arbeitest du?","Wenn du deinen ersten Arbeitsort bereits angegeben hast, musst du ihn nicht wiederholen.","Ich arbeite an einem festen Standort, zum Beispiel in einer Einrichtung oder einem Büro","Ich biete Pflege oder Betreuung ambulant bzw. mit Hausbesuchen an","Hast du weitere Arbeitsorte oder Standorte? Trage die Adressen ein."],
+     ru:["Где ты работаешь?","Если основное место работы уже указано, повторять его не нужно.","Работаю по постоянному адресу, например в учреждении или офисе","Оказываю помощь или уход на дому, с выездом","Есть другие рабочие адреса? Укажи их."],
+     en:["Where do you work?","If you've already entered your main work address, you don't need to repeat it.","I work at a fixed location, such as a care facility or office","I provide care or support through home visits or mobile appointments","Do you have additional work locations? Add their addresses."]
+   }[lang]||[];
+   const title=document.querySelector(".q-intro h1"),intro=document.querySelector(".q-intro p");
+   const fixed=form.querySelector('input[name="visitFixed"]')?.closest("label");
+   const mobile=form.querySelector('input[name="visitMobile"]')?.closest("label");
+   const additional=form.querySelector(".q-visit-group:nth-of-type(2) strong");
+   if(title)title.textContent=words[0];
+   if(intro)intro.textContent=words[1];
+   if(fixed&&fixed.lastChild?.nodeType===3)fixed.lastChild.textContent=words[2];
+   if(mobile&&mobile.lastChild?.nodeType===3)mobile.lastChild.textContent=words[3];
+   if(additional)additional.textContent=words[4];
+  }
   if(back.href.includes("/legal-lawyer/")){
    const lang=document.documentElement.lang;
    const words={
@@ -265,6 +283,10 @@ if(nextLink)nextLink.addEventListener("click",e=>{
     }
     if(draft.sectorId==="legal"&&!String(draft.sectorOther||"").trim()){
       window.location.assign("../legal-role/");
+      return;
+    }
+    if(draft.sectorId==="care"&&!String(draft.sectorOther||"").trim()){
+      window.location.assign("../pflege-role/");
       return;
     }
     const dialog=document.querySelector("[data-next-unavailable]");
