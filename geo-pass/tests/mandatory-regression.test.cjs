@@ -154,3 +154,31 @@ test('Forward and back navigation, AI prohibition, and other existing profession
     }
   }
 });
+
+test('Sector dropdown shows only existing first-stage directions and preserves Other field in DE/RU/EN',()=>{
+  const expected=['beauty','care','legal','marketing','health'];
+  for(const lang of languages){
+    const html=file('geo-pass/'+lang+'/create/sector/index.html');
+    const found=[...html.matchAll(/<option value="([^"]+)"/g)].map(m=>m[1]).filter(Boolean);
+    assert.deepEqual(found,expected,lang+': do not display unfinished professional categories');
+    assert.match(html,/<select id="sectorId" name="sectorId">/);
+    assert.match(html,/<input id="sectorOther" name="sectorOther"[^>]*>/);
+    assert.ok(html.includes('octopus-cta.webp'),lang+': Octopus CTA was changed');
+  }
+});
+
+test('All three landing CTAs open registration in a new tab; questionnaire navigation remains unchanged',()=>{
+  for(const lang of languages){
+    const html=file('geo-pass/'+lang+'/index.html');
+    // Check the exact links, not unrelated navigation.
+    const starts=[...html.matchAll(/<a class="hero-pass__mascot-cta[^"]*" href="\.\.\/(?:de|ru|en)\/create\/"[^>]*>/g)].map(m=>m[0]);
+    assert.equal(starts.length,3,lang+': landing registration CTA count changed');
+    for(const link of starts){
+      assert.ok(link.includes('href="../'+lang+'/create/"'),lang+': registration language lost');
+      assert.ok(link.includes('target="_blank"'),lang+': CTA must open a separate tab');
+      assert.ok(link.includes('rel="noopener noreferrer"'),lang+': new tab must not control landing');
+    }
+    const form=file('geo-pass/'+lang+'/create/sector/index.html');
+    assert.ok(form.includes('href="../channels/"'),lang+': existing form navigation changed');
+  }
+});
