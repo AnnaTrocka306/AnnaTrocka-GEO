@@ -1,0 +1,35 @@
+name: GEO Pass mandatory regressions
+on:
+  push:
+    branches: [preview/anna-geo-website]
+    paths:
+      - 'geo-pass/**'
+      - '.github/workflows/geo-pass-mandatory-regression.yml'
+  pull_request:
+    branches: [preview/anna-geo-website]
+    paths:
+      - 'geo-pass/**'
+      - '.github/workflows/geo-pass-mandatory-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check-contract:
+    name: GEO Pass mandatory contract
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Read working repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax
+        run: |
+          for file in geo-pass/assets/*.js; do node --check "$file"; done
+          node --check geo-pass/tests/mandatory-regression.test.cjs
+      - name: Offline contract and simulated browser-state tests
+        run: node --test geo-pass/tests/mandatory-regression.test.cjs
