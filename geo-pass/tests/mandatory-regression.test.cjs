@@ -140,7 +140,7 @@ test('Forward and back navigation, AI prohibition, and other existing profession
   const q=file('geo-pass/assets/questionnaire.js'),ai=file('geo-pass/assets/live-ai.js');
   assert.ok(q.includes('window.location.assign("../marketing-role/")'));
   assert.ok(q.includes('back.href="../marketing-role/"'));
-  assert.ok(ai.includes('isBeautyDraft()||isLegalDraft()||isCareDraft()||isMarketingDraft())beautyGenerating()'));
+  assert.ok(ai.includes('isBeautyDraft()||isLegalDraft()||isCareDraft()||isMarketingDraft()||isConsultingDraft())beautyGenerating()'));
   assert.ok(ai.includes('!isMarketingDraft())preview()'));
   for(const name of ['beauty-focus.js','legal-focus.js']){
     const script=file('geo-pass/assets/'+name);
