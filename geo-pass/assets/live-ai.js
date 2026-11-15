@@ -264,13 +264,21 @@ function isMarketingDraft(){
  const d=read(draftKey);
  return !!(d?.sectorId==="marketing"&&((Array.isArray(d.marketingRoles)&&d.marketingRoles.length>0)||d.marketingRole));
 }
+function isConsultingDraft(){
+ const d=read(draftKey);
+ return !!(d?.sectorId==="consulting"&&Array.isArray(d.consultingDirections)&&d.consultingDirections.length>0);
+}
 function beautyGenerating(){
  const main=document.querySelector('.q-final-main');if(!main)return;
  for(const selector of ['.q-running-dots','.q-oct-clock','.q-live-title','.q-final-info']){
    const e=document.querySelector(selector);if(e)e.hidden=true;
  }
- const legal=isLegalDraft(),care=isCareDraft(),marketing=isMarketingDraft();
- const copy=marketing?{
+ const legal=isLegalDraft(),care=isCareDraft(),marketing=isMarketingDraft(),consulting=isConsultingDraft();
+ const copy=consulting?{
+   de:["Deine Angaben sind gespeichert","Du hast deine Beratungsbereiche ausgewählt. Die KI-Erstellung wird später angeschlossen.","Es wird keine KI-Generierung oder Veröffentlichung gestartet. Deine Antworten bleiben in dieser Browser-Registerkarte.","Deine Angaben ansehen"],
+   ru:["Твои ответы сохранены","Ты выбрал направления бизнес-консультирования. AI-генерацию подключим позднее.","AI-генерация и публикация не запускаются. Ответы остаются в этой вкладке браузера.","Посмотреть мои ответы"],
+   en:["Your answers are saved","You have selected your consulting areas. AI generation will be connected later.","No AI generation or publication starts. Your answers remain in this browser tab.","Review my answers"]
+ }[lang]:marketing?{
    de:["Deine Angaben sind gespeichert","Du hast deine Bereiche im Marketing ausgewählt. Die KI-Erstellung wird später angeschlossen.","Es wird keine KI-Generierung oder Veröffentlichung gestartet. Deine Angaben bleiben in dieser Browser-Registerkarte.","Deine Angaben ansehen"],
    ru:["Твои ответы сохранены","Ты выбрал направления работы в маркетинге. AI-генерацию подключим позднее.","AI-генерация и публикация не запускаются. Ответы остаются в этой вкладке браузера.","Посмотреть мои ответы"],
    en:["Your answers are saved","You have selected your marketing areas. AI generation will be connected later.","No AI generation or publication starts. Your answers stay in this browser tab.","Review my answers"]
@@ -296,8 +304,8 @@ function beautyGenerating(){
 }
 const route=location.pathname;
 if(route.endsWith('/generating/')){
- if(isBeautyDraft()||isLegalDraft()||isCareDraft()||isMarketingDraft())beautyGenerating();else generating();
+ if(isBeautyDraft()||isLegalDraft()||isCareDraft()||isMarketingDraft()||isConsultingDraft())beautyGenerating();else generating();
 }else if(route.endsWith('/preview/')){
- if(!isBeautyDraft()&&!isLegalDraft()&&!isCareDraft()&&!isMarketingDraft())preview();
+ if(!isBeautyDraft()&&!isLegalDraft()&&!isCareDraft()&&!isMarketingDraft()&&!isConsultingDraft())preview();
 }
 })();

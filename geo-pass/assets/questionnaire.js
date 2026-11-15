@@ -160,6 +160,10 @@ if(step==="experience"&&draft.sectorId==="marketing"&&(Array.isArray(draft.marke
  const back=document.querySelector(".q-header .q-back");
  if(back)back.href="../marketing-role/";
 }
+if(step==="experience"&&draft.sectorId==="consulting"&&Array.isArray(draft.consultingDirections)&&draft.consultingDirections.length){
+ const back=document.querySelector(".q-header .q-back");
+ if(back)back.href="../consulting-directions/";
+}
 
 // Medical branch is a short self-declared profile, not a credentials audit.
 if(step==="medical-services"){
@@ -295,6 +299,10 @@ if(nextLink)nextLink.addEventListener("click",e=>{
     }
     if(draft.sectorId==="marketing"&&!String(draft.sectorOther||"").trim()){
       window.location.assign("../marketing-role/");
+      return;
+    }
+    if(draft.sectorId==="consulting"&&!String(draft.sectorOther||"").trim()){
+      window.location.assign("../consulting-directions/");
       return;
     }
     const dialog=document.querySelector("[data-next-unavailable]");

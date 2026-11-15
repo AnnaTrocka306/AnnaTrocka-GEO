@@ -156,7 +156,7 @@ test('Forward and back navigation, AI prohibition, and other existing profession
 });
 
 test('Sector dropdown shows only existing first-stage directions and preserves Other field in DE/RU/EN',()=>{
-  const expected=['beauty','care','legal','marketing','health'];
+  const expected=['beauty','care','legal','marketing','consulting','health'];
   for(const lang of languages){
     const html=file('geo-pass/'+lang+'/create/sector/index.html');
     const found=[...html.matchAll(/<option value="([^"]+)"/g)].map(m=>m[1]).filter(Boolean);
@@ -181,4 +181,74 @@ test('All three landing CTAs open registration in a new tab; questionnaire navig
     const form=file('geo-pass/'+lang+'/create/sector/index.html');
     assert.ok(form.includes('href="../channels/"'),lang+': existing form navigation changed');
   }
+});
+
+
+test('Consulting categories DE/RU/EN have 13 approved directions + Other and phase-two notice',()=>{
+  const expected=['strategy','startup','change','process','digital','ai','management','hr','crisis','succession','international','grants','projects','other'];
+  const copy={de:['Wähle bis zu drei Beratungsbereiche','zweiten Phase der Registrierung','Unternehmensnachfolge','Fördermittelberatung'],ru:['Выбери до трёх направлений консультирования','втором этапе регистрации','Передача и преемственность бизнеса','Консультирование по субсидиям'],en:['Choose up to three consulting areas','second stage of registration','Business Succession','Grants']};
+  for(const lang of languages){
+    const h=file('geo-pass/'+lang+'/create/consulting-directions/index.html');
+    assert.deepEqual([...h.matchAll(/<input type="checkbox" name="consultingDirectionChoice" value="([^"]+)"/g)].map(x=>x[1]),expected);
+    assert.ok(h.includes('data-consulting-count'));assert.ok(h.includes('data-consulting-other'));
+    assert.ok(h.includes('name="consultingDirectionOther"'));assert.ok(h.includes('octopus-cta.webp'));
+    for(const term of copy[lang])assert.ok(h.includes(term),lang+' missing '+term);
+    for(const l of languages)assert.ok(h.includes('hreflang="'+l+'"'));
+    const sector=file('geo-pass/'+lang+'/create/sector/index.html');
+    assert.match(sector,/<option value="consulting">[^<]+<\/option>/);
+  }
+});
+
+function consultingHarness(data=storage()){
+  const codes=['strategy','startup','change','process','digital','ai','management','hr','crisis','succession','international','grants','projects','other'];
+  const boxes=codes.map(value=>{const events={};return {value,checked:false,disabled:false,
+    addEventListener(type,fn){events[type]=fn;},toggle(value){this.checked=value;events.change();}};});
+  const other={hidden:true,style:{}},ownHandlers={};
+  const own={value:'',disabled:true,required:false,addEventListener(type,fn){ownHandlers[type]=fn;},reportValidity(){return !this.required||!!this.value.trim();},input(value){this.value=value;ownHandlers.input();}};
+  const counter={textContent:''},submit={disabled:false},callbacks={},routes=[];
+  const controls={'[data-consulting-other]':other,'input[name="consultingDirectionOther"]':own,'[data-consulting-count]':counter,'button[type="submit"]':submit};
+  const form={querySelectorAll(s){assert.equal(s,'input[name="consultingDirectionChoice"]');return boxes;},
+    querySelector(s){assert.ok(controls[s],s);return controls[s];},addEventListener(type,fn){callbacks[type]=fn;},
+    reportValidity(){return !own.required||!!own.value.trim();}};
+  vm.runInNewContext(file('geo-pass/assets/consulting-directions.js'),{sessionStorage:data,
+    document:{querySelector(s){assert.equal(s,'[data-consulting-directions]');return form;}},
+    window:{location:{assign(s){routes.push(s);}}}},{timeout:1200});
+  return {data,boxes,other,own,counter,submit,routes,
+    choose(id,checked=true){const b=boxes.find(x=>x.value===id);assert.ok(b);assert.ok(!checked||!b.disabled);b.toggle(checked);},
+    send(){callbacks.submit({preventDefault(){}});}
+  };
+}
+
+test('Consulting 1-3 selections, fourth blocked, custom Other required, restored after back',()=>{
+  const data=storage(),h=consultingHarness(data);
+  assert.equal(h.counter.textContent,'0 / 3');assert.equal(h.submit.disabled,true);
+  h.choose('strategy');h.choose('ai');h.choose('other');assert.equal(h.counter.textContent,'3 / 3');
+  assert.equal(h.boxes.find(x=>x.value==='hr').disabled,true);h.send();assert.equal(h.routes.length,0);
+  h.own.input('Логистический консалтинг');h.send();assert.deepEqual(h.routes,['../experience/']);
+  assert.deepEqual(Array.from(data.read().consultingDirections),['strategy','ai','other']);
+  assert.equal(data.read().consultingDirectionOther,'Логистический консалтинг');
+  const restore=consultingHarness(data);
+  assert.deepEqual(restore.boxes.filter(x=>x.checked).map(x=>x.value),['strategy','ai','other']);
+  restore.choose('other',false);assert.equal(restore.counter.textContent,'2 / 3');
+  assert.equal(restore.boxes.find(x=>x.value==='hr').disabled,false);
+  assert.equal(data.read().consultingDirectionOther,'');restore.choose('hr');
+  assert.equal(restore.counter.textContent,'3 / 3');
+  const damaged=consultingHarness(storage({consultingDirections:['strategy','strategy','fake','hr','projects','other']}));
+  assert.deepEqual(damaged.boxes.filter(x=>x.checked).map(x=>x.value),['strategy','hr','projects']);
+});
+
+test('All 3 consulting areas rendered in DE/RU/EN preview and AI publication stays disabled',()=>{
+  const draft={sectorId:'consulting',fullName:'Fictional Example',consultingDirections:['strategy','ai','grants']};
+  const translations={de:['Unternehmensstrategie & Geschäftsmodelle','KI-Beratung & Automatisierung','Fördermittelberatung'],ru:['Стратегия и бизнес-модели','Внедрение AI и автоматизация','Консультирование по субсидиям'],en:['Business Strategy & Business Models','AI Consulting & Automation','Grants & Funding Consulting']};
+  for(const lang of languages){const p=preview(lang,draft);
+    for(const label of translations[lang])assert.ok(p.role.includes(label),lang+' missing '+label);
+    assert.equal(p.servicesHidden,true);assert.equal(p.confirmHidden,true);
+  }
+  const own=preview('ru',{sectorId:'consulting',fullName:'Fictional Example',consultingDirections:['other','strategy'],consultingDirectionOther:'Моё направление'});
+  assert.ok(own.role.includes('Моё направление'));assert.ok(own.role.includes('Стратегия и бизнес-модели'));
+  const q=file('geo-pass/assets/questionnaire.js'),ai=file('geo-pass/assets/live-ai.js');
+  assert.ok(q.includes('window.location.assign("../consulting-directions/")'));
+  assert.ok(q.includes('back.href="../consulting-directions/"'));
+  assert.ok(ai.includes('||isConsultingDraft())beautyGenerating()'));
+  assert.ok(ai.includes('&&!isConsultingDraft())preview()'));
 });
