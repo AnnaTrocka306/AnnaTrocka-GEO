@@ -262,7 +262,7 @@ function isCareDraft(){
 }
 function isMarketingDraft(){
  const d=read(draftKey);
- return !!(d?.sectorId==="marketing"&&typeof d.marketingRole==="string"&&d.marketingRole);
+ return !!(d?.sectorId==="marketing"&&((Array.isArray(d.marketingRoles)&&d.marketingRoles.length>0)||d.marketingRole));
 }
 function beautyGenerating(){
  const main=document.querySelector('.q-final-main');if(!main)return;
@@ -271,9 +271,9 @@ function beautyGenerating(){
  }
  const legal=isLegalDraft(),care=isCareDraft(),marketing=isMarketingDraft();
  const copy=marketing?{
-   de:["Deine Angaben sind gespeichert","Du hast deine berufliche Rolle im Marketing ausgewählt. Eine KI-Erstellung wird später angeschlossen.","Es wird keine KI-Generierung oder Veröffentlichung gestartet. Deine Angaben bleiben in dieser Browser-Registerkarte.","Deine Angaben ansehen"],
-   ru:["Твои ответы сохранены","Ты выбрал профессию в маркетинге. AI-генерацию подключим позднее.","AI-генерация и публикация не запускаются. Ответы остаются в этой вкладке браузера.","Посмотреть мои ответы"],
-   en:["Your answers are saved","You have selected your marketing profession. AI generation will be connected later.","No AI generation or publication starts. Your answers stay in this browser tab.","Review my answers"]
+   de:["Deine Angaben sind gespeichert","Du hast deine Bereiche im Marketing ausgewählt. Die KI-Erstellung wird später angeschlossen.","Es wird keine KI-Generierung oder Veröffentlichung gestartet. Deine Angaben bleiben in dieser Browser-Registerkarte.","Deine Angaben ansehen"],
+   ru:["Твои ответы сохранены","Ты выбрал направления работы в маркетинге. AI-генерацию подключим позднее.","AI-генерация и публикация не запускаются. Ответы остаются в этой вкладке браузера.","Посмотреть мои ответы"],
+   en:["Your answers are saved","You have selected your marketing areas. AI generation will be connected later.","No AI generation or publication starts. Your answers stay in this browser tab.","Review my answers"]
  }[lang]:care?{
    de:["Deine Angaben sind gespeichert","Du hast die gemeinsamen Karten für Pflege & Betreuung ausgefüllt. Die KI-Erstellung wird später angeschlossen.","Es wird keine KI-Generierung oder Veröffentlichung gestartet. Deine Antworten bleiben in diesem Browser-Tab.","Deine Angaben ansehen"],
    ru:["Твои ответы сохранены","Общие карточки Pflege & Betreuung заполнены. Генерацию GEO-Pass подключим позднее.","AI-генерация и публикация не запускаются. Ответы остаются в этой вкладке браузера.","Посмотреть мои ответы"],

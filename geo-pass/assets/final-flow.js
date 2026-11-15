@@ -24,19 +24,26 @@ if(document.querySelector("[data-pass-name]")){
   const legalActive=draft.sectorId==="legal"&&draft.legalRole==="lawyer"&&
     draft.legalFocus?.role==="lawyer";
   const careActive=draft.sectorId==="care";
-  const marketingActive=draft.sectorId==="marketing"&&typeof draft.marketingRole==="string"&&draft.marketingRole.length>0;
+  const marketingActive=draft.sectorId==="marketing"&&((Array.isArray(draft.marketingRoles)&&draft.marketingRoles.length>0)||typeof draft.marketingRole==="string"&&draft.marketingRole.length>0);
   const marketingRoleLabels={"consultant":{"de":"Fachperson für Marketingberatung","ru":"Специалист по маркетинговому консультированию","en":"Marketing Consultant"},"strategist":{"de":"Fachperson für Marketingstrategie","ru":"Специалист по маркетинговой стратегии","en":"Marketing Strategist"},"online":{"de":"Fachperson für Online-Marketing","ru":"Специалист по интернет-маркетингу","en":"Online Marketing Specialist"},"geo":{"de":"GEO-Fachperson","ru":"Специалист по GEO","en":"GEO Specialist"},"seo":{"de":"SEO-Fachperson","ru":"Специалист по SEO","en":"SEO Specialist"},"performance":{"de":"Fachperson für Performance-Marketing","ru":"Специалист по performance-маркетингу","en":"Performance Marketing Specialist"},"brand":{"de":"Fachperson für Marken- und Positionierungsberatung","ru":"Специалист по брендингу и позиционированию","en":"Brand and Positioning Consultant"},"pr":{"de":"Fachperson für PR- und Kommunikationsberatung","ru":"Специалист по PR и коммуникациям","en":"PR and Communications Consultant"},"social":{"de":"Fachperson für Social-Media-Management","ru":"Специалист по социальным сетям","en":"Social Media Manager"},"content":{"de":"Fachperson für Content-Marketing","ru":"Специалист по контент-маркетингу","en":"Content Marketing Specialist"},"crm":{"de":"Fachperson für CRM und Marketing-Automation","ru":"Специалист по CRM и автоматизации маркетинга","en":"CRM and Marketing Automation Specialist"},"research":{"de":"Fachperson für Marktforschung und Marketinganalyse","ru":"Специалист по исследованию рынка и маркетинговой аналитике","en":"Market Researcher / Marketing Analyst"},"manager":{"de":"Marketing Manager","ru":"Менеджер по маркетингу","en":"Marketing Manager"}};
   const careRoleLabels={"fach":{"de":"Pflegefachfrau / Pflegefachmann / Pflegefachperson","ru":"Специалист по уходу (Pflegefachperson)","en":"Qualified nursing professional (Pflegefachperson)"},"alten":{"de":"Altenpfleger / Altenpflegerin","ru":"Специалист по уходу за пожилыми (Altenpfleger/in)","en":"Geriatric nurse (Altenpfleger/in)"},"kranken":{"de":"Gesundheits- und Krankenpfleger/in","ru":"Медицинская сестра / медбрат по уходу (Gesundheits- und Krankenpfleger/in)","en":"General nurse (Gesundheits- und Krankenpfleger/in)"},"kinder":{"de":"Gesundheits- und Kinderkrankenpfleger/in","ru":"Медицинская сестра / медбрат по уходу за детьми","en":"Paediatric nurse (Kinderkrankenpfleger/in)"},"assist":{"de":"Pflegeassistent/in / Pflegefachassistent/in","ru":"Ассистент по уходу (Pflegeassistent/in)","en":"Care / nursing assistant"},"helfer":{"de":"Pflegehelfer/in","ru":"Помощник по уходу (Pflegehelfer/in)","en":"Care aide (Pflegehelfer/in)"},"betreuung":{"de":"Betreuungskraft / Alltagsbegleiter/in","ru":"Специалист по сопровождению и повседневной помощи","en":"Care companion / daily living assistant"},"haus":{"de":"Hauswirtschafter/in / Hauswirtschaftskraft","ru":"Специалист по помощи по хозяйству","en":"Home support / housekeeping professional"},"heiler":{"de":"Heilerziehungspfleger/in","ru":"Специалист по сопровождению людей с инвалидностью","en":"Disability support professional (Heilerziehungspfleger/in)"}};
   const careRole=careActive?(draft.careRole==="other"?
     (filled(draft.careRoleOther)?draft.careRoleOther.trim():t.none):
     careRoleLabels[draft.careRole]?.[lang]||t.none):null;
-  const marketingRole=marketingActive?(draft.marketingRole==="other"?
-    (filled(draft.marketingRoleOther)?draft.marketingRoleOther.trim():t.none):
-    marketingRoleLabels[draft.marketingRole]?.[lang]||t.none):null;
+  const marketingSelected=Array.isArray(draft.marketingRoles)&&draft.marketingRoles.length?
+    [...new Set(draft.marketingRoles.filter(code=>typeof code==="string"))].slice(0,3):
+    (draft.marketingRole?[draft.marketingRole]:[]);
+  const marketingRole=marketingActive?marketingSelected.map(code=>
+    code==="other"?(filled(draft.marketingRoleOther)?draft.marketingRoleOther.trim():t.none):
+    marketingRoleLabels[code]?.[lang]||t.none).join(", "):null;
   const role=marketingActive?marketingRole:careActive?careRole:legalActive?{de:"Rechtsanwalt / Rechtsanwältin",ru:"Адвокат",en:"Lawyer / Attorney"}[lang]:
     beautyActive?beautyRoles[focus.branch][lang]:
     draft.medicalRole==="doctor"?t.doctor:draft.medicalRole==="heilpraktiker"?t.heil:draft.medicalRole==="podologist"?t.pod:t.none;
   set("[data-pass-role]",role);
+  if(marketingActive){
+    const label=document.querySelector("[data-pass-role]")?.previousElementSibling;
+    if(label)label.textContent={de:"Ausgewählte Bereiche",ru:"Выбранные направления",en:"Selected areas"}[lang];
+  }
   const serviceNames=marketingActive?[]:careActive?[]:legalActive?
     (Array.isArray(draft.legalFocus.selectedLabels)?draft.legalFocus.selectedLabels.filter(filled):[]):
     beautyActive?

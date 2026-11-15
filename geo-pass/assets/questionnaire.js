@@ -156,7 +156,7 @@ function setupVisitRepeaters(){
  }
 }
 setupVisitRepeaters();
-if(step==="experience"&&draft.sectorId==="marketing"&&draft.marketingRole){
+if(step==="experience"&&draft.sectorId==="marketing"&&(Array.isArray(draft.marketingRoles)&&draft.marketingRoles.length||draft.marketingRole)){
  const back=document.querySelector(".q-header .q-back");
  if(back)back.href="../marketing-role/";
 }
