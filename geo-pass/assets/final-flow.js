@@ -24,33 +24,39 @@ if(document.querySelector("[data-pass-name]")){
   const legalActive=draft.sectorId==="legal"&&draft.legalRole==="lawyer"&&
     draft.legalFocus?.role==="lawyer";
   const careActive=draft.sectorId==="care";
+  const marketingActive=draft.sectorId==="marketing"&&typeof draft.marketingRole==="string"&&draft.marketingRole.length>0;
+  const marketingRoleLabels={"consultant":{"de":"Fachperson für Marketingberatung","ru":"Специалист по маркетинговому консультированию","en":"Marketing Consultant"},"strategist":{"de":"Fachperson für Marketingstrategie","ru":"Специалист по маркетинговой стратегии","en":"Marketing Strategist"},"online":{"de":"Fachperson für Online-Marketing","ru":"Специалист по интернет-маркетингу","en":"Online Marketing Specialist"},"geo":{"de":"GEO-Fachperson","ru":"Специалист по GEO","en":"GEO Specialist"},"seo":{"de":"SEO-Fachperson","ru":"Специалист по SEO","en":"SEO Specialist"},"performance":{"de":"Fachperson für Performance-Marketing","ru":"Специалист по performance-маркетингу","en":"Performance Marketing Specialist"},"brand":{"de":"Fachperson für Marken- und Positionierungsberatung","ru":"Специалист по брендингу и позиционированию","en":"Brand and Positioning Consultant"},"pr":{"de":"Fachperson für PR- und Kommunikationsberatung","ru":"Специалист по PR и коммуникациям","en":"PR and Communications Consultant"},"social":{"de":"Fachperson für Social-Media-Management","ru":"Специалист по социальным сетям","en":"Social Media Manager"},"content":{"de":"Fachperson für Content-Marketing","ru":"Специалист по контент-маркетингу","en":"Content Marketing Specialist"},"crm":{"de":"Fachperson für CRM und Marketing-Automation","ru":"Специалист по CRM и автоматизации маркетинга","en":"CRM and Marketing Automation Specialist"},"research":{"de":"Fachperson für Marktforschung und Marketinganalyse","ru":"Специалист по исследованию рынка и маркетинговой аналитике","en":"Market Researcher / Marketing Analyst"},"manager":{"de":"Marketing Manager","ru":"Менеджер по маркетингу","en":"Marketing Manager"}};
   const careRoleLabels={"fach":{"de":"Pflegefachfrau / Pflegefachmann / Pflegefachperson","ru":"Специалист по уходу (Pflegefachperson)","en":"Qualified nursing professional (Pflegefachperson)"},"alten":{"de":"Altenpfleger / Altenpflegerin","ru":"Специалист по уходу за пожилыми (Altenpfleger/in)","en":"Geriatric nurse (Altenpfleger/in)"},"kranken":{"de":"Gesundheits- und Krankenpfleger/in","ru":"Медицинская сестра / медбрат по уходу (Gesundheits- und Krankenpfleger/in)","en":"General nurse (Gesundheits- und Krankenpfleger/in)"},"kinder":{"de":"Gesundheits- und Kinderkrankenpfleger/in","ru":"Медицинская сестра / медбрат по уходу за детьми","en":"Paediatric nurse (Kinderkrankenpfleger/in)"},"assist":{"de":"Pflegeassistent/in / Pflegefachassistent/in","ru":"Ассистент по уходу (Pflegeassistent/in)","en":"Care / nursing assistant"},"helfer":{"de":"Pflegehelfer/in","ru":"Помощник по уходу (Pflegehelfer/in)","en":"Care aide (Pflegehelfer/in)"},"betreuung":{"de":"Betreuungskraft / Alltagsbegleiter/in","ru":"Специалист по сопровождению и повседневной помощи","en":"Care companion / daily living assistant"},"haus":{"de":"Hauswirtschafter/in / Hauswirtschaftskraft","ru":"Специалист по помощи по хозяйству","en":"Home support / housekeeping professional"},"heiler":{"de":"Heilerziehungspfleger/in","ru":"Специалист по сопровождению людей с инвалидностью","en":"Disability support professional (Heilerziehungspfleger/in)"}};
   const careRole=careActive?(draft.careRole==="other"?
     (filled(draft.careRoleOther)?draft.careRoleOther.trim():t.none):
     careRoleLabels[draft.careRole]?.[lang]||t.none):null;
-  const role=careActive?careRole:legalActive?{de:"Rechtsanwalt / Rechtsanwältin",ru:"Адвокат",en:"Lawyer / Attorney"}[lang]:
+  const marketingRole=marketingActive?(draft.marketingRole==="other"?
+    (filled(draft.marketingRoleOther)?draft.marketingRoleOther.trim():t.none):
+    marketingRoleLabels[draft.marketingRole]?.[lang]||t.none):null;
+  const role=marketingActive?marketingRole:careActive?careRole:legalActive?{de:"Rechtsanwalt / Rechtsanwältin",ru:"Адвокат",en:"Lawyer / Attorney"}[lang]:
     beautyActive?beautyRoles[focus.branch][lang]:
     draft.medicalRole==="doctor"?t.doctor:draft.medicalRole==="heilpraktiker"?t.heil:draft.medicalRole==="podologist"?t.pod:t.none;
   set("[data-pass-role]",role);
-  const serviceNames=careActive?[]:legalActive?
+  const serviceNames=marketingActive?[]:careActive?[]:legalActive?
     (Array.isArray(draft.legalFocus.selectedLabels)?draft.legalFocus.selectedLabels.filter(filled):[]):
     beautyActive?
     (Array.isArray(focus.selectedLabels)?focus.selectedLabels.filter(filled):[]):
     Object.keys(names).filter(k=>yes(k) && (k!=="medicalSurgery"||draft.medicalRole==="doctor")).map(k=>names[k]);
-  const extra=careActive?[]:legalActive?
+  const extra=marketingActive?[]:careActive?[]:legalActive?
     (Array.isArray(draft.legalFocus.custom)?draft.legalFocus.custom.filter(filled):[]):
     beautyActive?(Array.isArray(focus.custom)?focus.custom.filter(filled):[]):
     (draft.medicalRole==="podologist"?series("podOtherProcedure"):series("medicalOtherProcedure"));
   set("[data-pass-services]",[...serviceNames,...extra].join(", ")||t.none);
-  if(careActive){
+  if(careActive||marketingActive){
     const servicesRow=document.querySelector("[data-pass-services]")?.parentElement;
     if(servicesRow)servicesRow.hidden=true;
     const placesLabel=document.querySelector("[data-pass-places]")?.previousElementSibling;
     if(placesLabel)placesLabel.textContent={de:"Arbeitsorte",ru:"Места работы",en:"Work locations"}[lang];
   }
-  if(beautyActive||legalActive||careActive){
+  if(beautyActive||legalActive||careActive||marketingActive){
     const note=document.querySelector(".q-first-version-note");
-    if(note&&careActive)note.textContent={de:"Dies ist eine Vorschau deiner Angaben. Ein KI-generierter GEO-Pass für Pflege & Betreuung wird derzeit noch nicht erstellt.",ru:"Это просмотр заполненной анкеты. AI GEO-Pass для Pflege & Betreuung пока не создаётся.",en:"This is a preview of your answers. An AI GEO-Pass for Care & Support is not yet generated."}[lang];
+    if(note&&marketingActive)note.textContent={de:"Dies ist die Vorschau deiner Angaben für Marketing & Kommunikation. Ein KI-generierter GEO-Pass wird derzeit noch nicht erstellt.",ru:"Это просмотр заполненной анкеты Marketing & Kommunikation. AI GEO-Pass пока не создаётся.",en:"This is a review of your Marketing & Communications answers. An AI-generated GEO-Pass is not yet available."}[lang];
+    else if(note&&careActive)note.textContent={de:"Dies ist eine Vorschau deiner Angaben. Ein KI-generierter GEO-Pass für Pflege & Betreuung wird derzeit noch nicht erstellt.",ru:"Это просмотр заполненной анкеты. AI GEO-Pass для Pflege & Betreuung пока не создаётся.",en:"This is a preview of your answers. An AI GEO-Pass for Care & Support is not yet generated."}[lang];
     else if(note&&legalActive)note.textContent={de:"Dies ist die Vorschau deiner Angaben. Ein KI-generierter GEO-Pass für Rechtsanwälte wird noch nicht erstellt.",ru:"Это просмотр заполненной анкеты. AI GEO-Pass адвоката пока не создаётся.",en:"This is a review of your answers. An AI GEO-Pass for lawyers is not generated yet."}[lang];
     else if(note)note.textContent={de:"Hier siehst du nur die Angaben deiner ausgefüllten Karten. Ein KI-generierter GEO-Pass wird für diesen Beauty-Bereich noch nicht erstellt.",
       ru:"Это просмотр заполненных карточек. AI GEO-Pass для этого направления Beauty пока не создаётся.",

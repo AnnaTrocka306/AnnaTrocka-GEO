@@ -260,13 +260,21 @@ function isCareDraft(){
  const d=read(draftKey);
  return !!(d?.sectorId==="care"&&d.careRole);
 }
+function isMarketingDraft(){
+ const d=read(draftKey);
+ return !!(d?.sectorId==="marketing"&&typeof d.marketingRole==="string"&&d.marketingRole);
+}
 function beautyGenerating(){
  const main=document.querySelector('.q-final-main');if(!main)return;
  for(const selector of ['.q-running-dots','.q-oct-clock','.q-live-title','.q-final-info']){
    const e=document.querySelector(selector);if(e)e.hidden=true;
  }
- const legal=isLegalDraft(),care=isCareDraft();
- const copy=care?{
+ const legal=isLegalDraft(),care=isCareDraft(),marketing=isMarketingDraft();
+ const copy=marketing?{
+   de:["Deine Angaben sind gespeichert","Du hast deine berufliche Rolle im Marketing ausgewählt. Eine KI-Erstellung wird später angeschlossen.","Es wird keine KI-Generierung oder Veröffentlichung gestartet. Deine Angaben bleiben in dieser Browser-Registerkarte.","Deine Angaben ansehen"],
+   ru:["Твои ответы сохранены","Ты выбрал профессию в маркетинге. AI-генерацию подключим позднее.","AI-генерация и публикация не запускаются. Ответы остаются в этой вкладке браузера.","Посмотреть мои ответы"],
+   en:["Your answers are saved","You have selected your marketing profession. AI generation will be connected later.","No AI generation or publication starts. Your answers stay in this browser tab.","Review my answers"]
+ }[lang]:care?{
    de:["Deine Angaben sind gespeichert","Du hast die gemeinsamen Karten für Pflege & Betreuung ausgefüllt. Die KI-Erstellung wird später angeschlossen.","Es wird keine KI-Generierung oder Veröffentlichung gestartet. Deine Antworten bleiben in diesem Browser-Tab.","Deine Angaben ansehen"],
    ru:["Твои ответы сохранены","Общие карточки Pflege & Betreuung заполнены. Генерацию GEO-Pass подключим позднее.","AI-генерация и публикация не запускаются. Ответы остаются в этой вкладке браузера.","Посмотреть мои ответы"],
    en:["Your answers are saved","You have completed the shared Care & Support cards. AI generation will be connected later.","No AI generation or publication starts. Your answers remain in this browser tab.","Review my answers"]
@@ -288,8 +296,8 @@ function beautyGenerating(){
 }
 const route=location.pathname;
 if(route.endsWith('/generating/')){
- if(isBeautyDraft()||isLegalDraft()||isCareDraft())beautyGenerating();else generating();
+ if(isBeautyDraft()||isLegalDraft()||isCareDraft()||isMarketingDraft())beautyGenerating();else generating();
 }else if(route.endsWith('/preview/')){
- if(!isBeautyDraft()&&!isLegalDraft()&&!isCareDraft())preview();
+ if(!isBeautyDraft()&&!isLegalDraft()&&!isCareDraft()&&!isMarketingDraft())preview();
 }
 })();
