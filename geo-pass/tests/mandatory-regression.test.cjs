@@ -141,7 +141,7 @@ test('Forward and back navigation, AI prohibition, and other existing profession
   assert.ok(q.includes('window.location.assign("../marketing-role/")'));
   assert.ok(q.includes('back.href="../marketing-role/"'));
   assert.ok(ai.includes('isBeautyDraft()||isLegalDraft()||isCareDraft()||isMarketingDraft()||isConsultingDraft())beautyGenerating()'));
-  assert.ok(ai.includes('!isMarketingDraft())preview()'));
+  assert.ok(ai.includes('!isMarketingDraft()&&!isConsultingDraft())preview()'));
   for(const name of ['beauty-focus.js','legal-focus.js']){
     const script=file('geo-pass/assets/'+name);
     assert.ok(script.includes('n>=3'),name+': three-direction limit disappeared');
