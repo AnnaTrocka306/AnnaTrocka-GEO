@@ -12,3 +12,11 @@
 .geo-cta{background:linear-gradient(120deg,#453125,#685039);color:white;padding:30px;margin:38px 0 18px}.geo-cta h2{color:white}.geo-cta p{color:#f3e5d6}.geo-cta .btn{background:#f1dbba;color:#332319;border-color:#f1dbba}
 .geo-status{font-size:.8rem!important;color:#716459!important;line-height:1.5!important}
 @media(max-width:830px){.geo-layout{display:block;padding:34px 0 65px}.geo-questions{position:static;margin-bottom:35px}.geo-cards{grid-template-columns:1fr}}
+
+/* GEO guide: six concise capabilities and independent pricing note */
+.geo-capabilities{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0 16px}
+.geo-capabilities article{border:1px solid var(--line);border-top:3px solid #b98f5e;background:#fffdf9;padding:16px 17px;min-width:0}
+.geo-capabilities h3{font-size:1.15rem;margin:0 0 9px}
+.geo-capabilities p{font-size:.89rem;line-height:1.61;margin:0}
+.geo-pricing-hint{margin-top:12px!important;font-size:.83rem!important;color:#765f4d!important;font-style:italic}
+@media(max-width:680px){.geo-capabilities{grid-template-columns:1fr}}
