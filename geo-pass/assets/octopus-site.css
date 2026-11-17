@@ -123,3 +123,16 @@ body:has(.os-masthead) .footer{padding-bottom:104px}
 .os-passport-landing .hero-pass__layout{padding-block:50px 60px}
 @media(max-width:960px){.os-passport-landing .hero-pass__copy h2{font-size:clamp(2.2rem,6vw,4rem)}}
 @media(max-width:600px){.os-homehero .os-hero-grid{padding:42px 0 43px}.os-hero-mascot{width:min(100%,390px)}.os-hero-mascot-label{font-size:clamp(10px,3.1vw,15px)}.os-passport-landing .hero-pass__copy h2{font-size:clamp(2rem,8.6vw,3.1rem)}.os-passport-landing .os-landing-top{padding-top:37px;padding-bottom:15px}}
+
+
+/* 2026-11-17 approved GEO and automation illustrations; passport moved to own page. */
+.os-feature-grid,.os-section#octopus .os-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.98fr);align-items:center;gap:clamp(25px,4vw,62px);max-width:none}
+.os-feature-grid .os-feature-copy{min-width:0}
+.os-section#octopus .os-split>div{max-width:none}
+.os-feature-image{margin:0;min-width:0}
+.os-feature-image img{display:block;width:100%;height:auto;max-height:490px;object-fit:contain;border-radius:12px;box-shadow:0 10px 29px #51331126}
+.os-passport-landing .os-landing-top{padding-top:38px}
+body:has(.os-masthead) .octo-float{width:clamp(178px,17vw,217px);right:9px;bottom:calc(8px + env(safe-area-inset-bottom,0px))}
+body:has(.os-masthead) .octo-float__label{font-size:clamp(8.5px,.95vw,11px)}
+@media(max-width:940px){.os-feature-grid,.os-section#octopus .os-split{grid-template-columns:1fr}.os-feature-image{max-width:750px}.os-feature-image img{max-height:none}}
+@media(max-width:740px){body:has(.os-masthead) .octo-float{width:clamp(148px,36vw,174px);right:5px;bottom:calc(6px + env(safe-area-inset-bottom,0px))}body:has(.os-masthead) .octo-float__label{font-size:clamp(7.6px,2.15vw,9.8px)}}

@@ -192,6 +192,26 @@ test('Octopus homepage and experts hub preserve localized new-tab GEO Pass entry
 });
 
 
+test('Octopus homepage uses two approved stamped AI illustrations and links to a separate GEO Pass landing',()=>{
+  for(const lang of languages){
+    const home=file('geo-pass/'+lang+'/index.html');
+    const passport=file('geo-pass/'+lang+'/passport/index.html');
+    const experts=file('geo-pass/'+lang+'/experts/index.html');
+    assert.ok(home.includes('octopus_geo_comparison_ai.webp'),lang+': GEO illustration missing');
+    assert.ok(home.includes('octopus_automation_ai.webp'),lang+': automation illustration missing');
+    assert.ok(!home.includes('class="os-anchors wrap"'),lang+': rejected anchor navigation returned');
+    assert.ok(!home.includes('class="os-passport-landing"'),lang+': GEO Pass landing should not be embedded in homepage');
+    assert.ok(home.includes('href="../'+lang+'/passport/"'),lang+': footer passport link missing');
+    assert.ok(home.includes('class="os-homehero"'),lang+': first screen missing');
+    assert.ok(home.indexOf('id="start"')<home.indexOf('</main>'),lang+': expected short conclusion');
+    assert.ok(passport.includes('class="os-passport-landing"'),lang+': complete original passport page absent');
+    for(const marker of ['hero-pass','benefits-section','geo-pass-process','geo-pass-why','geo-pass-identity']){
+      assert.ok(passport.includes(marker),lang+': legacy passport section lost: '+marker);
+    }
+    assert.ok(experts.includes('href="../../'+lang+'/passport/"'),lang+': experts hub should link to full passport information');
+  }
+});
+
 test('Consulting categories DE/RU/EN have 13 approved directions + Other and phase-two notice',()=>{
   const expected=['strategy','startup','change','process','digital','ai','management','hr','crisis','succession','international','grants','projects','other'];
   const copy={de:['Wähle bis zu drei Beratungsbereiche','zweiten Phase der Registrierung','Unternehmensnachfolge','Fördermittelberatung'],ru:['Выбери до трёх направлений консультирования','втором этапе регистрации','Передача и преемственность бизнеса','Консультирование по субсидиям'],en:['Choose up to three consulting areas','second stage of registration','Business Succession','Grants']};
