@@ -20,3 +20,11 @@
 .geo-capabilities p{font-size:.89rem;line-height:1.61;margin:0}
 .geo-pricing-hint{margin-top:12px!important;font-size:.83rem!important;color:#765f4d!important;font-style:italic}
 @media(max-width:680px){.geo-capabilities{grid-template-columns:1fr}}
+
+/* Why Octopus: compact value-led guide */
+.geo-independent{border-top:1px solid var(--line);padding-top:19px;margin-top:24px}
+.geo-independent h3{font-size:1.43rem!important;margin:0 0 13px}
+.geo-result-note{padding:22px 24px;border-left:4px solid #b98c50;background:#f2e6d5;margin:28px 0 35px}
+.geo-result-note h2{font-size:clamp(1.5rem,2.5vw,2.1rem);margin:0 0 12px}
+.geo-result-note p{line-height:1.7;font-size:.99rem;color:#48382d;margin:0}
+@media(max-width:640px){.geo-result-note{padding:18px 16px}}
