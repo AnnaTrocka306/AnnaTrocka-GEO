@@ -167,19 +167,27 @@ test('Sector dropdown shows only existing first-stage directions and preserves O
   }
 });
 
-test('All three landing CTAs open registration in a new tab; questionnaire navigation remains unchanged',()=>{
+test('Octopus homepage and experts hub preserve localized new-tab GEO Pass entry and questionnaire navigation',()=>{
+  // Approved site architecture 2026-11-17: Octopus is the homepage; GEO Pass lives in the experts section.
+  // Four working registration links are intentionally provided: menu, hero, page end and floating mascot.
   for(const lang of languages){
-    const html=file('geo-pass/'+lang+'/index.html');
-    // Check the exact links, not unrelated navigation.
-    const starts=[...html.matchAll(/<a class="hero-pass__mascot-cta[^"]*" href="\.\.\/(?:de|ru|en)\/create\/"[^>]*>/g)].map(m=>m[0]);
-    assert.equal(starts.length,3,lang+': landing registration CTA count changed');
+    const home=file('geo-pass/'+lang+'/index.html');
+    const starts=[...home.matchAll(/<a\b[^>]*href="\.\.\/(?:de|ru|en)\/create\/"[^>]*>/g)].map(m=>m[0]);
+    assert.equal(starts.length,4,lang+': homepage GEO Pass entry points changed');
     for(const link of starts){
       assert.ok(link.includes('href="../'+lang+'/create/"'),lang+': registration language lost');
-      assert.ok(link.includes('target="_blank"'),lang+': CTA must open a separate tab');
+      assert.ok(link.includes('target="_blank"'),lang+': must preserve landing in a separate tab');
       assert.ok(link.includes('rel="noopener noreferrer"'),lang+': new tab must not control landing');
     }
+    assert.ok(home.includes('class="os-menu"'),lang+': global site navigation missing');
+    assert.ok(home.includes('href="../'+lang+'/how-it-works/"'),lang+': Octopus process link missing');
+    const experts=file('geo-pass/'+lang+'/experts/index.html');
+    assert.ok(experts.includes('action="../../'+lang+'/search/results/"'),lang+': existing name-only search route lost');
+    assert.ok(experts.includes('name="q"'),lang+': name query field changed');
+    assert.ok(experts.includes('href="../../'+lang+'/register/"'),lang+': expert registry lost');
+    assert.ok(experts.includes('href="../../'+lang+'/create/"'),lang+': GEO Pass entry missing from experts page');
     const form=file('geo-pass/'+lang+'/create/sector/index.html');
-    assert.ok(form.includes('href="../channels/"'),lang+': existing form navigation changed');
+    assert.ok(form.includes('href="../channels/"'),lang+': existing questionnaire navigation changed');
   }
 });
 
