@@ -165,3 +165,15 @@ box-shadow:0 3px 10px #24181033
 .search-empty p{margin:0 auto 24px;color:var(--muted)}
 .search-empty .btn{max-width:100%;white-space:normal}
 @media(max-width:740px){.search-empty{padding:20px 15px 28px}}
+
+
+/* Small, fixed CTA using the original approved Octopus illustration. */
+.octo-float{position:fixed;z-index:90;right:clamp(8px,1.5vw,22px);bottom:calc(10px + env(safe-area-inset-bottom,0px));width:clamp(174px,16.5vw,230px);height:auto;display:block;isolation:isolate;text-decoration:none;filter:drop-shadow(0 7px 13px rgba(35,20,10,.42));transition:transform .18s ease,filter .18s ease;cursor:pointer}
+.octo-float img{display:block;width:100%;height:auto}
+.octo-float:hover{transform:translateY(-4px);filter:drop-shadow(0 10px 17px rgba(35,20,10,.52))}
+.octo-float:focus-visible{outline:3px solid #1567ab;outline-offset:4px;border-radius:9px}
+.octo-float__label{position:absolute;z-index:2;pointer-events:none;left:24%;top:56%;width:49%;height:25%;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(180deg,#ffe4a9,#f8d396 68%,#f3c57e);border-radius:5px;color:#402312;font-family:var(--sans);font-weight:850;font-size:clamp(8px,.87vw,11px);letter-spacing:-.03em;line-height:1.1;padding:2px 1px;box-shadow:inset 0 0 4px rgba(255,251,217,.65)}
+@media(max-width:740px){.octo-float{width:clamp(148px,41vw,194px);right:6px;bottom:calc(7px + env(safe-area-inset-bottom,0px))}.octo-float__label{font-size:clamp(7px,2.3vw,9px)}}
+@media(max-width:360px){.octo-float{width:137px}.octo-float__label{font-size:6.7px}}
+body:has(.octo-float) .footer{padding-bottom:max(120px,calc(104px + env(safe-area-inset-bottom,0px)))}
+@media(prefers-reduced-motion:reduce){.octo-float{transition:none}}
