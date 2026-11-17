@@ -81,3 +81,16 @@ body:has(.os-masthead) .footer{padding-bottom:104px}
 @media(max-width:900px){.os-hero-grid,.os-split{grid-template-columns:1fr}.os-hero-art{max-width:650px}.os-step{grid-template-columns:1fr}.os-step:nth-child(even) .os-step-visual,.os-step:nth-child(even) .os-step-copy{order:initial}.os-step-visual{min-height:220px}.os-step-copy{padding:8px 0}.os-time-art{max-width:600px}}
 @media(max-width:740px){.os-head{flex-wrap:nowrap!important;min-height:68px!important;gap:9px;padding:11px 0!important}.os-logo .logo-main{font-size:1.65rem}.os-logo .logo-sub{font-size:.49rem}.os-head .languages{order:2;gap:3px}.os-head .languages a{padding:5px;font-size:.62rem}.os-menu{order:3}.os-menu summary{min-width:49px;padding:8px}.os-menu summary span:last-child{display:none}.os-menu-panel{z-index:150}.os-hero-copy h1{font-size:clamp(2.3rem,9vw,4rem)}.os-hero-grid{gap:30px}.os-anchors a{padding:6px 9px;font-size:.74rem}.os-benefits{grid-template-columns:1fr}.os-graphic-object{font-size:2.7rem}body:has(.os-masthead) .octo-float{width:clamp(112px,30vw,140px);right:5px;bottom:calc(5px + env(safe-area-inset-bottom,0px))}body:has(.os-masthead) .octo-float__label{font-size:clamp(6px,1.8vw,8px)}}
 @media(max-width:360px){.os-head{gap:6px}.os-logo .logo-main{font-size:1.48rem}.os-logo .logo-sub{font-size:.43rem}.os-head .languages a{font-size:.57rem;padding:4px}.os-menu summary{min-width:43px}}
+
+
+/* International, text-free editorial image mosaics and existing branded process pictures. */
+.os-mosaic-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.os-mosaic-images img{display:block;width:100%;height:auto;aspect-ratio:380/244;object-fit:cover;border:1px solid #dbbb9780;border-radius:9px;box-shadow:0 11px 25px #130a064d}
+.os-mosaic-images img:first-child{grid-column:span 2;max-height:275px;object-fit:cover}
+.os-step-picture{display:block;width:min(100%,330px);height:185px;object-fit:contain;margin:16px auto 2px;border-radius:8px}
+.os-step-visual--1 .os-step-picture{width:min(95%,270px);height:185px;object-fit:contain}
+.os-step-visual--2 .os-step-picture,.os-step-visual--3 .os-step-picture,.os-step-visual--4 .os-step-picture,.os-step-visual--5 .os-step-picture,.os-step-visual--6 .os-step-picture{box-shadow:0 6px 17px #35231022}
+.os-step-visual{min-height:290px}
+.os-legacy-breadcrumb{padding-top:13px;padding-bottom:13px;font-size:.81rem}
+.os-legacy-breadcrumb a{color:#825a37}
+@media(max-width:700px){.os-mosaic-images{gap:8px}.os-step-picture{height:173px}.os-step-visual{min-height:263px}}
