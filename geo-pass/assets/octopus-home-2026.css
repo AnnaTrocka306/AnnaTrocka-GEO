@@ -101,3 +101,24 @@
 @media(max-width:850px){.oh-publications-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.oh-publications-grid{grid-template-columns:1fr;gap:11px}.oh-publication{min-height:140px;padding:20px}}
 @media(prefers-reduced-motion:reduce){.oh-publication--linked{transition:none}.oh-publication--linked:hover{transform:none}}
+
+/* FAQ — 13 approved answers. Native details; clear typography, no animation. */
+.oh-faq .oh-section-head{max-width:860px}
+.oh-faq-list{max-width:970px;display:grid;gap:11px}
+.oh-faq-item{border:1px solid #dcc7af;border-radius:12px;background:#fffdf9;overflow:hidden;box-shadow:0 5px 18px #39240e08}
+.oh-faq-item summary{display:flex;align-items:center;justify-content:space-between;gap:22px;cursor:pointer;list-style:none;padding:23px clamp(19px,3vw,30px);color:#37291f}
+.oh-faq-item summary::-webkit-details-marker{display:none}
+.oh-faq-item summary::marker{content:""}
+.oh-faq-item summary h3{margin:0;font-size:clamp(1.02rem,1.54vw,1.22rem);font-weight:735;line-height:1.4;flex:1}
+.oh-faq-item summary:focus-visible{outline:3px solid #1567ab;outline-offset:-3px;border-radius:10px}
+.oh-faq-item[open]{border-color:#c9a881;background:#fffaf1}
+.oh-faq-plus{width:27px;height:27px;min-width:27px;border:1px solid #c3a789;border-radius:50%;display:grid;place-items:center;font-size:1.25rem;color:#65452a;line-height:1}
+.oh-faq-plus:before{content:"+";display:block}
+.oh-faq-item[open] .oh-faq-plus:before{content:"−"}
+.oh-faq-answer{border-top:1px solid #e6d9c8;padding:19px clamp(19px,3vw,30px) 24px}
+.oh-site .oh-faq-answer p{font-size:clamp(.97rem,1.22vw,1.07rem);line-height:1.79;margin:0 0 15px;color:#55483d;max-width:850px}
+.oh-site .oh-faq-answer p:last-child{margin-bottom:0}
+.oh-faq-answer strong{font-weight:780;color:#3a2b20}
+.oh-faq-answer a{color:#79512c;font-weight:780;text-decoration:underline;text-underline-offset:4px}
+.oh-faq-dev{color:#886a4d;font-weight:630;white-space:nowrap}
+@media(max-width:650px){.oh-faq-item summary{padding:19px 17px;gap:12px}.oh-faq-answer{padding:17px 17px 23px}.oh-faq-list{gap:9px}}
