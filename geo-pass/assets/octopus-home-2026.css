@@ -15,19 +15,19 @@
 .oh-site .oh-lead{font-size:clamp(1.08rem,1.58vw,1.27rem);line-height:1.72}
 .oh-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-align:center;padding:14px 21px;background:#4d3425;border:1px solid #4d3425;border-radius:9px;color:#fffaf2!important;text-decoration:none;font-weight:750;font-size:.91rem;line-height:1.25;min-height:49px;transition:background .15s ease,transform .15s ease}
 .oh-button:hover{background:#694a33;transform:translateY(-1px)}
-.oh-button--light{color:#302219!important;background:#f6ddad;border-color:#f6ddad}.oh-button--light:hover{background:#f4c982}
+.oh-button--light{color:#302219!important;background:#e7bf82;border-color:#b68b55;box-shadow:0 6px 17px #7c5b341e}.oh-button--light:hover{background:#dfb06d}
 .oh-text-link{display:inline-flex;align-items:center;gap:7px;color:#745033;font-weight:750;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;font-size:.94rem}
 .oh-text-link:hover{color:#332319}
 .oh-site .oh-muted{color:var(--oh-muted)}
 .oh-site .oh-section{padding:clamp(65px,8vw,115px) 0;scroll-margin-top:30px}
 .oh-section-head{max-width:800px;margin-bottom:32px}
 .oh-section-head p{color:var(--oh-muted)}
-.oh-hero{background:radial-gradient(circle at 92% 0%,#70533f 0%,#483529 35%,#28221d 100%);color:#fff8ee;padding:clamp(70px,9vw,125px) 0 clamp(75px,10vw,135px)}
-.oh-hero .oh-kicker{color:#e9bd88}
+.oh-hero{background:radial-gradient(circle at 92% 5%,#fffaf2 0%,#f8f1e7 43%,#eee2d3 100%);color:#33281f;padding:clamp(70px,9vw,125px) 0 clamp(75px,10vw,135px)}
+.oh-hero .oh-kicker{color:#805634}
 .oh-hero .oh-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(185px,.58fr);gap:clamp(25px,4.2vw,60px);align-items:center}
-.oh-hero .oh-lead{color:#f0dfcd;max-width:765px}
+.oh-hero .oh-lead{color:#544539;max-width:765px}
 .oh-hero h1{max-width:810px}
-.oh-hero .oh-hero-em{color:#f5d49a;display:block}
+.oh-hero .oh-hero-em{color:#865932;display:block}
 .oh-hero-actions{display:flex;flex-wrap:wrap;gap:15px;align-items:center;margin-top:30px}
 .oh-hero-note{font-size:.84rem!important;color:#d5c7b8!important;margin-top:16px!important}
 .oh-hero-art{text-align:center;margin:0;min-width:0}
