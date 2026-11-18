@@ -1,0 +1,87 @@
+
+/* Octopus Startseite & Preiskatalog — isolated UI layer, 2026-11-18. */
+/* Existing branding/images and underlying GEO Pass implementation remain unchanged. */
+.oh-site{--oh-ink:#34271f;--oh-muted:#69584b;--oh-cream:#faf7f1;--oh-tan:#eaddcb;--oh-gold:#c09a6c;--oh-dark:#30251f;color:var(--oh-ink);background:var(--oh-cream)}
+.oh-site *{box-sizing:border-box}
+.oh-site a:focus-visible,.oh-site button:focus-visible{outline:3px solid #1567ab;outline-offset:4px}
+.oh-shell{max-width:1150px;margin:0 auto;padding:0 clamp(19px,4.2vw,56px)}
+.oh-kicker{display:inline-flex;align-items:center;gap:10px;font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;font-weight:800;color:#8b633c}
+.oh-kicker:before{content:"";width:24px;height:1px;background:currentColor}
+.oh-site h1,.oh-site h2,.oh-site h3{color:inherit;overflow-wrap:anywhere}
+.oh-site h1{font-size:clamp(2.6rem,5.4vw,5.15rem);line-height:1.065;letter-spacing:-.035em;margin:15px 0 24px;font-weight:750}
+.oh-site h2{font-size:clamp(2rem,3.3vw,3.15rem);line-height:1.17;letter-spacing:-.025em;font-weight:730;margin:15px 0 20px}
+.oh-site h3{font-size:clamp(1.14rem,1.8vw,1.43rem);line-height:1.3;margin:0 0 12px;font-weight:730}
+.oh-site p{line-height:1.72;font-size:clamp(1rem,1.28vw,1.125rem);margin:0 0 15px;max-width:730px}
+.oh-site .oh-lead{font-size:clamp(1.08rem,1.58vw,1.27rem);line-height:1.72}
+.oh-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-align:center;padding:14px 21px;background:#4d3425;border:1px solid #4d3425;border-radius:9px;color:#fffaf2!important;text-decoration:none;font-weight:750;font-size:.91rem;line-height:1.25;min-height:49px;transition:background .15s ease,transform .15s ease}
+.oh-button:hover{background:#694a33;transform:translateY(-1px)}
+.oh-button--light{color:#302219!important;background:#f6ddad;border-color:#f6ddad}.oh-button--light:hover{background:#f4c982}
+.oh-text-link{display:inline-flex;align-items:center;gap:7px;color:#745033;font-weight:750;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;font-size:.94rem}
+.oh-text-link:hover{color:#332319}
+.oh-site .oh-muted{color:var(--oh-muted)}
+.oh-site .oh-section{padding:clamp(65px,8vw,115px) 0;scroll-margin-top:30px}
+.oh-section-head{max-width:800px;margin-bottom:32px}
+.oh-section-head p{color:var(--oh-muted)}
+.oh-hero{background:radial-gradient(circle at 92% 0%,#70533f 0%,#483529 35%,#28221d 100%);color:#fff8ee;padding:clamp(70px,9vw,125px) 0 clamp(75px,10vw,135px)}
+.oh-hero .oh-kicker{color:#e9bd88}
+.oh-hero .oh-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(185px,.58fr);gap:clamp(25px,4.2vw,60px);align-items:center}
+.oh-hero .oh-lead{color:#f0dfcd;max-width:765px}
+.oh-hero h1{max-width:810px}
+.oh-hero .oh-hero-em{color:#f5d49a;display:block}
+.oh-hero-actions{display:flex;flex-wrap:wrap;gap:15px;align-items:center;margin-top:30px}
+.oh-hero-note{font-size:.84rem!important;color:#d5c7b8!important;margin-top:16px!important}
+.oh-hero-art{text-align:center;margin:0;min-width:0}
+.oh-hero-art img{display:block;max-width:100%;width:315px;height:auto;filter:drop-shadow(0 17px 24px #12090655);margin:auto}
+.oh-split{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(28px,6vw,85px);align-items:center}
+.oh-image{background:#efe4d4;border:1px solid #dbc7af;box-shadow:0 20px 46px #3321121c;border-radius:17px;padding:11px;overflow:hidden;margin:0}
+.oh-image img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:contain;border-radius:11px;background:#e8d6be}
+.oh-image figcaption{font-size:.73rem;line-height:1.5;color:#786452;padding:10px 7px 3px}
+.oh-section--cream{background:#faf7f1}
+.oh-section--white{background:#fffdf9}
+.oh-section--sand{background:#f1e8dc}
+.oh-section--brown{background:#423126;color:#fff6ea}
+.oh-section--brown .oh-kicker{color:#eac58f}
+.oh-section--brown p,.oh-section--brown .oh-muted{color:#e5d4c1}
+.oh-quote{font-weight:740;color:#684b37;font-size:clamp(1.13rem,1.65vw,1.42rem);line-height:1.45;border-left:4px solid #c3a279;padding-left:20px;margin-top:25px;max-width:675px}
+.oh-product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.oh-product{background:#fffdfa;border:1px solid #ddc8b1;border-radius:17px;box-shadow:0 12px 25px #45301c0c;padding:clamp(22px,2.6vw,31px);display:flex;flex-direction:column;min-width:0;min-height:340px}
+.oh-product .oh-product-index{font-size:.73rem;letter-spacing:.14em;text-transform:uppercase;color:#886543;font-weight:800;margin-bottom:23px}
+.oh-product p{color:#625247;font-size:.95rem;line-height:1.65}
+.oh-product .oh-product-tagline{font-weight:740;color:#3d3028;margin:5px 0 12px;line-height:1.4}
+.oh-product .oh-product-bottom{margin-top:auto;padding-top:28px}
+.oh-product .oh-product-bottom a{display:inline-flex;font-size:.92rem}
+.oh-product--primary{border:2px solid #ac8054;background:#fffbf5}
+.oh-benefit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-top:38px}
+.oh-benefit{padding:27px 24px;border:1px solid #e0d0be;border-radius:14px;background:#fffdf9;min-height:190px}
+.oh-benefit .oh-number{display:grid;place-items:center;background:#ece0d0;color:#694b32;border-radius:8px;font-size:.83rem;font-weight:800;width:37px;height:37px;margin-bottom:18px}
+.oh-benefit h3{font-size:1.16rem;margin-bottom:10px}
+.oh-benefit p{font-size:.92rem;color:#63564b;line-height:1.65;margin:0}
+.oh-kmu-accent{display:inline-block;background:#f8e7c9;border-radius:6px;padding:4px 11px;color:#5c422e;font-size:.8rem;font-weight:750;margin:0 0 19px}
+.oh-testimonials{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.oh-review{border-radius:15px;border:1px solid #d7c3ae;background:#fffdf8;padding:clamp(20px,2.5vw,30px);display:flex;flex-direction:column;min-height:220px}
+.oh-review blockquote{margin:0 0 22px;padding:0;font-size:1.08rem;line-height:1.65;color:#433429}
+.oh-review footer{border-top:1px solid #e5d8c9;padding-top:15px;margin-top:auto;font-size:.93rem;font-weight:760;color:#4d392c}
+.oh-review footer span{display:block;font-size:.76rem;font-weight:500;color:#89735f;margin-top:4px}
+.oh-demo-note{border:1px dashed #bc9b76;background:#fff5e6;border-radius:8px;padding:12px 16px;font-size:.79rem!important;color:#745333!important;margin-top:16px;max-width:none!important}
+.oh-reviews-actions{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin-top:27px}
+.oh-mini-cta{border-top:1px solid #cfbba7;margin-top:32px;padding-top:27px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.oh-mini-cta strong{font-size:1.23rem;line-height:1.45}
+.oh-price-hero{background:linear-gradient(120deg,#32261f,#634933);color:#fffaef;padding:75px 0}
+.oh-price-hero .oh-kicker{color:#f0c78d}
+.oh-price-hero h1{font-size:clamp(2.5rem,4.5vw,4.2rem)}
+.oh-price-hero p{color:#e8d8c6}
+.oh-price-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.oh-price-nav a{border-radius:8px;padding:10px 15px;background:#fffbf2;color:#463122;text-decoration:none;font-weight:700;font-size:.91rem}
+.oh-price-list{display:grid;gap:18px;margin-top:28px}
+.oh-price-entry{background:#fffdfa;border:1px solid #decbb5;border-radius:15px;padding:clamp(23px,3.3vw,42px);scroll-margin-top:28px}
+.oh-price-entry:target{outline:3px solid #ad8354;outline-offset:4px}
+.oh-price-entry h2{font-size:clamp(1.7rem,2.8vw,2.35rem);margin:6px 0 13px}
+.oh-price-badge{display:inline-block;font-size:.8rem;border-radius:6px;padding:6px 9px;background:#e8d6bf;color:#583d29;font-weight:800}
+.oh-price-entry p{font-size:.99rem;color:#605043}
+.oh-price-amount{font-size:1.6rem;font-weight:800;color:#3d2b1f;margin:14px 0}
+.oh-price-develop{background:#fff3e1;border:1px solid #e3c79d;border-radius:10px;padding:17px;margin-bottom:25px}
+.oh-price-develop strong{display:block;margin-bottom:4px}
+.oh-price-develop p{font-size:.91rem;margin:0;color:#64513f}
+@media (max-width:990px){.oh-product-grid,.oh-benefit-grid,.oh-testimonials{grid-template-columns:repeat(2,minmax(0,1fr))}.oh-product-grid .oh-product:last-child,.oh-testimonials .oh-review:last-child{grid-column:1/-1}.oh-hero .oh-grid{grid-template-columns:1fr 220px}}
+@media (max-width:720px){.oh-hero .oh-grid,.oh-split{grid-template-columns:1fr}.oh-hero{padding:57px 0 65px}.oh-hero-art{max-width:215px;margin:0 auto}.oh-hero h1{font-size:clamp(2.45rem,9vw,3.35rem)}.oh-section-head{margin-bottom:25px}.oh-product-grid,.oh-benefit-grid,.oh-testimonials{grid-template-columns:1fr}.oh-product-grid .oh-product:last-child,.oh-testimonials .oh-review:last-child{grid-column:auto}.oh-product{min-height:250px}.oh-benefit{min-height:unset}.oh-site .oh-section{padding:55px 0}.oh-hero-actions .oh-button,.oh-reviews-actions .oh-button{width:100%}.oh-mini-cta{align-items:stretch}.oh-mini-cta .oh-button{width:100%}}
+@media (prefers-reduced-motion:reduce){.oh-button{transition:none}.oh-button:hover{transform:none}}
