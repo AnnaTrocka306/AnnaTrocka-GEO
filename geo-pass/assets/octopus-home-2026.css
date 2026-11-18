@@ -85,3 +85,19 @@
 @media (max-width:990px){.oh-product-grid,.oh-benefit-grid,.oh-testimonials{grid-template-columns:repeat(2,minmax(0,1fr))}.oh-product-grid .oh-product:last-child,.oh-testimonials .oh-review:last-child{grid-column:1/-1}.oh-hero .oh-grid{grid-template-columns:1fr 220px}}
 @media (max-width:720px){.oh-hero .oh-grid,.oh-split{grid-template-columns:1fr}.oh-hero{padding:57px 0 65px}.oh-hero-art{max-width:215px;margin:0 auto}.oh-hero h1{font-size:clamp(2.45rem,9vw,3.35rem)}.oh-section-head{margin-bottom:25px}.oh-product-grid,.oh-benefit-grid,.oh-testimonials{grid-template-columns:1fr}.oh-product-grid .oh-product:last-child,.oh-testimonials .oh-review:last-child{grid-column:auto}.oh-product{min-height:250px}.oh-benefit{min-height:unset}.oh-site .oh-section{padding:55px 0}.oh-hero-actions .oh-button,.oh-reviews-actions .oh-button{width:100%}.oh-mini-cta{align-items:stretch}.oh-mini-cta .oh-button{width:100%}}
 @media (prefers-reduced-motion:reduce){.oh-button{transition:none}.oh-button:hover{transform:none}}
+
+/* Block 07 — editorial / external platforms. Calm, compact links rather than a logo wall. */
+.oh-publications{border-top:1px solid #e7dacb}
+.oh-publications-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.oh-publication{display:flex;flex-direction:column;align-items:flex-start;gap:11px;min-width:0;min-height:173px;padding:24px;border:1px solid #decab4;border-radius:14px;background:#faf6f0;color:#3b2c21;text-decoration:none;box-shadow:0 9px 22px #3321120b}
+.oh-publication-logo{display:block;font-size:clamp(1.18rem,2vw,1.58rem);font-weight:790;line-height:1.2;letter-spacing:-.015em;overflow-wrap:anywhere}
+.oh-publication-label{color:#68574a;font-size:.89rem;line-height:1.45}
+.oh-publication-state{display:block;margin-top:auto;font-size:.79rem;font-weight:750;color:#875f3c;line-height:1.45}
+.oh-publication--placeholder{background:#fbf9f6;border-style:dashed}
+.oh-publication--placeholder .oh-publication-state{color:#7e7064}
+.oh-publication--linked{border-color:#c8ab89;transition:background .15s ease,border-color .15s ease,transform .15s ease}
+.oh-publication--linked:hover{background:#f5eadc;border-color:#9d7951;transform:translateY(-2px)}
+.oh-publication--linked:focus-visible{outline:3px solid #1567ab;outline-offset:4px}
+@media(max-width:850px){.oh-publications-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.oh-publications-grid{grid-template-columns:1fr;gap:11px}.oh-publication{min-height:140px;padding:20px}}
+@media(prefers-reduced-motion:reduce){.oh-publication--linked{transition:none}.oh-publication--linked:hover{transform:none}}
