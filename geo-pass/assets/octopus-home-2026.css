@@ -122,3 +122,10 @@
 .oh-faq-answer a{color:#79512c;font-weight:780;text-decoration:underline;text-underline-offset:4px}
 .oh-faq-dev{color:#886a4d;font-weight:630;white-space:nowrap}
 @media(max-width:650px){.oh-faq-item summary{padding:19px 17px;gap:12px}.oh-faq-answer{padding:17px 17px 23px}.oh-faq-list{gap:9px}}
+
+/* Product 01: prominent GEO Pass CTA; accessible at desktop and mobile widths. */
+.oh-product .oh-pass-cta{display:flex;width:100%;min-height:58px;padding:15px 17px;align-items:center;justify-content:center;gap:9px;background:#a77540;border:1px solid #8a5d31;border-radius:10px;color:#fff!important;font-size:clamp(.93rem,1.2vw,1.04rem);font-weight:800;line-height:1.4;text-align:center;text-decoration:none;box-shadow:0 6px 16px #62422222;transition:background .15s ease,transform .15s ease}
+.oh-product .oh-pass-cta:hover{background:#81542d;transform:translateY(-1px)}
+.oh-product .oh-pass-cta:focus-visible{outline:3px solid #145d9f;outline-offset:4px}
+.oh-product .oh-pass-cta span{flex:0 0 auto}
+@media(prefers-reduced-motion:reduce){.oh-product .oh-pass-cta{transition:none}.oh-product .oh-pass-cta:hover{transform:none}}
