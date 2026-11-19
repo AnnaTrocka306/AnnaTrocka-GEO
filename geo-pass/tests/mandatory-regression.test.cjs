@@ -192,7 +192,7 @@ test('Octopus homepage and experts hub preserve localized new-tab GEO Pass entry
 });
 
 
-test('Octopus homepage uses two approved stamped AI illustrations and links to a separate GEO Pass landing',()=>{
+test('Octopus homepage preserves two approved AI illustrations, current hero, FAQ and standalone GEO Pass landing',()=>{
   for(const lang of languages){
     const home=file('geo-pass/'+lang+'/index.html');
     const passport=file('geo-pass/'+lang+'/passport/index.html');
@@ -202,8 +202,9 @@ test('Octopus homepage uses two approved stamped AI illustrations and links to a
     assert.ok(!home.includes('class="os-anchors wrap"'),lang+': rejected anchor navigation returned');
     assert.ok(!home.includes('class="os-passport-landing"'),lang+': GEO Pass landing should not be embedded in homepage');
     assert.ok(home.includes('href="../'+lang+'/passport/"'),lang+': footer passport link missing');
-    assert.ok(home.includes('class="os-homehero"'),lang+': first screen missing');
-    assert.ok(home.indexOf('id="start"')<home.indexOf('</main>'),lang+': expected short conclusion');
+    assert.ok(home.includes('<section class="oh-hero" id="startseite"'),lang+': approved Octopus first screen missing');
+    const mainStart=home.indexOf('<main'),heroStart=home.indexOf('id="startseite"'),faqStart=home.indexOf('id="faq"'),mainEnd=home.indexOf('</main>');
+    assert.ok(mainStart>=0&&heroStart>mainStart&&faqStart>heroStart&&faqStart<mainEnd,lang+': homepage sections are missing or out of order');
     assert.ok(passport.includes('class="os-passport-landing"'),lang+': complete original passport page absent');
     for(const marker of ['hero-pass','benefits-section','geo-pass-process','geo-pass-why','geo-pass-identity']){
       assert.ok(passport.includes(marker),lang+': legacy passport section lost: '+marker);
