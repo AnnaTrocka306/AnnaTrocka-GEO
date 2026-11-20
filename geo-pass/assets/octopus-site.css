@@ -188,3 +188,5 @@ body:has(.oh-site #plattform) .octo-float.oh-home-cta-gated:hover{transform:tran
 .os-glossary-entry h2{margin:0 0 12px}.os-glossary-entry p{line-height:1.7}
 @media(max-width:990px){.os-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.os-footer-grid,.os-architecture-sections{grid-template-columns:1fr}.os-menu-panel{max-height:calc(100dvh - 80px)}}
+
+.os-geo-subnav{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}.os-geo-subnav a{display:inline-block;background:#fff9ed;color:#553c29!important;border:1px solid #dbc9b4;border-radius:9px;padding:11px 15px;text-decoration:none;font-size:.94rem}.os-geo-subnav a:hover{text-decoration:underline}
