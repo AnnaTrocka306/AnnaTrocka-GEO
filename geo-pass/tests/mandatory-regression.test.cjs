@@ -259,7 +259,7 @@ test('Stage-1 architecture: eight navigation sections, utility-only footer, work
     const footer=file('geo-pass/'+lang+'/services/index.html').match(/<footer[^>]*>([\s\S]*?)<\/footer>/);
     assert.ok(footer,lang+': footer missing');
     for(const target of [...utilityDestinations,...archiveDestinations]){
-      assert.ok(footer[1].includes('href="../'+lang+'/'+target+'"'),lang+': footer entry missing '+target);
+      assert.ok(footer[1].includes('href="../../'+lang+'/'+target+'"'),lang+': service footer entry missing '+target);
       assert.ok(fs.existsSync(path.join(__dirname,'..',lang,target,'index.html')),lang+': linked page does not exist '+target);
     }
     assert.ok(footer[1].includes('os-archive-links'),lang+': temporary content archive missing');
