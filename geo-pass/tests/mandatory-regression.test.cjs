@@ -227,10 +227,15 @@ test('Stage-3: mobile-friendly value-first hero, original green Octopus and revi
   assert.ok(colorStyle.includes('.oh-homehero-v3'), 'dedicated responsive hero style is absent');
   assert.ok(siteStyle.includes('.oh-home-cta-gated.is-visible'), 'floating mascot visible-state style is absent');
   assert.ok(revealScript.includes("getElementById('plattform')"), 'floating CTA must start at platform section');
+  assert.ok(colorStyle.includes('max-width:1024px'), 'responsive image hiding rule missing');
+  assert.ok(colorStyle.includes('.oh-hero-side-visual'), 'desktop visual CSS missing');
   for(const lang of languages){
     const home=file('geo-pass/'+lang+'/index.html');
     const hero=home.slice(home.indexOf('id="startseite"'),home.indexOf('id="plattform"'));
     const image=lang==='de'?'octopus-cta-green.webp':lang==='ru'?'octopus-cta-green-ru.webp':'octopus-cta-green-en.webp';
+    assert.ok(hero.includes('oh-hero-contrast'),lang+': emotional customer-acquisition headline missing');
+    assert.ok(hero.includes('octopus-ai-recommendations-hero.webp'),lang+': supplied desktop AI diagram missing');
+    assert.ok(hero.indexOf('oh-hero-contrast')<hero.indexOf('oh-hero-value'),lang+': customer problem must precede value statement');
     assert.ok(hero.includes('oh-hero-value'), lang+': customer value panel is missing');
     assert.ok(hero.includes('oh-hero-perks'), lang+': three concise benefits are missing');
     assert.equal((hero.match(/class="oh-hero-perk"/g)||[]).length,3,lang+': expected three compact benefits');
