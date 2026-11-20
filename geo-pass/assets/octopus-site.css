@@ -139,3 +139,30 @@ body:has(.os-masthead) .octo-float__label{font-size:clamp(8.5px,.95vw,11px)}
 
 /* Octopus independent multilingual service detail pages (2026-11-20) */
 .oh-price-list>.oh-price-entry{max-width:100%;min-width:0}.oh-price-entry .oh-editorial-steps{max-width:100%}.oh-price-entry .oh-editorial-steps li{margin-bottom:14px}.oh-product-grid>.oh-product{min-width:0}.oh-product .oh-price-amount{font-size:1.2rem;margin-top:12px}.oh-product .oh-button{margin-top:16px}.oh-price-hero .oh-button{display:inline-flex;margin-top:20px}
+
+
+/* Homepage CTA: larger green octopus, shown only once the second ("platform") section comes into view. */
+body:has(.oh-site #plattform) .octo-float.oh-home-cta-gated{
+  width:clamp(255px,25vw,325px);
+  right:9px;
+  bottom:calc(8px + env(safe-area-inset-bottom,0px));
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translateY(12px);
+  transition:opacity .2s ease,transform .2s ease,visibility .2s ease;
+}
+body:has(.oh-site #plattform) .octo-float.oh-home-cta-gated.is-visible{
+  opacity:1;visibility:visible;pointer-events:auto;transform:none;
+}
+body:has(.oh-site #plattform) .octo-float.oh-home-cta-gated:hover{transform:translateY(-3px)}
+@media(max-width:740px){
+  body:has(.oh-site #plattform) .octo-float.oh-home-cta-gated{
+    width:clamp(205px,58vw,250px);
+    right:5px;
+    bottom:calc(6px + env(safe-area-inset-bottom,0px));
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  body:has(.oh-site #plattform) .octo-float.oh-home-cta-gated{transition:none}
+}
