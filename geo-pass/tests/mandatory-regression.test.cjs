@@ -193,6 +193,33 @@ test('Octopus homepage and experts hub preserve localized new-tab GEO Pass entry
 
 
 
+test('Stage-2 commercial terms: transparent net prices, differentiated offer, and honest website capability status',()=>{
+  for(const lang of languages){
+    const website=file('geo-pass/'+lang+'/services/website/index.html');
+    const articles=file('geo-pass/'+lang+'/services/articles/index.html');
+    const services=file('geo-pass/'+lang+'/services/index.html');
+    const prices=file('geo-pass/'+lang+'/pricing/index.html');
+    const vat=lang==='de'?'gesetzlichen Umsatzsteuer':lang==='ru'?'НДС по действующей ставке':'applicable VAT';
+    for(const [name,html] of [['Website',website],['Articles',articles],['Services',services],['Archived prices',prices]]){
+      assert.ok(html.includes(vat),lang+': '+name+' must disclose net prices plus VAT');
+    }
+    for(const label of ['oh-website-rate-grid','oh-website-benefits','oh-website-questions','oh-website-pricing','oh-website-process']){
+      assert.ok(website.includes(label),lang+': detailed website explanation missing '+label);
+    }
+    assert.ok(website.includes('19,90 €')||website.includes('€19.90'),lang+': 19.90 mapping price missing');
+    assert.ok(website.includes('150 €')||website.includes('€150'),lang+': first-page price missing');
+    assert.ok(website.includes('90 €')||website.includes('€90'),lang+': additional-page price missing');
+    assert.ok(website.includes('noch in Entwicklung')||website.includes('ещё разрабатывается')||website.includes('still being developed'),lang+': planned editor must not be presented as live');
+    for(const [name,html] of [['Articles',articles],['Services',services],['Archived prices',prices]]){
+      assert.ok(html.includes('oh-discount-current'),lang+': '+name+' missing green current price');
+      assert.ok(html.includes('oh-discount-previous'),lang+': '+name+' missing visible crossed-out old price');
+      assert.ok(html.includes('oh-discount-saving'),lang+': '+name+' missing discount message');
+    }
+    assert.ok(articles.includes('glossary/#geo'),lang+': GEO reference should resolve to the glossary');
+    assert.ok(prices.includes('services/website/'),lang+': archived pricing should reference the full website description');
+  }
+});
+
 test('Stage-1 architecture: eight navigation sections, utility-only footer, working glossary and archive links',()=>{
   const menuDestinations=['','product-features/','geo/','about/','blog/','case-studies/','services/','onboarding/'];
   const utilityDestinations=['agb/','privacy/','legal/','search/','register/','glossary/','what-is-geo/'];
