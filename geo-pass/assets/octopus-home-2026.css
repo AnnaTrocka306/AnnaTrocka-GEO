@@ -363,3 +363,66 @@
  .oh-site .oh-homehero-v3 .oh-hero-perk{font-size:.7rem;padding:4px 3px}
 }
 @media(prefers-reduced-motion:reduce){.oh-site .oh-homehero-v3 .oh-hero-art a{transition:none}}
+
+/* Approved hero refinement 2026-11-20: original customer-acquisition tension + supplied AI illustration. */
+@media (min-width:1025px){
+ .oh-site .oh-homehero-v3 .oh-hero-layout{
+   display:grid;
+   grid-template-columns:minmax(0,1.2fr) minmax(330px,.87fr);
+   column-gap:clamp(22px,3.4vw,53px);
+   align-items:center;
+   max-width:1200px;
+ }
+ .oh-site .oh-homehero-v3 .oh-hero-copy{min-width:0;max-width:100%;}
+ .oh-site .oh-homehero-v3 h1{font-size:clamp(2.35rem,3.15vw,3.05rem);line-height:1.11;max-width:680px;margin:0 0 10px;}
+ .oh-site .oh-homehero-v3 .oh-hero-contrast{
+   font-size:clamp(1.4rem,1.95vw,1.8rem);
+   font-weight:650;
+   line-height:1.24;
+   letter-spacing:-.019em;
+   max-width:680px;
+   color:#98623c;
+   margin:0 0 13px;
+ }
+ .oh-site .oh-homehero-v3 .oh-hero-value{padding:10px 16px;min-height:62px;margin-bottom:12px;max-width:680px;}
+ .oh-site .oh-homehero-v3 .oh-hero-value strong{font-size:clamp(1.07rem,1.5vw,1.45rem);}
+ .oh-site .oh-homehero-v3 .oh-hero-description{font-size:.99rem;line-height:1.55;max-width:690px;}
+ .oh-site .oh-homehero-v3 .oh-hero-art{width:min(100%,292px);margin:9px 0 0;}
+ .oh-site .oh-homehero-v3 .oh-hero-art a,.oh-site .oh-homehero-v3 .oh-hero-art img{max-width:292px;}
+ .oh-site .oh-homehero-v3 .oh-hero-side-visual{
+   grid-column:2;
+   grid-row:1;
+   align-self:center;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   justify-content:center;
+   max-width:485px;
+   margin:0;
+   padding:0;
+ }
+ .oh-site .oh-homehero-v3 .oh-hero-side-visual img{display:block;width:100%;height:auto;max-height:515px;object-fit:contain;border-radius:15px;box-shadow:0 11px 35px rgba(82,49,20,.06)}
+ .oh-site .oh-homehero-v3 .oh-hero-side-visual figcaption{font-size:.71rem;line-height:1.35;color:#80664f;text-align:center;margin-top:7px;}
+ .oh-site .oh-homehero-v3 .oh-hero-wave{grid-column:1 / -1;grid-row:2;margin:10px -4vw 0;height:22px;}
+ .oh-site .oh-homehero-v3 .oh-hero-perks{grid-column:1 / -1;grid-row:3;width:100%;margin:0 auto;max-width:960px;}
+}
+@media (min-width:1025px) and (max-height:780px){
+ .oh-site .oh-homehero-v3{padding-top:19px;}
+ .oh-site .oh-homehero-v3 .oh-hero-side-visual img{max-height:440px;}
+ .oh-site .oh-homehero-v3 .oh-hero-perks{padding:9px 0 12px;}
+}
+@media(max-width:1024px){
+ .oh-site .oh-homehero-v3 .oh-hero-side-visual{display:none;}
+ .oh-site .oh-homehero-v3 .oh-hero-contrast{
+   display:block;
+   font-family:var(--serif);
+   font-size:clamp(1.42rem,3vw,1.95rem);
+   line-height:1.24;
+   color:#98623c;
+   margin:0 0 14px;
+   font-weight:630;
+ }
+}
+@media(max-width:740px){
+ .oh-site .oh-homehero-v3 .oh-hero-contrast{font-size:clamp(1.3rem,5.15vw,1.65rem);margin:0 0 15px;}
+}
