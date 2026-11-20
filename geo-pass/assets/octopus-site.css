@@ -238,3 +238,58 @@ body:has(.oh-site #plattform) .octo-float.oh-home-cta-gated:hover{transform:tran
   .os-architecture-page .os-glossary-entry p{font-size:.96rem}
   .os-architecture-page .os-glossary-index a{font-size:.82rem}
 }
+
+/* Octopus stage 2: marketing-first website copy, ordinary net rates and special offers. */
+.oh-site .oh-website-product{max-width:1040px;margin:0 auto;}
+.oh-site .oh-website-product>h2{font-size:clamp(1.65rem,2.4vw,2.25rem);line-height:1.2;margin:36px 0 15px;color:#3b281e;}
+.oh-site .oh-website-product>h3{font-size:clamp(1.25rem,1.8vw,1.65rem);line-height:1.24;margin:30px 0 13px;color:#4d3425;}
+.oh-site .oh-website-product>p{max-width:83ch;line-height:1.78;}
+.oh-site .oh-website-deck{max-width:800px!important;font-size:clamp(1.15rem,1.75vw,1.35rem)!important;color:#4d3425!important;line-height:1.55!important;}
+.oh-site .oh-website-promise{background:#f4e7d4;border-left:4px solid #a67a48;border-radius:0 11px 11px 0;padding:17px 22px;margin:22px 0!important;color:#4d3425!important;}
+.oh-site .oh-website-benefits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:22px 0 38px;}
+.oh-site .oh-website-benefit{background:#fff9ed;border:1px solid #e5ceb0;border-radius:12px;padding:21px 23px;}
+.oh-site .oh-website-benefit h3{font:600 clamp(1.15rem,1.5vw,1.45rem)/1.35 var(--serif);color:#4d3425;margin:0 0 12px;}
+.oh-site .oh-website-benefit p{margin:0;line-height:1.64;}
+.oh-site .oh-website-questions{counter-reset:website-question;display:grid;gap:10px;margin:20px 0 22px;padding:0;list-style:none;}
+.oh-site .oh-website-questions li{counter-increment:website-question;display:flex;align-items:flex-start;gap:12px;background:#fffaf4;border:1px solid #e6d7c4;border-radius:9px;padding:13px 16px;font-size:.99rem;line-height:1.58;}
+.oh-site .oh-website-questions li:before{content:counter(website-question,decimal-leading-zero);font-weight:800;color:#98632f;font-size:.85rem;padding-top:2px;}
+.oh-site .oh-website-process{max-width:100%;}
+.oh-site .oh-website-pricing{padding:24px clamp(16px,3vw,32px);margin:35px 0;background:#f7efe4;border:1px solid #d8c3a8;border-radius:13px;}
+.oh-site .oh-website-pricing h2{font-size:clamp(1.65rem,2.4vw,2.25rem);margin:0 0 12px;}
+.oh-site .oh-website-rate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:23px 0 13px;}
+.oh-site .oh-website-rate{border-radius:10px;background:#fffdfa;border:1px solid #ddc5a9;padding:17px 15px;min-width:0;}
+.oh-site .oh-website-rate>strong{display:block;min-height:42px;font-size:.95rem;line-height:1.5;color:#4d3425;}
+.oh-site .oh-website-rate .oh-price-amount{margin:7px 0;color:#6d4930;font-size:clamp(1.5rem,2.4vw,1.85rem);font-weight:650;}
+.oh-site .oh-website-rate>span{display:block;color:#6e6357;font-size:.8rem;line-height:1.5;}
+.oh-site .oh-website-closing{border-top:1px solid #dbc8b2;margin-top:35px;padding-top:24px;}
+.oh-site .oh-website-closing h2{font-size:clamp(1.55rem,2.25vw,2.15rem);margin:0 0 10px;}
+.oh-site .oh-website-closing a{display:inline-block;margin-top:10px;}
+.oh-site .oh-tax-note{display:block!important;max-width:70ch;margin:9px 0 0!important;color:#645648!important;font-size:.82rem!important;font-weight:400!important;line-height:1.55!important;}
+.oh-site .oh-editorial-offer{display:block;width:fit-content;max-width:100%;background:#fff8eb;border:1px solid #d9c5ac;padding:17px 20px;border-radius:13px;margin:17px 0 24px;}
+.oh-site .oh-discount-prices{display:flex;flex-wrap:wrap;gap:12px 17px;align-items:center;margin:12px 0 2px;}
+.oh-site .oh-discount-current{display:inline-flex;align-items:center;justify-content:center;min-width:108px;padding:10px 20px;background:linear-gradient(155deg,#21b234,#168b28);border:1px solid #168526;border-radius:12px;box-shadow:inset 0 2px 2px #ffffff65,0 4px 0 #11692030;color:#fff!important;font-size:clamp(1.7rem,2.9vw,2.25rem);font-weight:750;line-height:1.1;white-space:nowrap;cursor:default;user-select:text;}
+.oh-site .oh-discount-previous{display:flex;flex-direction:column;gap:2px;color:#b52b36;font-size:.81rem;font-weight:550;line-height:1.35;}
+.oh-site .oh-discount-previous del{color:#b52b36;opacity:1;font-size:clamp(1.18rem,2vw,1.55rem);font-weight:650;text-decoration-line:line-through;text-decoration-thickness:2px;text-decoration-color:#b52b36;}
+.oh-site .oh-discount-saving{padding:6px 10px;background:#efe1cc;border-radius:8px;color:#62442b;font-size:.8rem;font-weight:700;white-space:nowrap;}
+.oh-site .oh-product-offer{margin:12px 0 6px;}
+.oh-site .oh-product-offer .oh-discount-prices{gap:9px 11px;}
+.oh-site .oh-product-offer .oh-discount-current{font-size:1.37rem;min-width:82px;padding:9px 13px;border-radius:9px;}
+.oh-site .oh-product-offer .oh-discount-previous{font-size:.75rem;}
+.oh-site .oh-product-offer .oh-discount-previous del{font-size:1rem;}
+.oh-site .oh-product-offer .oh-discount-saving{font-size:.72rem;}
+.oh-site .oh-overview-website-price{margin:18px 0 9px;}
+.oh-site .oh-overview-website-rates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;}
+.oh-site .oh-overview-website-rates>span{min-width:0;border:1px solid #e1d1bb;background:#fbf4eb;border-radius:9px;padding:9px 8px;}
+.oh-site .oh-overview-website-rates small{display:block;font-size:.72rem;line-height:1.4;color:#745942;min-height:2.8em;}
+.oh-site .oh-overview-website-rates strong{font-size:1rem;line-height:1.45;white-space:nowrap;color:#654027;font-weight:700;}
+.oh-site .oh-product .oh-tax-note{font-size:.76rem!important;}
+@media(max-width:700px){
+  .oh-site .oh-website-benefits,.oh-site .oh-website-rate-grid{grid-template-columns:1fr;}
+  .oh-site .oh-website-rate>strong{min-height:0;}
+  .oh-site .oh-website-product>h2{margin-top:28px;}
+  .oh-site .oh-website-pricing{padding:19px 15px;}
+  .oh-site .oh-overview-website-rates{grid-template-columns:1fr 1fr;}
+  .oh-site .oh-overview-website-rates small{min-height:0;}
+  .oh-site .oh-discount-prices{gap:9px;}
+}
+@media(max-width:410px){.oh-site .oh-overview-website-rates{grid-template-columns:1fr;}}
