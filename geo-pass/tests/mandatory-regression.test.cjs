@@ -199,11 +199,11 @@ test('Stage-1 architecture: eight navigation sections, utility-only footer, work
   const archiveDestinations=['how-it-works/','passport/','pricing/','faq/','experts/'];
   for(const lang of languages){
     const home=file('geo-pass/'+lang+'/index.html');
-    const mainNav=home.match(/<nav class="os-menu-panel"[^>]*>([\\s\\S]*?)<\\/nav>/);
+    const mainNav=home.match(/<nav class="os-menu-panel"[^>]*>([\s\S]*?)<\/nav>/);
     assert.ok(mainNav,lang+': no primary navigation');
     const menuLinks=[...mainNav[1].matchAll(/href="([^"]+)"/g)].map(m=>m[1]);
     assert.deepEqual(menuLinks,menuDestinations.map(s=>'../'+lang+'/'+s),lang+': primary menu differs from agreed eight sections');
-    const footer=home.match(/<footer[^>]*>([\\s\\S]*?)<\\/footer>/);
+    const footer=home.match(/<footer[^>]*>([\s\S]*?)<\/footer>/);
     assert.ok(footer,lang+': footer missing');
     for(const target of [...utilityDestinations,...archiveDestinations]){
       assert.ok(footer[1].includes('href="../'+lang+'/'+target+'"'),lang+': footer entry missing '+target);
