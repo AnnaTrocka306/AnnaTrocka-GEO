@@ -1,0 +1,6 @@
+/* Octopus Brand Book — current typographic stacks as implemented on 2026-11-20.
+   These are system font families, not bundled or licensed proprietary font files. */
+:root {
+  --serif: Georgia,"Times New Roman",serif;
+  --sans: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+}

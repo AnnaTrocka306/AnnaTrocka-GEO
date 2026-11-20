@@ -1,7 +1,7 @@
 
 /* Octopus Startseite & Preiskatalog — isolated UI layer, 2026-11-18. */
 /* Existing branding/images and underlying GEO Pass implementation remain unchanged. */
-.oh-site{--oh-ink:#34271f;--oh-muted:#69584b;--oh-cream:#faf7f1;--oh-tan:#eaddcb;--oh-gold:#c09a6c;--oh-dark:#30251f;color:var(--oh-ink);background:var(--oh-cream)}
+.oh-site{color:var(--oh-ink);background:var(--oh-cream)}
 .oh-site *{box-sizing:border-box}
 .oh-site a:focus-visible,.oh-site button:focus-visible{outline:3px solid #1567ab;outline-offset:4px}
 .oh-shell{max-width:1150px;margin:0 auto;padding:0 clamp(19px,4.2vw,56px)}

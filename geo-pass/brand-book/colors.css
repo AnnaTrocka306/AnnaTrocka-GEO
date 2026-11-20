@@ -1,0 +1,24 @@
+/* Octopus Brand Book — current colors as implemented on 2026-11-20.
+   Central source for existing global palette and homepage scoped colors.
+   Do not change without design approval. */
+:root {
+  --paper: #f8f5ef;
+  --white: #fffdf9;
+  --cream: #f0e9df;
+  --ink: #26201b;
+  --muted: #62584e;
+  --line: #dfd0be;
+  --accent: #735136;
+  --dark: #28211c;
+  --gold: #d5b188;
+}
+
+/* Homepage-specific tokens; values preserved from octopus-home-2026.css. */
+.oh-site {
+  --oh-ink: #34271f;
+  --oh-muted: #69584b;
+  --oh-cream: #faf7f1;
+  --oh-tan: #eaddcb;
+  --oh-gold: #c09a6c;
+  --oh-dark: #30251f;
+}
