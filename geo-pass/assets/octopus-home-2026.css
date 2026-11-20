@@ -182,3 +182,132 @@
 .oh-site .oh-hero .oh-hero-art a{display:inline-block;width:100%;max-width:500px}
 .oh-site .oh-hero .oh-hero-art img{display:block;width:100%;max-width:500px;height:auto;margin:0;filter:drop-shadow(0 10px 15px #30221922)}
 @media(max-width:740px){.oh-product .oh-product-icon{width:88px}.oh-site .oh-hero .oh-hero-art{width:min(100%,390px);margin-top:22px}}
+
+/* Stage 3: approved benefit-first hero; original Octopus artwork and original round glasses preserved.
+   Deliberately isolated to the homepage, not the sitewide footer or commercial product pages. */
+.oh-site .oh-homehero-v3{
+  padding:clamp(36px,5vw,68px) 0 clamp(36px,5vw,68px);
+  background:radial-gradient(circle at 87% 18%,#fffdf9 0%,#faf6ef 51%,#f1e6d6 100%);
+  color:#35281f;
+}
+.oh-site .oh-homehero-v3 .oh-hero-layout{display:block;max-width:1150px;}
+.oh-site .oh-homehero-v3 .oh-hero-copy{max-width:910px;}
+.oh-site .oh-homehero-v3 .oh-kicker{font-size:.7rem;letter-spacing:.17em;margin-bottom:11px;}
+.oh-site .oh-homehero-v3 h1{
+  max-width:860px;
+  font-family:var(--serif);
+  font-size:clamp(2.3rem,4.25vw,3.65rem);
+  font-weight:650;
+  line-height:1.13;
+  letter-spacing:-.038em;
+  overflow-wrap:normal;
+  margin:10px 0 10px;
+  color:#35271e;
+}
+.oh-site .oh-homehero-v3 .oh-hero-contrast{
+  font-family:var(--serif);
+  font-size:clamp(1.35rem,2.45vw,2rem);
+  line-height:1.28;
+  letter-spacing:-.024em;
+  font-weight:550;
+  color:#945e37;
+  max-width:710px;
+  margin:0 0 20px;
+}
+.oh-site .oh-homehero-v3 .oh-hero-benefit{
+  display:flex;
+  align-items:flex-start;
+  gap:15px;
+  width:min(100%,690px);
+  margin:0 0 18px;
+  padding:16px 20px;
+  background:#fff9ed;
+  border:1px solid #dac3a4;
+  border-left:5px solid #ad7747;
+  border-radius:12px;
+  box-shadow:0 7px 22px rgba(61,40,23,.045);
+}
+.oh-site .oh-homehero-v3 .oh-hero-benefit-mark{
+  display:grid;
+  place-items:center;
+  flex:0 0 30px;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  font:700 1.05rem/1 var(--sans);
+  color:#fff;
+  background:#99683e;
+}
+.oh-site .oh-homehero-v3 .oh-hero-benefit strong{
+  display:block;
+  font-family:var(--sans);
+  font-size:clamp(1.1rem,1.55vw,1.28rem);
+  font-weight:750;
+  line-height:1.42;
+  color:#493023;
+}
+.oh-site .oh-homehero-v3 .oh-hero-benefit span:not(.oh-hero-benefit-mark){
+  display:block;
+  margin-top:3px;
+  font-size:clamp(.91rem,1.15vw,1.05rem);
+  color:#76583f;
+  line-height:1.5;
+}
+.oh-site .oh-homehero-v3 .oh-hero-description{
+  max-width:720px;
+  color:#625143;
+  font-size:clamp(.99rem,1.25vw,1.13rem);
+  line-height:1.65;
+  margin:0;
+}
+.oh-site .oh-homehero-v3 .oh-hero-art{
+  display:block;
+  width:min(100%,390px);
+  max-width:none;
+  margin:16px 0 0;
+  text-align:left;
+}
+.oh-site .oh-homehero-v3 .oh-hero-art a{
+  display:block;
+  width:100%;
+  max-width:390px;
+  border-radius:18px;
+}
+.oh-site .oh-homehero-v3 .oh-hero-art img{
+  display:block;
+  width:100%;
+  max-width:390px;
+  height:auto;
+  margin:0;
+  filter:drop-shadow(0 8px 13px rgba(47,34,20,.12));
+}
+.oh-site #produkte .oh-product .oh-product-bottom .oh-button{
+  font-weight:500!important;
+  font-size:clamp(1.01rem,1.13vw,1.13rem)!important;
+  line-height:1.45;
+  letter-spacing:0;
+  padding:15px 17px;
+  min-height:58px;
+}
+.oh-site #kundenstimmen{padding-top:clamp(42px,5vw,70px);padding-bottom:clamp(48px,6vw,78px);}
+.oh-site #kundenstimmen .oh-review footer{background:transparent;color:#4d392c;}
+.oh-site #kundenstimmen .oh-section-head{margin-bottom:26px;}
+@media(min-width:1000px) and (min-height:720px){
+  .oh-site .oh-homehero-v3{padding-top:45px;padding-bottom:42px;}
+  .oh-site .oh-homehero-v3 .oh-hero-art{width:350px;margin-top:12px;}
+}
+@media(max-width:740px){
+  .oh-site .oh-homehero-v3{padding:29px 0 36px;}
+  .oh-site .oh-homehero-v3 .oh-hero-copy{max-width:100%;}
+  .oh-site .oh-homehero-v3 h1{font-size:clamp(2rem,7.4vw,2.75rem);line-height:1.13;}
+  .oh-site .oh-homehero-v3 .oh-hero-contrast{font-size:clamp(1.31rem,5vw,1.75rem);margin-bottom:17px;}
+  .oh-site .oh-homehero-v3 .oh-hero-benefit{padding:14px;gap:11px;border-left-width:4px;}
+  .oh-site .oh-homehero-v3 .oh-hero-description{font-size:1rem;line-height:1.62;}
+  .oh-site .oh-homehero-v3 .oh-hero-art{width:min(100%,360px);margin:15px auto 0;text-align:center;}
+  .oh-site .oh-homehero-v3 .oh-hero-art img{margin:0 auto;}
+  .oh-site #kundenstimmen{padding-top:35px;}
+}
+@media(max-width:380px){
+  .oh-site .oh-homehero-v3 h1{font-size:2rem;}
+  .oh-site .oh-homehero-v3 .oh-hero-art{width:min(100%,310px);}
+}
