@@ -169,11 +169,11 @@ test('Sector dropdown shows only existing first-stage directions and preserves O
 
 test('Octopus homepage and experts hub preserve localized new-tab GEO Pass entry and questionnaire navigation',()=>{
   // Approved site architecture 2026-11-17: Octopus is the homepage; GEO Pass lives in the experts section.
-  // Four working registration links are intentionally provided: menu, hero, page end and floating mascot.
+  // Stage-1 architecture: eight items in the primary menu, with three existing GEO Pass CTAs on the homepage (hero, product card, floating mascot).
   for(const lang of languages){
     const home=file('geo-pass/'+lang+'/index.html');
     const starts=[...home.matchAll(/<a\b[^>]*href="\.\.\/(?:de|ru|en)\/create\/"[^>]*>/g)].map(m=>m[0]);
-    assert.equal(starts.length,4,lang+': homepage GEO Pass entry points changed');
+    assert.equal(starts.length,3,lang+': approved homepage GEO Pass entry points changed');
     for(const link of starts){
       assert.ok(link.includes('href="../'+lang+'/create/"'),lang+': registration language lost');
       assert.ok(link.includes('target="_blank"'),lang+': must preserve landing in a separate tab');
@@ -191,6 +191,34 @@ test('Octopus homepage and experts hub preserve localized new-tab GEO Pass entry
   }
 });
 
+
+
+test('Stage-1 architecture: eight navigation sections, utility-only footer, working glossary and archive links',()=>{
+  const menuDestinations=['','product-features/','geo/','about/','blog/','case-studies/','services/','onboarding/'];
+  const utilityDestinations=['agb/','privacy/','legal/','search/','register/','glossary/','what-is-geo/'];
+  const archiveDestinations=['how-it-works/','passport/','pricing/','faq/','experts/'];
+  for(const lang of languages){
+    const home=file('geo-pass/'+lang+'/index.html');
+    const mainNav=home.match(/<nav class="os-menu-panel"[^>]*>([\\s\\S]*?)<\\/nav>/);
+    assert.ok(mainNav,lang+': no primary navigation');
+    const menuLinks=[...mainNav[1].matchAll(/href="([^"]+)"/g)].map(m=>m[1]);
+    assert.deepEqual(menuLinks,menuDestinations.map(s=>'../'+lang+'/'+s),lang+': primary menu differs from agreed eight sections');
+    const footer=home.match(/<footer[^>]*>([\\s\\S]*?)<\\/footer>/);
+    assert.ok(footer,lang+': footer missing');
+    for(const target of [...utilityDestinations,...archiveDestinations]){
+      assert.ok(footer[1].includes('href="../'+lang+'/'+target+'"'),lang+': footer entry missing '+target);
+      assert.ok(fs.existsSync(path.join(__dirname,'..',lang,target,'index.html')),lang+': linked page does not exist '+target);
+    }
+    assert.ok(footer[1].includes('os-archive-links'),lang+': temporary content archive missing');
+    const glossary=file('geo-pass/'+lang+'/glossary/index.html');
+    for(const anchor of ['geo','seo','ki','geo-pass','maschinenlesbar','ki-empfehlung','website-mapping','onboarding','analytics']){
+      assert.ok(glossary.includes('id="'+anchor+'"'),lang+': glossary anchor missing '+anchor);
+    }
+    for(const p of [...menuDestinations.slice(1),'geo-hotels/']){
+      assert.ok(fs.existsSync(path.join(__dirname,'..',lang,p,'index.html')),lang+': main section not created '+p);
+    }
+  }
+});
 
 test('Octopus homepage preserves two approved AI illustrations, current hero, FAQ and standalone GEO Pass landing',()=>{
   for(const lang of languages){
