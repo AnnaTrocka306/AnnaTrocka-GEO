@@ -220,6 +220,32 @@ test('Stage-2 commercial terms: transparent net prices, differentiated offer, an
   }
 });
 
+test('Stage-3: mobile-friendly value-first hero, original green Octopus and reviews directly below products',()=>{
+  const colorStyle=file('geo-pass/assets/octopus-home-2026.css');
+  const siteStyle=file('geo-pass/assets/octopus-site.css');
+  const revealScript=file('geo-pass/assets/octopus-cta-visibility.js');
+  assert.ok(colorStyle.includes('.oh-homehero-v3'), 'dedicated responsive hero style is absent');
+  assert.ok(siteStyle.includes('.oh-home-cta-gated.is-visible'), 'floating mascot visible-state style is absent');
+  assert.ok(revealScript.includes("getElementById('plattform')"), 'floating CTA must start at platform section');
+  for(const lang of languages){
+    const home=file('geo-pass/'+lang+'/index.html');
+    const hero=home.slice(home.indexOf('id="startseite"'),home.indexOf('id="plattform"'));
+    const image=lang==='de'?'octopus-cta-green.webp':lang==='ru'?'octopus-cta-green-ru.webp':'octopus-cta-green-en.webp';
+    assert.ok(hero.includes('oh-hero-benefit'), lang+': customer benefit is not highlighted');
+    assert.ok(hero.includes(image),lang+': green approved Octopus artwork changed');
+    assert.ok(home.includes('class="octo-float oh-home-cta-gated"'),lang+': floating CTA missing');
+    const prod=home.indexOf('id="produkte"');
+    const review=home.indexOf('id="kundenstimmen"');
+    const benefit=home.indexOf('id="vorteile"');
+    assert.ok(prod>=0&&review>prod&&benefit>review,lang+': testimonials must directly follow product section');
+    const reviews=home.slice(review,benefit);
+    assert.ok(reviews.includes('oh-demo-note'),lang+': sample testimonials must be labelled');
+    assert.ok(!reviews.includes('<footer class="footer os-footer">'),lang+': site footer accidentally embedded inside a testimonial');
+    assert.equal((reviews.match(/<article class="oh-review">/g)||[]).length,3,lang+': three testimonial placeholders should be preserved');
+    assert.ok(home.includes('href="../'+lang+'/services/articles/"'),lang+': link to article detail is missing');
+  }
+});
+
 test('Stage-1 architecture: eight navigation sections, utility-only footer, working glossary and archive links',()=>{
   const menuDestinations=['','product-features/','geo/','about/','blog/','case-studies/','services/','onboarding/'];
   const utilityDestinations=['agb/','privacy/','legal/','search/','register/','glossary/','what-is-geo/'];
@@ -230,7 +256,7 @@ test('Stage-1 architecture: eight navigation sections, utility-only footer, work
     assert.ok(mainNav,lang+': no primary navigation');
     const menuLinks=[...mainNav[1].matchAll(/href="([^"]+)"/g)].map(m=>m[1]);
     assert.deepEqual(menuLinks,menuDestinations.map(s=>'../'+lang+'/'+s),lang+': primary menu differs from agreed eight sections');
-    const footer=home.match(/<footer[^>]*>([\s\S]*?)<\/footer>/);
+    const footer=file('geo-pass/'+lang+'/services/index.html').match(/<footer[^>]*>([\s\S]*?)<\/footer>/);
     assert.ok(footer,lang+': footer missing');
     for(const target of [...utilityDestinations,...archiveDestinations]){
       assert.ok(footer[1].includes('href="../'+lang+'/'+target+'"'),lang+': footer entry missing '+target);
@@ -257,7 +283,7 @@ test('Octopus homepage preserves two approved AI illustrations, current hero, FA
     assert.ok(!home.includes('class="os-anchors wrap"'),lang+': rejected anchor navigation returned');
     assert.ok(!home.includes('class="os-passport-landing"'),lang+': GEO Pass landing should not be embedded in homepage');
     assert.ok(home.includes('href="../'+lang+'/passport/"'),lang+': footer passport link missing');
-    assert.ok(home.includes('<section class="oh-hero" id="startseite"'),lang+': approved Octopus first screen missing');
+    assert.ok(home.includes('<section class="oh-hero oh-homehero-v3" id="startseite"'),lang+': approved benefit-first Octopus first screen missing');
     const mainStart=home.indexOf('<main'),heroStart=home.indexOf('id="startseite"'),faqStart=home.indexOf('id="faq"'),mainEnd=home.indexOf('</main>');
     assert.ok(mainStart>=0&&heroStart>mainStart&&faqStart>heroStart&&faqStart<mainEnd,lang+': homepage sections are missing or out of order');
     assert.ok(passport.includes('class="os-passport-landing"'),lang+': complete original passport page absent');
