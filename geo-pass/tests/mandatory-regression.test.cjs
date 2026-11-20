@@ -232,7 +232,7 @@ test('Stage-3: mobile-friendly value-first hero, original green Octopus and revi
   for(const lang of languages){
     const home=file('geo-pass/'+lang+'/index.html');
     const hero=home.slice(home.indexOf('id="startseite"'),home.indexOf('id="plattform"'));
-    const image=lang==='de'?'octopus-cta-green.webp':lang==='ru'?'octopus-cta-green-ru.webp':'octopus-cta-green-en.webp';
+    const image=lang==='de'?'octopus-mascot-warm-original.webp':lang==='ru'?'octopus-cta-green-ru.webp':'octopus-cta-green-en.webp';
     assert.ok(hero.includes('oh-hero-contrast'),lang+': emotional customer-acquisition headline missing');
     assert.ok(hero.includes('octopus-ai-recommendations-hero.webp'),lang+': supplied desktop AI diagram missing');
     assert.ok(hero.indexOf('oh-hero-contrast')<hero.indexOf('oh-hero-value'),lang+': customer problem must precede value statement');
@@ -240,7 +240,7 @@ test('Stage-3: mobile-friendly value-first hero, original green Octopus and revi
     assert.ok(hero.includes('oh-hero-perks'), lang+': three concise benefits are missing');
     assert.equal((hero.match(/class="oh-hero-perk"/g)||[]).length,3,lang+': expected three compact benefits');
     assert.ok(hero.indexOf('oh-hero-value')<hero.indexOf('oh-hero-art'),lang+': main CTA must remain below the highlighted customer benefit');
-    assert.ok(hero.includes(image),lang+': green approved Octopus artwork changed');
+    assert.ok(hero.includes(image),lang+': approved green-button round-glasses Octopus artwork missing');
     assert.ok(home.includes('class="octo-float oh-home-cta-gated"'),lang+': floating CTA missing');
     const prod=home.indexOf('id="produkte"');
     const review=home.indexOf('id="kundenstimmen"');
