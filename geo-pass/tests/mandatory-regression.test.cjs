@@ -231,7 +231,10 @@ test('Stage-3: mobile-friendly value-first hero, original green Octopus and revi
     const home=file('geo-pass/'+lang+'/index.html');
     const hero=home.slice(home.indexOf('id="startseite"'),home.indexOf('id="plattform"'));
     const image=lang==='de'?'octopus-cta-green.webp':lang==='ru'?'octopus-cta-green-ru.webp':'octopus-cta-green-en.webp';
-    assert.ok(hero.includes('oh-hero-benefit'), lang+': customer benefit is not highlighted');
+    assert.ok(hero.includes('oh-hero-value'), lang+': customer value panel is missing');
+    assert.ok(hero.includes('oh-hero-perks'), lang+': three concise benefits are missing');
+    assert.equal((hero.match(/class="oh-hero-perk"/g)||[]).length,3,lang+': expected three compact benefits');
+    assert.ok(hero.indexOf('oh-hero-value')<hero.indexOf('oh-hero-art'),lang+': main CTA must remain below the highlighted customer benefit');
     assert.ok(hero.includes(image),lang+': green approved Octopus artwork changed');
     assert.ok(home.includes('class="octo-float oh-home-cta-gated"'),lang+': floating CTA missing');
     const prod=home.indexOf('id="produkte"');
