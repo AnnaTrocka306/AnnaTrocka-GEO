@@ -136,3 +136,6 @@ body:has(.os-masthead) .octo-float{width:clamp(178px,17vw,217px);right:9px;botto
 body:has(.os-masthead) .octo-float__label{font-size:clamp(8.5px,.95vw,11px)}
 @media(max-width:940px){.os-feature-grid,.os-section#octopus .os-split{grid-template-columns:1fr}.os-feature-image{max-width:750px}.os-feature-image img{max-height:none}}
 @media(max-width:740px){body:has(.os-masthead) .octo-float{width:clamp(148px,36vw,174px);right:5px;bottom:calc(6px + env(safe-area-inset-bottom,0px))}body:has(.os-masthead) .octo-float__label{font-size:clamp(7.6px,2.15vw,9.8px)}}
+
+/* Octopus independent multilingual service detail pages (2026-11-20) */
+.oh-price-list>.oh-price-entry{max-width:100%;min-width:0}.oh-price-entry .oh-editorial-steps{max-width:100%}.oh-price-entry .oh-editorial-steps li{margin-bottom:14px}.oh-product-grid>.oh-product{min-width:0}.oh-product .oh-price-amount{font-size:1.2rem;margin-top:12px}.oh-product .oh-button{margin-top:16px}.oh-price-hero .oh-button{display:inline-flex;margin-top:20px}
