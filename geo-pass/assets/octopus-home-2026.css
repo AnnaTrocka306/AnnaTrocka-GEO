@@ -426,3 +426,18 @@
 @media(max-width:740px){
  .oh-site .oh-homehero-v3 .oh-hero-contrast{font-size:clamp(1.3rem,5.15vw,1.65rem);margin:0 0 15px;}
 }
+
+/* German homepage: original owner-supplied CTA image (2026-11-20).
+   Increase only its desktop presentation size for legible button copy;
+   preserve the established mobile design and all other locales. */
+@media screen and (min-width:741px) {
+ .oh-site .oh-homehero-v3 .oh-hero-art.oh-hero-art--brand-button {
+   width:min(100%,440px);
+   margin-top:15px;
+ }
+ .oh-site .oh-homehero-v3 .oh-hero-art.oh-hero-art--brand-button a,
+ .oh-site .oh-homehero-v3 .oh-hero-art.oh-hero-art--brand-button img {
+   width:100%;
+   max-width:440px;
+ }
+}
