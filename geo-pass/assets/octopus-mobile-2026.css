@@ -1,0 +1,583 @@
+/* Octopus mobile homepage visual system — 2026-11-21
+   Mobile-only, scoped to the three localized homepage bodies.
+   Desktop styles, legal copy, and shared subpages are unchanged.
+   Design follows the owner-approved long-form mobile concept. */
+
+@media screen and (max-width:740px) {
+  body.oh-homepage {
+    background:#fffdf9;
+    color:#34271f;
+    overflow-x:clip;
+  }
+  body.oh-homepage .topline {
+    padding:5px 10px;
+    min-height:24px;
+    background:#4d3425;
+    color:#fff8ef;
+    font-size:10px;
+    line-height:1.3;
+    letter-spacing:.16em;
+    font-weight:650;
+  }
+  body.oh-homepage .masthead {
+    background:#fffdf9;
+    border-bottom:1px solid #ebdfd2;
+    box-shadow:0 4px 16px #35231510;
+  }
+  body.oh-homepage .os-head {
+    width:calc(100% - 30px);
+    display:flex;
+    flex-wrap:nowrap!important;
+    justify-content:space-between;
+    gap:8px;
+    min-height:66px!important;
+    padding:9px 0!important;
+  }
+  body.oh-homepage .os-logo {
+    min-width:0;
+    flex:1 1 auto;
+    margin-right:0;
+  }
+  body.oh-homepage .os-logo .logo-main {
+    color:#4d3425;
+    font-size:clamp(1.52rem,6vw,1.9rem);
+    font-family:Georgia,"Times New Roman",serif;
+    font-style:italic;
+    line-height:1;
+    letter-spacing:-.055em;
+  }
+  body.oh-homepage .os-logo .logo-sub {
+    color:#795332;
+    margin-top:5px;
+    font-size:clamp(.42rem,1.6vw,.56rem);
+    letter-spacing:.035em;
+  }
+  body.oh-homepage .os-head .languages {
+    display:flex;
+    align-items:center;
+    flex:0 0 auto;
+    order:2;
+    gap:0;
+  }
+  body.oh-homepage .os-head .languages a {
+    border:0;
+    border-radius:0;
+    border-right:1px solid #d6b997;
+    background:transparent;
+    padding:2px 5px;
+    color:#503726;
+    font-size:clamp(.61rem,2.2vw,.73rem);
+    line-height:1.3;
+    font-weight:700;
+  }
+  body.oh-homepage .os-head .languages a:last-child {border-right:0}
+  body.oh-homepage .os-head .languages a[aria-current="page"] {
+    color:#7e4f2b;
+    text-decoration:underline;
+    text-decoration-color:#b88445;
+    text-underline-offset:4px;
+  }
+  body.oh-homepage .os-menu {order:3;flex:0 0 auto}
+  body.oh-homepage .os-menu summary {
+    min-width:43px;
+    min-height:40px;
+    padding:8px 10px;
+    border:1px solid #8c633d;
+    border-radius:8px;
+    background:linear-gradient(135deg,#b4854d,#755032);
+    color:#fffaf2;
+    box-shadow:0 3px 8px #4d342520;
+  }
+  body.oh-homepage .os-bars {width:20px;gap:4px}
+  body.oh-homepage .os-bars i {background:#fffaf2}
+  body.oh-homepage .os-menu-panel {
+    max-height:min(70vh,580px);
+    overflow-y:auto;
+    border-radius:10px;
+    border-color:#d4bd9f;
+  }
+
+  body.oh-homepage .oh-shell {
+    width:100%;
+    max-width:none;
+    padding-inline:clamp(16px,4.5vw,25px);
+  }
+  body.oh-homepage .oh-site .oh-section {
+    padding:39px 0 43px;
+  }
+  body.oh-homepage .oh-site h2 {
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(1.63rem,6.5vw,2.15rem);
+    font-weight:650;
+    line-height:1.12;
+    letter-spacing:-.029em;
+    margin:8px 0 14px;
+    color:#35251b;
+    overflow-wrap:normal;
+  }
+  body.oh-homepage .oh-site h3 {
+    font-family:Georgia,"Times New Roman",serif;
+    color:#39271d;
+    font-weight:650;
+  }
+  body.oh-homepage .oh-site p {
+    font-size:.925rem;
+    line-height:1.53;
+    color:#514235;
+    margin:0 0 13px;
+    max-width:none;
+  }
+  body.oh-homepage .oh-kicker {
+    display:inline-flex;
+    font-size:.69rem;
+    line-height:1.35;
+    letter-spacing:.11em;
+    font-weight:800;
+    color:#a56b2e;
+  }
+  body.oh-homepage .oh-kicker:before {display:none}
+  body.oh-homepage .oh-section-head {
+    margin:0 0 20px;
+  }
+
+  /* HERO — original approved orange mascot with green GEO-Pass CTA */
+  body.oh-homepage .oh-site .oh-homehero-v3 {
+    padding:21px 0 0;
+    background:linear-gradient(130deg,#fffdf9 0%,#fdf7ee 64%,#f2e6d5 100%);
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-layout {
+    display:block;
+    max-width:none;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-kicker {
+    font-size:.64rem;
+    letter-spacing:.10em;
+    color:#a36828;
+    margin:0 0 10px;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 h1 {
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(1.84rem,7.7vw,2.45rem);
+    font-weight:700;
+    line-height:1.06;
+    color:#392317;
+    letter-spacing:-.036em;
+    margin:0 0 10px;
+    max-width:none;
+    overflow-wrap:normal;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-contrast {
+    display:block;
+    color:#3e3026;
+    font-size:clamp(.94rem,3.8vw,1.14rem);
+    font-weight:500;
+    line-height:1.33;
+    margin:0 0 11px;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-value {
+    display:flex;
+    width:100%;
+    max-width:none;
+    min-height:0;
+    padding:9px 12px;
+    gap:0;
+    margin:0 0 11px;
+    border-radius:7px;
+    border:1px solid #e8c89d;
+    background:linear-gradient(90deg,#f5ddb4,#f1d0a2 85%,#f4dfbe);
+    box-shadow:none;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-value-icon {display:none}
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-value strong {
+    font:700 clamp(.96rem,3.8vw,1.15rem)/1.27 var(--serif);
+    color:#392518;
+    letter-spacing:-.012em;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-description {
+    font-size:.94rem;
+    line-height:1.46;
+    color:#47382d;
+    margin:0;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-art {
+    width:min(100%,345px);
+    max-width:none;
+    margin:14px auto 0;
+    text-align:center;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-art a,
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-art img {
+    width:100%;
+    max-width:345px;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-art img {
+    display:block;
+    height:auto;
+    margin:0 auto;
+    filter:drop-shadow(0 6px 10px #583a221c);
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-wave {
+    height:13px;
+    margin:-3px -20px 0;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-perks {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:0;
+    padding:11px 0 13px;
+    margin:0;
+    width:100%;
+    max-width:none;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-perk {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    padding:4px 7px;
+    min-height:73px;
+    font-size:clamp(.67rem,2.6vw,.81rem);
+    line-height:1.26;
+    color:#4a3322;
+    text-align:center;
+    font-weight:700;
+  }
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-perk-icon,
+  body.oh-homepage .oh-site .oh-homehero-v3 .oh-hero-perk svg {
+    width:27px;
+    height:27px;
+    flex-basis:27px;
+  }
+
+  /* EINE PLATTFORM */
+  body.oh-homepage #plattform {background:#fffdf9}
+  body.oh-homepage #plattform .oh-split {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:19px;
+  }
+  body.oh-homepage #plattform .oh-quote {
+    margin-top:15px;
+    border-left:4px solid #c89b5c;
+    padding:11px 15px;
+    border-radius:0 10px 10px 0;
+    background:#f8eddb;
+    color:#59361f;
+    font:italic 500 1.08rem/1.43 Georgia,"Times New Roman",serif;
+  }
+  body.oh-homepage #plattform .oh-image {
+    padding:7px;
+    margin:0;
+    border-radius:13px;
+    background:#f6eee3;
+    box-shadow:0 8px 17px #34201112;
+  }
+  body.oh-homepage #plattform .oh-image img {
+    aspect-ratio:auto;
+    width:100%;
+    object-fit:contain;
+    height:auto;
+  }
+  body.oh-homepage #plattform .oh-image figcaption {
+    font-size:.71rem;
+    padding:8px 6px 4px;
+  }
+
+  /* PRODUKTE — compact illustrated cards, but keep complete approved copy */
+  body.oh-homepage #produkte {background:#f1e8dc}
+  body.oh-homepage #produkte .oh-product-grid {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:11px;
+  }
+  body.oh-homepage #produkte .oh-product {
+    display:grid;
+    grid-template-columns:68px minmax(0,1fr);
+    align-content:start;
+    column-gap:13px;
+    row-gap:4px;
+    padding:16px 16px 17px;
+    min-height:0;
+    border:1px solid #ddc8b1;
+    border-radius:13px;
+    box-shadow:0 5px 12px #4b301c13;
+    background:#fffdf9;
+  }
+  body.oh-homepage #produkte .oh-product--primary {
+    border:2px solid #b58b57;
+    padding:15px 15px 16px;
+  }
+  body.oh-homepage #produkte .oh-product .oh-product-index {
+    grid-column:2;
+    grid-row:1;
+    margin:1px 0 1px;
+    font-size:.63rem;
+    letter-spacing:.08em;
+  }
+  body.oh-homepage #produkte .oh-product .oh-product-icon {
+    grid-column:1;
+    grid-row:1 / span 3;
+    display:block;
+    width:68px;
+    height:68px;
+    max-width:100%;
+    margin:0;
+    object-fit:contain;
+  }
+  body.oh-homepage #produkte .oh-product h3 {
+    grid-column:2;
+    grid-row:2;
+    font-size:1.36rem;
+    line-height:1.17;
+    margin:0;
+  }
+  body.oh-homepage #produkte .oh-product .oh-product-tagline {
+    grid-column:2;
+    grid-row:3;
+    color:#4d3b2e;
+    font-size:.83rem;
+    font-weight:600;
+    line-height:1.4;
+    margin:0;
+  }
+  body.oh-homepage #produkte .oh-product p:not(.oh-product-tagline) {
+    grid-column:1/-1;
+    font-size:.865rem;
+    line-height:1.49;
+    margin:10px 0 0;
+  }
+  body.oh-homepage #produkte .oh-product .oh-product-bottom {
+    grid-column:1/-1;
+    margin:0;
+    padding-top:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:10px;
+  }
+  body.oh-homepage #produkte .oh-product .oh-product-bottom .oh-button {
+    min-height:48px;
+    width:100%;
+    font-size:.9rem!important;
+    font-weight:700!important;
+    line-height:1.3;
+    padding:11px 13px;
+    border-radius:9px;
+    color:#fffaf4!important;
+    background:linear-gradient(180deg,#a47745,#76502e);
+    border-color:#76502e;
+    box-shadow:0 4px 10px #5b37251e;
+  }
+  body.oh-homepage #produkte .oh-product--primary .oh-product-bottom .oh-pass-cta {
+    background:linear-gradient(180deg,#41c80d,#188300)!important;
+    border-color:#178000!important;
+    font-weight:750!important;
+  }
+  body.oh-homepage #produkte .oh-product .oh-product-bottom .oh-text-link {
+    font-size:.82rem;
+    line-height:1.3;
+    justify-content:center;
+  }
+
+  /* TESTIMONIALS — clearly identified as example reviews */
+  body.oh-homepage #kundenstimmen {
+    background:#fffdf9;
+    padding:38px 0 40px;
+  }
+  body.oh-homepage #kundenstimmen .oh-testimonials {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+  body.oh-homepage #kundenstimmen .oh-review {
+    min-height:0;
+    border-radius:11px;
+    padding:17px 18px;
+    background:#fffaf5;
+    border-color:#e4d1b9;
+  }
+  body.oh-homepage #kundenstimmen .oh-review blockquote {
+    position:relative;
+    padding-left:23px;
+    margin:0 0 10px;
+    color:#493629;
+    font-size:.91rem;
+    line-height:1.52;
+  }
+  body.oh-homepage #kundenstimmen .oh-review blockquote::before {
+    content:"“";
+    position:absolute;
+    top:-7px;
+    left:0;
+    color:#c89b5a;
+    font:700 2rem/1 Georgia,"Times New Roman",serif;
+  }
+  body.oh-homepage #kundenstimmen .oh-review footer {
+    padding-top:10px;
+    border-top:1px solid #eddfcf;
+    font-size:.83rem;
+    background:transparent;
+    color:#4d392c;
+  }
+  body.oh-homepage #kundenstimmen .oh-demo-note {
+    margin-top:12px;
+    padding:11px 12px;
+    border-radius:8px;
+    font-size:.75rem!important;
+    line-height:1.5;
+    background:#f9ecdb;
+  }
+  body.oh-homepage #kundenstimmen .oh-reviews-actions {margin-top:12px}
+  body.oh-homepage #kundenstimmen .oh-reviews-actions .oh-button {
+    min-height:47px;
+    width:100%;
+    background:#795131;
+  }
+
+  /* ADVANTAGES — numbered two-column grid */
+  body.oh-homepage #vorteile {background:#f6eee4}
+  body.oh-homepage #vorteile .oh-benefit-grid {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:9px;
+    margin-top:21px;
+  }
+  body.oh-homepage #vorteile .oh-benefit {
+    min-height:0;
+    padding:13px 11px 14px;
+    border-radius:10px;
+    border:1px solid #e1ceb8;
+    box-shadow:0 4px 9px #5a3d2310;
+  }
+  body.oh-homepage #vorteile .oh-benefit .oh-number {
+    display:inline-grid;
+    place-items:center;
+    vertical-align:middle;
+    width:31px;
+    height:29px;
+    margin:0 0 8px;
+    border-radius:7px;
+    background:#bc8e4e;
+    color:#fff9ef;
+    font-size:.76rem;
+  }
+  body.oh-homepage #vorteile .oh-benefit h3 {
+    font-family:var(--sans);
+    font-size:.83rem;
+    line-height:1.34;
+    font-weight:800;
+    margin:0 0 7px;
+  }
+  body.oh-homepage #vorteile .oh-benefit p {
+    font-size:.77rem;
+    line-height:1.45;
+    color:#625347;
+  }
+
+  /* GEO for small and medium-sized businesses */
+  body.oh-homepage #geo-kmu {background:#fffdf9}
+  body.oh-homepage #geo-kmu .oh-split {
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+  body.oh-homepage #geo-kmu .oh-image {
+    padding:7px;
+    border-radius:12px;
+  }
+  body.oh-homepage #geo-kmu .oh-image img {
+    aspect-ratio:auto;
+    width:100%;
+    height:auto;
+    object-fit:contain;
+  }
+
+  /* Publications and FAQ */
+  body.oh-homepage #veroeffentlichungen {
+    background:#f7efe5;
+    border-top:1px solid #eadac7;
+  }
+  body.oh-homepage #veroeffentlichungen .oh-publications-grid {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+  body.oh-homepage #veroeffentlichungen .oh-publication {
+    min-height:0;
+    padding:17px 20px;
+    gap:6px;
+    border-radius:11px;
+    box-shadow:0 5px 11px #51351c10;
+  }
+  body.oh-homepage #veroeffentlichungen .oh-publication-logo {
+    font-size:1.3rem;
+    line-height:1.22;
+    color:#503323;
+  }
+  body.oh-homepage #faq {background:#f1e6d7}
+  body.oh-homepage #faq .oh-section-head {margin:0}
+  body.oh-homepage #faq .oh-section-head p:last-child {margin:17px 0 0}
+  body.oh-homepage #faq .oh-button {
+    display:flex;
+    width:100%;
+    padding:14px 17px;
+    background:linear-gradient(180deg,#a87944,#754a2a);
+    border-color:#754a2a;
+  }
+
+  /* Dark, compact site footer; no intrusive floating mascot on mobile */
+  body.oh-homepage .octo-float.oh-home-cta-gated {display:none!important}
+  body.oh-homepage .footer.os-footer {
+    background:linear-gradient(135deg,#4b3022,#342218);
+    color:#fff6e9;
+    padding:29px 0 31px!important;
+  }
+  body.oh-homepage .footer.os-footer .wrap {
+    width:calc(100% - 34px);
+  }
+  body.oh-homepage .footer.os-footer .footer-columns {
+    display:flex;
+    flex-direction:column;
+    gap:17px;
+    align-items:center;
+    text-align:center;
+  }
+  body.oh-homepage .footer.os-footer .logo-main {
+    color:#fff7eb;
+    font-size:1.8rem;
+    font-style:italic;
+  }
+  body.oh-homepage .footer.os-footer p {color:#ead5be}
+  body.oh-homepage .footer.os-footer .footer-links {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    column-gap:12px;
+    row-gap:8px;
+  }
+  body.oh-homepage .footer.os-footer .footer-links a {
+    font-size:.75rem;
+    line-height:1.45;
+    color:#fff2e2;
+    text-decoration:none;
+  }
+  body.oh-homepage .footer.os-footer .os-footer-note {
+    margin-top:19px!important;
+    padding-top:13px;
+    color:#d8c3ad!important;
+    font-size:.72rem!important;
+    line-height:1.5;
+    text-align:center;
+  }
+}
+@media screen and (max-width:360px) {
+  body.oh-homepage .os-head {gap:5px;width:calc(100% - 22px)}
+  body.oh-homepage .os-logo .logo-main {font-size:1.47rem}
+  body.oh-homepage .os-logo .logo-sub {font-size:.42rem}
+  body.oh-homepage .os-head .languages a {padding-inline:3px}
+  body.oh-homepage .oh-shell {padding-inline:15px}
+  body.oh-homepage .oh-site .oh-homehero-v3 h1 {font-size:1.8rem}
+  body.oh-homepage #produkte .oh-product {column-gap:10px}
+  body.oh-homepage #vorteile .oh-benefit {padding:11px 9px}
+  body.oh-homepage #vorteile .oh-benefit h3 {font-size:.78rem}
+}
